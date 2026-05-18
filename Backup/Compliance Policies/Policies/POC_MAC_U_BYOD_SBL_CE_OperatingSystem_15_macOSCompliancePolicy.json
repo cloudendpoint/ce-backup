@@ -1,0 +1,65 @@
+{
+     "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem_15",
+     "passwordRequired": false,
+     "passwordBlockSimple": false,
+     "passwordExpirationDays": null,
+     "passwordMinimumLength": null,
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordPreviousPasswordBlockCount": null,
+     "passwordMinimumCharacterSetCount": null,
+     "passwordRequiredType": "deviceDefault",
+     "osMinimumVersion": "15.7.7",
+     "osMaximumVersion": null,
+     "osMinimumBuildVersion": null,
+     "osMaximumBuildVersion": null,
+     "systemIntegrityProtectionEnabled": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "storageRequireEncryption": false,
+     "gatekeeperAllowedAppSource": "notConfigured",
+     "firewallEnabled": false,
+     "firewallBlockAllIncoming": false,
+     "firewallEnableStealthMode": false,
+     "deviceCompliancePolicyScript": null,
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 336,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_BYOD_OS_15",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE+",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_BYOD_OS_15",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

@@ -1,0 +1,16 @@
+{
+     "@odata.type": "#microsoft.graph.editionUpgradeConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Used for userless kiosk devices to activate to Enterprise.",
+     "displayName": "REF_WIN_D_COBO_Kiosk_EditionUpgrade",
+     "licenseType": "productKey",
+     "targetEdition": "windows10Enterprise",
+     "license": "",
+     "productKey": "#####-#####-#####-#####-#2345",
+     "windowsSMode": "noRestriction"
+}

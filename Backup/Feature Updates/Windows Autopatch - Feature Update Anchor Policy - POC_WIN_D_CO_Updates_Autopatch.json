@@ -1,0 +1,64 @@
+{
+     "displayName": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+     "description": null,
+     "featureUpdateVersion": "Windows 11, version 25H2",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deployableContentDisplayName": null,
+     "endOfSupportDate": "2028-10-10T00:00:00Z",
+     "installLatestWindows10OnWindows11IneligibleDevice": false,
+     "installFeatureUpdatesOptional": false,
+     "rolloutSettings": {
+          "offerStartDateTimeInUTC": null,
+          "offerEndDateTimeInUTC": null,
+          "offerIntervalInDays": null
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Last",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

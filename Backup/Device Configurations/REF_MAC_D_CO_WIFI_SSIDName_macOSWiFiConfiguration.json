@@ -1,0 +1,23 @@
+{
+     "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "REF_MAC_D_CO_WIFI_SSIDName",
+     "networkName": "7a065758-e789-41c3-b310-5c215d6191c8",
+     "ssid": "SSID",
+     "connectAutomatically": true,
+     "connectWhenNetworkNameIsHidden": false,
+     "wiFiSecurityType": "open",
+     "proxySettings": "none",
+     "proxyManualAddress": null,
+     "proxyManualPort": null,
+     "proxyAutomaticConfigurationUrl": null,
+     "deploymentChannel": null,
+     "wifiRequirePhysicalMacAddressEnabled": false,
+     "preSharedKey": null
+}

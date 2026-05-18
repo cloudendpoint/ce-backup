@@ -1,0 +1,53 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "XXX_AND_AE_D_CO_MicrosoftDefender",
+     "packageId": "app:com.microsoft.scmx",
+     "payloadJson": "",
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidDeviceOwner",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [
+          {
+               "permission": "android.permission.POST_NOTIFICATIONS",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.READ_EXTERNAL_STORAGE",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.ACCESS_FINE_LOCATION",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.ACCESS_COARSE_LOCATION",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.ACCESS_BACKGROUND_LOCATION",
+               "action": "autoGrant"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Defender: Antivirus",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

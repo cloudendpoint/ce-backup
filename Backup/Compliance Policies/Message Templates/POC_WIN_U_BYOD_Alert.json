@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_WIN_U_BYOD_Alert",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('de4f874a-6261-491b-b488-70d3f708ac06')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "Windows Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \n\nYour personal Windows device with name {{DeviceName}} running {{OSAndVersion}} has been marked as non-compliant and will be blocked from accessing Microsoft Services.\n\nPlease update your device, enable the firewall and enable or install an antivirus product.",
+               "isDefault": true
+          }
+     ]
+}

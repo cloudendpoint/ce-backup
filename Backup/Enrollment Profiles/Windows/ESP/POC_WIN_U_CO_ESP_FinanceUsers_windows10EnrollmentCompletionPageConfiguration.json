@@ -1,0 +1,22 @@
+{
+     "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
+     "displayName": "POC_WIN_U_CO_ESP_FinanceUsers",
+     "description": "",
+     "priority": 2,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "windows10EnrollmentCompletionPageConfiguration",
+     "showInstallationProgress": false,
+     "blockDeviceSetupRetryByUser": true,
+     "allowDeviceResetOnInstallFailure": false,
+     "allowLogCollectionOnInstallFailure": false,
+     "customErrorMessage": "",
+     "installProgressTimeoutInMinutes": 60,
+     "allowDeviceUseOnInstallFailure": false,
+     "selectedMobileAppIds": [],
+     "allowNonBlockingAppInstallation": true,
+     "installQualityUpdates": false,
+     "trackInstallProgressForAutopilotOnly": false,
+     "disableUserStatusTrackingAfterFirstUser": false
+}

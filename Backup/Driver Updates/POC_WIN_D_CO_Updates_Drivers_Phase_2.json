@@ -1,0 +1,52 @@
+{
+     "displayName": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+     "description": "",
+     "approvalType": "automatic",
+     "deviceReporting": 0,
+     "newUpdates": 0,
+     "deploymentDeferralInDays": 3,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "inventorySyncStatus": null,
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_CPC_CO",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_2",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_1",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Parent Group",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

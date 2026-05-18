@@ -1,0 +1,33 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "REF_WIN_D_CO_RS_AppControlEventLogSize",
+     "description": "Increases log file size to support App Control audit investigations.\n\nhttps://www.oddsandendpoints.co.uk/posts/windows-event-log-size/",
+     "detectionScriptContent": "JGxvZ3MgPSBAKCkNCiRsb2dzICs9IFtQU0N1c3RvbU9iamVjdF1Ae05hbWUgPSAnTWljcm9zb2Z0LVdpbmRvd3MtQXBwTG9ja2VyL0VYRSBhbmQgRExMJzsgU2l6ZSA9IDEwTUIgfQ0KJGxvZ3MgKz0gW1BTQ3VzdG9tT2JqZWN0XUB7TmFtZSA9ICdNaWNyb3NvZnQtV2luZG93cy1BcHBMb2NrZXIvTVNJIGFuZCBTY3JpcHQnOyBTaXplID0gMTBNQiB9DQokbG9ncyArPSBbUFNDdXN0b21PYmplY3RdQHtOYW1lID0gJ01pY3Jvc29mdC1XaW5kb3dzLUFwcExvY2tlci9QYWNrYWdlZCBhcHAtRGVwbG95bWVudCc7IFNpemUgPSAxME1CIH0NCiRsb2dzICs9IFtQU0N1c3RvbU9iamVjdF1Ae05hbWUgPSAnTWljcm9zb2Z0LVdpbmRvd3MtQXBwTG9ja2VyL1BhY2thZ2VkIGFwcC1FeGVjdXRpb24nOyBTaXplID0gMTBNQiB9DQokbG9ncyArPSBbUFNDdXN0b21PYmplY3RdQHtOYW1lID0gJ01pY3Jvc29mdC1XaW5kb3dzLUNvZGVJbnRlZ3JpdHkvT3BlcmF0aW9uYWwnOyBTaXplID0gMTBNQiB9DQoNCnRyeSB7DQogICAgJHJlbWVkaWF0ZUNvdW50ID0gMA0KICAgICRyZW1lZGlhdGVPdXRwdXQgPSBAKCkNCiAgICBmb3JlYWNoICgkbG9nIGluICRsb2dzKSB7DQogICAgICAgICRldmVudExvZyA9IEdldC1XaW5FdmVudCAtTGlzdExvZyAkbG9nLk5hbWUgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAgICAgaWYgKCRldmVudExvZykgew0KICAgICAgICAgICAgaWYgKCRldmVudExvZy5NYXhpbXVtU2l6ZUluQnl0ZXMgLW5lICRsb2cuU2l6ZSkgew0KICAgICAgICAgICAgICAgICRyZW1lZGlhdGVDb3VudCsrDQogICAgICAgICAgICAgICAgJHJlbWVkaWF0ZU91dHB1dCArPSAiRXZlbnQgbG9nICQoJGxvZy5OYW1lKSBpcyBjb25maWd1cmVkIHdpdGggc2l6ZSAkKCRldmVudExvZy5NYXhpbXVtU2l6ZUluQnl0ZXMpIGJ5dGVzLCBleHBlY3RlZCBzaXplIGlzICQoJGxvZy5TaXplKSBieXRlcyINCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgICBlbHNlIHsNCiAgICAgICAgICAgIGNvbnRpbnVlDQogICAgICAgIH0NCiAgICB9DQoNCiAgICBpZiAoJHJlbWVkaWF0ZUNvdW50IC1ndCAwKSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAkKCRyZW1lZGlhdGVPdXRwdXQgLWpvaW4gIiwgIikNCiAgICAgICAgZXhpdCAxDQogICAgfQ0KICAgIGVsc2Ugew0KICAgICAgICBXcml0ZS1PdXRwdXQgJ0FsbCBldmVudCBsb2cocykgYXJlIGNvbmZpZ3VyZWQgY29ycmVjdGx5LicNCiAgICAgICAgZXhpdCAwDQogICAgfQ0KfQ0KY2F0Y2ggew0KICAgIFdyaXRlLUVycm9yICRfLkV4Y2VwdGlvbi5NZXNzYWdlDQogICAgRXhpdCAyMDAwDQp9",
+     "remediationScriptContent": "JGxvZ3MgPSBAKCkNCiRsb2dzICs9IFtQU0N1c3RvbU9iamVjdF1Ae05hbWUgPSAnTWljcm9zb2Z0LVdpbmRvd3MtQXBwTG9ja2VyL0VYRSBhbmQgRExMJzsgU2l6ZSA9IDEwTUIgfQ0KJGxvZ3MgKz0gW1BTQ3VzdG9tT2JqZWN0XUB7TmFtZSA9ICdNaWNyb3NvZnQtV2luZG93cy1BcHBMb2NrZXIvTVNJIGFuZCBTY3JpcHQnOyBTaXplID0gMTBNQiB9DQokbG9ncyArPSBbUFNDdXN0b21PYmplY3RdQHtOYW1lID0gJ01pY3Jvc29mdC1XaW5kb3dzLUFwcExvY2tlci9QYWNrYWdlZCBhcHAtRGVwbG95bWVudCc7IFNpemUgPSAxME1CIH0NCiRsb2dzICs9IFtQU0N1c3RvbU9iamVjdF1Ae05hbWUgPSAnTWljcm9zb2Z0LVdpbmRvd3MtQXBwTG9ja2VyL1BhY2thZ2VkIGFwcC1FeGVjdXRpb24nOyBTaXplID0gMTBNQiB9DQokbG9ncyArPSBbUFNDdXN0b21PYmplY3RdQHtOYW1lID0gJ01pY3Jvc29mdC1XaW5kb3dzLUNvZGVJbnRlZ3JpdHkvT3BlcmF0aW9uYWwnOyBTaXplID0gMTBNQiB9DQoNCnRyeSB7cw0KICAgIGZvcmVhY2ggKCRsb2cgaW4gJGxvZ3MpIHsNCiAgICAgICAgJGV2ZW50TG9nID0gR2V0LVdpbkV2ZW50IC1MaXN0TG9nICRsb2cuTmFtZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZQ0KICAgICAgICBpZiAoJGV2ZW50TG9nKSB7DQogICAgICAgICAgICBpZiAoJGV2ZW50TG9nLk1heGltdW1TaXplSW5CeXRlcyAtbmUgJGxvZy5TaXplKSB7DQogICAgICAgICAgICAgICAgJGV2ZW50TG9nLk1heGltdW1TaXplSW5CeXRlcyA9ICRsb2cuU2l6ZQ0KICAgICAgICAgICAgICAgICRldmVudExvZy5TYXZlQ2hhbmdlcygpDQogICAgICAgICAgICAgICAgV3JpdGUtT3V0cHV0ICJSZW1lZGlhdGVkIGV2ZW50IGxvZyAkKCRsb2cuTmFtZSkgdG8gc2l6ZSAkKCRsb2cuU2l6ZSkuIg0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICAgIGVsc2Ugew0KICAgICAgICAgICAgY29udGludWUNCiAgICAgICAgfQ0KICAgIH0NCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1FcnJvciAkXy5FeGNlcHRpb24uTWVzc2FnZQ0KICAgIGV4aXQgMjAwMA0KfQ==",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": [],
+     "assignments": [
+          {
+               "runRemediationScript": false,
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_ACFB_COPE",
+                    "groupType": "StaticMembership"
+               },
+               "runSchedule": {
+                    "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+                    "interval": 1,
+                    "useUtc": false,
+                    "time": "01:00:00.0000000"
+               }
+          }
+     ]
+}

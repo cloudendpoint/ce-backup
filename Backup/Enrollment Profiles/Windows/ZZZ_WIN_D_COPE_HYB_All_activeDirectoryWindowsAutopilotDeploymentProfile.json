@@ -1,0 +1,35 @@
+{
+     "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
+     "displayName": "ZZZ_WIN_D_COPE_HYB_All",
+     "description": "",
+     "language": "os-default",
+     "locale": "os-default",
+     "enrollmentStatusScreenSettings": null,
+     "extractHardwareHash": false,
+     "hardwareHashExtractionEnabled": false,
+     "deviceNameTemplate": "",
+     "deviceType": "windowsPc",
+     "enableWhiteGlove": true,
+     "preprovisioningAllowed": true,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "managementServiceAppId": null,
+     "hybridAzureADJoinSkipConnectivityCheck": true,
+     "outOfBoxExperienceSettings": {
+          "hidePrivacySettings": true,
+          "hideEULA": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "skipKeyboardSelectionPage": true,
+          "hideEscapeLink": true
+     },
+     "outOfBoxExperienceSetting": {
+          "privacySettingsHidden": true,
+          "eulaHidden": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "keyboardSelectionPageSkipped": true,
+          "escapeLinkHidden": true
+     }
+}

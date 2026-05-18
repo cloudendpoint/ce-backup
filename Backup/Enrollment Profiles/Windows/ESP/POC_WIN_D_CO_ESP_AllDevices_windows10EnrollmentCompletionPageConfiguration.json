@@ -1,0 +1,37 @@
+{
+     "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
+     "displayName": "POC_WIN_D_CO_ESP_AllDevices",
+     "description": "",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "windows10EnrollmentCompletionPageConfiguration",
+     "showInstallationProgress": true,
+     "blockDeviceSetupRetryByUser": false,
+     "allowDeviceResetOnInstallFailure": true,
+     "allowLogCollectionOnInstallFailure": true,
+     "customErrorMessage": "Setup could not be completed. Please try again or contact your support person for help.",
+     "installProgressTimeoutInMinutes": 60,
+     "allowDeviceUseOnInstallFailure": true,
+     "allowNonBlockingAppInstallation": true,
+     "installQualityUpdates": false,
+     "trackInstallProgressForAutopilotOnly": true,
+     "disableUserStatusTrackingAfterFirstUser": true,
+     "selectedMobileAppNames": [
+          {
+               "name": "Company Portal",
+               "type": "#microsoft.graph.winGetApp"
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

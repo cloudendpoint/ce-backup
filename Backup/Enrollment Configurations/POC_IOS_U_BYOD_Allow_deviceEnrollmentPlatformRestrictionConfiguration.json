@@ -1,0 +1,59 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_IOS_U_BYOD_Allow",
+     "description": "",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "ios",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "18.0.0",
+          "osMaximumVersion": "26.99.99",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_U_NCSC",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_U_CIS",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_U_CE+",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_OS_NotHome",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.operatingSystemSKU -notContains \"Core\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

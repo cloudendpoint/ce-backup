@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_AE_MNGD_COBO",
+     "description": "",
+     "platform": "androidMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Corporate-owned dedicated devices with Entra ID Shared mode\") or (app.deviceManagementType -eq \"Corporate-owned dedicated devices without Entra ID Shared mode\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

@@ -1,0 +1,48 @@
+{
+     "creationSource": "Windows365BootGuidedScenario",
+     "description": "",
+     "name": "POC_WIN_U_CO_W365Boot_PhysicalDeviceAccess",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "mdm",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "user_vendor_msft_clouddesktop_enablephysicaldeviceaccessonerrorscreens",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "user_vendor_msft_clouddesktop_enablephysicaldeviceaccessonerrorscreens_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "user_vendor_msft_clouddesktop_enablephysicaldeviceaccessonctrlaltdel",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "user_vendor_msft_clouddesktop_enablephysicaldeviceaccessonctrlaltdel_true",
+                         "children": []
+                    }
+               }
+          }
+     ]
+}

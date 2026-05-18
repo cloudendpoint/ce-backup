@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_MNGD_COBO",
+     "description": "",
+     "platform": "iOSMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Automated Device Enrollment userless devices\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

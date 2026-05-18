@@ -1,0 +1,410 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "DEV_AND_AE_D_CO_SC_SBL_CIS_DeviceSecurity",
+     "platforms": "androidEnterprise",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 27,
+     "technologies": "android",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_always",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.networkescapehatchallowed",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.networkescapehatchallowed_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.storageallowusb",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.storageallowusb_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.camerablocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.camerablocked_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.assistcontentpolicy_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "7",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "8",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "9",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "10",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.datetimeconfigurationblocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.datetimeconfigurationblocked_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "11",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.factoryresetblocked_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "12",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.locationmode",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.locationmode_notconfigured",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "13",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.storageblockexternalmedia",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.storageblockexternalmedia_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "14",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.privatespacepolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.privatespacepolicy_disallowed",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "15",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.dataroamingblocked_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "16",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.screencaptureblocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.screencaptureblocked_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.cellularblockwifitethering_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "18",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.wifidirectsettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.wifidirectsettings_disallowed",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "19",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "20",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy_prompt",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "21",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.appsrecommendskippingfirstusehints",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.appsrecommendskippingfirstusehints_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "22",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.usbdataaccess",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.usbdataaccess_disallowusbdatatransfer",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "23",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "24",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.securityrequireverifyapps_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "25",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.accountsblockmodification",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.accountsblockmodification_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "26",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_true",
+                         "children": []
+                    }
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_AND_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

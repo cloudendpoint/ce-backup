@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_CO_AP",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.enrollmentProfileName -ne $null) and (device.deviceOwnership -eq \"Corporate\") and (device.model -notContains \"Cloud PC\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

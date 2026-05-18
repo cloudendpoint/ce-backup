@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_IOS_U_BYOD_Warning",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('4b73b2dc-db58-449a-a714-da5210a50dd2')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "iOS Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \r\n\r\nYour personal iOS device with name {{DeviceName}} running {{OSAndVersion}} will be marked as non-compliant.\r\n\r\nPlease ensure that your device is up to date, and has a configured device PIN.\r\n",
+               "isDefault": true
+          }
+     ]
+}

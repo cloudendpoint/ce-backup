@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_BYOD_OS_26",
+     "description": "",
+     "platform": "iOS",
+     "rule": "(device.deviceOwnership -eq \"Personal\") and (device.osVersion -startsWith \"26\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

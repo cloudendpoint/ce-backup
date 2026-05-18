@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_CO",
+     "description": "",
+     "platform": "iOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

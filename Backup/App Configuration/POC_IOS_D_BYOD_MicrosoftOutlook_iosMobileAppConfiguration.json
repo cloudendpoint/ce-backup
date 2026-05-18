@@ -1,0 +1,65 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_BYOD_MicrosoftOutlook",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.AccountType",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "ModernAuth"
+          },
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          },
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailAddress",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{mail}}"
+          },
+          {
+               "appConfigKey": "com.microsoft.outlook.Contacts.LocalSyncEnabled",
+               "appConfigKeyType": "booleanType",
+               "appConfigKeyValue": "false"
+          },
+          {
+               "appConfigKey": "IntuneMAMAllowedAccountsOnly",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "Disabled"
+          },
+          {
+               "appConfigKey": "IntuneMAMUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Outlook",
+          "type": "#microsoft.graph.iosStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_AND_NCSC_BYOD",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

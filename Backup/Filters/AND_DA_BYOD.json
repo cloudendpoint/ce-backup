@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_DA_BYOD",
+     "description": "",
+     "platform": "android",
+     "rule": "(device.deviceOwnership -eq \"Personal\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

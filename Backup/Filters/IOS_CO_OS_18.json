@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_CO_OS_18",
+     "description": "",
+     "platform": "iOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.osVersion -startsWith \"18\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

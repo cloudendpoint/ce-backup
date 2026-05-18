@@ -1,0 +1,60 @@
+{
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "displayName": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+     "description": "Removes pre-installed Microsoft Store apps from the original installed operating system, the array needs to be updated to either include or exclude apps from the removal list.",
+     "scriptContent": "JHNjcmlwdE5hbWUgPSAnUmVtb3ZlQnVpbHRJbkFwcHMnDQokcmVtb3ZlQXBwcyA9IEAoDQogICAgI1VubmVjZXNzYXJ5IFdpbmRvd3MgMTAvMTEgQXBwWCBBcHBzDQogICAgIyJNaWNyb3NvZnQuNTQ5OTgxQzNGNUYxMCIgI2NvcnRhbmENCiAgICAnQ2xpcGNoYW1wLkNsaXBjaGFtcCcNCiAgICAnTWljcm9zb2Z0LkJpbmdTZWFyY2gnDQogICAgJ01pY3Jvc29mdC5PbmVEcml2ZVN5bmMnDQogICAgJ01pY3Jvc29mdC5Zb3VyUGhvbmUnDQogICAgJ01pY3Jvc29mdFdpbmRvd3MuQ3Jvc3NEZXZpY2UnDQogICAgJ01pY3Jvc29mdC5Db3BpbG90Jw0KICAgICdNaWNyb3NvZnQuT3V0bG9va0ZvcldpbmRvd3MnDQogICAgJ01TVGVhbXMnDQogICAgJzdFRTc3NzZDLkxpbmtlZEluZm9yV2luZG93cycNCiAgICAnTWljcm9zb2Z0Llhib3hHYW1lQ2FsbGFibGVVSScNCiAgICAnTWljcm9zb2Z0LkJpbmdOZXdzJw0KICAgICdNaWNyb3NvZnQuR2V0SGVscCcNCiAgICAnTWljcm9zb2Z0LkdldHN0YXJ0ZWQnDQogICAgJ01pY3Jvc29mdC5NZXNzYWdpbmcnDQogICAgJ01pY3Jvc29mdC5NaWNyb3NvZnQzRFZpZXdlcicNCiAgICAnTWljcm9zb2Z0Lk1pY3Jvc29mdE9mZmljZUh1YicNCiAgICAnTWljcm9zb2Z0Lk1pY3Jvc29mdFNvbGl0YWlyZUNvbGxlY3Rpb24nDQogICAgJ01pY3Jvc29mdC5OZXR3b3JrU3BlZWRUZXN0Jw0KICAgICdNaWNyb3NvZnQuTWl4ZWRSZWFsaXR5LlBvcnRhbCcNCiAgICAnTWljcm9zb2Z0Lk5ld3MnDQogICAgJ01pY3Jvc29mdC5PZmZpY2UuTGVucycNCiAgICAnTWljcm9zb2Z0Lk9mZmljZS5PbmVOb3RlJw0KICAgICdNaWNyb3NvZnQuT2ZmaWNlLlN3YXknDQogICAgJ01pY3Jvc29mdC5PbmVDb25uZWN0Jw0KICAgICdNaWNyb3NvZnQuUGVvcGxlJw0KICAgICdNaWNyb3NvZnQuUHJpbnQzRCcNCiAgICAjIk1pY3Jvc29mdC5SZW1vdGVEZXNrdG9wIg0KICAgICdNaWNyb3NvZnQuU2t5cGVBcHAnDQogICAgIyJNaWNyb3NvZnQuU3RvcmVQdXJjaGFzZUFwcCINCiAgICAnTWljcm9zb2Z0Lk9mZmljZS5Ub2RvLkxpc3QnDQogICAgJ01pY3Jvc29mdC5XaGl0ZWJvYXJkJw0KICAgICdNaWNyb3NvZnQuV2luZG93c0FsYXJtcycNCiAgICAjIk1pY3Jvc29mdC5XaW5kb3dzQ2FtZXJhIg0KICAgICdtaWNyb3NvZnQud2luZG93c2NvbW11bmljYXRpb25zYXBwcycNCiAgICAnTWljcm9zb2Z0LldpbmRvd3NGZWVkYmFja0h1YicNCiAgICAnTWljcm9zb2Z0LldpbmRvd3NNYXBzJw0KICAgICdNaWNyb3NvZnQuV2luZG93c1NvdW5kUmVjb3JkZXInDQogICAgJ01pY3Jvc29mdC5YYm94LlRDVUknDQogICAgJ01pY3Jvc29mdC5YYm94QXBwJw0KICAgICdNaWNyb3NvZnQuWGJveEdhbWVPdmVybGF5Jw0KICAgICdNaWNyb3NvZnQuWGJveElkZW50aXR5UHJvdmlkZXInDQogICAgJ01pY3Jvc29mdC5YYm94U3BlZWNoVG9UZXh0T3ZlcmxheScNCiAgICAnTWljcm9zb2Z0Llp1bmVNdXNpYycNCiAgICAnTWljcm9zb2Z0Llp1bmVWaWRlbycNCiAgICAnTWljcm9zb2Z0VGVhbXMnDQogICAgJ01pY3Jvc29mdC5Zb3VyUGhvbmUnDQogICAgJ01pY3Jvc29mdC5YYm94R2FtaW5nT3ZlcmxheV81LjcyMS4xMDIwMi4wX25ldXRyYWxffl84d2VreWIzZDhiYndlJw0KICAgICdNaWNyb3NvZnQuR2FtaW5nQXBwJw0KICAgICdNaWNyb3NvZnQuVG9kb3MnDQogICAgJ01pY3Jvc29mdC5Qb3dlckF1dG9tYXRlRGVza3RvcCcNCiAgICAnU3BvdGlmeUFCLlNwb3RpZnlNdXNpYycNCiAgICAnRGlzbmV5LjM3ODUzRkMyMkIyQ0UnDQogICAgJypFY2xpcHNlTWFuYWdlcionDQogICAgJypBY3RpcHJvU29mdHdhcmVMTEMqJw0KICAgICcqQWRvYmVTeXN0ZW1zSW5jb3Jwb3JhdGVkLkFkb2JlUGhvdG9zaG9wRXhwcmVzcyonDQogICAgJypEdW9saW5nby1MZWFybkxhbmd1YWdlc2ZvckZyZWUqJw0KICAgICcqUGFuZG9yYU1lZGlhSW5jKicNCiAgICAnKkNhbmR5Q3J1c2gqJw0KICAgICcqTGlua2VkSW4qJw0KICAgICcqQnViYmxlV2l0Y2gzU2FnYSonDQogICAgJypXdW5kZXJsaXN0KicNCiAgICAnKkZsaXBib2FyZConDQogICAgJypUd2l0dGVyKicNCiAgICAnKkZhY2Vib29rKicNCiAgICAnKlNwb3RpZnkqJw0KICAgICcqTWluZWNyYWZ0KicNCiAgICAnKlJveWFsIFJldm9sdConDQogICAgJypTd2F5KicNCiAgICAnKlNwZWVkIFRlc3QqJw0KICAgICcqRG9sYnkqJw0KICAgICcqT2ZmaWNlKicNCiAgICAnKkRpc25leSonDQogICAgJypnYW1pbmcqJw0KICAgICdNaWNyb3NvZnRDb3Jwb3JhdGlvbklJLk1pY3Jvc29mdEZhbWlseScNCiAgICAnQzI3RUI0QkEuRHJvcGJveE9FTSonDQogICAgJypEZXZIb21lKicNCiAgICAjT3B0aW9uYWw6IFR5cGljYWxseSBub3QgcmVtb3ZlZCBidXQgeW91IGNhbiBpZiB5b3UgbmVlZCB0byBmb3Igc29tZSByZWFzb24NCiAgICAjIipNaWNyb3NvZnQuQWR2ZXJ0aXNpbmcuWGFtbF8xMC4xNzEyLjUuMF94NjRfXzh3ZWt5YjNkOGJid2UqIg0KICAgICMiKk1pY3Jvc29mdC5BZHZlcnRpc2luZy5YYW1sXzEwLjE3MTIuNS4wX3g4Nl9fOHdla3liM2Q4YmJ3ZSoiDQogICAgJypNaWNyb3NvZnQuQmluZ1dlYXRoZXIqJw0KICAgICMiKk1pY3Jvc29mdC5NU1BhaW50KiINCiAgICAnKk1pY3Jvc29mdC5NaWNyb3NvZnRTdGlja3lOb3RlcyonDQogICAgIyIqTWljcm9zb2Z0LldpbmRvd3MuUGhvdG9zKiINCiAgICAjIipNaWNyb3NvZnQuV2luZG93c0NhbGN1bGF0b3IqIg0KKQ0KDQpmdW5jdGlvbiBXcml0ZS1Mb2dFbnRyeSB7DQogICAgcGFyYW0oDQogICAgICAgIFtwYXJhbWV0ZXIoTWFuZGF0b3J5ID0gJHRydWUsIEhlbHBNZXNzYWdlID0gJ1ZhbHVlIGFkZGVkIHRvIHRoZSBSZW1vdmVkQXBwcy5sb2cgZmlsZS4nKV0NCiAgICAgICAgW1ZhbGlkYXRlTm90TnVsbE9yRW1wdHkoKV0NCiAgICAgICAgW3N0cmluZ10kVmFsdWUsDQoNCiAgICAgICAgW3BhcmFtZXRlcihNYW5kYXRvcnkgPSAkZmFsc2UsIEhlbHBNZXNzYWdlID0gJ05hbWUgb2YgdGhlIGxvZyBmaWxlIHRoYXQgdGhlIGVudHJ5IHdpbGwgd3JpdHRlbiB0by4nKV0NCiAgICAgICAgW1ZhbGlkYXRlTm90TnVsbE9yRW1wdHkoKV0NCiAgICAgICAgW3N0cmluZ10kRmlsZU5hbWUgPSAnUmVtb3ZlZEFwcHMubG9nJw0KICAgICkNCiAgICAjIERldGVybWluZSBsb2cgZmlsZSBsb2NhdGlvbg0KICAgICRsb2dGaWxlUGF0aCA9IEpvaW4tUGF0aCAtUGF0aCAkZW52OlByb2dyYW1EYXRhXE1pY3Jvc29mdFxJbnR1bmVNYW5hZ2VtZW50RXh0ZW5zaW9uXExvZ3MgLUNoaWxkUGF0aCAiJHNjcmlwdE5hbWUubG9nIg0KDQogICAgIyBBZGQgdmFsdWUgdG8gbG9nIGZpbGUNCiAgICB0cnkgew0KICAgICAgICBPdXQtRmlsZSAtSW5wdXRPYmplY3QgJFZhbHVlIC1BcHBlbmQgLU5vQ2xvYmJlciAtRW5jb2RpbmcgRGVmYXVsdCAtRmlsZVBhdGggJGxvZ0ZpbGVQYXRoIC1FcnJvckFjdGlvbiBTdG9wDQogICAgfQ0KICAgIGNhdGNoIFtTeXN0ZW0uRXhjZXB0aW9uXSB7DQogICAgICAgIFdyaXRlLVdhcm5pbmcgLU1lc3NhZ2UgIlVuYWJsZSB0byBhcHBlbmQgbG9nIGVudHJ5IHRvICRzY3JpcHROYW1lIGZpbGUiDQogICAgfQ0KfQ0KDQpXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gU3RhcnRpbmcgQXBwIHJlbW92YWwgcHJvY2VzcyINCmZvcmVhY2ggKCRyZW1vdmVBcHAgaW4gJHJlbW92ZUFwcHMpIHsNCiAgICAkYXBweFBhY2thZ2UgPSBHZXQtQXBweFBhY2thZ2UgLU5hbWUgJHJlbW92ZUFwcCAtQWxsVXNlcnMgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAkYXBweFByb3Zpc2lvbmluZ1BhY2thZ2UgPSBHZXQtQXBweFByb3Zpc2lvbmVkUGFja2FnZSAtT25saW5lIHwgV2hlcmUtT2JqZWN0IERpc3BsYXlOYW1lIC1MaWtlICRyZW1vdmVBcHAgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gRmluZGluZyBBcHB4UGFja2FnZSBmb3IgJHJlbW92ZUFwcCINCiAgICBpZiAoJGFwcHhQYWNrYWdlKSB7DQogICAgICAgIHRyeSB7DQogICAgICAgICAgICBHZXQtQXBweFBhY2thZ2UgLUFsbFVzZXJzIC1OYW1lICRyZW1vdmVBcHAgfCBSZW1vdmUtQXBweFBhY2thZ2UgLUFsbFVzZXJzIC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlDQogICAgICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gUmVtb3ZlZCBBcHAgJCgkYXBweFBhY2thZ2UuUGFja2FnZUZ1bGxOYW1lKSINCiAgICAgICAgfQ0KICAgICAgICBjYXRjaCB7DQogICAgICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gVW5hYmxlIHRvIHJlbW92ZSBBcHAgJCgkYXBweFBhY2thZ2UuUGFja2FnZUZ1bGxOYW1lKSINCiAgICAgICAgfQ0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIENvdWxkIG5vdCBmaW5kIEFwcHhQYWNrYWdlICRyZW1vdmVBcHAiDQogICAgfQ0KDQogICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIEZpbmRpbmcgQXBweFByb3Zpc2lvbmluZ1BhY2thZ2UgZm9yICRyZW1vdmVBcHAiDQogICAgaWYgKCRhcHB4UHJvdmlzaW9uaW5nUGFja2FnZSkgew0KICAgICAgICB0cnkgew0KICAgICAgICAgICAgR2V0LUFwcHhQcm92aXNpb25lZFBhY2thZ2UgLU9ubGluZSB8IFdoZXJlLU9iamVjdCBEaXNwbGF5TmFtZSAtTGlrZSAkcmVtb3ZlQXBwIHwgUmVtb3ZlLUFwcHhQcm92aXNpb25lZFBhY2thZ2UgLU9ubGluZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZQ0KICAgICAgICAgICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIFJlbW92ZWQgQXBwICQoJGFwcHhQcm92aXNpb25pbmdQYWNrYWdlLlBhY2thZ2VOYW1lKSINCiAgICAgICAgfQ0KICAgICAgICBjYXRjaCB7DQogICAgICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gVW5hYmxlIHRvIHJlbW92ZSBBcHAgJCgkYXBweFByb3Zpc2lvbmluZ1BhY2thZ2UuUGFja2FnZU5hbWUpIg0KICAgICAgICB9DQogICAgfQ0KICAgIGVsc2Ugew0KICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gQ291bGQgbm90IGZpbmQgQXBweFByb3Zpc2lvbmluZ1BhY2thZ2UgJHJlbW92ZUFwcCINCiAgICB9DQoNCiAgICAkYXBweFBhY2thZ2UgPSBHZXQtQXBweFBhY2thZ2UgLU5hbWUgJHJlbW92ZUFwcCAtQWxsVXNlcnMgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAkYXBweFByb3Zpc2lvbmluZ1BhY2thZ2UgPSBHZXQtQXBweFByb3Zpc2lvbmVkUGFja2FnZSAtT25saW5lIHwgV2hlcmUtT2JqZWN0IERpc3BsYXlOYW1lIC1MaWtlICRyZW1vdmVBcHAgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICBpZiAoJGFwcHhQYWNrYWdlKSB7DQogICAgICAgIHRyeSB7DQogICAgICAgICAgICBHZXQtQXBweFBhY2thZ2UgLUFsbFVzZXJzIC1OYW1lICRyZW1vdmVBcHAgfCBSZW1vdmUtQXBweFBhY2thZ2UgLUFsbFVzZXJzIC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlDQogICAgICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gUmVtb3ZlZCBBcHAgJCgkYXBweFBhY2thZ2UuUGFja2FnZUZ1bGxOYW1lKSINCiAgICAgICAgfQ0KICAgICAgICBjYXRjaCB7DQogICAgICAgICAgICBXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gVW5hYmxlIHRvIHJlbW92ZSBBcHAgJCgkYXBweFBhY2thZ2UuUGFja2FnZUZ1bGxOYW1lKSINCiAgICAgICAgfQ0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIENvdWxkIG5vdCBmaW5kIEFwcHhQYWNrYWdlICRyZW1vdmVBcHAiDQogICAgfQ0KICAgIGlmICgkYXBweFByb3Zpc2lvbmluZ1BhY2thZ2UpIHsNCiAgICAgICAgdHJ5IHsNCiAgICAgICAgICAgIEdldC1BcHB4UHJvdmlzaW9uZWRQYWNrYWdlIC1PbmxpbmUgfCBXaGVyZS1PYmplY3QgRGlzcGxheU5hbWUgLUxpa2UgJHJlbW92ZUFwcCB8IFJlbW92ZS1BcHB4UHJvdmlzaW9uZWRQYWNrYWdlIC1PbmxpbmUgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAgICAgICAgIFdyaXRlLUxvZ0VudHJ5IC1WYWx1ZSAiJChHZXQtRGF0ZSAtRm9ybWF0IHl5eS5NTS5kZC1oaDptbTpzcykgLSBSZW1vdmVkIEFwcCAkKCRhcHB4UHJvdmlzaW9uaW5nUGFja2FnZS5QYWNrYWdlTmFtZSkiDQogICAgICAgIH0NCiAgICAgICAgY2F0Y2ggew0KICAgICAgICAgICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIFVuYWJsZSB0byByZW1vdmUgQXBwICQoJGFwcHhQcm92aXNpb25pbmdQYWNrYWdlLlBhY2thZ2VOYW1lKSINCiAgICAgICAgfQ0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtTG9nRW50cnkgLVZhbHVlICIkKEdldC1EYXRlIC1Gb3JtYXQgeXl5Lk1NLmRkLWhoOm1tOnNzKSAtIENvdWxkIG5vdCBmaW5kIEFwcHhQcm92aXNpb25pbmdQYWNrYWdlICRyZW1vdmVBcHAiDQogICAgfQ0KfQ0KDQpXcml0ZS1Mb2dFbnRyeSAtVmFsdWUgIiQoR2V0LURhdGUgLUZvcm1hdCB5eXkuTU0uZGQtaGg6bW06c3MpIC0gUmVtb3ZlZCBCdWlsdCBpbiBhcHBzLiINCmV4aXQgMA==",
+     "runAsAccount": "system",
+     "fileName": "Remove-SpecificBuiltInApps.ps1",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_AP",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.devicePhysicalIDs -any (_ -contains \"[ZTDID]\"))"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_APDP_MSZT_COPE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_APDP_CE_COPE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_APDP_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_APDP_NCSC_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

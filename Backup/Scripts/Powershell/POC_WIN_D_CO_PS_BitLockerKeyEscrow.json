@@ -1,0 +1,44 @@
+{
+     "enforceSignatureCheck": false,
+     "runAs32Bit": true,
+     "displayName": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
+     "description": "Used to capture existing BitLocker recovery keys from devices not encrypted by Microsoft Intune.",
+     "scriptContent": "PCMKLlNZTk9QU0lTCiAgICBFc2Nyb3cgKEJhY2t1cCkgdGhlIGV4aXN0aW5nIEJpdGxvY2tlciBrZXkgcHJvdGVjdG9ycyB0byBBenVyZSBBRCAoSW50dW5lKQoKLkRFU0NSSVBUSU9OCiAgICBUaGlzIHNjcmlwdCB3aWxsIHZlcmlmeSB0aGUgcHJlc2VuY2Ugb2YgZXhpc3RpbmcgcmVjb3Zlcnkga2V5cyBhbmQgaGF2ZSB0aGVtIGVzY3Jvd2VkIChiYWNrZWQgdXApIHRvIEF6dXJlIEFECiAgICBHcmVhdCBmb3Igc3dpdGNoaW5nIGF3YXkgZnJvbSBNQkFNIG9uLXByZW0gdG8gdXNpbmcgSW50dW5lIGFuZCBBenVyZSBBRCBmb3IgQml0bG9ja2VyIGtleSBtYW5hZ2VtZW50CgouSU5QVVRTCiAgICBOb25lCgouTk9URVMKICAgIFZlcnNpb24gICAgICAgOiAxLjAKICAgIEF1dGhvciAgICAgICAgOiBNaWNoYWVsIE1hcmRhaGwKICAgIFR3aXR0ZXIgICAgICAgOiBAbWljaGFlbF9tYXJkYWhsCiAgICBCbG9nZ2luZyBvbiAgIDogd3d3Lm1zZW5kcG9pbnRtZ3IuY29tCiAgICBDcmVhdGlvbiBEYXRlIDogMTEgSmFudWFyeSAyMDIxCiAgICBQdXJwb3NlL0NoYW5nZTogSW5pdGlhbCBzY3JpcHQKICAgIExpY2Vuc2UgICAgICAgOiBNSVQgKExlYXZlIGF1dGhvciBjcmVkaXRzKQoKLkVYQU1QTEUKICAgIEV4ZWN1dGUgc2NyaXB0IGFzIHN5c3RlbSBvciBhZG1pbmlzdHJhdG9yCiAgICAuXEludm9rZS1Fc2Nyb3dCaXRsb2NrZXJUb0FBRC5wczEKCi5OT1RFUwogICAgSWYgdGhlcmUgaXMgYSBwb2xpY3kgbWlzbWF0Y2gsIHRoZW4geW91IG1pZ2h0IGdldCBlcnJvcnMgZnJvbSB0aGUgYnVpbHQtaW4gY21kbGV0IEJhY2t1cFRvQUFELUJpdExvY2tlcktleVByb3RlY3Rvci4KICAgIFNvIEkgaGF2ZSB3cmFwcGVkIHRoZSBjbWRsZXQgaW4gYSB0cnkvY2F0Y2ggaW4gb3JkZXIgdG8gc3VwcmVzcyB0aGUgZXJyb3IuIFRoaXMgbWVhbnMgdGhhdCB5b3Ugd2lsbCBoYXZlIHRvIG1hbnVhbGx5IHZlcmlmeSB0aGF0IHRoZSBrZXkgd2FzIGFjdHVhbGx5IGVzY3Jvd2VkLgogICAgQ2hlY2sgTVNFbmRwb2ludE1nci5jb20gZm9yIHNvbHV0aW9ucyB0byBnZXQgcmVwb3J0aW5nIHN0YXRzIG9uIHRoaXMuCgojPgoKI3JlZ2lvbiBkZWNsYXJhdGlvbnMKCiREcml2ZUxldHRlciA9ICRlbnY6U3lzdGVtRHJpdmUKCiNlbmRyZWdpb24gZGVjbGFyYXRpb25zCgojcmVnaW9uIGZ1bmN0aW9ucwoKZnVuY3Rpb24gVGVzdC1CaXRsb2NrZXIgKCRCaXRsb2NrZXJEcml2ZSkgewogICAgI1Rlc3RzIHRoZSBkcml2ZSBmb3IgZXhpc3RpbmcgQml0bG9ja2VyIGtleXByb3RlY3RvcnMKICAgIHRyeSB7CiAgICAgICAgR2V0LUJpdExvY2tlclZvbHVtZSAtTW91bnRQb2ludCAkQml0bG9ja2VyRHJpdmUgLUVycm9yQWN0aW9uIFN0b3AKICAgIH0KICAgIGNhdGNoIHsKICAgICAgICBXcml0ZS1PdXRwdXQgIkJpdGxvY2tlciB3YXMgbm90IGZvdW5kIHByb3RlY3RpbmcgdGhlICRCaXRsb2NrZXJEcml2ZSBkcml2ZS4gVGVybWluYXRpbmcgc2NyaXB0ISIKICAgICAgICBleGl0IDAKICAgIH0KfQoKZnVuY3Rpb24gR2V0LUtleVByb3RlY3RvcklkICgkQml0bG9ja2VyRHJpdmUpIHsKICAgICNmZXRjaGVzIHRoZSBrZXkgcHJvdGVjdG9yIElEIG9mIHRoZSBkcml2ZQogICAgJEJpdExvY2tlclZvbHVtZSA9IEdldC1CaXRMb2NrZXJWb2x1bWUgLU1vdW50UG9pbnQgJEJpdGxvY2tlckRyaXZlCiAgICAkS2V5UHJvdGVjdG9yID0gJEJpdExvY2tlclZvbHVtZS5LZXlQcm90ZWN0b3IgfCBXaGVyZS1PYmplY3QgeyAkXy5LZXlQcm90ZWN0b3JUeXBlIC1lcSAnUmVjb3ZlcnlQYXNzd29yZCcgfQogICAgcmV0dXJuICRLZXlQcm90ZWN0b3IuS2V5UHJvdGVjdG9ySWQKfQoKZnVuY3Rpb24gSW52b2tlLUJpdGxvY2tlckVzY3JvdyAoJEJpdGxvY2tlckRyaXZlLCAkQml0bG9ja2VyS2V5KSB7CiAgICAjRXNjcm93IHRoZSBrZXkgaW50byBBenVyZSBBRAogICAgdHJ5IHsKICAgICAgICBCYWNrdXBUb0FBRC1CaXRMb2NrZXJLZXlQcm90ZWN0b3IgLU1vdW50UG9pbnQgJEJpdGxvY2tlckRyaXZlIC1LZXlQcm90ZWN0b3JJZCAkQml0bG9ja2VyS2V5IC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlCiAgICAgICAgV3JpdGUtT3V0cHV0ICdBdHRlbXB0ZWQgdG8gZXNjcm93IGtleSBpbiBBenVyZSBBRCAtIFBsZWFzZSB2ZXJpZnkgbWFudWFsbHkhJwogICAgICAgIGV4aXQgMAogICAgfQogICAgY2F0Y2ggewogICAgICAgIFdyaXRlLUVycm9yICdUaGlzIHNob3VsZCBuZXZlciBoYXZlIGhhcHBlbmQ/IERlYnVnIG1lIScKICAgICAgICBleGl0IDEKICAgIH0KfQoKI2VuZHJlZ2lvbiBmdW5jdGlvbnMKCiNyZWdpb24gZXhlY3V0ZQoKVGVzdC1CaXRsb2NrZXIgLUJpdGxvY2tlckRyaXZlICREcml2ZUxldHRlcgokS2V5UHJvdGVjdG9ySWQgPSBHZXQtS2V5UHJvdGVjdG9ySWQgLUJpdGxvY2tlckRyaXZlICREcml2ZUxldHRlcgpJbnZva2UtQml0bG9ja2VyRXNjcm93IC1CaXRsb2NrZXJEcml2ZSAkRHJpdmVMZXR0ZXIgLUJpdGxvY2tlcktleSAkS2V5UHJvdGVjdG9ySWQKCiNlbmRyZWdpb24gZXhlY3V0ZQoNCg==",
+     "runAsAccount": "system",
+     "fileName": "Invoke-EscrowBitlockerToAAD.ps1",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\")"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_AP",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.devicePhysicalIDs -any (_ -contains \"[ZTDID]\"))"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_CPC_CO",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")"
+               }
+          }
+     ]
+}

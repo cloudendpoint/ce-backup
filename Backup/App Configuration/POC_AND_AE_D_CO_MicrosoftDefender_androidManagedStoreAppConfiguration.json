@@ -1,0 +1,81 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Used for onboarding to Defender for Endpoint only. Configures app permissions to prevent user requirement to approve them.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android \n\nhttps://learn.microsoft.com/en-us/defender-endpoint/android-intune",
+     "displayName": "POC_AND_AE_D_CO_MicrosoftDefender",
+     "packageId": "app:com.microsoft.scmx",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.scmx",
+          "managedProperty": [
+               {
+                    "key": "vpn",
+                    "valueInteger": 1
+               },
+               {
+                    "key": "EnableGSA",
+                    "valueInteger": 0
+               },
+               {
+                    "key": "UserUPN",
+                    "valueString": "{{UserPrincipalName}}"
+               },
+               {
+                    "key": "EnableLowTouchOnboarding",
+                    "valueInteger": 1
+               },
+               {
+                    "key": "DisableSignOut",
+                    "valueInteger": 1
+               },
+               {
+                    "key": "DefenderEndUserTrustFlowEnable",
+                    "valueInteger": 0
+               },
+               {
+                    "key": "DefenderNetworkProtectionEnable",
+                    "valueInteger": 1
+               },
+               {
+                    "key": "defendertoggle",
+                    "valueInteger": 1
+               },
+               {
+                    "key": "antiphishing",
+                    "valueInteger": 1
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidDeviceOwner",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [
+          {
+               "permission": "android.permission.ACCESS_FINE_LOCATION",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.ACCESS_COARSE_LOCATION",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.ACCESS_BACKGROUND_LOCATION",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.READ_EXTERNAL_STORAGE",
+               "action": "autoGrant"
+          },
+          {
+               "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+               "action": "autoGrant"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Defender: Antivirus",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     }
+}

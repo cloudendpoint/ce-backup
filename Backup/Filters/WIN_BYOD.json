@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_BYOD",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Personal\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

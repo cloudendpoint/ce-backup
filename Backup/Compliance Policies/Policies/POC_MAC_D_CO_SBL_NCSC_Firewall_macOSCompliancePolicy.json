@@ -1,0 +1,55 @@
+{
+     "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": null,
+     "displayName": "POC_MAC_D_CO_SBL_NCSC_Firewall",
+     "passwordRequired": false,
+     "passwordBlockSimple": false,
+     "passwordExpirationDays": null,
+     "passwordMinimumLength": null,
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordPreviousPasswordBlockCount": null,
+     "passwordMinimumCharacterSetCount": null,
+     "passwordRequiredType": "deviceDefault",
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "osMinimumBuildVersion": null,
+     "osMaximumBuildVersion": null,
+     "systemIntegrityProtectionEnabled": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "storageRequireEncryption": false,
+     "gatekeeperAllowedAppSource": "notConfigured",
+     "firewallEnabled": true,
+     "firewallBlockAllIncoming": true,
+     "firewallEnableStealthMode": true,
+     "deviceCompliancePolicyScript": null,
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

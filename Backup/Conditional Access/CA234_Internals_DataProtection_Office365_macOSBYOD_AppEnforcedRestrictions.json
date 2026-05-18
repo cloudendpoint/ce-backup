@@ -1,0 +1,70 @@
+{
+     "templateId": null,
+     "displayName": "CA234_Internals_DataProtection_Office365_macOSBYOD_AppEnforcedRestrictions",
+     "state": "disabled",
+     "deletedDateTime": null,
+     "grantControls": null,
+     "partialEnablementStrategy": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "browser"
+          ],
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "clientApplications": null,
+          "agents": null,
+          "applications": {
+               "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "Office365"
+               ],
+               "excludeApplications": [],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "None"
+               ],
+               "excludeUsers": [],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          },
+          "platforms": {
+               "includePlatforms": [
+                    "macOS"
+               ],
+               "excludePlatforms": []
+          },
+          "devices": {
+               "includeDeviceStates": [],
+               "excludeDeviceStates": [],
+               "includeDevices": [],
+               "excludeDevices": [],
+               "deviceFilter": {
+                    "mode": "include",
+                    "rule": "device.deviceOwnership -ne \"Company\""
+               }
+          }
+     },
+     "sessionControls": {
+          "disableResilienceDefaults": null,
+          "cloudAppSecurity": null,
+          "signInFrequency": null,
+          "persistentBrowser": null,
+          "continuousAccessEvaluation": null,
+          "secureSignInSession": null,
+          "blockSensitiveActions": null,
+          "applicationEnforcedRestrictions": {
+               "isEnabled": true
+          }
+     }
+}

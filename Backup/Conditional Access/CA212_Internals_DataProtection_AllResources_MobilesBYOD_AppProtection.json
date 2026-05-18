@@ -1,0 +1,69 @@
+{
+     "templateId": null,
+     "displayName": "CA212_Internals_DataProtection_AllResources_MobilesBYOD_AppProtection",
+     "state": "disabled",
+     "deletedDateTime": null,
+     "partialEnablementStrategy": null,
+     "sessionControls": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "all"
+          ],
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "clientApplications": null,
+          "agents": null,
+          "applications": {
+               "includeApplications": [
+                    "All"
+               ],
+               "excludeApplications": [
+                    "fc780465-2017-40d4-a0c5-307022471b92"
+               ],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "None"
+               ],
+               "excludeUsers": [],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          },
+          "platforms": {
+               "includePlatforms": [
+                    "android",
+                    "iOS"
+               ],
+               "excludePlatforms": []
+          },
+          "devices": {
+               "includeDeviceStates": [],
+               "excludeDeviceStates": [],
+               "includeDevices": [],
+               "excludeDevices": [],
+               "deviceFilter": {
+                    "mode": "include",
+                    "rule": "device.deviceOwnership -ne \"Company\""
+               }
+          }
+     },
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "compliantApplication"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
+     }
+}

@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_AND_U_BYOD_Alert",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('18330611-c719-4a32-95ce-d973a9e9c7a9')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "Android Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \r\n\r\nYour personal Android device with name {{DeviceName}} running {{OSAndVersion}}  has been marked as non-compliant and will be blocked from accessing Microsoft Services.\r\n\r\nPlease update your device, and configure a device PIN.\r\n",
+               "isDefault": true
+          }
+     ]
+}

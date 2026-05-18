@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_UMNGD",
+     "description": "",
+     "platform": "iOSMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Unmanaged\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

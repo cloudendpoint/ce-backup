@@ -1,0 +1,34 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_CO_MicrosoftOneDrive",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "IntuneMAMUPN ",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{UserPrincipalName}}"
+          },
+          {
+               "appConfigKey": "com.microsoft.onedrive.CameraUploadEnabled",
+               "appConfigKeyType": "booleanType",
+               "appConfigKeyValue": "true"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft OneDrive",
+          "type": "#microsoft.graph.iosVppApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_CO_OS_Business",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.operatingSystemSKU -in [\"Enterprise\",\"EnterpriseEval\",\"EnterpriseG\",\"EnterpriseGN\",\"EnterpriseS\",\"EnterpriseSEval\",\"EnterpriseSN\",\"EnterpriseN\",\"EnterpriseNEval\",\"IoTEnterprise\",\"Education\",\"EducationN\"])",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

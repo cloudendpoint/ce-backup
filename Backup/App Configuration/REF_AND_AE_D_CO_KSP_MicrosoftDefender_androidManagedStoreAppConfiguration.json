@@ -1,0 +1,107 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Additional silent Defender onboarding settings. \n\nYou can only have one OEMConfig per Samsung device.\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/android-intune",
+     "displayName": "REF_AND_AE_D_CO_KSP_MicrosoftDefender",
+     "packageId": "com.samsung.android.knox.kpu",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.samsung.android.knox.kpu",
+          "managedProperty": [
+               {
+                    "key": "schemaVersion",
+                    "valueString": "42.0.1"
+               },
+               {
+                    "key": "profileId",
+                    "valueString": ""
+               },
+               {
+                    "key": "transactionTs",
+                    "valueString": ""
+               },
+               {
+                    "key": "kpePartnerLicenseKey",
+                    "valueString": ""
+               },
+               {
+                    "key": "profileName",
+                    "valueString": "Defender(1.0)"
+               },
+               {
+                    "key": "verboseMode",
+                    "valueBool": false
+               },
+               {
+                    "key": "doPolicies",
+                    "valueBundle": {
+                         "managedProperty": [
+                              {
+                                   "key": "doPoliciesIsControlled",
+                                   "valueBool": true
+                              },
+                              {
+                                   "key": "doAppMgmt",
+                                   "valueBundle": {
+                                        "managedProperty": [
+                                             {
+                                                  "key": "doAppMgmtIsControlled",
+                                                  "valueBool": true
+                                             },
+                                             {
+                                                  "key": "doAppMgmtBatteryWhitelist",
+                                                  "valueString": "com.microsoft.scmx"
+                                             },
+                                             {
+                                                  "key": "doAppMgmtIsPermissionControlled",
+                                                  "valueBool": true
+                                             }
+                                        ]
+                                   }
+                              }
+                         ]
+                    }
+               },
+               {
+                    "key": "profilePermissionControl",
+                    "valueBundleArray": [
+                         {
+                              "managedProperty": [
+                                   {
+                                        "key": "profileSpecialAccessPermission",
+                                        "valueStringArray": [
+                                             "24",
+                                             "92"
+                                        ]
+                                   },
+                                   {
+                                        "key": "profileSpecialAccessComponentName",
+                                        "valueString": "com.microsoft.scmx"
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          ]
+     },
+     "appSupportsOemConfig": true,
+     "profileApplicability": "default",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Knox Service Plugin",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_CO_Samsung",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

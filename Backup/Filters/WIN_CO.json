@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_CO",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.model -notContains \"Cloud PC\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

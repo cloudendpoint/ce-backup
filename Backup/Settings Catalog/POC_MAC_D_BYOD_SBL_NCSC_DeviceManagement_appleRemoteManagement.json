@@ -1,0 +1,248 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_MAC_D_BYOD_SBL_NCSC_DeviceManagement",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 6,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.mcx_com.apple.mcx-accounts",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx_disableguestaccount",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx_disableguestaccount_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx_enableguestaccount",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx_enableguestaccount_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.systempreferences_com.apple.systempreferences",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.systempreferences_disabledpreferencepanes",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "simpleSettingCollectionValue": [
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.preferences.icloud"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.preference.security"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.preference.startupdisk"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.preferences.sharing"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Siri-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Xsan"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.prefpanel.fibrechannel"
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.applicationaccess_com.apple.applicationaccess",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowaccountmodification",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowaccountmodification_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.system-extension-policy_com.apple.system-extension-policy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.system-extension-policy_allowuseroverrides",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.system-extension-policy_allowuseroverrides_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.mcx_com.apple.mcx-timeserver",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx_timeserver",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "simpleSettingValue": {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "uk.pool.ntp.org"
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.systempolicy.control_com.apple.systempolicy.control",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.systempolicy.control_allowidentifieddevelopers",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.systempolicy.control_allowidentifieddevelopers_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.systempolicy.control_enableassessment",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.systempolicy.control_enableassessment_true",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_MAC_NCSC_BYOD",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

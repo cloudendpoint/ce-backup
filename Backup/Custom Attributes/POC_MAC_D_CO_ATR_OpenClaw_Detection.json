@@ -1,0 +1,21 @@
+{
+     "customAttributeName": null,
+     "customAttributeType": "string",
+     "displayName": "POC_MAC_D_CO_ATR_OpenClaw_Detection",
+     "description": "",
+     "scriptContent": "IyEvYmluL2Jhc2gKIyBPcGVuQ2xhdy9DbGF3ZGJvdC9Nb2x0Ym90IERldGVjdGlvbiAtIEN1c3RvbSBBdHRyaWJ1dGUKIyBSdW5zIGFzIHJvb3QsIG11c3QgY2hlY2sgYWxsIHVzZXIgZGlyZWN0b3JpZXMKREVURUNURUQ9Ik5vdCBEZXRlY3RlZCIKIyBDaGVjayBiaW5hcmllcwppZiBbIC1mICIvdXNyL2xvY2FsL2Jpbi9vcGVuY2xhdyIgXSB8fCBbIC1mICIvb3B0L2hvbWVicmV3L2Jpbi9vcGVuY2xhdyIgXTsgdGhlbgogICAgREVURUNURUQ9IkRldGVjdGVkIgpmaQojIENoZWNrIGFsbCB1c2VyIGhvbWUgZGlyZWN0b3JpZXMKZm9yIFVTRVJfSE9NRSBpbiAvVXNlcnMvKjsgZG8KICAgIFsgISAtZCAiJFVTRVJfSE9NRSIgXSAmJiBjb250aW51ZQogICAgWyAiJFVTRVJfSE9NRSIgPSAiL1VzZXJzL1NoYXJlZCIgXSAmJiBjb250aW51ZQoKICAgIGlmIFsgLWQgIiRVU0VSX0hPTUUvLm9wZW5jbGF3IiBdIHx8IFwKICAgIFsgLWQgIiRVU0VSX0hPTUUvLmNsYXdkYm90IiBdIHx8IFwKICAgIFsgLWQgIiRVU0VSX0hPTUUvLm1vbHRib3QiIF0gfHwgXAogICAgbHMgIiRVU0VSX0hPTUUiL0xpYnJhcnkvTGF1bmNoQWdlbnRzLypvcGVuY2xhdyogJj4vZGV2L251bGwgMj4mMTsgdGhlbgogICAgICAgIERFVEVDVEVEPSJEZXRlY3RlZCIKICAgICAgICBicmVhawogICAgZmkKZG9uZQplY2hvICIkREVURUNURUQiCmV4aXQgMA==",
+     "runAsAccount": "system",
+     "fileName": "Detect-OpenClaw.sh",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

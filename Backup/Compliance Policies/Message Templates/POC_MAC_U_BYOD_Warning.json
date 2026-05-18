@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_MAC_U_BYOD_Warning",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('d577a98f-c96d-45fa-a170-954babefd16e')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "macOS Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \r\n\r\nYour personal macOS device with name {{DeviceName}} running {{OSAndVersion}} will be marked as non-compliant.\r\n\r\nPlease ensure that your device is up to date, has the firewall and Gatekeeper enabled.\r\n",
+               "isDefault": true
+          }
+     ]
+}

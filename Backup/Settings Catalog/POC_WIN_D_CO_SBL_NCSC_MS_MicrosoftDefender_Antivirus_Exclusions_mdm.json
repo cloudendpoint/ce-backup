@@ -1,0 +1,204 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus_Exclusions",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "mdm",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedpaths",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Microsoft\\"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender Advanced Threat Protection\\"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles(x86)%\\Windows Defender\\"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.chk\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\\\.edb"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "windir%\\Security\\Database\\*.jrs"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.log\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.sdb\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.xml\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.csv\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Security\\Database\\*.cmtx"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Datastore.edb"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Logs\\edb*.jrs"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\\\\\\\Logs\\edb.chk"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Logs\\tmp.edb"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Logs\\res*.log"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Logs\\res*.jrs"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles(x86)%\\Microsoft Intune Management Extension\\Content\\"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\IMECache\\"
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedprocesses",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\System32\\ApplicationFrameHost.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\System32\\SearchIndexer.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\MSASCuiL.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\MSASCui.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\MpCmdRun.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\MsMpEng.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Windows Defender\\NisSrv.exe\""
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\System32\\wlanext.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\System32\\Lsalso.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\System32\\AppVClient.exe"
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_NCSC_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

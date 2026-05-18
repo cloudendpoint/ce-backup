@@ -1,0 +1,173 @@
+{
+     "creationSource": null,
+     "description": "Configures Microsoft RemoteHelp settings, logon permissions, and notification permissions.",
+     "name": "POC_MAC_D_CO_MicrosoftRemoteHelp",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization_0",
+                                                                                     "children": []
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_coderequirement",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "identifier \"com.microsoft.remotehelp\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifier",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.microsoft.remotehelp"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype_0",
+                                                                                     "children": []
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization_2",
+                                                                                     "children": []
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_coderequirement",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "identifier \"com.microsoft.remotehelp\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifier",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.microsoft.remotehelp"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype_0",
+                                                                                     "children": []
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_BYOD_OS_Consumer",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Personal\") and (device.operatingSystemSKU -in [\"Core\",\"CoreN\",\"CoreSingleLanguage\",\"Professional\",\"ProfessionalEducation\",\"ProfessionalWorkstation\",\"ProfessionalN\",\"ProfessionalEducationN\",\"BusinessN\",\"ProfessionalSingleLanguage\"])",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

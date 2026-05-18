@@ -1,0 +1,43 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_CPC_D_CO_ENT_Auto",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "enrollment",
+     "templateReference": {
+          "templateId": "a6157a7f-aa00-42d9-ac82-7d2479f545db_1",
+          "templateFamily": "enrollmentConfiguration",
+          "templateDisplayName": "Win365 Device Preparation",
+          "templateDisplayVersion": "Version 1"
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "enrollment_autopilot_dpp_allowedappids",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "a9dedfd6-c3b2-46d9-ae39-91fd0dcb7a20"
+                    },
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "{\"id\":\"8546a402-db5b-4ddd-b915-d0bfaf59914f\",\"type\":\"#microsoft.graph.winGetApp\"}"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "{\"id\":\"324b0bfa-e36b-4793-af40-04cf7f4b8c55\",\"type\":\"#microsoft.graph.win32LobApp\"}"
+                         }
+                    ]
+               }
+          }
+     ]
+}

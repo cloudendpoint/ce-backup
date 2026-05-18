@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_MNGD_BYOD",
+     "description": "",
+     "platform": "iOSMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Account Driven User Enrollment\") or (app.deviceManagementType -eq \"Device Enrollment with Company Portal and Web Enrollment\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

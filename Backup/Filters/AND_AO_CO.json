@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_AO_CO",
+     "description": "",
+     "platform": "androidAOSP",
+     "rule": "(device.deviceOwnership -eq \"Corporate\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

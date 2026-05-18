@@ -1,0 +1,91 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_MAC_D_CO_SBL_NCSC_DeviceSecurity",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.systempreferences_com.apple.systempreferences",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.systempreferences_disabledpreferencepanes",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "simpleSettingCollectionValue": [
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Family-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Game-Center-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Siri-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Startup-Disk-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.Time-Machine-Settings.extension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.WalletSettingsExtension"
+                                             },
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.apple.systempreferences.AppleIDSettings"
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

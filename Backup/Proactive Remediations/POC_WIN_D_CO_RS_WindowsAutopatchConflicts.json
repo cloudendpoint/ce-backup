@@ -1,0 +1,33 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "POC_WIN_D_CO_RS_WindowsAutopatchConflicts",
+     "description": "Removes legacy registry entries known to cause issues with onboarding to Windows Autopatch.\n\nhttps://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/references/windows-autopatch-conflicting-configurations\n\nhttps://kengoossens.com/windows-autopatch-auto-remediation-script/",
+     "detectionScriptContent": "JHRyYW5zY3JpcHRQYXRoID0gIiRlbnY6UHJvZ3JhbWRhdGFcTWljcm9zb2Z0XEludHVuZU1hbmFnZW1lbnRFeHRlbnNpb25cTG9ncyINCiR0cmFuc2NyaXB0TmFtZSA9ICdBdXRvUGF0Y2hEZXRlY3Rpb24ubG9nJw0KTmV3LUl0ZW0gJHRyYW5zY3JpcHRQYXRoIC1JdGVtVHlwZSBEaXJlY3RvcnkgLUZvcmNlDQoNCiMgc3RvcHBpbmcgb3JwaGFuZWQgdHJhbnNjcmlwdHMNCnRyeSB7DQogICAgU3RvcC1UcmFuc2NyaXB0IHwgT3V0LU51bGwNCn0NCmNhdGNoIFtTeXN0ZW0uSW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbl0NCnt9DQoNClN0YXJ0LVRyYW5zY3JpcHQgLVBhdGggJHRyYW5zY3JpcHRQYXRoXCR0cmFuc2NyaXB0TmFtZSAtQXBwZW5kDQoNCiMgaW5pdGlhbGl6ZSB0aGUgYXJyYXkNCltQc09iamVjdFtdXSRyZWdLZXlzID0gQCgpDQojIHBvcHVsYXRlIHRoZSBhcnJheSB3aXRoIGVhY2ggb2JqZWN0DQokcmVnS2V5cyArPSBbUHNPYmplY3RdQHsgTmFtZSA9ICdEb05vdENvbm5lY3RUb1dpbmRvd3NVcGRhdGVJbnRlcm5ldExvY2F0aW9ucyc7IHBhdGggPSAnSEtMTTpcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcV2luZG93c1VwZGF0ZVwnIH0NCiRyZWdLZXlzICs9IFtQc09iamVjdF1AeyBOYW1lID0gJ0Rpc2FibGVXaW5kb3dzVXBkYXRlQWNjZXNzJzsgcGF0aCA9ICdIS0xNOlxTT0ZUV0FSRVxQb2xpY2llc1xNaWNyb3NvZnRcV2luZG93c1xXaW5kb3dzVXBkYXRlXCcgfQ0KJHJlZ0tleXMgKz0gW1BzT2JqZWN0XUB7IE5hbWUgPSAnV1VTZXJ2ZXInOyBwYXRoID0gJ0hLTE06XFNPRlRXQVJFXFBvbGljaWVzXE1pY3Jvc29mdFxXaW5kb3dzXFdpbmRvd3NVcGRhdGVcJyB9DQokcmVnS2V5cyArPSBbUHNPYmplY3RdQHsgTmFtZSA9ICdVc2VXVVNlcnZlcic7IHBhdGggPSAnSEtMTTpcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcV2luZG93c1VwZGF0ZVxBVVwnIH0NCiRyZWdLZXlzICs9IFtQc09iamVjdF1AeyBOYW1lID0gJ05vQXV0b1VwZGF0ZSc7IHBhdGggPSAnSEtMTTpcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcV2luZG93c1VwZGF0ZVxBVVwnIH0NCg0KZm9yZWFjaCAoJHNldHRpbmcgaW4gJHJlZ0tleXMpIHsNCiAgICBXcml0ZS1Ib3N0ICJjaGVja2luZyAkKCRzZXR0aW5nLm5hbWUpIg0KICAgIGlmICgoR2V0LUl0ZW0gJHNldHRpbmcucGF0aCAtRXJyb3JBY3Rpb24gSWdub3JlKS5Qcm9wZXJ0eSAtY29udGFpbnMgJHNldHRpbmcubmFtZSkgew0KICAgICAgICBXcml0ZS1Ib3N0ICIkKCRzZXR0aW5nLm5hbWUpIGlzIG5vdCBjb3JyZWN0Ig0KICAgICAgICAkcmVtZWRpYXRpb25OZWVkZWQgPSAkdHJ1ZQ0KICAgIH0NCn0NCg0KaWYgKCRyZW1lZGlhdGlvbk5lZWRlZCAtZXEgJHRydWUpIHsNCiAgICBXcml0ZS1Ib3N0ICdBdXRvcGF0Y2ggcmVnaXN0cnkgc2V0dGluZ3MgYXJlIGluY29ycmVjdCcNCiAgICBTdG9wLVRyYW5zY3JpcHQNCiAgICBleGl0IDENCn0NCmVsc2Ugew0KICAgIFdyaXRlLUhvc3QgJ0F1dG9wYXRjaCByZWdpc3RyeSBzZXR0aW5ncyBhcmUgY29ycmVjdCcNCiAgICBTdG9wLVRyYW5zY3JpcHQNCiAgICBleGl0IDANCn0=",
+     "remediationScriptContent": "JHRyYW5zY3JpcHRQYXRoID0gIiRlbnY6UHJvZ3JhbWRhdGFcTWljcm9zb2Z0XEludHVuZU1hbmFnZW1lbnRFeHRlbnNpb25cTG9ncyINCiR0cmFuc2NyaXB0TmFtZSA9ICdBdXRvUGF0Y2hSZW1lZGlhdGlvbi5sb2cnDQpOZXctSXRlbSAkdHJhbnNjcmlwdFBhdGggLUl0ZW1UeXBlIERpcmVjdG9yeSAtRm9yY2UNCg0KIyBzdG9wcGluZyBvcnBoYW5lZCB0cmFuc2NyaXB0cw0KdHJ5IHsNCiAgICBTdG9wLVRyYW5zY3JpcHQgfCBPdXQtTnVsbA0KfQ0KY2F0Y2ggW1N5c3RlbS5JbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uXQ0Ke30NCg0KU3RhcnQtVHJhbnNjcmlwdCAtUGF0aCAkdHJhbnNjcmlwdFBhdGhcJHRyYW5zY3JpcHROYW1lIC1BcHBlbmQNCg0KIyBpbml0aWFsaXplIHRoZSBhcnJheQ0KW1BzT2JqZWN0W11dJHJlZ0tleXMgPSBAKCkNCiMgcG9wdWxhdGUgdGhlIGFycmF5IHdpdGggZWFjaCBvYmplY3QNCiRyZWdLZXlzICs9IFtQc09iamVjdF1AeyBOYW1lID0gJ0RvTm90Q29ubmVjdFRvV2luZG93c1VwZGF0ZUludGVybmV0TG9jYXRpb25zJzsgcGF0aCA9ICdIS0xNOlxTT0ZUV0FSRVxQb2xpY2llc1xNaWNyb3NvZnRcV2luZG93c1xXaW5kb3dzVXBkYXRlXCcgfQ0KJHJlZ0tleXMgKz0gW1BzT2JqZWN0XUB7IE5hbWUgPSAnRGlzYWJsZVdpbmRvd3NVcGRhdGVBY2Nlc3MnOyBwYXRoID0gJ0hLTE06XFNPRlRXQVJFXFBvbGljaWVzXE1pY3Jvc29mdFxXaW5kb3dzXFdpbmRvd3NVcGRhdGVcJyB9DQokcmVnS2V5cyArPSBbUHNPYmplY3RdQHsgTmFtZSA9ICdXVVNlcnZlcic7IHBhdGggPSAnSEtMTTpcU09GVFdBUkVcUG9saWNpZXNcTWljcm9zb2Z0XFdpbmRvd3NcV2luZG93c1VwZGF0ZVwnIH0NCiRyZWdLZXlzICs9IFtQc09iamVjdF1AeyBOYW1lID0gJ1VzZVdVU2VydmVyJzsgcGF0aCA9ICdIS0xNOlxTT0ZUV0FSRVxQb2xpY2llc1xNaWNyb3NvZnRcV2luZG93c1xXaW5kb3dzVXBkYXRlXEFVXCcgfQ0KJHJlZ0tleXMgKz0gW1BzT2JqZWN0XUB7IE5hbWUgPSAnTm9BdXRvVXBkYXRlJzsgcGF0aCA9ICdIS0xNOlxTT0ZUV0FSRVxQb2xpY2llc1xNaWNyb3NvZnRcV2luZG93c1xXaW5kb3dzVXBkYXRlXEFVXCcgfQ0KDQpmb3JlYWNoICgkc2V0dGluZyBpbiAkcmVnS2V5cykgew0KICAgIFdyaXRlLUhvc3QgImNoZWNraW5nICQoJHNldHRpbmcubmFtZSkiDQogICAgaWYgKChHZXQtSXRlbSAkc2V0dGluZy5wYXRoIC1FcnJvckFjdGlvbiBJZ25vcmUpLlByb3BlcnR5IC1jb250YWlucyAkc2V0dGluZy5uYW1lKSB7DQogICAgICAgIFdyaXRlLUhvc3QgInJlbWVkaWF0aW5nICQoJHNldHRpbmcubmFtZSkiDQogICAgICAgIFJlbW92ZS1JdGVtUHJvcGVydHkgLVBhdGggJHNldHRpbmcucGF0aCAtTmFtZSAkKCRzZXR0aW5nLm5hbWUpDQogICAgfQ0KICAgIGVsc2Ugew0KICAgICAgICBXcml0ZS1Ib3N0ICIkKCRzZXR0aW5nLm5hbWUpIHdhcyBub3QgZm91bmQiDQogICAgfQ0KfQ0KU3RvcC1UcmFuc2NyaXB0",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": [],
+     "assignments": [
+          {
+               "runRemediationScript": false,
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Windows Autopatch - Devices All",
+                    "groupType": "StaticMembership"
+               },
+               "runSchedule": {
+                    "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+                    "interval": 1,
+                    "useUtc": false,
+                    "time": "01:00:00.0000000"
+               }
+          }
+     ]
+}

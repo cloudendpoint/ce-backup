@@ -1,0 +1,20 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_CO_MicrosoftDefender",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "issupervised",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{issupervised}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Defender: Security",
+          "type": "#microsoft.graph.iosVppApp"
+     }
+}

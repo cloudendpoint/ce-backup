@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_UMNGD",
+     "description": "",
+     "platform": "androidMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Unmanaged\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

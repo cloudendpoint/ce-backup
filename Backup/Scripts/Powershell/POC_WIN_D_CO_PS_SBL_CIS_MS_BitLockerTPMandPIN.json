@@ -1,0 +1,23 @@
+{
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "displayName": "POC_WIN_D_CO_PS_SBL_CIS_MS_BitLockerTPMandPIN",
+     "description": "Used in conjunction with a BitLocker policy that allows TPM and TPMandPIN key protectors, removes the TPM protector and adds in a TPMandPIN protector with the PIN set to the first 14 characters of the device serial number in uppercase.",
+     "scriptContent": "dHJ5IHsNCiAgICAkb3NWb2x1bWUgPSBHZXQtQml0TG9ja2VyVm9sdW1lIHwgV2hlcmUtT2JqZWN0IHsgJF8uVm9sdW1lVHlwZSAtZXEgJ09wZXJhdGluZ1N5c3RlbScgfQ0KDQogICAgIyBEZXRlY3RzIGlmIFRQTVBpbiBhbHJlYWR5IHNldA0KICAgIGlmICgkb3NWb2x1bWUuS2V5UHJvdGVjdG9yLktleVByb3RlY3RvclR5cGUgLWNvbnRhaW5zICdUcG1QaW4nKSB7DQogICAgICAgIGV4aXQgMA0KICAgIH0NCg0KICAgICMgU2V0cyBhIHJlY292ZXJ5IHBhc3N3b3JkIGtleSBwcm90ZWN0b3IgaWYgb25lIGRvZXNuJ3QgZXhpc3QsIG5lZWRlZCBmb3IgVHBtUGluIGtleSBwcm90ZWN0b3INCiAgICBpZiAoJG9zVm9sdW1lLktleVByb3RlY3Rvci5LZXlQcm90ZWN0b3JUeXBlIC1ub3Rjb250YWlucyAnUmVjb3ZlcnlQYXNzd29yZCcpIHsNCiAgICAgICAgRW5hYmxlLUJpdExvY2tlciAtTW91bnRQb2ludCAkb3NWb2x1bWUuTW91bnRQb2ludCAtUmVjb3ZlcnlQYXNzd29yZFByb3RlY3Rvcg0KICAgIH0NCg0KICAgICMgQ29uZmlndXJlcyB0aGUgUElOICgxNCBjaGFyYWN0ZXJzIG9mIHRoZSBzZXJpYWwgaW4gVXBwZXIgQ2FzZSkNCiAgICAkZGV2aWNlU2VyaWFsID0gKCgoR2V0LUNpbUluc3RhbmNlIC1DbGFzcyB3aW4zMl9iaW9zKS5TZXJpYWxOdW1iZXIpLlRvVXBwZXIoKSAtcmVwbGFjZSAnW15hLXpBLVowLTldJywgJycpDQogICAgaWYgKCRkZXZpY2VTZXJpYWwubGVuZ3RoIC1ndCAxNCkgew0KICAgICAgICAkZGV2aWNlU2VyaWFsID0gJGRldmljZVNlcmlhbC5TdWJzdHJpbmcoMCwgMTQpICMgUmVkdWNlIHRvIDE0IGNoYXJhY3RlcnMgaWYgbG9uZ2VyDQogICAgfQ0KDQogICAgIyBFbmFibGVzIEJpdExvY2tlciB1c2luZyB0aGUgVHBtUGluIGtleSBwcm90ZWN0b3INCiAgICAkZGV2aWNlUElOID0gQ29udmVydFRvLVNlY3VyZVN0cmluZyAkZGV2aWNlU2VyaWFsIC1Bc1BsYWluVGV4dCAtRm9yY2UNCiAgICBFbmFibGUtQml0TG9ja2VyIC1Nb3VudFBvaW50ICRvc1ZvbHVtZS5Nb3VudFBvaW50IC1QaW4gJGRldmljZVBJTiAtVHBtQW5kUGluUHJvdGVjdG9yDQoNCiAgICAjIEdldHMgdGhlIHJlY292ZXJ5IGtleSBhbmQgZXNjcm93cyB0byBFbnRyYQ0KICAgIChHZXQtQml0TG9ja2VyVm9sdW1lKS5LZXlQcm90ZWN0b3IgfCBXaGVyZS1PYmplY3QgeyAkXy5LZXlQcm90ZWN0b3JUeXBlIC1lcSAnUmVjb3ZlcnlQYXNzd29yZCcgfSB8IEZvckVhY2gtT2JqZWN0IHsNCiAgICAgICAgQmFja3VwVG9BQUQtQml0TG9ja2VyS2V5UHJvdGVjdG9yIC1Nb3VudFBvaW50ICRvc1ZvbHVtZS5Nb3VudFBvaW50IC1LZXlQcm90ZWN0b3JJZCAkXy5LZXlQcm90ZWN0b3JJZA0KICAgIH0NCiAgICBleGl0IDANCn0NCmNhdGNoIHsNCiAgICAkRXJyb3JNZXNzYWdlID0gJF8uRXhjZXB0aW9uLk1lc3NhZ2UNCiAgICBXcml0ZS1XYXJuaW5nICRFcnJvck1lc3NhZ2UNCiAgICBleGl0IDENCn0=",
+     "runAsAccount": "system",
+     "fileName": "Set-BitLockerTPMandPin.ps1",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

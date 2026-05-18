@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_CO_ADE",
+     "description": "",
+     "platform": "iOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -ne null)",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

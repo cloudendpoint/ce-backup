@@ -1,0 +1,22 @@
+{
+     "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
+     "displayName": "POC_WIN_D_COBO_ESP_Kiosk",
+     "description": "",
+     "priority": 3,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "windows10EnrollmentCompletionPageConfiguration",
+     "showInstallationProgress": true,
+     "blockDeviceSetupRetryByUser": false,
+     "allowDeviceResetOnInstallFailure": false,
+     "allowLogCollectionOnInstallFailure": true,
+     "customErrorMessage": "Setup could not be completed. Please try again or contact your support person for help.",
+     "installProgressTimeoutInMinutes": 60,
+     "allowDeviceUseOnInstallFailure": false,
+     "selectedMobileAppIds": [],
+     "allowNonBlockingAppInstallation": true,
+     "installQualityUpdates": false,
+     "trackInstallProgressForAutopilotOnly": true,
+     "disableUserStatusTrackingAfterFirstUser": true
+}

@@ -1,0 +1,204 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedAppProtection",
+     "displayName": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+     "description": "",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "periodOfflineBeforeAccessCheck": "PT12H",
+     "periodOnlineBeforeAccessCheck": "PT30M",
+     "allowedInboundDataTransferSources": "allApps",
+     "allowedOutboundDataTransferDestinations": "managedApps",
+     "organizationalCredentialsRequired": false,
+     "allowedOutboundClipboardSharingLevel": "managedAppsWithPasteIn",
+     "dataBackupBlocked": true,
+     "deviceComplianceRequired": true,
+     "managedBrowserToOpenLinksRequired": true,
+     "saveAsBlocked": true,
+     "periodOfflineBeforeWipeIsEnforced": "P90D",
+     "pinRequired": false,
+     "maximumPinRetries": 5,
+     "simplePinBlocked": false,
+     "minimumPinLength": 4,
+     "pinCharacterSet": "numeric",
+     "periodBeforePinReset": "PT0S",
+     "allowedDataStorageLocations": [
+          "oneDriveForBusiness",
+          "sharePoint"
+     ],
+     "contactSyncBlocked": true,
+     "printBlocked": true,
+     "fingerprintBlocked": false,
+     "disableAppPinIfDevicePinIsSet": false,
+     "maximumRequiredOsVersion": null,
+     "maximumWarningOsVersion": null,
+     "maximumWipeOsVersion": null,
+     "minimumRequiredOsVersion": "15.0",
+     "minimumWarningOsVersion": "16.0",
+     "minimumRequiredAppVersion": null,
+     "minimumWarningAppVersion": null,
+     "minimumWipeOsVersion": "14.0",
+     "minimumWipeAppVersion": null,
+     "appActionIfDeviceComplianceRequired": "block",
+     "appActionIfMaximumPinRetriesExceeded": "block",
+     "pinRequiredInsteadOfBiometricTimeout": "PT30M",
+     "allowedOutboundClipboardSharingExceptionLength": 0,
+     "notificationRestriction": "blockOrganizationalData",
+     "previousPinBlockCount": 0,
+     "managedBrowser": "microsoftEdge",
+     "maximumAllowedDeviceThreatLevel": "notConfigured",
+     "mobileThreatDefenseRemediationAction": "block",
+     "mobileThreatDefensePartnerPriority": null,
+     "blockDataIngestionIntoOrganizationDocuments": false,
+     "allowedDataIngestionLocations": [
+          "oneDriveForBusiness",
+          "sharePoint",
+          "camera",
+          "photoLibrary"
+     ],
+     "appActionIfUnableToAuthenticateUser": "block",
+     "dialerRestrictionLevel": "allApps",
+     "gracePeriodToBlockAppsDuringOffClockHours": null,
+     "protectedMessagingRedirectAppType": "anyApp",
+     "targetedAppManagementLevels": "unspecified",
+     "appGroupType": "allApps",
+     "screenCaptureBlocked": false,
+     "disableAppEncryptionIfDeviceEncryptionIsEnabled": false,
+     "encryptAppData": true,
+     "minimumRequiredPatchVersion": null,
+     "minimumWarningPatchVersion": null,
+     "minimumWipePatchVersion": null,
+     "allowedAndroidDeviceManufacturers": null,
+     "appActionIfAndroidDeviceManufacturerNotAllowed": "block",
+     "appActionIfAccountIsClockedOut": null,
+     "appActionIfSamsungKnoxAttestationRequired": null,
+     "requiredAndroidSafetyNetDeviceAttestationType": "none",
+     "appActionIfAndroidSafetyNetDeviceAttestationFailed": "block",
+     "requiredAndroidSafetyNetAppsVerificationType": "none",
+     "appActionIfAndroidSafetyNetAppsVerificationFailed": "block",
+     "customBrowserPackageId": "",
+     "customBrowserDisplayName": "",
+     "minimumRequiredCompanyPortalVersion": null,
+     "minimumWarningCompanyPortalVersion": null,
+     "minimumWipeCompanyPortalVersion": null,
+     "keyboardsRestricted": false,
+     "allowedAndroidDeviceModels": [],
+     "appActionIfAndroidDeviceModelNotAllowed": "block",
+     "customDialerAppPackageId": "",
+     "customDialerAppDisplayName": "",
+     "biometricAuthenticationBlocked": false,
+     "requiredAndroidSafetyNetEvaluationType": "basic",
+     "blockAfterCompanyPortalUpdateDeferralInDays": 0,
+     "warnAfterCompanyPortalUpdateDeferralInDays": 0,
+     "wipeAfterCompanyPortalUpdateDeferralInDays": 0,
+     "deviceLockRequired": false,
+     "appActionIfDeviceLockNotSet": "block",
+     "connectToVpnOnLaunch": false,
+     "appActionIfDevicePasscodeComplexityLessThanLow": null,
+     "appActionIfDevicePasscodeComplexityLessThanMedium": null,
+     "appActionIfDevicePasscodeComplexityLessThanHigh": null,
+     "requireClass3Biometrics": false,
+     "requirePinAfterBiometricChange": false,
+     "fingerprintAndBiometricEnabled": true,
+     "messagingRedirectAppPackageId": "",
+     "messagingRedirectAppDisplayName": "",
+     "exemptedAppPackages": [],
+     "approvedKeyboards": [
+          {
+               "name": "com.google.android.inputmethod.latin",
+               "value": "Gboard - the Google Keyboard"
+          },
+          {
+               "name": "com.touchtype.swiftkey",
+               "value": "SwiftKey Keyboard"
+          },
+          {
+               "name": "com.sec.android.inputmethod",
+               "value": "Samsung Keyboard"
+          },
+          {
+               "name": "com.google.android.apps.inputmethod.hindi",
+               "value": "Google Indic Keyboard"
+          },
+          {
+               "name": "com.google.android.inputmethod.pinyin",
+               "value": "Google Pinyin Input"
+          },
+          {
+               "name": "com.google.android.inputmethod.japanese",
+               "value": "Google Japanese Input"
+          },
+          {
+               "name": "com.google.android.inputmethod.korean",
+               "value": "Google Korean Input"
+          },
+          {
+               "name": "com.google.android.apps.handwriting.ime",
+               "value": "Google Handwriting Input"
+          },
+          {
+               "name": "com.google.android.googlequicksearchbox",
+               "value": "Google voice typing"
+          },
+          {
+               "name": "com.samsung.android.svoiceime",
+               "value": "Samsung voice input"
+          },
+          {
+               "name": "com.samsung.android.honeyboard",
+               "value": "Samsung Keyboard"
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CIS",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_NCSC",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_MSZT",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE+",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

@@ -1,0 +1,21 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_AND_DA_U_BYOD_Allow_ResourceAccounts",
+     "description": "Users for Teams Room Systems and Phones",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "android",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [
+               "Yealink"
+          ],
+          "blockedSkus": []
+     }
+}

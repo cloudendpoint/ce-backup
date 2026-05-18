@@ -1,0 +1,31 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "REF_WIN_D_CO_RS_WindowsUpdateUX",
+     "description": "Restores Windows Update notification functionality that cannot be configured using Microsoft Intune natively. Enables Notify me when a restart is required to finish updating dialog.",
+     "detectionScriptContent": "JHJlZ1BhdGggPSAnSEtMTTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NVcGRhdGVcVVhcU2V0dGluZ3MnDQokcmVnTmFtZSA9ICdSZXN0YXJ0Tm90aWZpY2F0aW9uc0FsbG93ZWQyJw0KJHJlZ1ZhbHVlID0gMQ0KDQokdHJhbnNjcmlwdFBhdGggPSAiJGVudjpQcm9ncmFtRGF0YVxNaWNyb3NvZnRcSW50dW5lTWFuYWdlbWVudEV4dGVuc2lvblxMb2dzXCINCiR0cmFuc2NyaXB0TmFtZSA9ICdXaW5kb3dzVXBkYXRlLVVYLUltcHJvdmVtZW50LmxvZycNCk5ldy1JdGVtIC1QYXRoICR0cmFuc2NyaXB0UGF0aCAtSXRlbVR5cGUgRGlyZWN0b3J5IC1Gb3JjZSB8IE91dC1OdWxsDQoNCiMgU3RvcHBpbmcgb3JwaGFuZWQgdHJhbnNjcmlwdHMNCnRyeSB7IFN0b3AtVHJhbnNjcmlwdCB8IE91dC1OdWxsIH0gY2F0Y2ggW1N5c3RlbS5JbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uXSB7fQ0KDQpTdGFydC1UcmFuc2NyaXB0IC1QYXRoIChKb2luLVBhdGggJHRyYW5zY3JpcHRQYXRoICR0cmFuc2NyaXB0TmFtZSkgLUFwcGVuZA0KDQokcmVtZWRpYXRpb25OZWVkZWQgPSAkZmFsc2UNCldyaXRlLU91dHB1dCAiQ2hlY2tpbmcgaWYgcmVnaXN0cnkgdmFsdWU6ICRyZWdQYXRoXCRyZWdOYW1lIGVxdWFscyAkcmVnVmFsdWUgKERXT1JEKSINCg0KaWYgKC1ub3QgKFRlc3QtUGF0aCAkcmVnUGF0aCkpIHsNCiAgICBXcml0ZS1Ib3N0ICJSZWdpc3RyeSBrZXkgZG9lcyBub3QgZXhpc3Q6ICRyZWdQYXRoIg0KICAgICRyZW1lZGlhdGlvbk5lZWRlZCA9ICR0cnVlDQp9DQplbHNlIHsNCiAgICBpZiAoKEdldC1JdGVtICRyZWdQYXRoIC1FcnJvckFjdGlvbiBJZ25vcmUpLlByb3BlcnR5IC1jb250YWlucyAkcmVnTmFtZSkgew0KICAgICAgICBpZiAoKEdldC1JdGVtUHJvcGVydHlWYWx1ZSAtUGF0aCAkcmVnUGF0aCAtTmFtZSAkcmVnTmFtZSkgLW5lICRyZWdWYWx1ZSkgew0KICAgICAgICAgICAgV3JpdGUtT3V0cHV0ICIkcmVnTmFtZSB2YWx1ZSBpcyBub3QgY29ycmVjdCINCiAgICAgICAgICAgICRyZW1lZGlhdGlvbk5lZWRlZCA9ICR0cnVlDQogICAgICAgIH0NCiAgICB9DQogICAgZWxzZSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiJHJlZ05hbWUgZG9lcyBub3QgZXhpc3QiDQogICAgICAgICRyZW1lZGlhdGlvbk5lZWRlZCA9ICR0cnVlDQogICAgfQ0KfQ0KDQppZiAoJHJlbWVkaWF0aW9uTmVlZGVkKSB7DQogICAgV3JpdGUtV2FybmluZyAnUmVzdGFydCBub3RpZmljYXRpb24gc2V0dGluZyBpcyBtaXNzaW5nIG9yIGluY29ycmVjdCcNCiAgICBTdG9wLVRyYW5zY3JpcHQgfCBPdXQtTnVsbA0KICAgIGV4aXQgMQ0KfQ0KZWxzZSB7DQogICAgV3JpdGUtT3V0cHV0ICdSZXN0YXJ0IG5vdGlmaWNhdGlvbiBzZXR0aW5nIGlzIGNvcnJlY3QnDQogICAgU3RvcC1UcmFuc2NyaXB0IHwgT3V0LU51bGwNCiAgICBleGl0IDANCn0=",
+     "remediationScriptContent": "JHJlZ1BhdGggPSAnSEtMTTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NVcGRhdGVcVVhcU2V0dGluZ3MnDQokcmVnTmFtZSA9ICdSZXN0YXJ0Tm90aWZpY2F0aW9uc0FsbG93ZWQyJw0KJHJlZ1ZhbHVlID0gMQ0KDQokdHJhbnNjcmlwdFBhdGggPSAiJGVudjpQcm9ncmFtRGF0YVxNaWNyb3NvZnRcSW50dW5lTWFuYWdlbWVudEV4dGVuc2lvblxMb2dzXCINCiR0cmFuc2NyaXB0TmFtZSA9ICdXaW5kb3dzVXBkYXRlLVVYLUltcHJvdmVtZW50LmxvZycNCk5ldy1JdGVtIC1QYXRoICR0cmFuc2NyaXB0UGF0aCAtSXRlbVR5cGUgRGlyZWN0b3J5IC1Gb3JjZSB8IE91dC1OdWxsDQoNCiMgU3RvcHBpbmcgb3JwaGFuZWQgdHJhbnNjcmlwdHMNCnRyeSB7IFN0b3AtVHJhbnNjcmlwdCB8IE91dC1OdWxsIH0gY2F0Y2ggW1N5c3RlbS5JbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uXSB7fQ0KDQpTdGFydC1UcmFuc2NyaXB0IC1QYXRoIChKb2luLVBhdGggJHRyYW5zY3JpcHRQYXRoICR0cmFuc2NyaXB0TmFtZSkgLUFwcGVuZA0KDQp0cnkgew0KICAgICMgRW5zdXJlIGtleSBleGlzdHMNCiAgICBpZiAoLW5vdCAoVGVzdC1QYXRoICRyZWdQYXRoKSkgew0KICAgICAgICBXcml0ZS1PdXRwdXQgIkNyZWF0aW5nIHJlZ2lzdHJ5IGtleTogJHJlZ1BhdGgiDQogICAgICAgIE5ldy1JdGVtIC1QYXRoICRyZWdQYXRoIC1Gb3JjZSB8IE91dC1OdWxsDQogICAgfQ0KDQogICAgIyBDcmVhdGUgb3Igc2V0IHRoZSBEV09SRCB2YWx1ZQ0KICAgIFdyaXRlLU91dHB1dCAiQ2hlY2tpbmcgJHJlZ05hbWUiDQogICAgaWYgKChHZXQtSXRlbSAkcmVnUGF0aCAtRXJyb3JBY3Rpb24gSWdub3JlKS5Qcm9wZXJ0eSAtY29udGFpbnMgJHJlZ05hbWUpIHsNCiAgICAgICAgaWYgKChHZXQtSXRlbVByb3BlcnR5VmFsdWUgLVBhdGggJHJlZ1BhdGggLU5hbWUgJHJlZ05hbWUpIC1uZSAkcmVnVmFsdWUpIHsNCiAgICAgICAgICAgIFdyaXRlLU91dHB1dCAiUmVtZWRpYXRpbmcgJHJlZ05hbWUiDQogICAgICAgICAgICBTZXQtSXRlbVByb3BlcnR5IC1QYXRoICRyZWdQYXRoIC1OYW1lICRyZWdOYW1lIC1WYWx1ZSAkcmVnVmFsdWUNCiAgICAgICAgfQ0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJSZW1lZGlhdGluZyAkcmVnTmFtZSINCiAgICAgICAgTmV3LUl0ZW1Qcm9wZXJ0eSAtUGF0aCAkcmVnUGF0aCAtTmFtZSAkcmVnTmFtZSAtVmFsdWUgJHJlZ1ZhbHVlIC1Qcm9wZXJ0eVR5cGUgRFdPUkQgLUZvcmNlIHwgT3V0LU51bGwNCiAgICB9DQogICAgU3RvcC1UcmFuc2NyaXB0DQogICAgZXhpdCAwDQp9DQpjYXRjaCB7DQogICAgV3JpdGUtRXJyb3IgIkVSUk9SOiBGYWlsZWQgdG8gc2V0ICRyZWdQYXRoXCRyZWdOYW1lLiAkKCRfLkV4Y2VwdGlvbi5NZXNzYWdlKSINCiAgICBTdG9wLVRyYW5zY3JpcHQgfCBPdXQtTnVsbA0KICAgIGV4aXQgMQ0KfQ==",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": [],
+     "assignments": [
+          {
+               "runRemediationScript": false,
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "WIN_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               },
+               "runSchedule": {
+                    "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+                    "interval": 1,
+                    "useUtc": false,
+                    "time": "01:00:00.0000000"
+               }
+          }
+     ]
+}

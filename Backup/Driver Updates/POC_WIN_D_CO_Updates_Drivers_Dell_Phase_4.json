@@ -1,0 +1,72 @@
+{
+     "displayName": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
+     "description": "",
+     "approvalType": "manual",
+     "deviceReporting": 0,
+     "newUpdates": 0,
+     "deploymentDeferralInDays": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "inventorySyncStatus": null,
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_5",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"9\") or (device.deviceId -startsWith \"a\") or (device.deviceId -startsWith \"b\") or (device.deviceId -startsWith \"c\") or (device.deviceId -startsWith \"d\") or (device.deviceId -startsWith \"e\") or (device.deviceId -startsWith \"f\"))"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_1",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_2",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_3",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"1\") or (device.deviceId -startsWith \"2\") or (device.deviceId -startsWith \"3\"))"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Dell",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceManufacturer -eq \"Dell Inc.\")"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Parent Group",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

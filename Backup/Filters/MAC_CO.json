@@ -1,0 +1,11 @@
+{
+     "displayName": "MAC_CO",
+     "description": "",
+     "platform": "macOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

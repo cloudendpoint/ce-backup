@@ -1,0 +1,23 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "This will conflict with WUCP and Windows Autopatch policies that silent set the SetEDURestart with no GUI option.\n\nEnabling this policy for EDU devices that remain on Carts overnight will skip power checks to ensure update reboots will happen at the scheduled install time.\n\nEnabling this policy will restrict updates to download and install outside of Active Hours. Updates are allowed to start even if there's a signed-in user or the device is on battery power, providing there's more than 70% battery capacity. Windows will schedule the device to wake from sleep 1 hour after the ActiveHoursEnd time with a 60-minute random delay. Devices will reboot immediately after the updates are installed. If there are still pending updates, the device continues to retry every hour for 4 hours.\n\nThe following rules are followed regarding battery power:\n\nAbove 70% - allowed to start work;\nAbove 40% - allowed to reboot;\nAbove 20% - allowed to continue work.\nThis setting overrides the install deferral behavior of AllowAutoUpdate.\n\nThese settings are designed for education devices that remain in carts overnight that are left in sleep mode. It isn't designed for 1:1 devices.",
+     "displayName": "REF_WIN_D_CO_WindowsUpdateSupportforCarts",
+     "omaSettings": [
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "SetEDURestart",
+               "description": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#setedurestart",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/SetEDURestart",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 1,
+               "isReadOnly": false
+          }
+     ]
+}

@@ -1,0 +1,49 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_CO_MicrosoftOutlook",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.AccountType",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "ModernAuth"
+          },
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          },
+          {
+               "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailAddress",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{mail}}"
+          },
+          {
+               "appConfigKey": "IntuneMAMAllowedAccountsOnly",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "Enabled"
+          },
+          {
+               "appConfigKey": "IntuneMAMUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Outlook",
+          "type": "#microsoft.graph.iosVppApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

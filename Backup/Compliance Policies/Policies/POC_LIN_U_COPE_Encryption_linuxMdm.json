@@ -1,0 +1,41 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_LIN_U_COPE_Encryption",
+     "platforms": "linux",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "linuxMdm",
+     "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/compliancePolicies('81f702f1-086f-4b0f-bc78-8d31530a23e1')/settings",
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "linux_deviceencryption_required",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "linux_deviceencryption_required_true",
+                         "children": []
+                    }
+               }
+          }
+     ],
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ]
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_AE_COPE_OS_14",
+     "description": "",
+     "platform": "androidForWork",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq \"14\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

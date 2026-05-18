@@ -1,0 +1,11 @@
+{
+     "displayName": "MAC_CO_OS_26",
+     "description": "",
+     "platform": "macOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.osVersion -startsWith \"26\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

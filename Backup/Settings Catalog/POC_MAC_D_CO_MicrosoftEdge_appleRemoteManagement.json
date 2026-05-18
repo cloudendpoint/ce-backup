@@ -1,0 +1,435 @@
+{
+     "creationSource": null,
+     "description": "Configures Microsoft Edge settings, logon permissions, and notification permissions.",
+     "name": "POC_MAC_D_CO_MicrosoftEdge",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 18,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.servicemanagement_rules",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                            "settingDefinitionId": "com.apple.servicemanagement_rules_item_comment",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "simpleSettingValue": {
+                                                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "Edge Updater"
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.servicemanagement_rules_item_ruletype_3",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                            "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "simpleSettingValue": {
+                                                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.microsoft.EdgeUpdater"
+                                                            }
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_restoreonstartup",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_restoreonstartup_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_browsersignin",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_browsersignin_2",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_smartscreenenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_smartscreenenabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_smartscreenpuaenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_smartscreenpuaenabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_passwordrevealenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_passwordrevealenabled_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_browseraddprofileenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_browseraddprofileenabled_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "7",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_passwordmanagerenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_passwordmanagerenabled_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "8",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_forceephemeralprofiles",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_forceephemeralprofiles_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "9",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_forcesync",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_forcesync_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "10",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_hidefirstrunexperience",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_hidefirstrunexperience_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "11",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_relaunchnotification",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_relaunchnotification_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "12",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_preventsmartscreenpromptoverride",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_preventsmartscreenpromptoverride_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "13",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_preventsmartscreenpromptoverrideforfiles",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_preventsmartscreenpromptoverrideforfiles_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "14",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_defaultbrowsersettingenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_defaultbrowsersettingenabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "15",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_showhomebutton",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_showhomebutton_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "16",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_restoreonstartupurls",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "https://www.phoenixs.co.uk/"
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.notificationsettings_com.apple.notificationsettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.notificationsettings_notificationsettings",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_alerttype",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_alerttype_1",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_badgesenabled",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_badgesenabled_true",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_bundleidentifier",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "simpleSettingValue": {
+                                                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.microsoft.edgemac"
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled_true",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled_true",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen_true",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter_true",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_soundsenabled",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.notificationsettings_notificationsettings_item_soundsenabled_true",
+                                                                 "children": []
+                                                            }
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

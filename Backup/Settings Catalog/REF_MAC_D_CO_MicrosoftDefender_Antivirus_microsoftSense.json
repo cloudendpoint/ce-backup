@@ -1,0 +1,682 @@
+{
+     "creationSource": null,
+     "description": "Configures Microsoft Defemder Antivirus settings. Only to be used for onboarding to Defender for Endpoint and where environment is licensed.\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites",
+     "name": "REF_MAC_D_CO_MicrosoftDefender_Antivirus",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 20,
+     "technologies": "mdm,microsoftSense",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_maximumondemandscanthreads",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 2
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_enablefilehashcomputation",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_enablefilehashcomputation_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_offlinedefinitionupdate_0",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_enablerealtimeprotection",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_enablerealtimeprotection_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_exclusions",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/.*\\\\\\\\cache.db"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/private/var/db/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/private/var/folders/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/private/var/root/Library/Caches/com.apple.SoftwareUpdate/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/Applications/.*/Contents/(version|Info).plist"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/Library/Updates/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/Library/Caches/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/Users/.*/Library/Caches/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         },
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_$type",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_exclusions_item_$type_0",
+                                             "children": [
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "choiceSettingValue": {
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "com.apple.managedclient.preferences_exclusions_item_isdirectory_true",
+                                                            "children": []
+                                                       }
+                                                  },
+                                                  {
+                                                       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                       "settingDefinitionId": "com.apple.managedclient.preferences_exclusions_item_path",
+                                                       "settingInstanceTemplateReference": null,
+                                                       "auditRuleInformation": null,
+                                                       "simpleSettingValue": {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                            "settingValueTemplateReference": null,
+                                                            "value": "/Users/.*/Library/Developer/.*"
+                                                       }
+                                                  }
+                                             ]
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_scanarchives",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_scanarchives_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "7",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_threattypesettings_item_value",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.managedclient.preferences_threattypesettings_item_key",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.managedclient.preferences_threattypesettings_item_key_0",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "8",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "9",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_diagnosticlevel",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_diagnosticlevel_0",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "10",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmission",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_automaticsamplesubmission_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "11",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_enabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_enabled_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "12",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_definitionupdatedue",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 7
+                    }
+               }
+          },
+          {
+               "id": "13",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_definitionupdatesinterval",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 28800
+                    }
+               }
+          },
+          {
+               "id": "14",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_behaviormonitoring",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_behaviormonitoring_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "15",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_enforcementlevel",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_enforcementlevel_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "16",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_enforcementlevel_tamperprotection",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_enforcementlevel_tamperprotection_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_consumerexperience",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_consumerexperience_0",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "18",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_hidestatusmenuicon",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_hidestatusmenuicon_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "19",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_userinitiatedfeedback",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_userinitiatedfeedback_0",
+                         "children": []
+                    }
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

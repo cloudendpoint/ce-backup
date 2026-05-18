@@ -1,0 +1,11 @@
+{
+     "displayName": "CPC_CO_Link",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.operatingSystemSKU -eq \"WCPC\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

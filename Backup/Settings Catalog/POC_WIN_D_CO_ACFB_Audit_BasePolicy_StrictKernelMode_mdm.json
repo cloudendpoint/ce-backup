@@ -1,0 +1,63 @@
+{
+     "creationSource": null,
+     "description": "Policy ID - 019D2EA6-CC9B-7F1E-BB73-FD05A86770E0",
+     "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_StrictKernelMode",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "mdm",
+     "templateReference": {
+          "templateId": "d3849ba8-bf95-467c-9640-aa2334eae9e3_1",
+          "templateFamily": "endpointSecurityApplicationControl",
+          "templateDisplayName": "App Control for Business",
+          "templateDisplayVersion": "Version 1"
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrolv2_buildoptions",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "abc5b8cd-63a0-4a1c-a34d-da84d9a93f62"
+                    },
+                    "choiceSettingValue": {
+                         "value": "device_vendor_msft_policy_config_applicationcontrolv2_buildoptions_upload_xml_selected",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "8e9847a2-8a1b-4168-a5fc-4a99cd8cd480",
+                              "useTemplateDefault": false
+                         },
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrolv2_xmlupload",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SiPolicy PolicyType=\"Base Policy\" xmlns=\"urn:schemas-microsoft-com:sipolicy\">\r\n  <VersionEx>1.0.0.0</VersionEx>\r\n  <PolicyID>{019D2EA6-CC9B-7F1E-BB73-FD05A86770E0}</PolicyID>\r\n  <BasePolicyID>{019D2EA6-CC9B-7F1E-BB73-FD05A86770E0}</BasePolicyID>\r\n  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>\r\n  <Rules>\r\n    <Rule>\r\n      <Option>Enabled:Unsigned System Integrity Policy</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Update Policy No Reboot</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Revoked Expired As Unsigned</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Allow Supplemental Policies</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Audit Mode</Option>\r\n    </Rule>\r\n  </Rules>\r\n  <EKUs>\r\n    <EKU ID=\"ID_EKU_WINDOWS\" Value=\"010A2B0601040182370A0306\" />\r\n    <EKU ID=\"ID_EKU_ELAM\" Value=\"010A2B0601040182373D0401\" />\r\n    <EKU ID=\"ID_EKU_HAL_EXT\" Value=\"010A2B0601040182373D0501\" />\r\n  </EKUs>\r\n  <Signers>\r\n    <Signer ID=\"ID_SIGNER_WINDOWS_PRODUCTION\" Name=\"Microsoft Product Root 2010 Windows EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"06\" />\r\n      <CertEKU ID=\"ID_EKU_WINDOWS\" />\r\n    </Signer>\r\n    <Signer ID=\"ID_SIGNER_ELAM_PRODUCTION\" Name=\"Microsoft Product Root 2010 ELAM EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"06\" />\r\n      <CertEKU ID=\"ID_EKU_ELAM\" />\r\n    </Signer>\r\n    <Signer ID=\"ID_SIGNER_HAL_PRODUCTION\" Name=\"Microsoft Product Root 2010 HAL EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"06\" />\r\n      <CertEKU ID=\"ID_EKU_HAL_EXT\" />\r\n    </Signer>\r\n    <Signer ID=\"ID_SIGNER_WINDOWS_FLIGHT_ROOT\" Name=\"Microsoft Flighting Root 2014 Windows EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"0E\" />\r\n      <CertEKU ID=\"ID_EKU_WINDOWS\" />\r\n    </Signer>\r\n    <Signer ID=\"ID_SIGNER_ELAM_FLIGHT\" Name=\"Microsoft Flighting Root 2014 ELAM EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"0E\" />\r\n      <CertEKU ID=\"ID_EKU_ELAM\" />\r\n    </Signer>\r\n    <Signer ID=\"ID_SIGNER_HAL_FLIGHT\" Name=\"Microsoft Flighting Root 2014 HAL EKU\">\r\n      <CertRoot Type=\"Wellknown\" Value=\"0E\" />\r\n      <CertEKU ID=\"ID_EKU_HAL_EXT\" />\r\n    </Signer>\r\n  </Signers>\r\n  <SigningScenarios>\r\n    <SigningScenario Value=\"131\" ID=\"ID_SIGNINGSCENARIO_KMCI\" FriendlyName=\"Kernel Mode Signing Scenario\">\r\n      <ProductSigners>\r\n        <AllowedSigners>\r\n          <AllowedSigner SignerId=\"ID_SIGNER_WINDOWS_PRODUCTION\" />\r\n          <AllowedSigner SignerId=\"ID_SIGNER_ELAM_PRODUCTION\" />\r\n          <AllowedSigner SignerId=\"ID_SIGNER_HAL_PRODUCTION\" />\r\n          <AllowedSigner SignerId=\"ID_SIGNER_WINDOWS_FLIGHT_ROOT\" />\r\n          <AllowedSigner SignerId=\"ID_SIGNER_ELAM_FLIGHT\" />\r\n          <AllowedSigner SignerId=\"ID_SIGNER_HAL_FLIGHT\" />\r\n        </AllowedSigners>\r\n      </ProductSigners>\r\n    </SigningScenario>\r\n  </SigningScenarios>\r\n  <HvciOptions>2</HvciOptions>\r\n  <Settings>\r\n    <Setting Provider=\"AllHostIds\" Key=\"AllKeys\" ValueName=\"EnterpriseDefinedClsId\">\r\n      <Value>\r\n        <Boolean>true</Boolean>\r\n      </Value>\r\n    </Setting>\r\n    <Setting Provider=\"PolicyInfo\" Key=\"Information\" ValueName=\"Name\">\r\n      <Value>\r\n        <String>StrictKernelMode</String>\r\n      </Value>\r\n    </Setting>\r\n    <Setting Provider=\"PolicyInfo\" Key=\"Information\" ValueName=\"Id\">\r\n      <Value>\r\n        <String>129657</String>\r\n      </Value>\r\n    </Setting>\r\n  </Settings>\r\n</SiPolicy>"
+                                   }
+                              }
+                         ]
+                    }
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_ACFB_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

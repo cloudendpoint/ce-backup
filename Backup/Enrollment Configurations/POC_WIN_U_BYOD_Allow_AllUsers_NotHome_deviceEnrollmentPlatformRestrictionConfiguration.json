@@ -1,0 +1,29 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_WIN_U_BYOD_Allow_AllUsers_NotHome",
+     "description": "",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "windows",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "WIN_OS_NotHome",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

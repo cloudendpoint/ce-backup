@@ -1,0 +1,31 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "POC_WIN_D_CO_RS_UpdateMicrosoftStoreApps",
+     "description": "Updates Microsoft store originated apps on a schedule; system context apps are updated without user logon, user context apps only updated with a logged on user.\n\nhttps://www.oddsandendpoints.co.uk/posts/windows-updating-store-apps/",
+     "detectionScriptContent": "dHJ5IHsNCiAgICAkd21pT2JqID0gR2V0LUNpbUluc3RhbmNlIC1OYW1lc3BhY2UgIlJvb3RcY2ltdjJcbWRtXGRtbWFwIiAtQ2xhc3NOYW1lICJNRE1fRW50ZXJwcmlzZU1vZGVybkFwcE1hbmFnZW1lbnRfQXBwTWFuYWdlbWVudDAxIg0KICAgIGlmICgkd21pT2JqLkxhc3RTY2FuRXJyb3IgLW5lICcwJykgew0KICAgICAgICBXcml0ZS1PdXRwdXQgIldpbmRvd3MgU3RvcmUgQXBwcyBub3QgdXBkYXRlZC4iDQogICAgICAgIEV4aXQgMQ0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJXaW5kb3dzIFN0b3JlIEFwcHMgdXBkYXRlZC4iDQogICAgICAgIEV4aXQgMA0KICAgIH0NCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1PdXRwdXQgIlVuYWJsZSB0byBxdWVyeSBTdG9yZSBBcHAgVXBkYXRlIHN0YXR1cy4iDQogICAgRXhpdCAyMDAwDQp9",
+     "remediationScriptContent": "VHJ5IHsNCiAgICBHZXQtQ2ltSW5zdGFuY2UgLU5hbWVzcGFjZSAiUm9vdFxjaW12MlxtZG1cZG1tYXAiIC1DbGFzc05hbWUgIk1ETV9FbnRlcnByaXNlTW9kZXJuQXBwTWFuYWdlbWVudF9BcHBNYW5hZ2VtZW50MDEiIHwgSW52b2tlLUNpbU1ldGhvZCAtTWV0aG9kTmFtZSBVcGRhdGVTY2FuTWV0aG9kDQogICAgV3JpdGUtT3V0cHV0ICJXaW5kb3dzIFN0b3JlIEFwcHMgdXBkYXRlZC4iDQogICAgRXhpdCAwDQp9DQpDYXRjaCB7DQogICAgV3JpdGUtT3V0cHV0ICJXaW5kb3dzIFN0b3JlIEFwcHMgbm90IHVwZGF0ZWQuIg0KICAgIEV4aXQgMjAwMA0KfQ==",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": [],
+     "assignments": [
+          {
+               "runRemediationScript": false,
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "WIN_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               },
+               "runSchedule": {
+                    "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+                    "interval": 1,
+                    "useUtc": false,
+                    "time": "01:00:00.0000000"
+               }
+          }
+     ]
+}

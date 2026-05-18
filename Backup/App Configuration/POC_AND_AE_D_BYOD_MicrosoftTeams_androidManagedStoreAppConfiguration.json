@@ -1,0 +1,37 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Restricts use of only work/school account within the app.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android",
+     "displayName": "POC_AND_AE_D_BYOD_MicrosoftTeams",
+     "packageId": "app:com.microsoft.teams",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.teams",
+          "managedProperty": [
+               {
+                    "key": "com.microsoft.intune.mam.AllowedAccountUPNs",
+                    "valueString": "{{userprincipalname}}"
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidWorkProfile",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Microsoft Teams",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

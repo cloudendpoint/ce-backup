@@ -1,0 +1,11 @@
+{
+     "displayName": "CPC_CO",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.model -contains \"Cloud PC\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

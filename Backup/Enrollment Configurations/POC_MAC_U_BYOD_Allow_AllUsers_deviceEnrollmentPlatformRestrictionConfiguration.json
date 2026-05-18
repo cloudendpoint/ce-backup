@@ -1,0 +1,29 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_MAC_U_BYOD_Allow_AllUsers",
+     "description": "",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "mac",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

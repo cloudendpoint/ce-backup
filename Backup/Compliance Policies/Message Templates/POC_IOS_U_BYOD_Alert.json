@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_IOS_U_BYOD_Alert",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('4a897ea9-678f-46fc-a239-c57e027aa3c3')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "iOS Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \r\n\r\nYour personal iOS device with name {{DeviceName}} running {{OSAndVersion}}  has been marked as non-compliant and will be blocked from accessing Microsoft Services.\r\n\r\nPlease update your device, and configure a device PIN.\r\n",
+               "isDefault": true
+          }
+     ]
+}

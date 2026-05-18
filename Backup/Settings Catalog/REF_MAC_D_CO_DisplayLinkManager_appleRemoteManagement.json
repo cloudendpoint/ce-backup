@@ -1,0 +1,208 @@
+{
+     "creationSource": null,
+     "description": "Configures Display Link Manager settings, logon permissions, and notification permissions.\n",
+     "name": "REF_MAC_D_CO_DisplayLinkManager",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 3,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.loginitems.managed_com.apple.loginitems.managed",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.loginitems.managed_autolaunchedapplicationdictionary-managed",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.loginitems.managed_autolaunchedapplicationdictionary-managed_item_hide",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.loginitems.managed_autolaunchedapplicationdictionary-managed_item_hide_false",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                            "settingDefinitionId": "com.apple.loginitems.managed_autolaunchedapplicationdictionary-managed_item_path",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "simpleSettingValue": {
+                                                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "/Applications/DisplayLink Manager.app"
+                                                            }
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.servicemanagement_rules",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                            "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "choiceSettingValue": {
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.apple.servicemanagement_rules_item_ruletype_0",
+                                                                 "children": []
+                                                            }
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                            "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "simpleSettingValue": {
+                                                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                 "settingValueTemplateReference": null,
+                                                                 "value": "com.displaylink.DisplayLinkUserAgent"
+                                                            }
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_authorization_2",
+                                                                                     "children": []
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_coderequirement",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "anchor apple generic and identifier \"com.displaylink.DisplayLinkUserAgent\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"73YQY62QM3\")"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifier",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.displaylink.DisplayLinkUserAgent"
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifiertype_0",
+                                                                                     "children": []
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ]
+}

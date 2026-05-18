@@ -1,0 +1,13 @@
+{
+     "@odata.type": "#microsoft.graph.deviceComanagementAuthorityConfiguration",
+     "displayName": "POC_WIN_D_CO_Intune_AllUsers",
+     "description": "",
+     "priority": 1,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "deviceComanagementAuthorityConfiguration",
+     "managedDeviceAuthority": 1,
+     "installConfigurationManagerAgent": true,
+     "configurationManagerAgentCommandLineArgument": "/mp:<CloudManagementGatewayURL> /nocrlcheck CCMHOSTNAME=<CloudManagementGateway> SMSSiteCode=<SiteCode> SMSMP=<ManagementPoint>"
+}

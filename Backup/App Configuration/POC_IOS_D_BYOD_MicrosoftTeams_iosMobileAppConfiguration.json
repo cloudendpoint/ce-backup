@@ -1,0 +1,36 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_BYOD_MicrosoftTeams",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "IntuneMAMUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Teams",
+          "type": "#microsoft.graph.iosStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

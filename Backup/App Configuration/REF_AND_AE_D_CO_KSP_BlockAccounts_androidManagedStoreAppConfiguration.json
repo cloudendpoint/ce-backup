@@ -1,0 +1,103 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Used to block adding Google and Samsung accounts to Samsung devices using KSP.\n\nYou can only have one OEMConfig per Samsung device.",
+     "displayName": "REF_AND_AE_D_CO_KSP_BlockAccounts",
+     "packageId": "com.samsung.android.knox.kpu",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.samsung.android.knox.kpu",
+          "managedProperty": [
+               {
+                    "key": "schemaVersion",
+                    "valueString": "42.0.1"
+               },
+               {
+                    "key": "profileId",
+                    "valueString": ""
+               },
+               {
+                    "key": "transactionTs",
+                    "valueString": ""
+               },
+               {
+                    "key": "kpePartnerLicenseKey",
+                    "valueString": ""
+               },
+               {
+                    "key": "profileName",
+                    "valueString": "BlockAccounts(1.0)"
+               },
+               {
+                    "key": "verboseMode",
+                    "valueBool": false
+               },
+               {
+                    "key": "doPolicies",
+                    "valueBundle": {
+                         "managedProperty": [
+                              {
+                                   "key": "doPoliciesIsControlled",
+                                   "valueBool": true
+                              },
+                              {
+                                   "key": "doDeviceAccountPolicy",
+                                   "valueBundle": {
+                                        "managedProperty": [
+                                             {
+                                                  "key": "doDeviceAccountPolicyIsControlled",
+                                                  "valueBool": true
+                                             },
+                                             {
+                                                  "key": "doDeviceAccountAdditionIsEnabled",
+                                                  "valueBool": true
+                                             }
+                                        ]
+                                   }
+                              }
+                         ]
+                    }
+               },
+               {
+                    "key": "profileDeviceAccountPolicyConfigurations",
+                    "valueBundleArray": [
+                         {
+                              "managedProperty": [
+                                   {
+                                        "key": "profileDeviceAccountPolicyAddAccountType",
+                                        "valueString": "com.osp.app.signin"
+                                   },
+                                   {
+                                        "key": "profileDeviceAccountPolicyAddAccountsToAdditionList",
+                                        "valueString": ".*"
+                                   }
+                              ]
+                         },
+                         {
+                              "managedProperty": [
+                                   {
+                                        "key": "profileDeviceAccountPolicyAddAccountType",
+                                        "valueString": "com.google"
+                                   },
+                                   {
+                                        "key": "profileDeviceAccountPolicyAddAccountsToAdditionList",
+                                        "valueString": ".*"
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          ]
+     },
+     "appSupportsOemConfig": true,
+     "profileApplicability": "default",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Knox Service Plugin",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     }
+}

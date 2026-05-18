@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_CO_ARM",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.cpuArchitecture -eq \"arm64\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

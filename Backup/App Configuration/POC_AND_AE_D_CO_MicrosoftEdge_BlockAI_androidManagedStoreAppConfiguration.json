@@ -1,0 +1,34 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Used to block AI websites in Microsoft Edge on Android Enterprise.\n\nhttps://learn.microsoft.com/en-us/intune/solutions/ai/manage-ai-android",
+     "displayName": "POC_AND_AE_D_CO_MicrosoftEdge_BlockAI",
+     "packageId": "app:com.microsoft.emmx",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.emmx",
+          "managedProperty": [
+               {
+                    "key": "URLBlocklist",
+                    "valueStringArray": [
+                         "https://chatgpt.com",
+                         "https://claude.ai",
+                         "https://copilot.microsoft.com",
+                         "https://perplexity.ai",
+                         "https://gemini.google.com"
+                    ]
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidDeviceOwner",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Microsoft Edge",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     }
+}

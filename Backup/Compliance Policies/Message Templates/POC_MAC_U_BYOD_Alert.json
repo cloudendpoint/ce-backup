@@ -1,0 +1,18 @@
+{
+     "displayName": "POC_MAC_U_BYOD_Alert",
+     "description": null,
+     "defaultLocale": "en-gb",
+     "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "localizedNotificationMessages@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/notificationMessageTemplates('82274068-460d-4044-a8ac-cb1575522a61')/localizedNotificationMessages",
+     "localizedNotificationMessages": [
+          {
+               "locale": "en-gb",
+               "subject": "macOS Device {{DeviceName}} Non-Compliance Notification",
+               "messageTemplate": "Hi {{UserName}}, \r\n\r\nYour personal macOS device with name {{DeviceName}} running {{OSAndVersion}} has been marked as non-compliant and will be blocked from accessing Microsoft Services.\r\n\r\nPlease update your device, enable the firewall and Gatekeeper.",
+               "isDefault": true
+          }
+     ]
+}

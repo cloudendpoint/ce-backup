@@ -1,0 +1,11 @@
+{
+     "displayName": "MAC_CO_OS_15",
+     "description": "",
+     "platform": "macOS",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.osVersion -startsWith \"15\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

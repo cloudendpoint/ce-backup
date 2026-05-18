@@ -1,0 +1,33 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Configures app permissions to prevent user requirement to approve them.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android",
+     "displayName": "POC_AND_AE_D_CO_MicrosoftRemoteHelp",
+     "packageId": "app:com.microsoft.intune.remotehelp",
+     "payloadJson": "",
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidDeviceOwner",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [
+          {
+               "permission": "android.permission.CAMERA",
+               "action": "autoGrant"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Remote Help",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

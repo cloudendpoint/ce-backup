@@ -1,0 +1,11 @@
+{
+     "displayName": "WIN_CO_OS_Consumer",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.operatingSystemSKU -in [\"Core\",\"CoreN\",\"CoreSingleLanguage\",\"Professional\",\"ProfessionalEducation\",\"ProfessionalWorkstation\",\"ProfessionalN\",\"ProfessionalEducationN\",\"BusinessN\",\"ProfessionalSingleLanguage\"])",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

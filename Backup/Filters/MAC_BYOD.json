@@ -1,0 +1,11 @@
+{
+     "displayName": "MAC_BYOD",
+     "description": "",
+     "platform": "macOS",
+     "rule": "(device.deviceOwnership -eq \"Personal\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

@@ -1,0 +1,67 @@
+{
+     "templateId": null,
+     "displayName": "CA216_Internals_BaseProtection_AllResources_MobilesBYOD_Block",
+     "state": "disabled",
+     "deletedDateTime": null,
+     "partialEnablementStrategy": null,
+     "sessionControls": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "all"
+          ],
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "clientApplications": null,
+          "agents": null,
+          "applications": {
+               "includeApplications": [
+                    "All"
+               ],
+               "excludeApplications": [],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "None"
+               ],
+               "excludeUsers": [],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          },
+          "platforms": {
+               "includePlatforms": [
+                    "android",
+                    "iOS"
+               ],
+               "excludePlatforms": []
+          },
+          "devices": {
+               "includeDeviceStates": [],
+               "excludeDeviceStates": [],
+               "includeDevices": [],
+               "excludeDevices": [],
+               "deviceFilter": {
+                    "mode": "include",
+                    "rule": "device.deviceOwnership -ne \"Company\""
+               }
+          }
+     },
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "block"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
+     }
+}

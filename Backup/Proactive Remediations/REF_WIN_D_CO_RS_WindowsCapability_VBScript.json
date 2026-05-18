@@ -1,0 +1,15 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "REF_WIN_D_CO_RS_WindowsCapability_VBScript",
+     "description": "Adds in removed Windows features removed as part of Windows 11 feature updates. Only use if the feature is actually required.",
+     "detectionScriptContent": "JGNhcGFiaWxpdHlOYW1lID0gJ1ZCU0NSSVBUJw0KDQp0cnkgew0KICAgICR3aW5kb3dzQ2FwYWJpbGl0eSA9IEdldC1XaW5kb3dzQ2FwYWJpbGl0eSAtb25saW5lIHwgV2hlcmUtT2JqZWN0IHsgJF8uTmFtZSAtbGlrZSAiKiRjYXBhYmlsaXR5TmFtZSoiIH0NCiAgICBpZiAoJHdpbmRvd3NDYXBhYmlsaXR5LlN0YXRlICAtbmUgJ0luc3RhbGxlZCcpIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJXaW5kb3dzIENhcGFiaWxpdHkgJGNhcGFiaWxpdHlOYW1lIG5vdCBpbnN0YWxsZWQuIg0KICAgICAgICBFeGl0IDENCiAgICB9DQogICAgZWxzZSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiV2luZG93cyBDYXBhYmlsaXR5ICRjYXBhYmlsaXR5TmFtZSBpbnN0YWxsZWQuIg0KICAgICAgICBFeGl0IDANCiAgICB9DQp9DQpjYXRjaCB7DQogICAgV3JpdGUtT3V0cHV0ICJVbmFibGUgdG8gcXVlcnkgV2luZG93cyBDYXBhYmlsaXR5ICRjYXBhYmlsaXR5TmFtZSBzdGF0dXMuIg0KICAgIEV4aXQgMjAwMA0KfQ==",
+     "remediationScriptContent": "JGNhcGFiaWxpdHlOYW1lID0gJ1ZCU0NSSVBUJw0KDQpUcnkgew0KICAgIEdldC1XaW5kb3dzQ2FwYWJpbGl0eSAtb25saW5lIHwgV2hlcmUtT2JqZWN0IHsgJF8uTmFtZSAtbGlrZSAiKiRjYXBhYmlsaXR5TmFtZSoiIH0gfCBBZGQtV2luZG93c0NhcGFiaWxpdHkgLU9ubGluZQ0KICAgIEV4aXQgMA0KfQ0KQ2F0Y2ggew0KICAgIFdyaXRlLU91dHB1dCAiVW5hYmxlIHRvIGluc3RhbGwgV2luZG93cyBDYXBhYmlsaXR5ICRjYXBhYmlsaXR5TmFtZSBzdGF0dXMuIg0KICAgIEV4aXQgMjAwMA0KfQ==",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": []
+}

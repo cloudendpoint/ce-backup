@@ -1,0 +1,23 @@
+{
+     "displayName": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+     "description": "Driver update policy, created by Windows Autopatch",
+     "approvalType": "automatic",
+     "deviceReporting": 0,
+     "newUpdates": 0,
+     "deploymentDeferralInDays": 9,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "inventorySyncStatus": null,
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

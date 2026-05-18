@@ -1,0 +1,19 @@
+{
+     "@odata.type": "#microsoft.graph.windowsRestoreDeviceEnrollmentConfiguration",
+     "displayName": "All users and all devices",
+     "description": "This is the default Windows Restore configuration applied with the lowest priority to all users and all devices regardless of group membership.",
+     "priority": 0,
+     "roleScopeTagIds": [],
+     "deviceEnrollmentConfigurationType": "windowsRestore",
+     "state": "enabled",
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

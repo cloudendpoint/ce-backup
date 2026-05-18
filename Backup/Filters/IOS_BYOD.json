@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_BYOD",
+     "description": "",
+     "platform": "iOS",
+     "rule": "(device.deviceOwnership -eq \"Personal\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

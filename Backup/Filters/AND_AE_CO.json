@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_AE_CO",
+     "description": "",
+     "platform": "androidForWork",
+     "rule": "(device.deviceOwnership -eq \"Corporate\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "IOS_MNGD_COPE",
+     "description": "",
+     "platform": "iOSMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Automated Device Enrollment user-associated devices\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

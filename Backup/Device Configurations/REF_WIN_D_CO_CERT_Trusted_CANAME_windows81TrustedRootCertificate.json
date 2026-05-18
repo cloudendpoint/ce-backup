@@ -1,0 +1,14 @@
+{
+     "@odata.type": "#microsoft.graph.windows81TrustedRootCertificate",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "REF_WIN_D_CO_CERT_Trusted_CANAME",
+     "trustedRootCertificate": "MIIDaTCCAlGgAwIBAgIQGaNeMMJ7ZIlEAB5Y0DYsfzANBgkqhkiG9w0BAQ0FADBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFjAUBgoJkiaJk/IsZAEZFgZlbm5iZWUxFjAUBgNVBAMTDWVubmJlZS1MQUItQ0EwHhcNMjMxMTA4MTAzMjMwWhcNMjgxMTA4MTA0MjMwWjBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFjAUBgoJkiaJk/IsZAEZFgZlbm5iZWUxFjAUBgNVBAMTDWVubmJlZS1MQUItQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGsRq3OwhvN3vI1LO+/96QvAHJJZ7HBjQ6XlVHvHPwhsGYMfw6J3mLNFeM4GwNyEjCJU7xBP8GM/YWZZUOMaYPgTPIhAXUqvu3ZBfyGjtpiAdpz7D3Ns0jStk8DN7zOmySM/67cCSKHAlrKCEeoH0oTC1o+Etx0zUCnPloIsasX9CHlCM5I2YFfU8mAZ5CflndK2SlEyApRJF56mj54xGLytvxpJh8KzT1qdej0Sbfd480smYOv9C5oiQi3Kvd2J1xD+ZRwMDbXqkyPnta2RBwcQPsiQVgmLPmJRE8WP6q7IfU55b64nj+Pft4erN0fzezBTVjDnnojbkIOoDqbcnpAgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQ0pwEaE/+ri/pmm3FRXY4wz9fAPzAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQ0FAAOCAQEAf7yqpBiCyif8Ut9xUGaeFlO8RgMIFfL2fY2Xhvpzy/MITKbLF84ycUWRcGkiQoUOCj31Lp25uLm6qmEUrBOxGCI87vLc9db8DMuDxfNd3F4JX2cPysFklBrXX5QvbTBDJ+cFV9Bf34x7vKMg65KPFxuHQTqGo3oClpmRgcytdBpXtFM17zrx2QFkpVFLEPIF3Vzo4jUbU5AQbbcu/yINJe4s2ZzgHXghh/gPRrw8XxFWZXDy1JhlBJG8Am99Bl3uhP8Y961e1TRdYnhB6eqNT65Ivm90+PML1gadKodYFXu3PSHsFdGzRdux34qFH3uTyEZpiPOuoeRtNF+ay4DT/A==",
+     "certFileName": "root.cer",
+     "destinationStore": "computerCertStoreRoot"
+}

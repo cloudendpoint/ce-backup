@@ -1,0 +1,29 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_CO_MicrosoftPowerPoint",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "IntuneMAMUPN ",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{UserPrincipalName}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft PowerPoint",
+          "type": "#microsoft.graph.iosVppApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

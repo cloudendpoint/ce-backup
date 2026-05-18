@@ -1,0 +1,90 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_CPC_D_CO_Watermarking",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 1,
+     "technologies": "mdm",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingheightfactor",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 180
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingopacity",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 2000
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingqrscale",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 4
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingcontent",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingcontent_1",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_terminalserver-avdv1.upadtes~policy~avd_gp_node_avd_server_watermarking_part_watermarkingwidthfactor",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 320
+                                   }
+                              }
+                         ]
+                    }
+               }
+          }
+     ]
+}

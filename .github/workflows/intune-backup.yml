@@ -9,8 +9,8 @@ on:
     tags-ignore:
       - '*'
   schedule:
-    # Run the Intune configuration backup every day at 1am
-    - cron:  '0 1 * * *'
+    # Run the Intune configuration backup every day at 6am
+    - cron:  '0 6 * * *'
 
 # Add variables to the repo from secrets
 env:

@@ -1,6 +1,6 @@
-# Intune GitOps Lite
+# IntuneCD
 
-Repository created for the Cloud Endpoint Summit 2026
+Repository for the backup of the intuneblueprint.com tenant.
 
 ## Entra ID App Registration
 

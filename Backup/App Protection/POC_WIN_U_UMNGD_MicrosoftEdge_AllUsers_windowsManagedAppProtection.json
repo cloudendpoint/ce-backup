@@ -1,0 +1,28 @@
+{
+     "@odata.type": "#microsoft.graph.windowsManagedAppProtection",
+     "displayName": "POC_WIN_U_UMNGD_MicrosoftEdge_AllUsers",
+     "description": "",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "printBlocked": true,
+     "allowedInboundDataTransferSources": "allApps",
+     "allowedOutboundClipboardSharingLevel": "orgDestinationOrgSource",
+     "allowedOutboundDataTransferDestinations": "none",
+     "appActionIfUnableToAuthenticateUser": "block",
+     "maximumAllowedDeviceThreatLevel": "notConfigured",
+     "mobileThreatDefenseRemediationAction": "block",
+     "minimumRequiredSdkVersion": null,
+     "minimumWipeSdkVersion": null,
+     "minimumRequiredOsVersion": "10.0.26100.0",
+     "minimumWarningOsVersion": "10.0.26200.0",
+     "minimumWipeOsVersion": "10.0.22631.0",
+     "minimumRequiredAppVersion": null,
+     "minimumWarningAppVersion": null,
+     "minimumWipeAppVersion": null,
+     "maximumRequiredOsVersion": null,
+     "maximumWarningOsVersion": null,
+     "maximumWipeOsVersion": null,
+     "periodOfflineBeforeWipeIsEnforced": "P90D",
+     "periodOfflineBeforeAccessCheck": "P1D"
+}

@@ -1,0 +1,62 @@
+{
+     "@odata.type": "#microsoft.graph.iosCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": null,
+     "displayName": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem_26",
+     "passcodeBlockSimple": false,
+     "passcodeExpirationDays": null,
+     "passcodeMinimumLength": null,
+     "passcodeMinutesOfInactivityBeforeLock": null,
+     "passcodeMinutesOfInactivityBeforeScreenTimeout": null,
+     "passcodePreviousPasscodeBlockCount": null,
+     "passcodeMinimumCharacterSetCount": null,
+     "passcodeRequiredType": "deviceDefault",
+     "passcodeRequired": false,
+     "osMinimumVersion": "26.5",
+     "osMaximumVersion": null,
+     "osMinimumBuildVersion": null,
+     "osMaximumBuildVersion": null,
+     "securityBlockJailbrokenDevices": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "managedEmailProfileRequired": false,
+     "restrictedApps": [],
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 336,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD_OS_26",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE+",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD_OS_26",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

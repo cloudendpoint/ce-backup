@@ -1,0 +1,81 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": null,
+     "displayName": "POC_WIN_D_CO_SBL_CE_OperatingSystem_Business",
+     "passwordRequired": false,
+     "passwordBlockSimple": false,
+     "passwordRequiredToUnlockFromIdle": false,
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordExpirationDays": null,
+     "passwordMinimumLength": null,
+     "passwordMinimumCharacterSetCount": null,
+     "passwordRequiredType": "deviceDefault",
+     "passwordPreviousPasswordBlockCount": null,
+     "requireHealthyDeviceReport": false,
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "mobileOsMinimumVersion": null,
+     "mobileOsMaximumVersion": null,
+     "earlyLaunchAntiMalwareDriverEnabled": false,
+     "bitLockerEnabled": false,
+     "secureBootEnabled": false,
+     "codeIntegrityEnabled": false,
+     "memoryIntegrityEnabled": false,
+     "kernelDmaProtectionEnabled": false,
+     "virtualizationBasedSecurityEnabled": false,
+     "firmwareProtectionEnabled": false,
+     "storageRequireEncryption": false,
+     "activeFirewallRequired": false,
+     "defenderEnabled": false,
+     "defenderVersion": null,
+     "signatureOutOfDate": false,
+     "rtpEnabled": false,
+     "antivirusRequired": false,
+     "antiSpywareRequired": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "configurationManagerComplianceRequired": false,
+     "tpmRequired": false,
+     "deviceCompliancePolicyScript": null,
+     "validOperatingSystemBuildRanges": [
+          {
+               "description": "Windows 11 24H2",
+               "lowestVersion": "10.0.26100.8457",
+               "highestVersion": "10.0.26100.9999"
+          },
+          {
+               "description": "Windows 11 25H2",
+               "lowestVersion": "10.0.26200.8457",
+               "highestVersion": "10.0.26200.9999"
+          }
+     ],
+     "wslDistributions": [],
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 336,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "WIN_CO_OS_Business",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_D_WIN_CE_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

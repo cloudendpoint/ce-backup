@@ -1,0 +1,20 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_IOS_D_CO_MicrosoftAuthenticator_Shared",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "sharedDeviceMode",
+               "appConfigKeyType": "booleanType",
+               "appConfigKeyValue": "true"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Authenticator",
+          "type": "#microsoft.graph.iosVppApp"
+     }
+}

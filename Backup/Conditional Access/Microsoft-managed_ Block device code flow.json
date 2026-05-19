@@ -1,7 +1,7 @@
 {
      "templateId": "4200930c-0da2-4e33-ca01-000000000008",
      "displayName": "Microsoft-managed: Block device code flow",
-     "state": "enabledForReportingButNotEnforced",
+     "state": "enabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
      "sessionControls": null,

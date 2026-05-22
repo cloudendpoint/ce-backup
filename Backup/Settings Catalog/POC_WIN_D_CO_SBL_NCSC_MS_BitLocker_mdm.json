@@ -188,7 +188,7 @@
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_fixeddrivesencryptiontype_fdvencryptiontypedropdown_name_2",
+                                        "value": "device_vendor_msft_bitlocker_fixeddrivesencryptiontype_fdvencryptiontypedropdown_name_1",
                                         "children": []
                                    }
                               }
@@ -306,7 +306,7 @@
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_systemdrivesencryptiontype_osencryptiontypedropdown_name_2",
+                                        "value": "device_vendor_msft_bitlocker_systemdrivesencryptiontype_osencryptiontypedropdown_name_1",
                                         "children": []
                                    }
                               }
@@ -420,7 +420,7 @@
                                                                  "auditRuleInformation": null,
                                                                  "choiceSettingValue": {
                                                                       "settingValueTemplateReference": null,
-                                                                      "value": "device_vendor_msft_bitlocker_removabledrivesencryptiontype_rdvencryptiontypedropdown_name_2",
+                                                                      "value": "device_vendor_msft_bitlocker_removabledrivesencryptiontype_rdvencryptiontypedropdown_name_1",
                                                                       "children": []
                                                                  }
                                                             }

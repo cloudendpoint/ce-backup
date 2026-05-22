@@ -68,20 +68,6 @@
                          "children": [
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name_2",
-                                        "settingValueTemplateReference": {
-                                             "settingValueTemplateId": "2159ffae-55e2-406b-98b4-2ecdd9452c68",
-                                             "useTemplateDefault": false
-                                        },
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverypasswordusagedropdown_name",
                                    "settingInstanceTemplateReference": null,
                                    "auditRuleInformation": null,
@@ -157,6 +143,20 @@
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrequireactivedirectorybackup_name_1",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "2159ffae-55e2-406b-98b4-2ecdd9452c68",
+                                             "useTemplateDefault": false
+                                        },
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name_0",
                                         "settingValueTemplateReference": {
                                              "settingValueTemplateId": "2159ffae-55e2-406b-98b4-2ecdd9452c68",
                                              "useTemplateDefault": false
@@ -329,20 +329,6 @@
                          "children": [
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name_2",
-                                        "settingValueTemplateReference": {
-                                             "settingValueTemplateId": "2a756c45-f135-442f-9c01-829a9c9b5407",
-                                             "useTemplateDefault": false
-                                        },
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverypasswordusagedropdown_name",
                                    "settingInstanceTemplateReference": null,
                                    "auditRuleInformation": null,
@@ -418,6 +404,20 @@
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrequireactivedirectorybackup_name_1",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "2a756c45-f135-442f-9c01-829a9c9b5407",
+                                             "useTemplateDefault": false
+                                        },
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name_0",
                                         "settingValueTemplateReference": {
                                              "settingValueTemplateId": "2a756c45-f135-442f-9c01-829a9c9b5407",
                                              "useTemplateDefault": false

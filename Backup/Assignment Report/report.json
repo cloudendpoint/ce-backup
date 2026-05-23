@@ -10,23 +10,6 @@
                          "type": "iosMobileAppConfiguration",
                          "intent": "Include"
                     }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_CE_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_CE_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_CE_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
                ]
           }
      },
@@ -39,23 +22,6 @@
                     {
                          "name": "POC_IOS_D_BYOD_MicrosoftOutlook",
                          "type": "iosMobileAppConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_NCSC_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_NCSC_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_BYOD_SBL_NCSC_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
                ]
@@ -427,13 +393,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_GoogleChrome",
-                         "type": "macOSCustomConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Compliance Policies": [
                     {
                          "name": "POC_MAC_D_CO_SBL_NCSC_OperatingSystem",
@@ -477,13 +436,6 @@
                     {
                          "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
                          "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Include"
                     }
                ],
@@ -544,13 +496,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Driver Updates": [
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
@@ -604,33 +549,6 @@
                     {
                          "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
                          "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Exclude"
                     }
                ],
@@ -724,33 +642,6 @@
                     {
                          "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
                          "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Exclude"
                     }
                ],
@@ -1247,28 +1138,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_NCSC_DataProtection",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_NCSC_DeviceManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_NCSC_Updates",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_NCSC_DeviceLock",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Compliance Policies": [
                     {
                          "name": "POC_AND_AE_D_CO_SBL_NCSC_Encryption",
@@ -1511,13 +1380,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Driver Updates": [
                     {
                          "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
@@ -1601,13 +1463,6 @@
                          "intent": "Exclude"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_SystemSecurity",
-                         "type": "macOSCustomConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Compliance Policies": [
                     {
                          "name": "POC_MAC_D_CO_SBL_CIS_SystemIntegrity",
@@ -1653,13 +1508,6 @@
                     {
                          "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
                          "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Include"
                     }
                ],
@@ -1856,13 +1704,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Driver Updates": [
                     {
                          "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
@@ -1893,13 +1734,6 @@
                     {
                          "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
                          "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Include"
                     }
                ],
@@ -1945,13 +1779,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Driver Updates": [
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
@@ -1987,13 +1814,6 @@
                          "type": "",
                          "intent": "Include"
                     }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "DEV_AND_AE_D_CO_DR_SBL_CIS_DeviceSecurity",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
                ]
           }
      },
@@ -2011,13 +1831,6 @@
                     {
                          "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
                          "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
-                         "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Include"
                     }
                ],
@@ -2214,33 +2027,6 @@
                          "intent": "Exclude"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    }
-               ],
                "Scripts": [
                     {
                          "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
@@ -2320,13 +2106,6 @@
                          "intent": "Include"
                     }
                ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Driver Updates": [
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
@@ -2391,28 +2170,6 @@
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_CE_DeviceLock",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_CE_DataProtection",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_CE_Updates",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_D_CO_SBL_CE_DeviceManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ],
                "Compliance Policies": [
                     {
                          "name": "POC_AND_AE_D_CO_SBL_CE_Password",

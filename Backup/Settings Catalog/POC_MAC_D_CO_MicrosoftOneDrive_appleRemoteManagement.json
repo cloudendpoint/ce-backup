@@ -410,17 +410,6 @@
                                                                                      "value": "com.apple.tcc.configuration-profile-policy_services_systempolicydesktopfolder_item_identifiertype_0",
                                                                                      "children": []
                                                                                 }
-                                                                           },
-                                                                           {
-                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicydesktopfolder_item_staticcode",
-                                                                                "settingInstanceTemplateReference": null,
-                                                                                "auditRuleInformation": null,
-                                                                                "choiceSettingValue": {
-                                                                                     "settingValueTemplateReference": null,
-                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_systempolicydesktopfolder_item_staticcode_false",
-                                                                                     "children": []
-                                                                                }
                                                                            }
                                                                       ]
                                                                  }
@@ -476,17 +465,6 @@
                                                                                 "choiceSettingValue": {
                                                                                      "settingValueTemplateReference": null,
                                                                                      "value": "com.apple.tcc.configuration-profile-policy_services_systempolicydocumentsfolder_item_identifiertype_0",
-                                                                                     "children": []
-                                                                                }
-                                                                           },
-                                                                           {
-                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicydocumentsfolder_item_staticcode",
-                                                                                "settingInstanceTemplateReference": null,
-                                                                                "auditRuleInformation": null,
-                                                                                "choiceSettingValue": {
-                                                                                     "settingValueTemplateReference": null,
-                                                                                     "value": "com.apple.tcc.configuration-profile-policy_services_systempolicydocumentsfolder_item_staticcode_false",
                                                                                      "children": []
                                                                                 }
                                                                            }

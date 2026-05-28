@@ -1,0 +1,101 @@
+{
+     "@odata.type": "#microsoft.graph.iosVpnConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "XXX_IOS_D_MicrosoftTunnel_Defender",
+     "connectionName": "Intune Blueprint VPN",
+     "connectionType": "microsoftTunnel",
+     "loginGroupOrDomain": null,
+     "role": null,
+     "realm": null,
+     "identifier": null,
+     "enableSplitTunneling": false,
+     "authenticationMethod": "usernameAndPassword",
+     "enablePerApp": null,
+     "safariDomains": [],
+     "providerType": null,
+     "associatedDomains": [],
+     "excludedDomains": [],
+     "disableOnDemandUserOverride": null,
+     "disconnectOnIdle": true,
+     "disconnectOnIdleTimerInSeconds": null,
+     "proxyServer": null,
+     "optInToDeviceIdSharing": null,
+     "userDomain": null,
+     "strictEnforcement": null,
+     "cloudName": null,
+     "excludeList": [],
+     "microsoftTunnelSiteId": "77cdf2db-7d2e-4119-b665-a609d471a018",
+     "server": {
+          "description": "MST_D_SiteConfig_IntuneBlueprint",
+          "address": "tunnel.intuneblueprint.com:8443",
+          "isDefaultServer": true
+     },
+     "customData": [
+          {
+               "key": "TunnelOnly",
+               "value": "False"
+          },
+          {
+               "key": "WebProtection",
+               "value": "True"
+          },
+          {
+               "key": "AutoOnboard",
+               "value": "True"
+          },
+          {
+               "key": "DefenderNetworkProtectionPrivacy",
+               "value": "True"
+          },
+          {
+               "key": "DisableSignOut",
+               "value": "True"
+          },
+          {
+               "key": "issupervised",
+               "value": "{{issupervised}}"
+          },
+          {
+               "key": "MSTunnelProtectMode",
+               "value": "1"
+          }
+     ],
+     "customKeyValueData": [
+          {
+               "name": "TunnelOnly",
+               "value": "False"
+          },
+          {
+               "name": "WebProtection",
+               "value": "True"
+          },
+          {
+               "name": "AutoOnboard",
+               "value": "True"
+          },
+          {
+               "name": "DefenderNetworkProtectionPrivacy",
+               "value": "True"
+          },
+          {
+               "name": "DisableSignOut",
+               "value": "True"
+          },
+          {
+               "name": "issupervised",
+               "value": "{{issupervised}}"
+          },
+          {
+               "name": "MSTunnelProtectMode",
+               "value": "1"
+          }
+     ],
+     "onDemandRules": [],
+     "targetedMobileApps": []
+}

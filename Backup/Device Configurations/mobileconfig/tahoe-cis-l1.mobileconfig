@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>2D51BB66-30FD-4C41-976E-C064A7C74505</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft Corporation</string>
+        <key>PayloadIdentifier</key>
+        <string>97F32753-1FC4-4598-8440-944A51D2BBE9</string>
+        <key>PayloadDisplayName</key>
+        <string>CIS Level 1 Settings for Tahoe</string>
+        <key>PayloadDescription</key>
+        <string>CIS Level 1 Settings that are not available in Intune natively</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>4C4F0A81-E8D1-49FC-86CB-B2D162DB34EC</string>
+                <key>PayloadType</key>
+                <string>com.apple.loginwindow</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.loginwindow.D23F7208-B3A6-457C-B145-84EAFE719938</string>
+                <key>PayloadDisplayName</key>
+                <string>Disable "Show Password Hints"</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>RetriesUntilHint</key>
+                <integer>0</integer>
+                <key>com.apple.login.mcx.DisableAutoLoginClient</key>
+                <true/>
+                <key>screenUnlockMode</key>
+                <integer>1</integer>
+            </dict>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>D34FB907-A924-4115-B2F4-CEF6777E7AEC</string>
+                <key>PayloadType</key>
+                <string>com.apple.Siri</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.Siri.D34FB907-A924-4115-B2F4-CEF6777E7AEC</string>
+                <key>PayloadDisplayName</key>
+                <string>Disable "Siri Listen for" setting</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>VoiceTriggerUserEnabled</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>6b5ed6aa-0ee5-4a21-9df5-2518af6d4267</string>
+                <key>PayloadType</key>
+                <string>com.apple.Accessibility</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.Accessibility.6b5ed6aa-0ee5-4a21-9df5-2518af6d4267</string>
+                <key>PayloadDisplayName</key>
+                <string>Disable "Ensure Improve Assistive Voice Features"</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>AXSAudioDonationSiriImprovementEnabled</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>9601e921-7bd8-4623-a4e9-ee73ca4b1181</string>
+                <key>PayloadType</key>
+                <string>com.apple.assistant.support</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.assistant.support.9601e921-7bd8-4623-a4e9-ee73ca4b1181</string>
+                <key>PayloadDisplayName</key>
+                <string>Disable "Help Apple Improve Search"</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>Search Queries Data Sharing Status</key>
+                <integer>2</integer>
+                <key>Siri Data Sharing Opt-In Status</key>
+                <integer>2</integer>
+            </dict>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>56c31e24-31c9-4db6-90ed-56ac7723dbc9</string>
+                <key>PayloadType</key>
+                <string>com.apple.Safari</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.Safari.56c31e24-31c9-4db6-90ed-56ac7723dbc9</string>
+                <key>PayloadDisplayName</key>
+                <string>Disable "Safari settings"</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>ShowFullURLInSmartSearchField</key>
+                <true/>
+                <key>ShowOverlayStatusBar</key>
+                <true/>
+                <key>WarnAboutFraudulentWebsites</key>
+                <true/>
+                <key>WebKitPreferences.privateClickMeasurementEnabled</key>
+                <true/>
+                <key>WebKitPreferences.storageBlockingPolicy</key>
+                <integer>1</integer>
+                <key>WebKitStorageBlockingPolicy</key>
+                <integer>1</integer>
+                <key>AutoOpenSafeDownloads</key>
+                <false/>
+                <key>BlockStoragePolicy</key>
+                <integer>2</integer>
+            </dict>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>ddd5899b-4869-4067-9ed9-ecf4882cc3a0</string>
+                <key>PayloadType</key>
+                <string>com.apple.Terminal</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft Corporation</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.Terminal.ddd5899b-4869-4067-9ed9-ecf4882cc3a0</string>
+                <key>PayloadDisplayName</key>
+                <string>Enable "Secure Keyboard Entry Terminal.app"</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>SecureKeyboardEntry</key>
+                <true/>
+            </dict>
+        </array>
+    </dict>
+</plist>

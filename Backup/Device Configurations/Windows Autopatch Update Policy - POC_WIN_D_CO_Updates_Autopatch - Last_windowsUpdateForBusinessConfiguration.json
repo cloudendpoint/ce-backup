@@ -1,0 +1,60 @@
+{
+     "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+     "deliveryOptimizationMode": "userDefined",
+     "prereleaseFeatures": "userDefined",
+     "automaticUpdateMode": "windowsDefault",
+     "microsoftUpdateServiceAllowed": false,
+     "driversExcluded": false,
+     "installationSchedule": null,
+     "qualityUpdatesDeferralPeriodInDays": 11,
+     "featureUpdatesDeferralPeriodInDays": 28,
+     "qualityUpdatesPaused": false,
+     "featureUpdatesPaused": false,
+     "qualityUpdatesPauseExpiryDateTime": "0001-01-01T00:00:00Z",
+     "featureUpdatesPauseExpiryDateTime": "0001-01-01T00:00:00Z",
+     "businessReadyUpdatesOnly": "userDefined",
+     "skipChecksBeforeRestart": false,
+     "updateWeeks": null,
+     "qualityUpdatesPauseStartDate": null,
+     "featureUpdatesPauseStartDate": null,
+     "featureUpdatesRollbackWindowInDays": null,
+     "qualityUpdatesWillBeRolledBack": null,
+     "featureUpdatesWillBeRolledBack": null,
+     "qualityUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+     "featureUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+     "engagedRestartDeadlineInDays": null,
+     "engagedRestartSnoozeScheduleInDays": null,
+     "engagedRestartTransitionScheduleInDays": null,
+     "deadlineForFeatureUpdatesInDays": 7,
+     "deadlineForQualityUpdatesInDays": 3,
+     "deadlineGracePeriodInDays": 2,
+     "postponeRebootUntilAfterDeadline": null,
+     "autoRestartNotificationDismissal": "notConfigured",
+     "scheduleRestartWarningInHours": null,
+     "scheduleImminentRestartWarningInMinutes": null,
+     "userPauseAccess": "notConfigured",
+     "userWindowsUpdateScanAccess": "notConfigured",
+     "updateNotificationLevel": "defaultNotifications",
+     "allowWindows11Upgrade": false,
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "POC_WIN_D_CO_Updates_Autopatch - Last",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

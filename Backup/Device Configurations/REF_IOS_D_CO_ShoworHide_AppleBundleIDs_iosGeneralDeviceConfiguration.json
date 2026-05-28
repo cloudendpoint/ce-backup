@@ -1,0 +1,529 @@
+{
+     "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Default list of AppleBundles IDs. Use this to allow for showing or hiding of specific apps.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/configuration/bundle-ids-built-in-ios-apps",
+     "displayName": "REF_IOS_D_CO_ShoworHide_AppleBundleIDs",
+     "accountBlockModification": false,
+     "activationLockAllowWhenSupervised": false,
+     "airDropBlocked": false,
+     "airDropForceUnmanagedDropTarget": false,
+     "airPlayForcePairingPasswordForOutgoingRequests": false,
+     "appleWatchBlockPairing": false,
+     "appleWatchForceWristDetection": false,
+     "appleNewsBlocked": false,
+     "appsVisibilityListType": "appsNotInListCompliant",
+     "appStoreBlockAutomaticDownloads": false,
+     "appStoreBlocked": false,
+     "appStoreBlockInAppPurchases": false,
+     "appStoreBlockUIAppInstallation": false,
+     "appStoreRequirePassword": false,
+     "autoFillForceAuthentication": false,
+     "bluetoothBlockModification": false,
+     "cameraBlocked": false,
+     "cellularBlockDataRoaming": false,
+     "cellularBlockGlobalBackgroundFetchWhileRoaming": false,
+     "cellularBlockPerAppDataModification": false,
+     "cellularBlockPersonalHotspot": false,
+     "cellularBlockPlanModification": false,
+     "cellularBlockVoiceRoaming": false,
+     "certificatesBlockUntrustedTlsCertificates": false,
+     "classroomAppBlockRemoteScreenObservation": false,
+     "classroomAppForceUnpromptedScreenObservation": false,
+     "classroomForceAutomaticallyJoinClasses": false,
+     "classroomForceUnpromptedAppAndDeviceLock": false,
+     "compliantAppListType": "none",
+     "configurationProfileBlockChanges": false,
+     "definitionLookupBlocked": false,
+     "deviceBlockEnableRestrictions": false,
+     "deviceBlockEraseContentAndSettings": false,
+     "deviceBlockNameModification": false,
+     "diagnosticDataBlockSubmission": false,
+     "diagnosticDataBlockSubmissionModification": false,
+     "documentsBlockManagedDocumentsInUnmanagedApps": false,
+     "documentsBlockUnmanagedDocumentsInManagedApps": false,
+     "emailInDomainSuffixes": [],
+     "enterpriseAppBlockTrust": false,
+     "enterpriseAppBlockTrustModification": false,
+     "esimBlockModification": false,
+     "faceTimeBlocked": false,
+     "findMyFriendsBlocked": false,
+     "gamingBlockGameCenterFriends": false,
+     "gamingBlockMultiplayer": false,
+     "gameCenterBlocked": false,
+     "hostPairingBlocked": false,
+     "iBooksStoreBlocked": false,
+     "iBooksStoreBlockErotica": false,
+     "iCloudBlockActivityContinuation": false,
+     "iCloudBlockBackup": false,
+     "iCloudBlockDocumentSync": false,
+     "iCloudBlockManagedAppsSync": false,
+     "iCloudBlockPhotoLibrary": false,
+     "iCloudBlockPhotoStreamSync": false,
+     "iCloudBlockSharedPhotoStream": false,
+     "iCloudRequireEncryptedBackup": false,
+     "iTunesBlockExplicitContent": false,
+     "iTunesBlockMusicService": false,
+     "iTunesBlockRadio": false,
+     "keyboardBlockAutoCorrect": false,
+     "keyboardBlockDictation": false,
+     "keyboardBlockPredictive": false,
+     "keyboardBlockShortcuts": false,
+     "keyboardBlockSpellCheck": false,
+     "kioskModeAllowAssistiveSpeak": false,
+     "kioskModeAllowAssistiveTouchSettings": false,
+     "kioskModeAllowAutoLock": false,
+     "kioskModeBlockAutoLock": false,
+     "kioskModeAllowColorInversionSettings": false,
+     "kioskModeAllowRingerSwitch": false,
+     "kioskModeBlockRingerSwitch": false,
+     "kioskModeAllowScreenRotation": false,
+     "kioskModeBlockScreenRotation": false,
+     "kioskModeAllowSleepButton": false,
+     "kioskModeBlockSleepButton": false,
+     "kioskModeAllowTouchscreen": false,
+     "kioskModeBlockTouchscreen": false,
+     "kioskModeEnableVoiceControl": false,
+     "kioskModeAllowVoiceControlModification": false,
+     "kioskModeAllowVoiceOverSettings": false,
+     "kioskModeAllowVolumeButtons": false,
+     "kioskModeBlockVolumeButtons": false,
+     "kioskModeAllowZoomSettings": false,
+     "kioskModeAppStoreUrl": null,
+     "kioskModeBuiltInAppId": null,
+     "kioskModeRequireAssistiveTouch": false,
+     "kioskModeRequireColorInversion": false,
+     "kioskModeRequireMonoAudio": false,
+     "kioskModeRequireVoiceOver": false,
+     "kioskModeRequireZoom": false,
+     "kioskModeManagedAppId": null,
+     "lockScreenBlockControlCenter": false,
+     "lockScreenBlockNotificationView": false,
+     "lockScreenBlockPassbook": false,
+     "lockScreenBlockTodayView": false,
+     "mediaContentRatingAustralia": null,
+     "mediaContentRatingCanada": null,
+     "mediaContentRatingFrance": null,
+     "mediaContentRatingGermany": null,
+     "mediaContentRatingIreland": null,
+     "mediaContentRatingJapan": null,
+     "mediaContentRatingNewZealand": null,
+     "mediaContentRatingUnitedKingdom": null,
+     "mediaContentRatingUnitedStates": null,
+     "mediaContentRatingApps": "allAllowed",
+     "messagesBlocked": false,
+     "notificationsBlockSettingsModification": false,
+     "passcodeBlockFingerprintUnlock": false,
+     "passcodeBlockFingerprintModification": false,
+     "passcodeBlockModification": false,
+     "passcodeBlockSimple": false,
+     "passcodeExpirationDays": null,
+     "passcodeMinimumLength": null,
+     "passcodeMinutesOfInactivityBeforeLock": null,
+     "passcodeMinutesOfInactivityBeforeScreenTimeout": null,
+     "passcodeMinimumCharacterSetCount": null,
+     "passcodePreviousPasscodeBlockCount": null,
+     "passcodeSignInFailureCountBeforeWipe": null,
+     "passcodeRequiredType": "deviceDefault",
+     "passcodeRequired": false,
+     "podcastsBlocked": false,
+     "proximityBlockSetupToNewDevice": false,
+     "safariBlockAutofill": false,
+     "safariBlockJavaScript": false,
+     "safariBlockPopups": false,
+     "safariBlocked": false,
+     "safariCookieSettings": "browserDefault",
+     "safariManagedDomains": [],
+     "safariPasswordAutoFillDomains": [],
+     "safariRequireFraudWarning": false,
+     "screenCaptureBlocked": false,
+     "siriBlocked": false,
+     "siriBlockedWhenLocked": false,
+     "siriBlockUserGeneratedContent": false,
+     "siriRequireProfanityFilter": false,
+     "softwareUpdatesEnforcedDelayInDays": null,
+     "softwareUpdatesForceDelayed": false,
+     "spotlightBlockInternetResults": false,
+     "voiceDialingBlocked": false,
+     "wallpaperBlockModification": false,
+     "wiFiConnectOnlyToConfiguredNetworks": false,
+     "classroomForceRequestPermissionToLeaveClasses": false,
+     "keychainBlockCloudSync": false,
+     "pkiBlockOTAUpdates": false,
+     "privacyForceLimitAdTracking": false,
+     "enterpriseBookBlockBackup": false,
+     "enterpriseBookBlockMetadataSync": false,
+     "airPrintBlocked": false,
+     "airPrintBlockCredentialsStorage": false,
+     "airPrintForceTrustedTLS": false,
+     "airPrintBlockiBeaconDiscovery": false,
+     "filesNetworkDriveAccessBlocked": false,
+     "filesUsbDriveAccessBlocked": false,
+     "wifiPowerOnForced": false,
+     "blockSystemAppRemoval": false,
+     "vpnBlockCreation": false,
+     "appRemovalBlocked": false,
+     "usbRestrictedModeBlocked": false,
+     "passwordBlockAutoFill": false,
+     "passwordBlockProximityRequests": false,
+     "passwordBlockAirDropSharing": false,
+     "dateAndTimeForceSetAutomatically": false,
+     "contactsAllowManagedToUnmanagedWrite": false,
+     "contactsAllowUnmanagedToManagedRead": false,
+     "cellularBlockPersonalHotspotModification": false,
+     "continuousPathKeyboardBlocked": false,
+     "findMyDeviceInFindMyAppBlocked": false,
+     "findMyFriendsInFindMyAppBlocked": false,
+     "iTunesBlocked": false,
+     "sharedDeviceBlockTemporarySessions": false,
+     "appClipsBlocked": false,
+     "applePersonalizedAdsBlocked": false,
+     "nfcBlocked": false,
+     "autoUnlockBlocked": false,
+     "unpairedExternalBootToRecoveryAllowed": false,
+     "onDeviceOnlyDictationForced": false,
+     "wiFiConnectToAllowedNetworksOnlyForced": false,
+     "onDeviceOnlyTranslationForced": false,
+     "managedPasteboardRequired": false,
+     "iCloudPrivateRelayBlocked": false,
+     "kioskModeAppType": "notConfigured",
+     "appsSingleAppModeList": [],
+     "appsVisibilityList": [
+          {
+               "name": "App Store",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.AppStore"
+          },
+          {
+               "name": "Apple Store",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.store.Jolly"
+          },
+          {
+               "name": "Calculator",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.calculator"
+          },
+          {
+               "name": "Calendar",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilecal"
+          },
+          {
+               "name": "Camera",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.camera"
+          },
+          {
+               "name": "Clips",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.clips"
+          },
+          {
+               "name": "Clock",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobiletimer"
+          },
+          {
+               "name": "Compass",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.compass"
+          },
+          {
+               "name": "Contacts",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.MobileAddressBook"
+          },
+          {
+               "name": "FaceTime",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.facetime"
+          },
+          {
+               "name": "Files",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.DocumentsApp"
+          },
+          {
+               "name": "Find Friends",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobileme.fmf1"
+          },
+          {
+               "name": "Find iPhone",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobileme.fmip1"
+          },
+          {
+               "name": "Find My",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.findmy"
+          },
+          {
+               "name": "Freeform",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.freeform"
+          },
+          {
+               "name": "Game Center",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.gamecenter"
+          },
+          {
+               "name": "GarageBand",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilegarageband"
+          },
+          {
+               "name": "Health",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Health"
+          },
+          {
+               "name": "Home",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Home"
+          },
+          {
+               "name": "iBooks",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.iBooks"
+          },
+          {
+               "name": "iMovie",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.iMovie"
+          },
+          {
+               "name": "iTunes Connect",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.itunesconnect.mobile"
+          },
+          {
+               "name": "iTunes Store",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.MobileStore"
+          },
+          {
+               "name": "iTunes U",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.itunesu"
+          },
+          {
+               "name": "Keynote",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Keynote"
+          },
+          {
+               "name": "Magnifier",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Magnifier"
+          },
+          {
+               "name": "Mail",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilemail"
+          },
+          {
+               "name": "Maps",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Maps"
+          },
+          {
+               "name": "Measure",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.measure"
+          },
+          {
+               "name": "Messages",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.MobileSMS"
+          },
+          {
+               "name": "Music",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Music"
+          },
+          {
+               "name": "News",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.news"
+          },
+          {
+               "name": "Notes",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilenotes"
+          },
+          {
+               "name": "Numbers",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Numbers"
+          },
+          {
+               "name": "Pages",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Pages"
+          },
+          {
+               "name": "Passwords",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Passwords"
+          },
+          {
+               "name": "Phone",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilephone"
+          },
+          {
+               "name": "Photo Booth",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Photo-Booth"
+          },
+          {
+               "name": "Photos",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobileslideshow"
+          },
+          {
+               "name": "Podcasts",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.podcasts"
+          },
+          {
+               "name": "QR Code Reader",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.barcodesupport.qrcode"
+          },
+          {
+               "name": "Reminders",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.reminders"
+          },
+          {
+               "name": "Safari",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.mobilesafari"
+          },
+          {
+               "name": "Settings",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Preferences"
+          },
+          {
+               "name": "Shortcuts",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.shortcuts"
+          },
+          {
+               "name": "Siri",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.SiriViewService"
+          },
+          {
+               "name": "Stocks",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.stocks"
+          },
+          {
+               "name": "Tips",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.tips"
+          },
+          {
+               "name": "Translate",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Translate"
+          },
+          {
+               "name": "TV",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.tv"
+          },
+          {
+               "name": "Videos",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.videos"
+          },
+          {
+               "name": "VoiceMemos",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.VoiceMemos"
+          },
+          {
+               "name": "Wallet",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Passbook"
+          },
+          {
+               "name": "Watch",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.Bridge"
+          },
+          {
+               "name": "Weather",
+               "publisher": "Apple",
+               "appStoreUrl": "",
+               "appId": "com.apple.weather"
+          }
+     ],
+     "compliantAppsList": [],
+     "networkUsageRules": []
+}

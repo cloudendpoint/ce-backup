@@ -1,0 +1,25 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Single App Kiosk using the Shell Launcher option to run a specific application.\n\nhttps://learn.microsoft.com/en-us/windows/configuration/shell-launcher/configure",
+     "displayName": "REF_WIN_D_COBO_Kiosk_SA_ShellLauncher",
+     "omaSettings": [
+          {
+               "@odata.type": "#microsoft.graph.omaSettingString",
+               "displayName": "ShellLauncher",
+               "description": "https://learn.microsoft.com/en-us/windows/configuration/shell-launcher/configuration-file",
+               "omaUri": "./Vendor/MSFT/AssignedAccess/ShellLauncher",
+               "isEncrypted": false,
+               "secretReferenceValueId": null,
+               "value": {
+                    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
+                    "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ShellLauncherConfiguration xmlns=\"http://schemas.microsoft.com/ShellLauncher/2018/Configuration\"\n    xmlns:V2=\"http://schemas.microsoft.com/ShellLauncher/2019/Configuration\">\n    <Profiles>\n        <DefaultProfile>\n            <Shell Shell=\"%SystemRoot%\\explorer.exe\"/>\n        </DefaultProfile>\n        <Profile Id=\"{f73fe306-cbbe-4cb7-80b4-2d6e75171508}\">\n            <Shell Shell=\"C:\\Program Files (x86)\\Configuration Manager Support Center\\CMOneTrace.exe\" V2:AppType=\"Desktop\" V2:AllAppsFullScreen=\"true\">\n                <ReturnCodeActions>\n                    <ReturnCodeAction ReturnCode=\"0\" Action=\"RestartShell\"/>\n                    <ReturnCodeAction ReturnCode=\"-1\" Action=\"RestartDevice\"/>\n                    <ReturnCodeAction ReturnCode=\"255\" Action=\"ShutdownDevice\"/>\n                </ReturnCodeActions>\n                <DefaultAction Action=\"RestartShell\"/>\n            </Shell>\n        </Profile>\n    </Profiles>\n    <Configs>\n        <Config>\n            <AutoLogonAccount/>\n            <Profile Id=\"{f73fe306-cbbe-4cb7-80b4-2d6e75171508}\"/>\n        </Config>\n    </Configs>\n</ShellLauncherConfiguration>"
+               }
+          }
+     ]
+}

@@ -1,0 +1,14 @@
+{
+     "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "POC_MAC_D_CO_MicrosoftOneDrive_KnownFolderMove",
+     "bundleId": "com.microsoft.OneDrive.FinderSync",
+     "fileName": "com.microsoft.OneDrive.FinderSync-KFM.plist",
+     "configurationXml": "PGtleT5LRk1TaWxlbnRPcHRJbjwva2V5Pg0KPHN0cmluZz40MzdlOGZmYi0zMDMwLTQ2OWEtOTlkYS1lNWI1Mjc5MDgwMTA8L3N0cmluZz4NCjxrZXk+S0ZNU2lsZW50T3B0SW5XaXRoTm90aWZpY2F0aW9uPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5PktGTUJsb2NrT3B0T3V0PC9rZXk+DQo8dHJ1ZS8+DQo8a2V5Pk9wZW5BdExvZ2luPC9rZXk+DQo8dHJ1ZS8+"
+}

@@ -1,0 +1,25 @@
+{
+     "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Controls which components are installed as part of the Office app install. Stops Defender being installed by default.",
+     "displayName": "POC_MAC_D_CO_MicrosoftOffice_InstallPreferences",
+     "bundleId": "com.microsoft.office",
+     "fileName": "com.microsoft.office-installpref.plist",
+     "configurationXml": "PGtleT5JbnN0YWxsRXhjZWw8L2tleT4NCjx0cnVlLz4NCjxrZXk+SW5zdGFsbE9uZURyaXZlPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5Pkluc3RhbGxPbmVOb3RlPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5Pkluc3RhbGxPdXRsb29rPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5Pkluc3RhbGxQb3dlclBvaW50PC9rZXk+DQo8dHJ1ZS8+DQo8a2V5Pkluc3RhbGxUZWFtczwva2V5Pg0KPHRydWUvPg0KPGtleT5JbnN0YWxsV29yZDwva2V5Pg0KPHRydWUvPg0KPGtleT5JbnN0YWxsRGVmZW5kZXI8L2tleT4NCjxmYWxzZS8+",
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

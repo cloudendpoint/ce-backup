@@ -85,6 +85,7 @@ Description: This is the default enrollment status screen configuration applied 
 |Block Device Setup Retry By User             |True                                                           |
 |Allow Device Reset On Install Failure        |False                                                          |
 |Allow Log Collection On Install Failure      |False                                                          |
+|Custom Error Message                         |<details><summary>Click to expand...</summary></details>       |
 |Install Progress Timeout In Minutes          |                                                             60|
 |Allow Device Use On Install Failure          |False                                                          |
 |Allow Non Blocking App Installation          |True                                                           |

@@ -144,5 +144,57 @@
                "name": "Default",
                "value": "skype;app-settings;calshow;itms;itmss;itms-apps;itms-appss;itms-services;"
           }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_MNGD_COPE",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CIS",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_MNGD_COPE",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_NCSC",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_MNGD_COPE",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_MNGD_COPE",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_MSZT",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_MNGD_COPE",
+                    "deviceAndAppManagementAssignmentFilterType": "include",
+                    "groupName": "TEST_SG_MDM_U_CE+",
+                    "groupType": "StaticMembership"
+               }
+          }
      ]
 }

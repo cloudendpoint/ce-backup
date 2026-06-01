@@ -81,6 +81,11 @@
                          "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
                          "type": "androidManagedAppProtection",
                          "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
                     }
                ],
                "Enrollment Configurations": [
@@ -135,6 +140,11 @@
                     {
                          "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
                          "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     },
                     {
@@ -239,6 +249,11 @@
                          "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
                          "type": "androidManagedAppProtection",
                          "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
                     }
                ],
                "Settings Catalog": [
@@ -274,6 +289,11 @@
                     {
                          "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
                          "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     }
                ],
@@ -409,6 +429,11 @@
                     {
                          "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
                          "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     }
                ],

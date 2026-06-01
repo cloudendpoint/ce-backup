@@ -29,7 +29,7 @@
      "securityBlockJailbrokenDevices": false,
      "osMinimumVersion": "14.0",
      "osMaximumVersion": null,
-     "minAndroidSecurityPatchLevel": "2026-05-01",
+     "minAndroidSecurityPatchLevel": "2026-06-01",
      "storageRequireEncryption": false,
      "securityRequireSafetyNetAttestationBasicIntegrity": false,
      "securityRequireSafetyNetAttestationCertifiedDevice": false,

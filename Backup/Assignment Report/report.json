@@ -2156,6 +2156,11 @@
                ],
                "Settings Catalog": [
                     {
+                         "name": "DEV_IOS_D_CO_SBL_MS_Level_3",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_IOS_D_CO_SBL_CIS_NetworkSecurity",
                          "type": "",
                          "intent": "Include"
@@ -2171,7 +2176,17 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "DEV_IOS_D_CO_SBL_MS_Level_1",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_IOS_D_CO_SBL_CIS_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "DEV_IOS_D_CO_SBL_MS_Level_2",
                          "type": "",
                          "intent": "Include"
                     },

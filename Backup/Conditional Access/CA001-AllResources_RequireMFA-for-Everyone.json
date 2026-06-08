@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA001_Global_BaseProtection_AllResources_AnyPlatform_MFA",
+     "displayName": "CA001-AllResources:RequireMFA-for-Everyone",
      "state": "enabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,

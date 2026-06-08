@@ -1,0 +1,65 @@
+{
+     "templateId": null,
+     "displayName": "CA200-DeviceRegistration:RequireMFA-for-Users",
+     "state": "disabled",
+     "deletedDateTime": null,
+     "partialEnablementStrategy": null,
+     "sessionControls": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "all"
+          ],
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "devices": null,
+          "clientApplications": null,
+          "agents": null,
+          "applications": {
+               "includeApplications": [],
+               "excludeApplications": [],
+               "includeUserActions": [
+                    "urn:user:registerdevice"
+               ],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "All"
+               ],
+               "excludeUsers": [
+                    "0773fc40-ec9e-4ae5-8a40-d16704721bf5"
+               ],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": {
+                    "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                    "externalTenants": {
+                         "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                         "membershipKind": "all"
+                    }
+               }
+          },
+          "platforms": {
+               "includePlatforms": [
+                    "all"
+               ],
+               "excludePlatforms": []
+          }
+     },
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "mfa"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
+     }
+}

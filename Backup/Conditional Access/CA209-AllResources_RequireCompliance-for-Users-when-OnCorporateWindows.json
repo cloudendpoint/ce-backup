@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA220_Internals_BaseProtection_AllResources_WindowsAll_Compliant",
+     "displayName": "CA209-AllResources:RequireCompliance-for-Users-when-OnCorporateWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -14,7 +14,6 @@
           "locations": null,
           "times": null,
           "deviceStates": null,
-          "devices": null,
           "clientApplications": null,
           "agents": null,
           "applications": {
@@ -45,6 +44,16 @@
                     "windows"
                ],
                "excludePlatforms": []
+          },
+          "devices": {
+               "includeDeviceStates": [],
+               "excludeDeviceStates": [],
+               "includeDevices": [],
+               "excludeDevices": [],
+               "deviceFilter": {
+                    "mode": "include",
+                    "rule": "device.deviceOwnership -eq \"Company\""
+               }
           }
      },
      "grantControls": {

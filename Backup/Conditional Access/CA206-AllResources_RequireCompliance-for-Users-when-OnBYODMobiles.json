@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA215_Internals_BaseProtection_AllResources_MobilesBYOD_Compliant",
+     "displayName": "CA206-AllResources:RequireCompliance-for-Users-when-OnBYODMobiles",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,

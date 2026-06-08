@@ -1,15 +1,15 @@
 {
      "templateId": null,
-     "displayName": "CA222_Internals_BaseProtection_AllResources_WindowsBYOD_Compliant",
+     "displayName": "CA212-O365/SPO:RequireAppEnforcedRestrictions-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
+     "grantControls": null,
      "partialEnablementStrategy": null,
-     "sessionControls": null,
      "conditions": {
           "userRiskLevels": [],
           "signInRiskLevels": [],
           "clientAppTypes": [
-               "all"
+               "browser"
           ],
           "locations": null,
           "times": null,
@@ -18,11 +18,10 @@
           "agents": null,
           "applications": {
                "includeApplications": [
-                    "All"
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "Office365"
                ],
-               "excludeApplications": [
-                    "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
-               ],
+               "excludeApplications": [],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
@@ -56,13 +55,16 @@
                }
           }
      },
-     "grantControls": {
-          "operator": "OR",
-          "builtInControls": [
-               "compliantDevice"
-          ],
-          "customAuthenticationFactors": [],
-          "termsOfUse": [],
-          "authenticationStrength": null
+     "sessionControls": {
+          "disableResilienceDefaults": null,
+          "cloudAppSecurity": null,
+          "signInFrequency": null,
+          "persistentBrowser": null,
+          "continuousAccessEvaluation": null,
+          "secureSignInSession": null,
+          "blockSensitiveActions": null,
+          "applicationEnforcedRestrictions": {
+               "isEnabled": true
+          }
      }
 }

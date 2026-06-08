@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA232_Internals_BaseProtection_AllResouces_macOSBYOD_Compliant",
+     "displayName": "CA217-AllResources:RequireCompliance-for-Users-when-OnmacOS",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -14,6 +14,7 @@
           "locations": null,
           "times": null,
           "deviceStates": null,
+          "devices": null,
           "clientApplications": null,
           "agents": null,
           "applications": {
@@ -42,16 +43,6 @@
                     "macOS"
                ],
                "excludePlatforms": []
-          },
-          "devices": {
-               "includeDeviceStates": [],
-               "excludeDeviceStates": [],
-               "includeDevices": [],
-               "excludeDevices": [],
-               "deviceFilter": {
-                    "mode": "include",
-                    "rule": "device.deviceOwnership -ne \"Company\""
-               }
           }
      },
      "grantControls": {

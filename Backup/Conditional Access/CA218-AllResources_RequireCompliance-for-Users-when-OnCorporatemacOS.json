@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA201_Internals_BaseProtection_DeviceRegistrationJoin_MFA",
+     "displayName": "CA218-AllResources:RequireCompliance-for-Users-when-OnCorporatemacOS",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -14,49 +14,50 @@
           "locations": null,
           "times": null,
           "deviceStates": null,
-          "devices": null,
           "clientApplications": null,
           "agents": null,
           "applications": {
-               "includeApplications": [],
-               "excludeApplications": [],
-               "includeUserActions": [
-                    "urn:user:registerdevice"
+               "includeApplications": [
+                    "All"
                ],
+               "excludeApplications": [],
+               "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },
           "users": {
                "includeUsers": [
-                    "All"
+                    "None"
                ],
-               "excludeUsers": [
-                    "0773fc40-ec9e-4ae5-8a40-d16704721bf5"
-               ],
+               "excludeUsers": [],
                "includeGroups": [],
                "excludeGroups": [],
                "includeRoles": [],
                "excludeRoles": [],
                "includeGuestsOrExternalUsers": null,
-               "excludeGuestsOrExternalUsers": {
-                    "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
-                    "externalTenants": {
-                         "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
-                         "membershipKind": "all"
-                    }
-               }
+               "excludeGuestsOrExternalUsers": null
           },
           "platforms": {
                "includePlatforms": [
-                    "all"
+                    "macOS"
                ],
                "excludePlatforms": []
+          },
+          "devices": {
+               "includeDeviceStates": [],
+               "excludeDeviceStates": [],
+               "includeDevices": [],
+               "excludeDevices": [],
+               "deviceFilter": {
+                    "mode": "include",
+                    "rule": "device.deviceOwnership -eq \"Company\""
+               }
           }
      },
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "mfa"
+               "compliantDevice"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

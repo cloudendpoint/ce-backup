@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA223A_Internals_BaseProtection_AllResources_WindowsBYOD_Block",
+     "displayName": "CA210-AllResources:RequireCompliance-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -59,7 +59,7 @@
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "block"
+               "compliantDevice"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA231_Internals_BaseProtection_AllResouces_macOSCOPE_Compliant",
+     "displayName": "CA216-O365/SPO:RequireAppProtection-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -9,7 +9,8 @@
           "userRiskLevels": [],
           "signInRiskLevels": [],
           "clientAppTypes": [
-               "all"
+               "exchangeActiveSync",
+               "browser"
           ],
           "locations": null,
           "times": null,
@@ -18,7 +19,8 @@
           "agents": null,
           "applications": {
                "includeApplications": [
-                    "All"
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "Office365"
                ],
                "excludeApplications": [],
                "includeUserActions": [],
@@ -39,7 +41,7 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "macOS"
+                    "windows"
                ],
                "excludePlatforms": []
           },
@@ -50,14 +52,14 @@
                "excludeDevices": [],
                "deviceFilter": {
                     "mode": "include",
-                    "rule": "device.deviceOwnership -eq \"Company\""
+                    "rule": "device.deviceOwnership -ne \"Company\""
                }
           }
      },
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "compliantDevice"
+               "compliantApplication"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

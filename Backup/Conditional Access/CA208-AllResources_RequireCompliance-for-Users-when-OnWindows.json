@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA230_Internals_BaseProtection_AllResouces_macOSAll_Compliant",
+     "displayName": "CA208-AllResources:RequireCompliance-for-Users-when-OnWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -21,7 +21,9 @@
                "includeApplications": [
                     "All"
                ],
-               "excludeApplications": [],
+               "excludeApplications": [
+                    "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
+               ],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
@@ -40,7 +42,7 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "macOS"
+                    "windows"
                ],
                "excludePlatforms": []
           }

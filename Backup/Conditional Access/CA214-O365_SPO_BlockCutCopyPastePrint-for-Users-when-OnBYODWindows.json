@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA237_Internals_DataProtection_Office365_macOSBYOD_AppControlBlockDesktopApps",
+     "displayName": "CA214-O365/SPO:BlockCutCopyPastePrint-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "grantControls": null,
@@ -9,7 +9,7 @@
           "userRiskLevels": [],
           "signInRiskLevels": [],
           "clientAppTypes": [
-               "mobileAppsAndDesktopClients"
+               "browser"
           ],
           "locations": null,
           "times": null,
@@ -28,7 +28,7 @@
           },
           "users": {
                "includeUsers": [
-                    "None"
+                    "18588c3d-7417-456a-9dbf-f8a4777c91b8"
                ],
                "excludeUsers": [],
                "includeGroups": [],
@@ -40,7 +40,7 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "macOS"
+                    "windows"
                ],
                "excludePlatforms": []
           },

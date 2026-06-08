@@ -1,15 +1,15 @@
 {
      "templateId": null,
-     "displayName": "CA212_Internals_DataProtection_AllResources_MobilesBYOD_AppProtection",
+     "displayName": "CA215-O365/SPO:BlockDesktopApps-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
+     "grantControls": null,
      "partialEnablementStrategy": null,
-     "sessionControls": null,
      "conditions": {
           "userRiskLevels": [],
           "signInRiskLevels": [],
           "clientAppTypes": [
-               "all"
+               "mobileAppsAndDesktopClients"
           ],
           "locations": null,
           "times": null,
@@ -18,18 +18,17 @@
           "agents": null,
           "applications": {
                "includeApplications": [
-                    "All"
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "Office365"
                ],
-               "excludeApplications": [
-                    "fc780465-2017-40d4-a0c5-307022471b92"
-               ],
+               "excludeApplications": [],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },
           "users": {
                "includeUsers": [
-                    "None"
+                    "18588c3d-7417-456a-9dbf-f8a4777c91b8"
                ],
                "excludeUsers": [],
                "includeGroups": [],
@@ -41,8 +40,7 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "android",
-                    "iOS"
+                    "windows"
                ],
                "excludePlatforms": []
           },
@@ -57,13 +55,17 @@
                }
           }
      },
-     "grantControls": {
-          "operator": "OR",
-          "builtInControls": [
-               "compliantApplication"
-          ],
-          "customAuthenticationFactors": [],
-          "termsOfUse": [],
-          "authenticationStrength": null
+     "sessionControls": {
+          "disableResilienceDefaults": null,
+          "applicationEnforcedRestrictions": null,
+          "signInFrequency": null,
+          "persistentBrowser": null,
+          "continuousAccessEvaluation": null,
+          "secureSignInSession": null,
+          "blockSensitiveActions": null,
+          "cloudAppSecurity": {
+               "cloudAppSecurityType": "mcasConfigured",
+               "isEnabled": true
+          }
      }
 }

@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA228_Internals_DataProtection_Office365_WindowsBYOD_AppProtection",
+     "displayName": "CA211A-AllResources:Block-for-Users-when-OnBYODWindows",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -9,8 +9,7 @@
           "userRiskLevels": [],
           "signInRiskLevels": [],
           "clientAppTypes": [
-               "exchangeActiveSync",
-               "browser"
+               "all"
           ],
           "locations": null,
           "times": null,
@@ -19,9 +18,11 @@
           "agents": null,
           "applications": {
                "includeApplications": [
-                    "Office365"
+                    "All"
                ],
-               "excludeApplications": [],
+               "excludeApplications": [
+                    "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
+               ],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
@@ -58,7 +59,7 @@
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "compliantApplication"
+               "block"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA223B_Internals_BaseProtection_AllResources_WindowsBYOD_Block",
+     "displayName": "CA204-AllResources:RequireCompliance-for-Users-when-OnMobiles",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -14,11 +14,12 @@
           "locations": null,
           "times": null,
           "deviceStates": null,
+          "devices": null,
           "clientApplications": null,
           "agents": null,
           "applications": {
                "includeApplications": [
-                    "None"
+                    "All"
                ],
                "excludeApplications": [],
                "includeUserActions": [],
@@ -39,25 +40,16 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "windows"
+                    "android",
+                    "iOS"
                ],
                "excludePlatforms": []
-          },
-          "devices": {
-               "includeDeviceStates": [],
-               "excludeDeviceStates": [],
-               "includeDevices": [],
-               "excludeDevices": [],
-               "deviceFilter": {
-                    "mode": "exclude",
-                    "rule": "device.deviceOwnership -eq \"Company\" -or device.trustType -eq \"ServerAD\""
-               }
           }
      },
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "block"
+               "compliantDevice"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA234_Internals_DataProtection_Office365_macOSBYOD_AppEnforcedRestrictions",
+     "displayName": "CA222-O365/SPO:BlockDownloads-for-Users-when-OnBYODmacOS",
      "state": "disabled",
      "deletedDateTime": null,
      "grantControls": null,
@@ -40,7 +40,7 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "macOS"
+                    "windows"
                ],
                "excludePlatforms": []
           },
@@ -57,13 +57,14 @@
      },
      "sessionControls": {
           "disableResilienceDefaults": null,
-          "cloudAppSecurity": null,
+          "applicationEnforcedRestrictions": null,
           "signInFrequency": null,
           "persistentBrowser": null,
           "continuousAccessEvaluation": null,
           "secureSignInSession": null,
           "blockSensitiveActions": null,
-          "applicationEnforcedRestrictions": {
+          "cloudAppSecurity": {
+               "cloudAppSecurityType": "blockDownloads",
                "isEnabled": true
           }
      }

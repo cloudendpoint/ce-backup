@@ -1,6 +1,6 @@
 {
      "templateId": null,
-     "displayName": "CA233_Internals_BaseProtection_AllResources_macOSBYOD_Block",
+     "displayName": "CA201-AllResources:RequireAppProtection-for-Users-when-OnMobiles",
      "state": "disabled",
      "deletedDateTime": null,
      "partialEnablementStrategy": null,
@@ -14,6 +14,7 @@
           "locations": null,
           "times": null,
           "deviceStates": null,
+          "devices": null,
           "clientApplications": null,
           "agents": null,
           "applications": {
@@ -21,8 +22,7 @@
                     "All"
                ],
                "excludeApplications": [
-                    "0000000a-0000-0000-c000-000000000000",
-                    "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+                    "fc780465-2017-40d4-a0c5-307022471b92"
                ],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],
@@ -42,25 +42,16 @@
           },
           "platforms": {
                "includePlatforms": [
-                    "macOS"
+                    "android",
+                    "iOS"
                ],
                "excludePlatforms": []
-          },
-          "devices": {
-               "includeDeviceStates": [],
-               "excludeDeviceStates": [],
-               "includeDevices": [],
-               "excludeDevices": [],
-               "deviceFilter": {
-                    "mode": "include",
-                    "rule": "device.deviceOwnership -ne \"Company\""
-               }
           }
      },
      "grantControls": {
           "operator": "OR",
           "builtInControls": [
-               "block"
+               "compliantApplication"
           ],
           "customAuthenticationFactors": [],
           "termsOfUse": [],

@@ -15,7 +15,7 @@
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "TEST_SG_MDM_D_WIN_CIS_COPE",
+                    "groupName": "TEST_SG_MDM_D_WIN_CIS_MS_COPE",
                     "groupType": "StaticMembership"
                }
           }

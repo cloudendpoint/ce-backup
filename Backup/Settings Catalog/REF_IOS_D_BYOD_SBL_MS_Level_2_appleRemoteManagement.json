@@ -1,0 +1,118 @@
+{
+     "creationSource": null,
+     "description": "https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-enhanced-security-level-2",
+     "name": "REF_IOS_D_BYOD_SBL_MS_Level_2",
+     "platforms": "iOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "sirisettings_sirisettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "sirisettings_enabled",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "sirisettings_enabled_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.applicationaccess_com.apple.applicationaccess",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowdiagnosticsubmission",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowdiagnosticsubmission_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowenterprisebookbackup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowenterprisebookbackup_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowenterprisebookmetadatasync",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowenterprisebookmetadatasync_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowopenfrommanagedtounmanaged",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowopenfrommanagedtounmanaged_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ]
+}

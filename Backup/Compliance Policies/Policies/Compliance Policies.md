@@ -1545,9 +1545,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_CIS_Antivirus
 #### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_COPE|none       |           |
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1583,9 +1583,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_CIS_Encryption
 #### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_COPE|none       |           |
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1621,9 +1621,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_CIS_Firewall
 #### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_COPE|none       |           |
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1659,9 +1659,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_CIS_OperatingSystem
 #### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_COPE|none       |           |
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                                                                                   value                                                                                                                                                                                   |
@@ -1698,9 +1698,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_NCSC_Antivirus
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1736,9 +1736,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_NCSC_DeviceHealth
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                      value                                                                                                                       |
@@ -1774,9 +1774,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_NCSC_Encryption
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1812,9 +1812,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_NCSC_Firewall
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                     value                                                                                                                      |
@@ -1850,9 +1850,9 @@ Description: Will force the change to the local user accounts on macOS devices\.
 
 ### POC_WIN_D_CO_SBL_NCSC_OperatingSystem
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                      value                                                                                                                       |

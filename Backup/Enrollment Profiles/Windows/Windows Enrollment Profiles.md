@@ -156,9 +156,9 @@ Description: Used for Blueprint testing of Cyber Essentials baselines\.
 ### WIN_D_COPE_ENT_CIS
 Description: Used for Blueprint testing of Center for Internet Security baselines\.
 #### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_COPE|none       |           |
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
 
 #### Configuration
 |            setting             |                                                                                                value                                                                                                 |
@@ -204,9 +204,9 @@ Description: Used for Blueprint testing of Microsoft Zero Trust baselines\.
 ### WIN_D_COPE_ENT_NCSC
 Description: Used for Blueprint testing of National Cyber Security Centre baselines\.
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_NCSC_COPE|none       |           |
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
 
 #### Configuration
 |            setting             |                                                                                                value                                                                                                 |

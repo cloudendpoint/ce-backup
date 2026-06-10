@@ -1,0 +1,812 @@
+{
+     "creationSource": null,
+     "description": "https://www.cisecurity.org/benchmark/apple_ios\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-basic-security-level-1\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-enhanced-security-level-2",
+     "name": "UAT_IOS_D_CO_SBL_CIS_MS_DataProtection",
+     "platforms": "iOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 5,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "externalintelligencesettings_externalintelligencesettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "externalintelligencesettings_allowsignin",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "externalintelligencesettings_allowsignin_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "externalintelligencesettings_enabled",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "externalintelligencesettings_enabled_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "intelligencesettings_intelligencesettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "intelligencesettings_allowwritingtools",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "intelligencesettings_allowwritingtools_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "intelligencesettings_apps",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "intelligencesettings_apps_mail",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "intelligencesettings_apps_mail_allowsummary",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "intelligencesettings_apps_mail_allowsummary_false",
+                                                                                     "children": []
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       },
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "intelligencesettings_apps_notes",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "intelligencesettings_apps_notes_allowtranscription",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "intelligencesettings_apps_notes_allowtranscription_false",
+                                                                                     "children": []
+                                                                                }
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                "settingDefinitionId": "intelligencesettings_apps_notes_allowtranscriptionsummary",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "choiceSettingValue": {
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "intelligencesettings_apps_notes_allowtranscriptionsummary_false",
+                                                                                     "children": []
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "intelligencesettings_forceondeviceonlydictation",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "intelligencesettings_forceondeviceonlydictation_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "intelligencesettings_forceondeviceonlytranslation",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "intelligencesettings_forceondeviceonlytranslation_true",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "keyboardsettings_keyboardsettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "keyboardsettings_allowautocorrection",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "keyboardsettings_allowautocorrection_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "keyboardsettings_allowdefinitionlookup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "keyboardsettings_allowdefinitionlookup_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "keyboardsettings_allowdictation",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "keyboardsettings_allowdictation_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "keyboardsettings_allowpredictivetext",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "keyboardsettings_allowpredictivetext_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "keyboardsettings_allowspellcheck",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "keyboardsettings_allowspellcheck_true",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "sirisettings_sirisettings",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "sirisettings_allowwhilelocked",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "sirisettings_allowwhilelocked_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.applicationaccess_com.apple.applicationaccess",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowactivitycontinuation",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowactivitycontinuation_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowairdrop",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowairdrop_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowapplepersonalizedadvertising",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowapplepersonalizedadvertising_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowassistant",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowassistant_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowassistantwhilelocked",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowassistantwhilelocked_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowautocorrection",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowautocorrection_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowcamera",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowcamera_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowcloudbackup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowcloudbackup_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowclouddocumentsync",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowclouddocumentsync_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowcloudkeychainsync",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowcloudkeychainsync_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowcloudphotolibrary",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowcloudphotolibrary_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowdefinitionlookup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowdefinitionlookup_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowdiagnosticsubmission",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowdiagnosticsubmission_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowdiagnosticsubmissionmodification",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowdiagnosticsubmissionmodification_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowdictation",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowdictation_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowenterpriseapptrust",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowenterpriseapptrust_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowenterprisebookbackup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowenterprisebookbackup_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowenterprisebookmetadatasync",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowenterprisebookmetadatasync_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowerasecontentandsettings",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowerasecontentandsettings_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowexplicitcontent",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowexplicitcontent_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowexternalintelligenceintegrations",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowexternalintelligenceintegrations_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowexternalintelligenceintegrationssignin",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowexternalintelligenceintegrationssignin_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowfilesusbdriveaccess",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowfilesusbdriveaccess_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowlockscreencontrolcenter",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowlockscreencontrolcenter_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowlockscreennotificationsview",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowlockscreennotificationsview_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowlockscreentodayview",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowlockscreentodayview_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowmailsummary",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowmailsummary_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowmanagedappscloudsync",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowmanagedappscloudsync_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allownotestranscription",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allownotestranscription_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowopenfrommanagedtounmanaged",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowopenfrommanagedtounmanaged_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowopenfromunmanagedtomanaged",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowopenfromunmanagedtomanaged_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowpairedwatch",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowpairedwatch_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowphotostream",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowphotostream_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowpredictivekeyboard",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowpredictivekeyboard_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowscreenshot",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowscreenshot_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowsharedstream",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowsharedstream_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowspellcheck",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowspellcheck_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowspotlightinternetresults",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowspotlightinternetresults_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowvoicedialing",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowvoicedialing_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_allowwritingtools",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_allowwritingtools_false",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_forceairdropunmanaged",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_forceairdropunmanaged_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_forceauthenticationbeforeautofill",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_forceauthenticationbeforeautofill_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_forceencryptedbackup",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_forceencryptedbackup_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_requiremanagedpasteboard",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_requiremanagedpasteboard_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.applicationaccess_safariallowautofill",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.applicationaccess_safariallowautofill_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
+                    "groupType": "DynamicMembership",
+                    "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CIS_MS\")"
+               }
+          }
+     ]
+}

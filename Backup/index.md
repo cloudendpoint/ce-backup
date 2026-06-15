@@ -4,7 +4,7 @@ Intune backup and documentation generated at cloudendpoint/ce-backup <img align=
 
 **Tenant:** intuneblueprint.com 
 
-**Document updated on:** 11/06/2026 17:59:38 
+**Document updated on:** 15/06/2026 20:00:48 
 
 ## File index 
 

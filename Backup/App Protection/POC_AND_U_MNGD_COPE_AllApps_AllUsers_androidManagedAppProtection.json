@@ -43,7 +43,6 @@
      "appActionIfMaximumPinRetriesExceeded": "block",
      "pinRequiredInsteadOfBiometricTimeout": "PT30M",
      "allowedOutboundClipboardSharingExceptionLength": 0,
-     "purviewContentEvaluationRequired": "notRequired",
      "notificationRestriction": "blockOrganizationalData",
      "previousPinBlockCount": 0,
      "managedBrowser": "microsoftEdge",

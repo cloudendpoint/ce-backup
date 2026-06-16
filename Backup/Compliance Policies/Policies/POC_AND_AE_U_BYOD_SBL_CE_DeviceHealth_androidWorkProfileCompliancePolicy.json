@@ -20,7 +20,7 @@
      "workProfilePasswordRequiredType": "deviceDefault",
      "workProfileRequiredPasswordComplexity": "none",
      "workProfileRequirePassword": false,
-     "securityPreventInstallAppsFromUnknownSources": false,
+     "securityPreventInstallAppsFromUnknownSources": true,
      "securityDisableUsbDebugging": false,
      "securityRequireVerifyApps": false,
      "deviceThreatProtectionEnabled": false,

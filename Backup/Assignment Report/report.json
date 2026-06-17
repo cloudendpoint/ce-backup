@@ -1392,35 +1392,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_MAC_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_Password",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_WIN_ACFB_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2097,6 +2068,35 @@
           }
      },
      {
+          "groupName": "TEST_SG_MDM_D_MAC_CE_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "POC_MAC_D_BYOD_SBL_CE_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_BYOD_SBL_CE_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_BYOD_SBL_CE_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_BYOD_SBL_CE_DeviceManagement",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CIS_MS\")",
@@ -2193,7 +2193,12 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_CE_Password",
+                         "name": "POC_MAC_D_CO_SBL_CE_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_MicrosoftEdge",
                          "type": "",
                          "intent": "Include"
                     },

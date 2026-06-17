@@ -1106,11 +1106,12 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Feature Updates In Days    |                                                                                                                                                        10|
 |Deadline For Quality Updates In Days    |                                                                                                                                                        10|
 |Deadline Grace Period In Days           |                                                                                                                                                         4|
-|Postpone Reboot Until After Deadline    |True                                                                                                                                                      |
+|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
 |Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |enabled                                                                                                                                                   |
+|User Pause Access                       |disabled                                                                                                                                                  |
 |User Windows Update Scan Access         |enabled                                                                                                                                                   |
 |Update Notification Level               |defaultNotifications                                                                                                                                      |
 |Allow Windows11 Upgrade                 |False                                                                                                                                                     |

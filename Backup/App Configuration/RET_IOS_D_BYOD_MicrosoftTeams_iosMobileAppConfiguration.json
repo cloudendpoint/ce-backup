@@ -1,0 +1,20 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Starting with Intune's September (2409) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word. Intune will continue to expand this list to include additional managed apps.\n\nhttps://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types",
+     "displayName": "RET_IOS_D_BYOD_MicrosoftTeams",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "IntuneMAMUPN",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{userprincipalname}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Microsoft Teams",
+          "type": "#microsoft.graph.iosStoreApp"
+     }
+}

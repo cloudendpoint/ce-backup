@@ -770,13 +770,6 @@
                          "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
-               ],
-               "App Configuration": [
-                    {
-                         "name": "POC_IOS_D_BYOD_MicrosoftOutlook",
-                         "type": "iosMobileAppConfiguration",
-                         "intent": "Include"
-                    }
                ]
           }
      },
@@ -799,13 +792,6 @@
                     {
                          "name": "POC_AND_AE_D_BYOD_SBL_NCSC_DataProtection",
                          "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "App Configuration": [
-                    {
-                         "name": "POC_IOS_D_BYOD_MicrosoftOutlook",
-                         "type": "iosMobileAppConfiguration",
                          "intent": "Include"
                     }
                ]
@@ -948,17 +934,17 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_AND_AE_D_CO_SBL_CE_OperatingSystem_15",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_AND_AE_D_CO_SBL_CE_Password",
                          "type": "androidDeviceOwnerCompliancePolicy",
                          "intent": "Include"
                     },
                     {
                          "name": "POC_AND_AE_D_CO_SBL_CE_DeviceHealth",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_AE_D_CO_SBL_CE_OperatingSystem_17",
                          "type": "androidDeviceOwnerCompliancePolicy",
                          "intent": "Include"
                     },

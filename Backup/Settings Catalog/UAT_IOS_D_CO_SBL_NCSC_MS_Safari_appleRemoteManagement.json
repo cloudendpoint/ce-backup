@@ -1,6 +1,6 @@
 {
      "creationSource": null,
-     "description": "\nhttps://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/ios\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-basic-security-level-1\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-enhanced-security-level-2",
+     "description": "\nhttps://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/ios\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-basic-security-level-1\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal#personal-enhanced-security-level-2\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-supervised#supervised-high-security-level-3",
      "name": "UAT_IOS_D_CO_SBL_NCSC_MS_Safari",
      "platforms": "iOS",
      "priorityMetaData": null,

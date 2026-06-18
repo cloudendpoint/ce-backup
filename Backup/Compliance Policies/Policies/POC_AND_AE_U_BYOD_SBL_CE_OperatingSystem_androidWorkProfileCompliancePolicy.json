@@ -27,7 +27,7 @@
      "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
      "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
      "securityBlockJailbrokenDevices": false,
-     "osMinimumVersion": "14.0",
+     "osMinimumVersion": "15.0",
      "osMaximumVersion": null,
      "minAndroidSecurityPatchLevel": "2026-06-01",
      "storageRequireEncryption": false,

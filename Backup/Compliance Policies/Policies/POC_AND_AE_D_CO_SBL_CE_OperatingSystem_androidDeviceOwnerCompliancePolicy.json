@@ -11,7 +11,7 @@
      "securityBlockJailbrokenDevices": false,
      "securityRequireSafetyNetAttestationBasicIntegrity": null,
      "securityRequireSafetyNetAttestationCertifiedDevice": null,
-     "osMinimumVersion": "14.0",
+     "osMinimumVersion": "15.0",
      "osMaximumVersion": null,
      "minAndroidSecurityPatchLevel": "2026-06-01",
      "passwordRequired": null,

@@ -20,14 +20,7 @@
      "assignments": [
           {
                "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD",
-                    "deviceAndAppManagementAssignmentFilterType": "include"
-               }
-          },
-          {
-               "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include"
                }

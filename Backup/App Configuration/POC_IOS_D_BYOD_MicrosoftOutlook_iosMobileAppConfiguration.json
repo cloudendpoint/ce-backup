@@ -31,11 +31,6 @@
                "appConfigKey": "IntuneMAMAllowedAccountsOnly",
                "appConfigKeyType": "stringType",
                "appConfigKeyValue": "Disabled"
-          },
-          {
-               "appConfigKey": "IntuneMAMUPN",
-               "appConfigKeyType": "stringType",
-               "appConfigKeyValue": "{{userprincipalname}}"
           }
      ],
      "targetedMobileApps": {
@@ -45,20 +40,9 @@
      "assignments": [
           {
                "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
-                    "groupType": "StaticMembership"
-               }
-          },
-          {
-               "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "TEST_SG_MDM_D_AND_NCSC_BYOD",
-                    "groupType": "StaticMembership"
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "IOS_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
                }
           }
      ]

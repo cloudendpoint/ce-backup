@@ -564,10 +564,9 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 
 ### POC_IOS_D_BYOD_Microsoft365Office
 #### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
 |      setting       |                                                            value                                                             |
@@ -580,10 +579,9 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 
 ### POC_IOS_D_BYOD_MicrosoftCopilot
 #### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
 |      setting       |                                                            value                                                             |
@@ -596,10 +594,9 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 
 ### POC_IOS_D_BYOD_MicrosoftEdge
 #### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
 |      setting       |                                                            value                                                             |
@@ -610,28 +607,11 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
 |Targeted Mobile Apps|**appName:** Microsoft Edge: Web Browser<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                      |
 
-### POC_IOS_D_BYOD_MicrosoftExcel
-#### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
-
-#### Configuration
-|      setting       |                                                            value                                                             |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                    |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                  |
-|Display Name        |POC_IOS_D_BYOD_MicrosoftExcel                                                                                                 |
-|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Excel<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                  |
-
 ### POC_IOS_D_BYOD_MicrosoftOneDrive
 #### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
 |      setting       |                                                            value                                                             |
@@ -644,10 +624,9 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 
 ### POC_IOS_D_BYOD_MicrosoftOneNote
 #### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
 |      setting       |                                                            value                                                             |
@@ -660,67 +639,18 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 
 ### POC_IOS_D_BYOD_MicrosoftOutlook
 #### Assignments
-|intent |          target           |filter type|filter name|
-|-------|---------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_CE_BYOD  |none       |           |
-|Include|TEST_SG_MDM_D_AND_NCSC_BYOD|none       |           |
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |IOS_BYOD   |
 
 #### Configuration
-|      setting       |                                                                                                                                                                                                                                                                                                                                                                                                                                         value                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|Display Name        |POC_IOS_D_BYOD_MicrosoftOutlook                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|Settings            |**appConfigKey:** com.microsoft.outlook.EmailProfile.AccountType<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** ModernAuth<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailAddress<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{mail}}<br/><br/>**appConfigKey:** com.microsoft.outlook.Contacts.LocalSyncEnabled<br/>**appConfigKeyType:** booleanType<br/>**appConfigKeyValue:** false<br/><br/>**appConfigKey:** IntuneMAMAllowedAccountsOnly<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** Disabled<br/><br/>**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Outlook<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-
-### POC_IOS_D_BYOD_MicrosoftPowerpoint
-#### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_BYOD_MicrosoftPowerpoint                                                                                             |
-|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:**  {{userprincipalname}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft PowerPoint<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                              |
-
-### POC_IOS_D_BYOD_MicrosoftTeams
-#### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
-
-#### Configuration
-|      setting       |                                                            value                                                             |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                    |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                  |
-|Display Name        |POC_IOS_D_BYOD_MicrosoftTeams                                                                                                 |
-|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Teams<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                  |
-
-### POC_IOS_D_BYOD_MicrosoftWord
-#### Assignments
-|intent |target|filter type|filter name|
-|-------|------|-----------|-----------|
-|Include|      |include    |IOS_BYOD   |
-|Include|      |include    |IOS_BYOD   |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_BYOD_MicrosoftWord                                                                                                   |
-|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:**  {{userprincipalname}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Word<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                    |
+|      setting       |                                                                                                                                                                                                                                                                                                                                                                          value                                                                                                                                                                                                                                                                                                                                                                          |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|Display Name        |POC_IOS_D_BYOD_MicrosoftOutlook                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|Settings            |**appConfigKey:** com.microsoft.outlook.EmailProfile.AccountType<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** ModernAuth<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailAddress<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{mail}}<br/><br/>**appConfigKey:** com.microsoft.outlook.Contacts.LocalSyncEnabled<br/>**appConfigKeyType:** booleanType<br/>**appConfigKeyValue:** false<br/><br/>**appConfigKey:** IntuneMAMAllowedAccountsOnly<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** Disabled<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Outlook<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### POC_IOS_D_CO_Microsoft365Copilot
 #### Assignments
@@ -787,21 +717,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
 |Targeted Mobile Apps|**appName:** Microsoft Edge<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                      |
 
-### POC_IOS_D_CO_MicrosoftExcel
-#### Assignments
-|intent |  target   |filter type|filter name|
-|-------|-----------|-----------|-----------|
-|Include|All Devices|include    |IOS_CO     |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_CO_MicrosoftExcel                                                                                                    |
-|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Excel<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                     |
-
 ### POC_IOS_D_CO_MicrosoftOneDrive
 #### Assignments
 |intent |  target   |filter type|filter name|
@@ -831,51 +746,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Display Name        |POC_IOS_D_CO_MicrosoftOutlook                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |Settings            |**appConfigKey:** com.microsoft.outlook.EmailProfile.AccountType<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** ModernAuth<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>**appConfigKey:** com.microsoft.outlook.EmailProfile.EmailAddress<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{mail}}<br/><br/>**appConfigKey:** IntuneMAMAllowedAccountsOnly<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** Enabled<br/><br/>**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
 |Targeted Mobile Apps|**appName:** Microsoft Outlook<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-### POC_IOS_D_CO_MicrosoftPowerPoint
-#### Assignments
-|intent |  target   |filter type|filter name|
-|-------|-----------|-----------|-----------|
-|Include|All Devices|include    |IOS_CO     |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_CO_MicrosoftPowerPoint                                                                                               |
-|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft PowerPoint<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                |
-
-### POC_IOS_D_CO_MicrosoftTeams
-#### Assignments
-|intent |  target   |filter type|filter name|
-|-------|-----------|-----------|-----------|
-|Include|All Devices|include    |IOS_CO     |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_CO_MicrosoftTeams                                                                                                    |
-|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Teams<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                     |
-
-### POC_IOS_D_CO_MicrosoftWord
-#### Assignments
-|intent |  target   |filter type|filter name|
-|-------|-----------|-----------|-----------|
-|Include|All Devices|include    |IOS_CO     |
-
-#### Configuration
-|      setting       |                                                             value                                                             |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
-|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
-|Display Name        |POC_IOS_D_CO_MicrosoftWord                                                                                                     |
-|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Word<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                      |
 
 ### REF_AND_AE_D_CO_KSP_BlockAccounts
 Description: Used to block adding Google and Samsung accounts to Samsung devices using KSP\.
@@ -952,6 +822,110 @@ You can only have one OEMConfig per Samsung device\.
 |Connected Apps Enabled        |False                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |Credential Provider Role State|notConfigured                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |Targeted Mobile Apps          |**appName:** Knox Service Plugin<br/>**type:** #microsoft.graph.androidManagedStoreApp<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+
+### RET_IOS_D_BYOD_MicrosoftExcel
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                            value                                                             |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                    |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                  |
+|Display Name        |RET_IOS_D_BYOD_MicrosoftExcel                                                                                                 |
+|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Excel<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                  |
+
+### RET_IOS_D_BYOD_MicrosoftPowerpoint
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_BYOD_MicrosoftPowerpoint                                                                                             |
+|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:**  {{userprincipalname}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft PowerPoint<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                              |
+
+### RET_IOS_D_BYOD_MicrosoftTeams
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                            value                                                             |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                    |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                  |
+|Display Name        |RET_IOS_D_BYOD_MicrosoftTeams                                                                                                 |
+|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{userprincipalname}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Teams<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                  |
+
+### RET_IOS_D_BYOD_MicrosoftWord
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_BYOD_MicrosoftWord                                                                                                   |
+|Settings            |**appConfigKey:** IntuneMAMUPN<br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:**  {{userprincipalname}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Word<br/>**type:** #microsoft.graph.iosStoreApp<br/>                                                    |
+
+### RET_IOS_D_CO_MicrosoftExcel
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_CO_MicrosoftExcel                                                                                                    |
+|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Excel<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                     |
+
+### RET_IOS_D_CO_MicrosoftPowerPoint
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_CO_MicrosoftPowerPoint                                                                                               |
+|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft PowerPoint<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                |
+
+### RET_IOS_D_CO_MicrosoftTeams
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_CO_MicrosoftTeams                                                                                                    |
+|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Teams<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                     |
+
+### RET_IOS_D_CO_MicrosoftWord
+Description: Starting with Intune's September \(2409\) service release, the IntuneMAMUPN, IntuneMAMOID, and IntuneMAMDeviceID app configuration values will be automatically sent to managed applications on Intune enrolled iOS devices for the following apps: Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, Microsoft Teams and Microsoft Word\. Intune will continue to expand this list to include additional managed apps\.
+
+https://learn.microsoft.com/en-us/intune/app-management/protection/create-policy#device-management-types
+#### Configuration
+|      setting       |                                                             value                                                             |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                     |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                   |
+|Display Name        |RET_IOS_D_CO_MicrosoftWord                                                                                                     |
+|Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
+|Targeted Mobile Apps|**appName:** Microsoft Word<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                      |
 
 ### XXX_AND_AE_D_CO_MicrosoftDefender
 #### Assignments

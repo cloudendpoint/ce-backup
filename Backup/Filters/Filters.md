@@ -69,16 +69,6 @@
 |Role Scope Tags                  |Default<br/>                                                                                                         |
 |Assignment Filter Management Type|devices                                                                                                              |
 
-### AND_AE_COPE_OS_15
-#### Configuration
-|             setting             |                                                        value                                                        |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COPE_OS_15                                                                                                    |
-|Platform                         |androidForWork                                                                                                       |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -eq "15") and (device.enrollmentProfileName -eq $null)|
-|Role Scope Tags                  |Default<br/>                                                                                                         |
-|Assignment Filter Management Type|devices                                                                                                              |
-
 ### AND_AE_COPE_OS_16
 #### Configuration
 |             setting             |                                                        value                                                        |
@@ -86,6 +76,16 @@
 |Display Name                     |AND_AE_COPE_OS_16                                                                                                    |
 |Platform                         |androidForWork                                                                                                       |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "16")|
+|Role Scope Tags                  |Default<br/>                                                                                                         |
+|Assignment Filter Management Type|devices                                                                                                              |
+
+### AND_AE_COPE_OS_17
+#### Configuration
+|             setting             |                                                        value                                                        |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_AE_COPE_OS_17                                                                                                    |
+|Platform                         |androidForWork                                                                                                       |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -eq "17") and (device.enrollmentProfileName -eq $null)|
 |Role Scope Tags                  |Default<br/>                                                                                                         |
 |Assignment Filter Management Type|devices                                                                                                              |
 

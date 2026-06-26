@@ -1,0 +1,781 @@
+{
+     "creationSource": "DepTokenId_ef5231c3-eedb-4f24-8ae1-f45ee71aef6f",
+     "description": "Used for Blueprint testing of Center for Internet Security and Microsoft security baselines.",
+     "name": "IOS_D_COPE_ADE_UserAffinity_CIS_MS",
+     "platforms": "iOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 38,
+     "technologies": "enrollment",
+     "templateReference": {
+          "templateId": "27d20e9c-50c1-48f8-a44c-f37de4510051_1",
+          "templateFamily": "enrollmentConfiguration",
+          "templateDisplayName": "ADE Policy",
+          "templateDisplayVersion": "Version 1"
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_useraffinity",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "f3ddbbae-bb3d-45e8-bb9c-854f674e56ef"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_useraffinity_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "e34ab06d-486a-4cc0-a867-295515ac2dfc",
+                              "useTemplateDefault": false
+                         },
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "ade_authenticationmethod",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "ade_authenticationmethod_2",
+                                        "children": [
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                  "settingDefinitionId": "ade_modernauth_awaitfinalconfiguration",
+                                                  "settingInstanceTemplateReference": null,
+                                                  "auditRuleInformation": null,
+                                                  "choiceSettingValue": {
+                                                       "settingValueTemplateReference": null,
+                                                       "value": "ade_modernauth_awaitfinalconfiguration_1",
+                                                       "children": []
+                                                  }
+                                             }
+                                        ]
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_lockedenrollment",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "e105d3a4-7318-454a-a231-0d1510ebf1e3"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_lockedenrollment_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "49085612-4cce-4305-822d-6a6c793285be",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_devicenametemplatechoices",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "93d1bf98-2345-468a-b0f0-1e2daf198357"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_devicenametemplatechoices_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "8c02396f-d58f-4275-be5c-dd97713d636e",
+                              "useTemplateDefault": false
+                         },
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "ade_appledevicenametemplate",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                        "value": "CISMS-{{SERIAL}}",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "8c02396f-d58f-4275-be5c-dd97713d636e",
+                                             "useTemplateDefault": false
+                                        }
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_activatecellulardatachoices",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "b63070e7-d6f7-44e7-b1c1-fd51615748a3"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_activatecellulardatachoices_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "aaf7603d-0184-4143-bdfc-3326859ce0c3",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_department",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "1fd43c7c-0c7a-4dcc-8392-7b1776f86d14"
+                    },
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                         "value": "Intune Blueprint - CIS and Microsoft",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "180721e2-b467-40a3-b631-b2f28c5d9297",
+                              "useTemplateDefault": false
+                         }
+                    }
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_departmentphone",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "383a4d4b-0bbc-4791-bc48-6def8716ec96"
+                    },
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                         "value": "Intune Blueprint - CIS and Microsoft",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "f7322d5b-07aa-4b5c-9846-bc3e547e7c0b",
+                              "useTemplateDefault": false
+                         }
+                    }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_passcode",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "be808211-b4f1-4653-aa95-068b756dc682"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_passcode_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "67b68eed-075f-4479-a34b-9ae3d2b1cf4d",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "7",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_locationservices",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "5dca1893-31cd-49b7-aadf-c26990ea0639"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_locationservices_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "6f73700e-a14b-4784-9923-512a97297c41",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "8",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_restore",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "b4434e35-4131-4b13-90cb-4334cd9768dd"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_restore_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "78842c1b-d090-407d-9dec-a3a4a168a36f",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "9",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_appleid",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "4f26cd1f-5fd1-4d6c-af69-f18ade85aee9"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_appleid_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "469e5c1a-c2f8-44fb-b515-f8532c2dff40",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "10",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_termsandconditions",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "5a33bd8e-9df4-422c-92f5-3d5294a3e015"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_termsandconditions_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "404a8266-5c46-44b3-bf63-d8974d91c8f9",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "11",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_touchfaceid",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "0deedc8e-1597-47f0-a271-4ae5029c1795"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_touchfaceid_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "f11533e6-85a1-41c3-b23d-7a7c0bc2f7f8",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "12",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_applepay",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "c7b005a7-148a-40b0-aa06-8a6eaafa6fc0"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_applepay_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "a18db77d-76e6-4bf8-ab60-98d1e34ed8df",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "13",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_siri",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "764673c0-b331-478e-905f-ef45428fae99"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_siri_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "f3c03777-e89d-4fbc-bc1a-75c4858fa579",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "14",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_diagnosticsdata",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "6a6c0b44-8403-4213-8e34-fd21e416c0f3"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_diagnosticsdata_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "8e6986f8-3f2b-4a22-989d-08603dba0707",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "15",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_privacy",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "129ac5ce-c6b8-4402-bf18-40045c11c10d"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_privacy_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "177b8bd8-8dc1-4835-82af-16e81dc7e94f",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "16",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_androidmigration",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "ec192455-f753-4fe1-a4b5-ea98ce1f51a4"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_androidmigration_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "55060cc0-c46b-40fa-9435-7adf473662fb",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_imessagefacetime",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "53e650ca-9548-4fb6-8cba-3be4bc2d62a5"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_imessagefacetime_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "b1730b75-01d1-41a4-9e2e-d185ec2a5108",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "18",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_screentime",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "90501450-54d9-4695-a16c-fbfead918c24"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_screentime_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "b1d1feea-8d71-49bb-8cf6-c736321ae9b6",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "19",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_simsetup",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "7a270780-d94f-4d00-998e-2a5d69f43832"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_simsetup_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "8c2b8a4c-517a-47f7-9f05-392db533b05a",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "20",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_softwareupdate",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "1ad911de-03ea-45a1-917e-adf9ececc09c"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_softwareupdate_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "d9630ff4-94a4-4525-b37a-7c233a23a2bd",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "21",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_watchmigration",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "be182ec4-4e16-4f98-9ca2-e4775d35eb88"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_watchmigration_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "fe924b50-718f-4b7f-ac33-5a407ea0f005",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "22",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_appearance",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "61b602c2-86a3-4bca-82e5-cc7e14e17895"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_appearance_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "87067516-5437-44ce-a3cc-cee7b6518b46",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "23",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_devicemigration",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "3243140d-97b7-42fe-ba57-f23f782f9112"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_devicemigration_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "55900392-ff35-43dc-9adb-7fca1987a106",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "24",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_restorecompleted",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "991507fe-fe61-41f9-b80c-cac3f071fb92"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_restorecompleted_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "14e4f24a-55d5-4c04-9f61-862cb42a90e9",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "25",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_softwareupdatecompleted",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "8afaa22c-513a-41b4-9b49-1c888a6f1c53"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_softwareupdatecompleted_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "80bdf240-ad52-45fb-9a58-c888d812e75a",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "26",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_getstarted",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "21017ab9-73d3-45dd-b715-8742791a5d73"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_getstarted_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "df5a331d-7042-4abc-91f4-a37c82deaf08",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "27",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_actionbutton",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "6f78e140-a99d-49a0-9658-0d5a4bb30726"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_actionbutton_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "54fd9219-4c4a-4350-a2be-a85f1096f4da",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "28",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_safety",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "b8954ce1-36f1-4149-9851-99c050dfc3f8"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_safety_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "6290e656-2b8d-4793-b8fb-4336c64a32c5",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "29",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_termsofaddress",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "5dbc8d66-d852-4188-9500-020956fbdfb7"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_termsofaddress_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "1f57641d-fd69-403e-b96d-4f60869e6d9d",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "30",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_intelligence",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "cca42541-0513-41a6-ae74-e1fe878b0593"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_intelligence_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "d0c43d95-99c7-40ce-b3a6-33098215adc9",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "31",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_enablelockdownmode",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "4a9db745-821d-44a1-a26a-06f2c637d8b8"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_enablelockdownmode_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "181a5e6d-df5c-4016-b484-3130d54ee9ab",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "32",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_appstore",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "b3c4d5e6-f7a8-9012-bcde-fa3456789012"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_appstore_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "a2b3c4d5-e6f7-8901-abcd-ef2345678901",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "33",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_camerabutton",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "d5e6f7a8-b9c0-1234-defa-bc5678901234"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_camerabutton_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "c4d5e6f7-a8b9-0123-cdef-ab4567890123",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "34",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_multitasking",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "f7a8b9c0-d1e2-3456-fabc-de7890123456"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_multitasking_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "e6f7a8b9-c0d1-2345-efab-cd6789012345",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "35",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_osshowcase",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "b9c0d1e2-f3a4-5678-bcde-fa9012345678"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_osshowcase_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "a8b9c0d1-e2f3-4567-abcd-ef8901234567",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "36",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_safetyandhandling",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "d1e2f3a4-b5c6-7890-defa-bc1234567890"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_safetyandhandling_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "c0d1e2f3-a4b5-6789-cdef-ab0123456789",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "37",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "ade_setupassistant_webcontentfiltering",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "f3a4b5c6-d7e8-9012-fabc-de3456789012"
+                    },
+                    "choiceSettingValue": {
+                         "value": "ade_setupassistant_webcontentfiltering_0",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "e2f3a4b5-c6d7-8901-efab-cd2345678901",
+                              "useTemplateDefault": false
+                         },
+                         "children": []
+                    }
+               }
+          }
+     ]
+}

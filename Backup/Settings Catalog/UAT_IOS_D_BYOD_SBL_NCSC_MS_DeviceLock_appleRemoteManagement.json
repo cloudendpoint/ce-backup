@@ -68,7 +68,7 @@
                                         "simpleSettingValue": {
                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                              "settingValueTemplateReference": null,
-                                             "value": 8
+                                             "value": 6
                                         }
                                    },
                                    {

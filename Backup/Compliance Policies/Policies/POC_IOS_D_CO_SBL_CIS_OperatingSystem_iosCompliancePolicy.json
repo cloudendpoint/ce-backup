@@ -45,8 +45,7 @@
                     "deviceAndAppManagementAssignmentFilterId": "IOS_CO",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
-                    "groupType": "DynamicMembership",
-                    "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CIS\")"
+                    "groupType": "StaticMembership"
                }
           }
      ]

@@ -45,8 +45,7 @@
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "TEST_SG_MDM_D_IOS_NCSC_COPE",
-                    "groupType": "DynamicMembership",
-                    "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_NCSC\")"
+                    "groupType": "StaticMembership"
                }
           }
      ]

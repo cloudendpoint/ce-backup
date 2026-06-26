@@ -1156,8 +1156,8 @@
      },
      {
           "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CIS\")",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
           "assignedTo": {
                "Settings Catalog": [
                     {
@@ -1581,8 +1581,8 @@
      },
      {
           "groupName": "TEST_SG_MDM_D_IOS_CE_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CE\")",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
           "assignedTo": {
                "Settings Catalog": [
                     {
@@ -1922,8 +1922,8 @@
      },
      {
           "groupName": "TEST_SG_MDM_D_IOS_NCSC_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_NCSC\")",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
           "assignedTo": {
                "Settings Catalog": [
                     {
@@ -1973,8 +1973,8 @@
      },
      {
           "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_NCSC_MS\")",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
           "assignedTo": {
                "Settings Catalog": [
                     {
@@ -2084,8 +2084,8 @@
      },
      {
           "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.enrollmentProfileName -eq \"IOS_D_COPE_ADE_SUA_CIS_MS\")",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
           "assignedTo": {
                "Settings Catalog": [
                     {

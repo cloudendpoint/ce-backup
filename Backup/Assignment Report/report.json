@@ -2109,6 +2109,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "POC_IOS_D_CO_LockScreenMessage",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
                          "name": "UAT_IOS_D_CO_SBL_CIS_MS_AppleAccount",
                          "type": "",
                          "intent": "Include"

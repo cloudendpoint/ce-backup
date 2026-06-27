@@ -1,6 +1,6 @@
 {
      "creationSource": null,
-     "description": "\"If Lost, Return to...\" Message: If devices are lost or stolen, enter a note that might help get the device returned if found. You can enter any text you want. For example, enter something like If found, call Contoso at ....\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/configuration/device-features-apple?pivots=ios-ipados#lock-screen-message",
+     "description": "\"If Lost, Return to...\" Message: If devices are lost or stolen, enter a note that might help get the device returned if found. You can enter any text you want. For example, enter something like If found, call Contoso at....\n\nWill conflict with CIS benchmarks.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/configuration/device-features-apple?pivots=ios-ipados#lock-screen-message",
      "name": "POC_IOS_D_CO_LockScreenMessage",
      "platforms": "iOS",
      "priorityMetaData": null,
@@ -71,6 +71,16 @@
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
                     "groupType": "StaticMembership"
                }
           }

@@ -14,33 +14,5 @@
           "templateFamily": "none",
           "templateDisplayName": null,
           "templateDisplayVersion": null
-     },
-     "settings": [
-          {
-               "id": "0",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_admx_terminalserver_ts_server_profile",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_admx_terminalserver_ts_server_profile_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_admx_terminalserver_ts_server_profile_ts_server_profile_levels",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_admx_terminalserver_ts_server_profile_ts_server_profile_levels_2",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          }
-     ]
+     }
 }

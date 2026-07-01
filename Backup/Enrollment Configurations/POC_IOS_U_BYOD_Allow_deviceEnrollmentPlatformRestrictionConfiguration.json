@@ -42,14 +42,6 @@
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
-                    "deviceAndAppManagementAssignmentFilterType": "none"
-               }
-          },
-          {
-               "source": "direct",
-               "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
                     "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "TEST_SG_MDM_U_CE+",
                     "groupType": "StaticMembership"

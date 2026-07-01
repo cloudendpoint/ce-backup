@@ -83,7 +83,6 @@ Description: This is the default Windows Restore configuration applied with the 
 |intent |      target      |filter type|            filter name             |
 |-------|------------------|-----------|------------------------------------|
 |Include|TEST_SG_MDM_U_NCSC|none       |00000000-0000-0000-0000-000000000000|
-|Include|                  |none       |00000000-0000-0000-0000-000000000000|
 |Include|TEST_SG_MDM_U_CIS |none       |00000000-0000-0000-0000-000000000000|
 |Include|TEST_SG_MDM_U_CE+ |none       |00000000-0000-0000-0000-000000000000|
 
@@ -117,7 +116,6 @@ Description: Users for Teams Room Systems and Phones
 |-------|------------------|-----------|------------------------------------|
 |Include|TEST_SG_MDM_U_NCSC|none       |00000000-0000-0000-0000-000000000000|
 |Include|TEST_SG_MDM_U_CIS |none       |00000000-0000-0000-0000-000000000000|
-|Include|                  |none       |00000000-0000-0000-0000-000000000000|
 |Include|TEST_SG_MDM_U_CE+ |none       |00000000-0000-0000-0000-000000000000|
 
 #### Configuration

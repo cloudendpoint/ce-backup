@@ -1,0 +1,20 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment\n\nhttps://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531\n",
+     "displayName": "POC_IOS_D_CO_MicrosoftCompanyPortal_NUA",
+     "encodedSettingXml": null,
+     "settings": [
+          {
+               "appConfigKey": "IntuneUDAUserlessDevice",
+               "appConfigKeyType": "stringType",
+               "appConfigKeyValue": "{{SIGNEDDEVICEID}}"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Intune Company Portal",
+          "type": "#microsoft.graph.iosVppApp"
+     }
+}

@@ -7,12 +7,12 @@
           "Default"
      ],
      "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
-     "platformType": "androidForWork",
+     "platformType": "android",
      "platformRestriction": {
-          "platformBlocked": false,
+          "platformBlocked": true,
           "personalDeviceEnrollmentBlocked": false,
-          "osMinimumVersion": "13.0.0",
-          "osMaximumVersion": "16.99.99",
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
           "blockedManufacturers": [],
           "blockedSkus": []
      },

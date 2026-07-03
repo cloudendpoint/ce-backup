@@ -64,6 +64,23 @@
 |Device Location Mode                                |notConfigured                                                                                      |
 |Device Owner Lock Screen Message                    |**defaultMessage:** This device belongs to {Organization Name}<br/>**localizedMessages:** <ul></ul>|
 
+### POC_AND_AE_D_BYOD_AndroidManagementAPI
+Description: his policy will migrate existing Personally\-Owned with Work Profile devices to Android Management API\.
+
+https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview
+#### Assignments
+|intent |  target   |filter type|filter name|
+|-------|-----------|-----------|-----------|
+|Include|All Devices|include    |AND_AE_BYOD|
+
+#### Configuration
+|     setting      |                          value                          |
+|------------------|---------------------------------------------------------|
+|Odata type        |#microsoft.graph.androidWorkProfileMigrationConfiguration|
+|Role Scope Tag Ids|Default<br/>                                             |
+|Display Name      |POC_AND_AE_D_BYOD_AndroidManagementAPI                   |
+|Disable Migration |False                                                    |
+
 ### POC_AND_AE_D_BYOD_SBL_CE_DataProtection
 #### Assignments
 |intent |         target          |filter type|filter name|

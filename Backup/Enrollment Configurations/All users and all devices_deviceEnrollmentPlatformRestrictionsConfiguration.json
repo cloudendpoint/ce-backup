@@ -8,7 +8,7 @@
      "iosRestriction": {
           "platformBlocked": false,
           "personalDeviceEnrollmentBlocked": true,
-          "osMinimumVersion": "",
+          "osMinimumVersion": "16.0",
           "osMaximumVersion": "",
           "blockedManufacturers": [],
           "blockedSkus": []
@@ -16,7 +16,7 @@
      "windowsRestriction": {
           "platformBlocked": false,
           "personalDeviceEnrollmentBlocked": true,
-          "osMinimumVersion": "",
+          "osMinimumVersion": "10.0.19045",
           "osMaximumVersion": "",
           "blockedManufacturers": [],
           "blockedSkus": []
@@ -48,7 +48,7 @@
      "androidForWorkRestriction": {
           "platformBlocked": false,
           "personalDeviceEnrollmentBlocked": true,
-          "osMinimumVersion": "",
+          "osMinimumVersion": "14.0",
           "osMaximumVersion": "",
           "blockedManufacturers": [],
           "blockedSkus": []

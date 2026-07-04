@@ -3,7 +3,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "description": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment\n\nhttps://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531\n",
+     "description": "For non-user affinity Enrollment Time Grouping enrolled devices ONLY.\n\nhttps://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment\n\nhttps://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531\n",
      "displayName": "POC_IOS_D_CO_MicrosoftCompanyPortal_NUA",
      "encodedSettingXml": null,
      "settings": [
@@ -16,5 +16,34 @@
      "targetedMobileApps": {
           "appName": "Intune Company Portal",
           "type": "#microsoft.graph.iosVppApp"
-     }
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_IOS_CO_ADE_SharediPad",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_IOS_CO_ADE_EntraSharedMode",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_IOS_CO_ADE_Kiosk",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
 }

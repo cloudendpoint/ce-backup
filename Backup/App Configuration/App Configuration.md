@@ -678,9 +678,18 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Targeted Mobile Apps|**appName:** Microsoft Authenticator<br/>**type:** #microsoft.graph.iosVppApp<br/>                                |
 
 ### POC_IOS_D_CO_MicrosoftCompanyPortal_NUA
-Description: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment
+Description: For non\-user affinity Enrollment Time Grouping enrolled devices ONLY\.
+
+https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment
 
 https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531
+
+#### Assignments
+|intent |              target               |filter type|filter name|
+|-------|-----------------------------------|-----------|-----------|
+|Include|SG_MDM_D_IOS_CO_ADE_SharediPad     |none       |           |
+|Include|SG_MDM_D_IOS_CO_ADE_EntraSharedMode|none       |           |
+|Include|SG_MDM_D_IOS_CO_ADE_Kiosk          |none       |           |
 
 #### Configuration
 |      setting       |                                                                value                                                                 |

@@ -65,7 +65,7 @@
 |Device Owner Lock Screen Message                    |**defaultMessage:** This device belongs to {Organization Name}<br/>**localizedMessages:** <ul></ul>|
 
 ### POC_AND_AE_D_BYOD_AndroidManagementAPI
-Description: his policy will migrate existing Personally\-Owned with Work Profile devices to Android Management API\.
+Description: This policy will migrate existing Personally\-Owned with Work Profile devices to Android Management API\.
 
 https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview
 #### Assignments

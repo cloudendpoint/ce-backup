@@ -6,7 +6,7 @@
      "deviceManagementApplicabilityRuleOsEdition": null,
      "deviceManagementApplicabilityRuleOsVersion": null,
      "deviceManagementApplicabilityRuleDeviceMode": null,
-     "description": "his policy will migrate existing Personally-Owned with Work Profile devices to Android Management API.\n\nhttps://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview",
+     "description": "This policy will migrate existing Personally-Owned with Work Profile devices to Android Management API.\n\nhttps://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview",
      "displayName": "POC_AND_AE_D_BYOD_AndroidManagementAPI",
      "disableMigration": false,
      "assignments": [

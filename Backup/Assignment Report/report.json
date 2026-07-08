@@ -985,11 +985,6 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_Updates_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
                          "type": "",
                          "intent": "Include"
@@ -1003,26 +998,6 @@
                          "name": "POC_MAC_D_CO_SBL_CIS_EndpointSecurity",
                          "type": "",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_1",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
                     },
                     {
                          "name": "POC_MAC_D_CO_SBL_CIS_MicrosoftEdge",
@@ -2006,54 +1981,6 @@
           }
      },
      {
-          "groupName": "SG_MDM_D_MAC_CO_Phase_5",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"macmdm\") and ((device.deviceId -startsWith \"9\") or (device.deviceId -startsWith \"a\") or (device.deviceId -startsWith \"b\") or (device.deviceId -startsWith \"c\") or (device.deviceId -startsWith \"d\") or (device.deviceId -startsWith \"e\") or (device.deviceId -startsWith \"f\"))",
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_5",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_MAC_CO_Phase_1",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_1",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_MAC_CE_BYOD",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2256,48 +2183,6 @@
                     },
                     {
                          "name": "POC_WIN_D_BYOD_SBL_CE_MicrosoftDefender_SmartScreen",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_MAC_CO_Phase_4",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"macmdm\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))\n",
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_4",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_MAC_CO_Phase_3",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\")  and (device.deviceOSType -eq \"macmdm\") and ((device.deviceId -startsWith \"1\") or (device.deviceId -startsWith \"2\") or (device.deviceId -startsWith \"3\"))",
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_3",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_MAC_CO_Phase_2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\")  and (device.deviceOSType -eq \"macmdm\") and (device.deviceId -startsWith \"0\")",
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_Updates_Phase_2",
                          "type": "",
                          "intent": "Include"
                     }

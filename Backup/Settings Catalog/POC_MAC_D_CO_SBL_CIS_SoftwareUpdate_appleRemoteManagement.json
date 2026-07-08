@@ -115,7 +115,7 @@
                                                             "auditRuleInformation": null,
                                                             "choiceSettingValue": {
                                                                  "settingValueTemplateReference": null,
-                                                                 "value": "softwareupdate_automaticactions_installosupdates_1",
+                                                                 "value": "softwareupdate_automaticactions_installosupdates_0",
                                                                  "children": []
                                                             }
                                                        },
@@ -126,7 +126,7 @@
                                                             "auditRuleInformation": null,
                                                             "choiceSettingValue": {
                                                                  "settingValueTemplateReference": null,
-                                                                 "value": "softwareupdate_automaticactions_installsecurityupdate_1",
+                                                                 "value": "softwareupdate_automaticactions_installsecurityupdate_0",
                                                                  "children": []
                                                             }
                                                        }

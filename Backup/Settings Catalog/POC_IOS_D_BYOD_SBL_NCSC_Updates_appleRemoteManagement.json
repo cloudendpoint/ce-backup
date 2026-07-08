@@ -54,7 +54,7 @@
                                                             "auditRuleInformation": null,
                                                             "choiceSettingValue": {
                                                                  "settingValueTemplateReference": null,
-                                                                 "value": "softwareupdate_automaticactions_installosupdates_1",
+                                                                 "value": "softwareupdate_automaticactions_installosupdates_0",
                                                                  "children": []
                                                             }
                                                        },
@@ -72,17 +72,6 @@
                                                   ]
                                              }
                                         ]
-                                   },
-                                   {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                        "settingDefinitionId": "softwareupdate_notifications",
-                                        "settingInstanceTemplateReference": null,
-                                        "auditRuleInformation": null,
-                                        "choiceSettingValue": {
-                                             "settingValueTemplateReference": null,
-                                             "value": "softwareupdate_notifications_true",
-                                             "children": []
-                                        }
                                    },
                                    {
                                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
@@ -107,6 +96,17 @@
                                                   ]
                                              }
                                         ]
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "softwareupdate_notifications",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "softwareupdate_notifications_true",
+                                             "children": []
+                                        }
                                    }
                               ]
                          }

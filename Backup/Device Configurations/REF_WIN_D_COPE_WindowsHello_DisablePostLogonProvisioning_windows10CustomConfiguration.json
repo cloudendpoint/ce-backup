@@ -1,0 +1,22 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Update the tenant id with the correct one for the tenant being deployed to.\n\nStops the immediate Windows Hello provisioning at first sign-on for Windows.\n\nhttps://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesdisablepostlogonprovisioning",
+     "displayName": "REF_WIN_D_COPE_WindowsHello_DisablePostLogonProvisioning",
+     "omaSettings": [
+          {
+               "@odata.type": "#microsoft.graph.omaSettingBoolean",
+               "displayName": "DisablePostLogonProvisioning",
+               "description": "https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesdisablepostlogonprovisioning",
+               "omaUri": "./Device/Vendor/MSFT/PassportForWork/69b2ff03-08b5-4781-b7ea-af7ffbf790c4/Policies/DisablePostLogonProvisioning",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": true
+          }
+     ]
+}

@@ -18,6 +18,6 @@
      "proxyManualPort": null,
      "proxyAutomaticConfigurationUrl": null,
      "deploymentChannel": null,
-     "wifiRequirePhysicalMacAddressEnabled": false,
+     "wifiRequirePhysicalMacAddressEnabled": null,
      "preSharedKey": null
 }

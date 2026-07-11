@@ -13,7 +13,7 @@
      "securityRequireSafetyNetAttestationCertifiedDevice": null,
      "osMinimumVersion": "16",
      "osMaximumVersion": null,
-     "minAndroidSecurityPatchLevel": "2026-06-01",
+     "minAndroidSecurityPatchLevel": "2026-07-01",
      "passwordRequired": null,
      "passwordMinimumLength": null,
      "passwordMinimumLetterCharacters": null,

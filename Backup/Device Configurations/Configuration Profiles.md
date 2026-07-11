@@ -1718,18 +1718,17 @@ https://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune#step
 
 ### REF_MAC_D_CO_WIFI_SSIDName
 #### Configuration
-|                 setting                 |                           value                           |
-|-----------------------------------------|-----------------------------------------------------------|
-|Odata type                               |#microsoft.graph.macOSWiFiConfiguration                    |
-|Role Scope Tag Ids                       |Default<br/>                                               |
-|Display Name                             |REF_MAC_D_CO_WIFI_SSIDName                                 |
-|Network Name                             |7a065758-e789-41c3-b310-5c215d6191c8                       |
-|Ssid                                     |<details><summary>Click to expand...</summary>I"</details>|
-|Connect Automatically                    |True                                                       |
-|Connect When Network Name Is Hidden      |False                                                      |
-|Wi Fi Security Type                      |open                                                       |
-|Proxy Settings                           |none                                                       |
-|Wifi Require Physical Mac Address Enabled|False                                                      |
+|              setting              |                           value                           |
+|-----------------------------------|-----------------------------------------------------------|
+|Odata type                         |#microsoft.graph.macOSWiFiConfiguration                    |
+|Role Scope Tag Ids                 |Default<br/>                                               |
+|Display Name                       |REF_MAC_D_CO_WIFI_SSIDName                                 |
+|Network Name                       |7a065758-e789-41c3-b310-5c215d6191c8                       |
+|Ssid                               |<details><summary>Click to expand...</summary>I"</details>|
+|Connect Automatically              |True                                                       |
+|Connect When Network Name Is Hidden|False                                                      |
+|Wi Fi Security Type                |open                                                       |
+|Proxy Settings                     |none                                                       |
 
 ### REF_WIN_D_CO_AP_SkipUserESP
 Description: Consider this for shared/self\-deploying, not for user\-driven, we need user policies to be evaluated during autopilot\.

@@ -1,0 +1,15 @@
+{
+     "publisher": "Phoenix Software Ltd",
+     "displayName": "ZZZ_WIN_D_CO_RS_UpdateDefenderSignatures",
+     "description": "Used for Autopilot devices where signatures are out of date.\n\nReplaced with setting \"Oobe Enable Rtp And Sig Update\"",
+     "detectionScriptContent": "JGRheXMgPSAxDQp0cnkgew0KICAgICRzaWduYXR1cmVBZ2UgPSAoR2V0LU1wQ29tcHV0ZXJTdGF0dXMpLkFudGlzcHl3YXJlU2lnbmF0dXJlQWdlDQoNCiAgICBpZiAoJHNpZ25hdHVyZUFnZSAtbGUgJGRheXMpIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICdEZWZlbmRlciBzaWduYXR1cmVzIHVwLXRvLWRhdGUnDQogICAgICAgIGV4aXQgMA0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtV2FybmluZyAnRGVmZW5kZXIgc2lnbmF0dXJlcyBvdXRkYXRlZCcNCiAgICAgICAgZXhpdCAxDQogICAgfQ0KfQ0KY2F0Y2ggew0KICAgIFdyaXRlLUVycm9yICdVbmFibGUgdG8gY2hlY2sgRGVmZW5kZXIgc2lnbmF0dXJlIGFnZScNCiAgICBleGl0IDIwMDANCn0=",
+     "remediationScriptContent": "dHJ5IHsNCiAgICBVcGRhdGUtTXBTaWduYXR1cmUNCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1FcnJvciAnVW5hYmxlIHRvIHVwZGF0ZSBEZWZlbmRlciBzaWduYXR1cmVzJw0KICAgIGV4aXQgMjAwMA0KfQ==",
+     "runAsAccount": "system",
+     "enforceSignatureCheck": false,
+     "runAs32Bit": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "detectionScriptParameters": [],
+     "remediationScriptParameters": []
+}

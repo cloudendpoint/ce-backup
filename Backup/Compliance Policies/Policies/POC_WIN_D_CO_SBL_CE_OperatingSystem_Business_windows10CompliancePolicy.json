@@ -50,6 +50,11 @@
                "description": "Windows 11 25H2",
                "lowestVersion": "10.0.26200.8655",
                "highestVersion": "10.0.26200.9999"
+          },
+          {
+               "description": "Windows 11 26H1",
+               "lowestVersion": "10.0.28000.2269",
+               "highestVersion": "10.0.28000.9999"
           }
      ],
      "wslDistributions": [],

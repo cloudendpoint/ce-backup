@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 4,
+     "settingCount": 5,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -18,6 +18,20 @@
      "settings": [
           {
                "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_kerberos_cloudkerberosticketretrievalenabled",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_kerberos_cloudkerberosticketretrievalenabled_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_passportforwork_biometrics_usebiometrics",
@@ -31,7 +45,7 @@
                }
           },
           {
-               "id": "1",
+               "id": "2",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                     "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}",
@@ -168,7 +182,7 @@
                }
           },
           {
-               "id": "2",
+               "id": "3",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_passportforwork_biometrics_facialfeaturesuseenhancedantispoofing",
@@ -182,7 +196,7 @@
                }
           },
           {
-               "id": "3",
+               "id": "4",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_passportforwork_securitykey_usesecuritykeyforsignin",

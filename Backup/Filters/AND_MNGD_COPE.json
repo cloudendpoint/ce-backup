@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_MNGD_COPE",
+     "description": "",
+     "platform": "androidMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"Corporate-owned fully managed\") or (app.deviceManagementType -eq \"Corporate-owned with work profile\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

@@ -1,0 +1,23 @@
+{
+     "@odata.type": "#microsoft.graph.androidWorkProfileMigrationConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "This policy will migrate existing Personally-Owned with Work Profile devices to Android Management API.\n\nhttps://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview",
+     "displayName": "POC_AND_D_BYOD_AndroidManagementAPI",
+     "disableMigration": false,
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

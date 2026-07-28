@@ -45,7 +45,7 @@
           {
                "target": {
                     "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_CO",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_CO",
                     "deviceAndAppManagementAssignmentFilterType": "include"
                }
           }

@@ -155,7 +155,7 @@
                "source": "direct",
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_MNGD_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_U_CIS",
                     "groupType": "StaticMembership"
@@ -165,7 +165,7 @@
                "source": "direct",
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_MNGD_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_U_NCSC",
                     "groupType": "StaticMembership"
@@ -175,7 +175,7 @@
                "source": "direct",
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_MNGD_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_U_CE",
                     "groupType": "StaticMembership"
@@ -185,7 +185,7 @@
                "source": "direct",
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_MNGD_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_U_MSZT",
                     "groupType": "StaticMembership"
@@ -195,7 +195,7 @@
                "source": "direct",
                "target": {
                     "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_AE_MNGD_BYOD",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_MNGD_BYOD",
                     "deviceAndAppManagementAssignmentFilterType": "include",
                     "groupName": "TEST_SG_MDM_U_CE+",
                     "groupType": "StaticMembership"

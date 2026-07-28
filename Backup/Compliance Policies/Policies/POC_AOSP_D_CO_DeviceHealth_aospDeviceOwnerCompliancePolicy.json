@@ -1,0 +1,30 @@
+{
+     "@odata.type": "#microsoft.graph.aospDeviceOwnerCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": null,
+     "displayName": "POC_AOSP_D_CO_DeviceHealth",
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "minAndroidSecurityPatchLevel": null,
+     "securityBlockJailbrokenDevices": true,
+     "passwordRequired": null,
+     "passwordRequiredType": "deviceDefault",
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordMinimumLength": null,
+     "storageRequireEncryption": null,
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ]
+}

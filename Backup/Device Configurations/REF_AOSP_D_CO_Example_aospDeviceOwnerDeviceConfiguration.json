@@ -1,0 +1,25 @@
+{
+     "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "REF_AOSP_D_CO_Example",
+     "appsBlockInstallFromUnknownSources": null,
+     "bluetoothBlocked": null,
+     "bluetoothBlockConfiguration": null,
+     "cameraBlocked": null,
+     "factoryResetBlocked": null,
+     "passwordMinimumLength": null,
+     "passwordMinutesOfInactivityBeforeScreenTimeout": null,
+     "passwordRequiredType": "deviceDefault",
+     "passwordSignInFailureCountBeforeFactoryReset": null,
+     "screenCaptureBlocked": null,
+     "securityAllowDebuggingFeatures": null,
+     "storageBlockExternalMedia": null,
+     "storageBlockUsbFileTransfer": true,
+     "wifiBlockEditConfigurations": null
+}

@@ -1,13 +1,13 @@
 ## App Protection
 ### POC_AND_U_MNGD_BYOD_AllApps_AllUsers
 #### Assignments
-|intent |      target      |filter type|  filter name   |
-|-------|------------------|-----------|----------------|
-|Include|TEST_SG_MDM_U_CIS |include    |AND_AE_MNGD_BYOD|
-|Include|TEST_SG_MDM_U_NCSC|include    |AND_AE_MNGD_BYOD|
-|Include|TEST_SG_MDM_U_CE  |include    |AND_AE_MNGD_BYOD|
-|Include|TEST_SG_MDM_U_MSZT|include    |AND_AE_MNGD_BYOD|
-|Include|TEST_SG_MDM_U_CE+ |include    |AND_AE_MNGD_BYOD|
+|intent |      target      |filter type| filter name |
+|-------|------------------|-----------|-------------|
+|Include|TEST_SG_MDM_U_CIS |include    |AND_MNGD_BYOD|
+|Include|TEST_SG_MDM_U_NCSC|include    |AND_MNGD_BYOD|
+|Include|TEST_SG_MDM_U_CE  |include    |AND_MNGD_BYOD|
+|Include|TEST_SG_MDM_U_MSZT|include    |AND_MNGD_BYOD|
+|Include|TEST_SG_MDM_U_CE+ |include    |AND_MNGD_BYOD|
 
 #### Configuration
 |                         setting                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -83,13 +83,13 @@
 
 ### POC_AND_U_MNGD_COPE_AllApps_AllUsers
 #### Assignments
-|intent |      target      |filter type|  filter name   |
-|-------|------------------|-----------|----------------|
-|Include|TEST_SG_MDM_U_CIS |include    |AND_AE_MNGD_COPE|
-|Include|TEST_SG_MDM_U_NCSC|include    |AND_AE_MNGD_COPE|
-|Include|TEST_SG_MDM_U_CE  |include    |AND_AE_MNGD_COPE|
-|Include|TEST_SG_MDM_U_MSZT|include    |AND_AE_MNGD_COPE|
-|Include|TEST_SG_MDM_U_CE+ |include    |AND_AE_MNGD_COPE|
+|intent |      target      |filter type| filter name |
+|-------|------------------|-----------|-------------|
+|Include|TEST_SG_MDM_U_CIS |include    |AND_MNGD_COPE|
+|Include|TEST_SG_MDM_U_NCSC|include    |AND_MNGD_COPE|
+|Include|TEST_SG_MDM_U_CE  |include    |AND_MNGD_COPE|
+|Include|TEST_SG_MDM_U_MSZT|include    |AND_MNGD_COPE|
+|Include|TEST_SG_MDM_U_CE+ |include    |AND_MNGD_COPE|
 
 #### Configuration
 |                         setting                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |

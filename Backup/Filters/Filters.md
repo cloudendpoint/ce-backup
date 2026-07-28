@@ -1,143 +1,103 @@
 ## Filters
-### AND_AE_BYOD
+### ADA_CA
+#### Configuration
+|             setting             |                 value                  |
+|---------------------------------|----------------------------------------|
+|Display Name                     |ADA_CA                                  |
+|Platform                         |android                                 |
+|Rule                             |(device.deviceOwnership -eq "Corporate")|
+|Role Scope Tags                  |Default<br/>                            |
+|Assignment Filter Management Type|devices                                 |
+
+### AND_BYOD
 #### Configuration
 |             setting             |                 value                 |
 |---------------------------------|---------------------------------------|
-|Display Name                     |AND_AE_BYOD                            |
+|Display Name                     |AND_BYOD                               |
 |Platform                         |androidForWork                         |
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
 
-### AND_AE_CO
+### AND_CO
 #### Configuration
 |             setting             |                 value                  |
 |---------------------------------|----------------------------------------|
-|Display Name                     |AND_AE_CO                               |
+|Display Name                     |AND_CO                                  |
 |Platform                         |androidForWork                          |
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
 
-### AND_AE_CO_Samsung
+### AND_CO_Samsung
 #### Configuration
 |             setting             |                                     value                                      |
 |---------------------------------|--------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_CO_Samsung                                                               |
+|Display Name                     |AND_CO_Samsung                                                                  |
 |Platform                         |androidForWork                                                                  |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.manufacturer -eq "samsung")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
 
-### AND_AE_COBO_DD
+### AND_COBO_DD
 #### Configuration
 |             setting             |                                           value                                           |
 |---------------------------------|-------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COBO_DD                                                                             |
+|Display Name                     |AND_COBO_DD                                                                                |
 |Platform                         |androidForWork                                                                             |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -contains "_DD")|
 |Role Scope Tags                  |Default<br/>                                                                               |
 |Assignment Filter Management Type|devices                                                                                    |
 
-### AND_AE_COBO_DS
+### AND_COBO_DS
 #### Configuration
 |             setting             |                                           value                                            |
 |---------------------------------|--------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COBO_DS                                                                              |
+|Display Name                     |AND_COBO_DS                                                                                 |
 |Platform                         |androidForWork                                                                              |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -contains "_DS_")|
 |Role Scope Tags                  |Default<br/>                                                                                |
 |Assignment Filter Management Type|devices                                                                                     |
 
-### AND_AE_COPE
+### AND_COPE
 #### Configuration
 |             setting             |                                        value                                        |
 |---------------------------------|-------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COPE                                                                          |
+|Display Name                     |AND_COPE                                                                             |
 |Platform                         |androidForWork                                                                       |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null)|
 |Role Scope Tags                  |Default<br/>                                                                         |
 |Assignment Filter Management Type|devices                                                                              |
 
-### AND_AE_COPE_OS_14
+### AND_COPE_OS_15
 #### Configuration
 |             setting             |                                                        value                                                        |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COPE_OS_14                                                                                                    |
+|Display Name                     |AND_COPE_OS_15                                                                                                       |
 |Platform                         |androidForWork                                                                                                       |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "14")|
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "15")|
 |Role Scope Tags                  |Default<br/>                                                                                                         |
 |Assignment Filter Management Type|devices                                                                                                              |
 
-### AND_AE_COPE_OS_16
+### AND_COPE_OS_16
 #### Configuration
 |             setting             |                                                        value                                                        |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COPE_OS_16                                                                                                    |
+|Display Name                     |AND_COPE_OS_16                                                                                                       |
 |Platform                         |androidForWork                                                                                                       |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "16")|
 |Role Scope Tags                  |Default<br/>                                                                                                         |
 |Assignment Filter Management Type|devices                                                                                                              |
 
-### AND_AE_COPE_OS_17
+### AND_COPE_OS_17
 #### Configuration
 |             setting             |                                                        value                                                        |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_COPE_OS_17                                                                                                    |
+|Display Name                     |AND_COPE_OS_17                                                                                                       |
 |Platform                         |androidForWork                                                                                                       |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -eq "17") and (device.enrollmentProfileName -eq $null)|
 |Role Scope Tags                  |Default<br/>                                                                                                         |
 |Assignment Filter Management Type|devices                                                                                                              |
-
-### AND_AE_MNGD
-#### Configuration
-|             setting             |                                                                                                                                                                              value                                                                                                                                                                              |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_MNGD                                                                                                                                                                                                                                                                                                                                                      |
-|Platform                         |androidMobileApplicationManagement                                                                                                                                                                                                                                                                                                                               |
-|Rule                             |<details><summary>Click to expand...</summary>(app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile") or (app.deviceManagementType -eq "Personally-owned work profile")</details>|
-|Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                                                     |
-|Assignment Filter Management Type|apps                                                                                                                                                                                                                                                                                                                                                             |
-
-### AND_AE_MNGD_BYOD
-#### Configuration
-|             setting             |                            value                             |
-|---------------------------------|--------------------------------------------------------------|
-|Display Name                     |AND_AE_MNGD_BYOD                                              |
-|Platform                         |androidMobileApplicationManagement                            |
-|Rule                             |(app.deviceManagementType -eq "Personally-owned work profile")|
-|Role Scope Tags                  |Default<br/>                                                  |
-|Assignment Filter Management Type|apps                                                          |
-
-### AND_AE_MNGD_COBO
-#### Configuration
-|             setting             |                                                                                             value                                                                                             |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_MNGD_COBO                                                                                                                                                                               |
-|Platform                         |androidMobileApplicationManagement                                                                                                                                                             |
-|Rule                             |(app.deviceManagementType -eq "Corporate-owned dedicated devices with Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode")|
-|Role Scope Tags                  |Default<br/>                                                                                                                                                                                   |
-|Assignment Filter Management Type|apps                                                                                                                                                                                           |
-
-### AND_AE_MNGD_COPE
-#### Configuration
-|             setting             |                                                               value                                                                |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_AE_MNGD_COPE                                                                                                                    |
-|Platform                         |androidMobileApplicationManagement                                                                                                  |
-|Rule                             |(app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile")|
-|Role Scope Tags                  |Default<br/>                                                                                                                        |
-|Assignment Filter Management Type|apps                                                                                                                                |
-
-### AND_AO_CO
-#### Configuration
-|             setting             |                 value                  |
-|---------------------------------|----------------------------------------|
-|Display Name                     |AND_AO_CO                               |
-|Platform                         |androidAOSP                             |
-|Rule                             |(device.deviceOwnership -eq "Corporate")|
-|Role Scope Tags                  |Default<br/>                            |
-|Assignment Filter Management Type|devices                                 |
 
 ### AND_DA_BYOD
 #### Configuration
@@ -159,6 +119,46 @@
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
 
+### AND_MNGD
+#### Configuration
+|             setting             |                                                                                                                                                                              value                                                                                                                                                                              |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_MNGD                                                                                                                                                                                                                                                                                                                                                         |
+|Platform                         |androidMobileApplicationManagement                                                                                                                                                                                                                                                                                                                               |
+|Rule                             |<details><summary>Click to expand...</summary>(app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile") or (app.deviceManagementType -eq "Personally-owned work profile")</details>|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                                                     |
+|Assignment Filter Management Type|apps                                                                                                                                                                                                                                                                                                                                                             |
+
+### AND_MNGD_BYOD
+#### Configuration
+|             setting             |                            value                             |
+|---------------------------------|--------------------------------------------------------------|
+|Display Name                     |AND_MNGD_BYOD                                                 |
+|Platform                         |androidMobileApplicationManagement                            |
+|Rule                             |(app.deviceManagementType -eq "Personally-owned work profile")|
+|Role Scope Tags                  |Default<br/>                                                  |
+|Assignment Filter Management Type|apps                                                          |
+
+### AND_MNGD_COBO
+#### Configuration
+|             setting             |                                                                                             value                                                                                             |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_MNGD_COBO                                                                                                                                                                                  |
+|Platform                         |androidMobileApplicationManagement                                                                                                                                                             |
+|Rule                             |(app.deviceManagementType -eq "Corporate-owned dedicated devices with Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode")|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                                   |
+|Assignment Filter Management Type|apps                                                                                                                                                                                           |
+
+### AND_MNGD_COPE
+#### Configuration
+|             setting             |                                                               value                                                                |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_MNGD_COPE                                                                                                                       |
+|Platform                         |androidMobileApplicationManagement                                                                                                  |
+|Rule                             |(app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile")|
+|Role Scope Tags                  |Default<br/>                                                                                                                        |
+|Assignment Filter Management Type|apps                                                                                                                                |
+
 ### AND_UMNGD
 #### Configuration
 |             setting             |                  value                   |
@@ -168,6 +168,26 @@
 |Rule                             |(app.deviceManagementType -eq "Unmanaged")|
 |Role Scope Tags                  |Default<br/>                              |
 |Assignment Filter Management Type|apps                                      |
+
+### AOSP_CO
+#### Configuration
+|             setting             |                 value                  |
+|---------------------------------|----------------------------------------|
+|Display Name                     |AOSP_CO                                 |
+|Platform                         |androidAOSP                             |
+|Rule                             |(device.deviceOwnership -eq "Corporate")|
+|Role Scope Tags                  |Default<br/>                            |
+|Assignment Filter Management Type|devices                                 |
+
+### AOSP_MNGD
+#### Configuration
+|             setting             |                                                         value                                                          |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AOSP_MNGD                                                                                                               |
+|Platform                         |androidMobileApplicationManagement                                                                                      |
+|Rule                             |(app.deviceManagementType -eq "AOSP user-associated devices") and (app.deviceManagementType -eq "AOSP userless devices")|
+|Role Scope Tags                  |Default<br/>                                                                                                            |
+|Assignment Filter Management Type|apps                                                                                                                    |
 
 ### CPC_CO
 #### Configuration

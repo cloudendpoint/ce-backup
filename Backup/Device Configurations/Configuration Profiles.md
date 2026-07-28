@@ -1,5 +1,5 @@
 ## Configuration Profiles
-### DEV_AND_AE_D_CO_DR_SBL_CIS_DeviceSecurity
+### DEV_AND_D_CO_DR_SBL_CIS_DeviceSecurity
 #### Assignments
 |intent |          target          |filter type|filter name|
 |-------|--------------------------|-----------|-----------|
@@ -10,7 +10,7 @@
 |----------------------------------------------------|---------------------------------------------------------------------------------------------------|
 |Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                      |
 |Role Scope Tag Ids                                  |Default<br/>                                                                                       |
-|Display Name                                        |DEV_AND_AE_D_CO_DR_SBL_CIS_DeviceSecurity                                                          |
+|Display Name                                        |DEV_AND_D_CO_DR_SBL_CIS_DeviceSecurity                                                             |
 |Accounts Block Modification                         |True                                                                                               |
 |Apps Auto Update Policy                             |notConfigured                                                                                      |
 |Apps Default Permission Policy                      |deviceDefault                                                                                      |
@@ -64,24 +64,24 @@
 |Device Location Mode                                |notConfigured                                                                                      |
 |Device Owner Lock Screen Message                    |**defaultMessage:** This device belongs to {Organization Name}<br/>**localizedMessages:** <ul></ul>|
 
-### POC_AND_AE_D_BYOD_AndroidManagementAPI
+### POC_AND_D_BYOD_AndroidManagementAPI
 Description: This policy will migrate existing Personally\-Owned with Work Profile devices to Android Management API\.
 
 https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview
 #### Assignments
 |intent |  target   |filter type|filter name|
 |-------|-----------|-----------|-----------|
-|Include|All Devices|include    |AND_AE_BYOD|
+|Include|All Devices|include    |AND_BYOD   |
 
 #### Configuration
 |     setting      |                          value                          |
 |------------------|---------------------------------------------------------|
 |Odata type        |#microsoft.graph.androidWorkProfileMigrationConfiguration|
 |Role Scope Tag Ids|Default<br/>                                             |
-|Display Name      |POC_AND_AE_D_BYOD_AndroidManagementAPI                   |
+|Display Name      |POC_AND_D_BYOD_AndroidManagementAPI                      |
 |Disable Migration |False                                                    |
 
-### POC_AND_AE_D_BYOD_SBL_CE_DataProtection
+### POC_AND_D_BYOD_SBL_CE_DataProtection
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -92,7 +92,7 @@ https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-manag
 |-------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |POC_AND_AE_D_BYOD_SBL_CE_DataProtection                      |
+|Display Name                                                 |POC_AND_D_BYOD_SBL_CE_DataProtection                         |
 |Password Block Face Unlock                                   |False                                                        |
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
@@ -124,7 +124,7 @@ https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-manag
 |Work Profile Account Use                                     |blockAll                                                     |
 |Block Unified Password For Work Profile                      |False                                                        |
 
-### POC_AND_AE_D_BYOD_SBL_CE_DeviceLock
+### POC_AND_D_BYOD_SBL_CE_DeviceLock
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -135,7 +135,7 @@ https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-manag
 |-----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                       |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                               |Default<br/>                                                 |
-|Display Name                                                     |POC_AND_AE_D_BYOD_SBL_CE_DeviceLock                          |
+|Display Name                                                     |POC_AND_D_BYOD_SBL_CE_DeviceLock                             |
 |Password Block Face Unlock                                       |False                                                        |
 |Password Block Fingerprint Unlock                                |False                                                        |
 |Password Block Iris Unlock                                       |False                                                        |
@@ -173,7 +173,7 @@ https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-manag
 |Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
 |Block Unified Password For Work Profile                          |True                                                         |
 
-### POC_AND_AE_D_BYOD_SBL_CE_DeviceManagement
+### POC_AND_D_BYOD_SBL_CE_DeviceManagement
 Description:  
 #### Assignments
 |intent |         target          |filter type|filter name|
@@ -185,7 +185,7 @@ Description:
 |-------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |POC_AND_AE_D_BYOD_SBL_CE_DeviceManagement                    |
+|Display Name                                                 |POC_AND_D_BYOD_SBL_CE_DeviceManagement                       |
 |Password Block Face Unlock                                   |False                                                        |
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
@@ -217,7 +217,7 @@ Description:
 |Work Profile Account Use                                     |allowAllExceptGoogleAccounts                                 |
 |Block Unified Password For Work Profile                      |False                                                        |
 
-### POC_AND_AE_D_BYOD_SBL_NCSC_DataProtection
+### POC_AND_D_BYOD_SBL_NCSC_DataProtection
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -228,7 +228,7 @@ Description:
 |-------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |POC_AND_AE_D_BYOD_SBL_NCSC_DataProtection                    |
+|Display Name                                                 |POC_AND_D_BYOD_SBL_NCSC_DataProtection                       |
 |Password Block Face Unlock                                   |False                                                        |
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
@@ -260,7 +260,7 @@ Description:
 |Work Profile Account Use                                     |blockAll                                                     |
 |Block Unified Password For Work Profile                      |False                                                        |
 
-### POC_AND_AE_D_BYOD_SBL_NCSC_DeviceLock
+### POC_AND_D_BYOD_SBL_NCSC_DeviceLock
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -271,7 +271,7 @@ Description:
 |-----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                       |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                               |Default<br/>                                                 |
-|Display Name                                                     |POC_AND_AE_D_BYOD_SBL_NCSC_DeviceLock                        |
+|Display Name                                                     |POC_AND_D_BYOD_SBL_NCSC_DeviceLock                           |
 |Password Block Face Unlock                                       |False                                                        |
 |Password Block Fingerprint Unlock                                |False                                                        |
 |Password Block Iris Unlock                                       |False                                                        |
@@ -309,7 +309,7 @@ Description:
 |Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
 |Block Unified Password For Work Profile                          |True                                                         |
 
-### POC_AND_AE_D_BYOD_SBL_NCSC_DeviceManagement
+### POC_AND_D_BYOD_SBL_NCSC_DeviceManagement
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -320,7 +320,7 @@ Description:
 |-------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |POC_AND_AE_D_BYOD_SBL_NCSC_DeviceManagement                  |
+|Display Name                                                 |POC_AND_D_BYOD_SBL_NCSC_DeviceManagement                     |
 |Password Block Face Unlock                                   |False                                                        |
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
@@ -352,7 +352,7 @@ Description:
 |Work Profile Account Use                                     |allowAllExceptGoogleAccounts                                 |
 |Block Unified Password For Work Profile                      |False                                                        |
 
-### POC_AND_AE_D_CO_SBL_CE_DataProtection
+### POC_AND_D_CO_SBL_CE_DataProtection
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -363,7 +363,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_CE_DataProtection                        |
+|Display Name                             |POC_AND_D_CO_SBL_CE_DataProtection                           |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
 |Kiosk Customization Status Bar           |notConfigured                                                |
@@ -381,7 +381,7 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_CE_DeviceLock
+### POC_AND_D_CO_SBL_CE_DeviceLock
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -392,7 +392,7 @@ Description:
 |----------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                  |Default<br/>                                                 |
-|Display Name                                        |POC_AND_AE_D_CO_SBL_CE_DeviceLock                            |
+|Display Name                                        |POC_AND_D_CO_SBL_CE_DeviceLock                               |
 |Cross Profile Policies Allow Data Sharing           |notConfigured                                                |
 |Enrollment Profile                                  |notConfigured                                                |
 |Kiosk Customization Status Bar                      |notConfigured                                                |
@@ -414,7 +414,7 @@ Description:
 |Work Profile Password Require Unlock                |deviceDefault                                                |
 |Device Location Mode                                |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_CE_DeviceManagement
+### POC_AND_D_CO_SBL_CE_DeviceManagement
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -425,7 +425,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_CE_DeviceManagement                      |
+|Display Name                             |POC_AND_D_CO_SBL_CE_DeviceManagement                         |
 |Apps Default Permission Policy           |prompt                                                       |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
@@ -443,7 +443,7 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_CE_Updates
+### POC_AND_D_CO_SBL_CE_Updates
 #### Assignments
 |intent |         target          |filter type|filter name|
 |-------|-------------------------|-----------|-----------|
@@ -454,7 +454,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_CE_Updates                               |
+|Display Name                             |POC_AND_D_CO_SBL_CE_Updates                                  |
 |Apps Auto Update Policy                  |always                                                       |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
@@ -473,13 +473,13 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_CIS_DeviceSecurity
+### POC_AND_D_CO_SBL_CIS_DeviceSecurity
 #### Configuration
 |                      setting                       |                                                                          value                                                                           |
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                             |
 |Role Scope Tag Ids                                  |Default<br/>                                                                                                                                              |
-|Display Name                                        |POC_AND_AE_D_CO_SBL_CIS_DeviceSecurity                                                                                                                    |
+|Display Name                                        |POC_AND_D_CO_SBL_CIS_DeviceSecurity                                                                                                                       |
 |Accounts Block Modification                         |True                                                                                                                                                      |
 |Apps Auto Update Policy                             |always                                                                                                                                                    |
 |Bluetooth Block Contact Sharing                     |True                                                                                                                                                      |
@@ -513,7 +513,7 @@ Description:
 |Device Location Mode                                |notConfigured                                                                                                                                             |
 |Device Owner Lock Screen Message                    |**defaultMessage:** If lost please return to Customer Name<br/>**localizedMessages:** <ul></ul>                                                           |
 
-### POC_AND_AE_D_CO_SBL_NCSC_DataProtection
+### POC_AND_D_CO_SBL_NCSC_DataProtection
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -524,7 +524,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_NCSC_DataProtection                      |
+|Display Name                             |POC_AND_D_CO_SBL_NCSC_DataProtection                         |
 |Accounts Block Modification              |True                                                         |
 |Cross Profile Policies Allow Data Sharing|dataSharingFromWorkToPersonalBlocked                         |
 |Enrollment Profile                       |notConfigured                                                |
@@ -547,7 +547,7 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_NCSC_DeviceLock
+### POC_AND_D_CO_SBL_NCSC_DeviceLock
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -558,7 +558,7 @@ Description:
 |----------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                  |Default<br/>                                                 |
-|Display Name                                        |POC_AND_AE_D_CO_SBL_NCSC_DeviceLock                          |
+|Display Name                                        |POC_AND_D_CO_SBL_NCSC_DeviceLock                             |
 |Cross Profile Policies Allow Data Sharing           |notConfigured                                                |
 |Enrollment Profile                                  |notConfigured                                                |
 |Kiosk Customization Status Bar                      |notConfigured                                                |
@@ -586,7 +586,7 @@ Description:
 |Work Profile Password Require Unlock                |deviceDefault                                                |
 |Device Location Mode                                |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_NCSC_DeviceManagement
+### POC_AND_D_CO_SBL_NCSC_DeviceManagement
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -597,7 +597,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_NCSC_DeviceManagement                    |
+|Display Name                             |POC_AND_D_CO_SBL_NCSC_DeviceManagement                       |
 |Apps Default Permission Policy           |prompt                                                       |
 |Apps Recommend Skipping First Use Hints  |True                                                         |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
@@ -620,7 +620,7 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SBL_NCSC_Updates
+### POC_AND_D_CO_SBL_NCSC_Updates
 #### Assignments
 |intent |          target           |filter type|filter name|
 |-------|---------------------------|-----------|-----------|
@@ -631,7 +631,7 @@ Description:
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |POC_AND_AE_D_CO_SBL_NCSC_Updates                             |
+|Display Name                             |POC_AND_D_CO_SBL_NCSC_Updates                                |
 |Apps Auto Update Policy                  |always                                                       |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
@@ -650,21 +650,21 @@ Description:
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_AE_D_CO_SupportInformation
+### POC_AND_D_CO_SupportInformation
 Description: Using these settings, you can customize some support messages shown to users, and show these messages in different languages\.
 
 https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-android-for-work?tabs=aecorporate#custom-support-information
 #### Assignments
 |intent |  target   |filter type|filter name|
 |-------|-----------|-----------|-----------|
-|Include|All Devices|include    |AND_AE_CO  |
+|Include|All Devices|include    |AND_CO     |
 
 #### Configuration
 |                 setting                 |                                                                                                                              value                                                                                                                              |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                                                                                                                                    |
 |Role Scope Tag Ids                       |Default<br/>                                                                                                                                                                                                                                                     |
-|Display Name                             |POC_AND_AE_D_CO_SupportInformation                                                                                                                                                                                                                               |
+|Display Name                             |POC_AND_D_CO_SupportInformation                                                                                                                                                                                                                                  |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                                                                                                                                                                                                                    |
 |Enrollment Profile                       |notConfigured                                                                                                                                                                                                                                                    |
 |Kiosk Customization Status Bar           |notConfigured                                                                                                                                                                                                                                                    |
@@ -684,13 +684,13 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-res
 |Device Owner Lock Screen Message         |**defaultMessage:** If found, please contact XXXXX XXXXXX.<br/>**localizedMessages:** <ul></ul>                                                                                                                                                                  |
 |Short Help Text                          |**defaultMessage:** This action has been blocked. For more information, contact the [CustomerName] Service Desk on XXXXX XXXXXX.<br/>**localizedMessages:** <ul></ul>                                                                                            |
 
-### POC_AND_AE_D_COBO_DD_MultiAppKiosk
+### POC_AND_D_COBO_DD_MultiAppKiosk
 #### Configuration
 |                   setting                   |                                                                                                                                                                                                                                      value                                                                                                                                                                                                                                      |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                                   |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |Role Scope Tag Ids                           |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|Display Name                                 |POC_AND_AE_D_COBO_DD_MultiAppKiosk                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|Display Name                                 |POC_AND_D_COBO_DD_MultiAppKiosk                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |Cross Profile Policies Allow Data Sharing    |notConfigured                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |Enrollment Profile                           |dedicatedDevice                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |Kiosk Customization Status Bar               |notConfigured                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -723,13 +723,13 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-res
 |Kiosk Mode Apps                              |**name:** Microsoft Edge: Browse with AI<br/>**publisher:** Microsoft Corporation<br/>**appStoreUrl:** None<br/>**appId:** com.microsoft.emmx<br/><br/>**name:** Microsoft Teams<br/>**publisher:** Microsoft Corporation<br/>**appStoreUrl:** None<br/>**appId:** com.microsoft.teams<br/><br/>                                                                                                                                                                                 |
 |Kiosk Mode App Positions                     |**position:** 1<br/>**@odata.type:** #microsoft.graph.androidDeviceOwnerKioskModeApp<br/>**package:** com.microsoft.emmx<br/>**className:** None<br/>**offlineAppAccessEnabled:** None<br/>**preSignInAppAccessEnabled:** None<br/><br/>**position:** 2<br/>**@odata.type:** #microsoft.graph.androidDeviceOwnerKioskModeApp<br/>**package:** com.microsoft.teams<br/>**className:** None<br/>**offlineAppAccessEnabled:** None<br/>**preSignInAppAccessEnabled:** None<br/><br/>|
 
-### POC_AND_AE_D_COBO_DD_SingleAppKiosk
+### POC_AND_D_COBO_DD_SingleAppKiosk
 #### Configuration
 |                  setting                  |                                                          value                                                           |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 |Odata type                                 |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                             |
 |Role Scope Tag Ids                         |Default<br/>                                                                                                              |
-|Display Name                               |POC_AND_AE_D_COBO_DD_SingleAppKiosk                                                                                       |
+|Display Name                               |POC_AND_D_COBO_DD_SingleAppKiosk                                                                                          |
 |Cross Profile Policies Allow Data Sharing  |notConfigured                                                                                                             |
 |Enrollment Profile                         |dedicatedDevice                                                                                                           |
 |Kiosk Customization Device Settings Blocked|True                                                                                                                      |
@@ -754,13 +754,13 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-res
 |Device Location Mode                       |notConfigured                                                                                                             |
 |Kiosk Mode Apps                            |**name:** com.microsoft.emmx<br/>**publisher:** None<br/>**appStoreUrl:** None<br/>**appId:** com.microsoft.emmx<br/><br/>|
 
-### POC_AND_AE_D_COBO_DS_MultiAppKiosk
+### POC_AND_D_COBO_DS_MultiAppKiosk
 #### Configuration
 |                             setting                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                                                        |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |Role Scope Tag Ids                                                |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|Display Name                                                      |POC_AND_AE_D_COBO_DS_MultiAppKiosk                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|Display Name                                                      |POC_AND_D_COBO_DS_MultiAppKiosk                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |Cross Profile Policies Allow Data Sharing                         |notConfigured                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |Enrollment Profile                                                |dedicatedDevice                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |Kiosk Customization Status Bar                                    |notConfigured                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -1183,14 +1183,62 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Allow Windows11 Upgrade                 |False                                                                                                                                                    |
 |Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateScheduledInstall<br/>**scheduledInstallDay:** everyday<br/>**scheduledInstallTime:** 03:00:00.0000000<br/>|
 
-### REF_AND_AE_D_BYOD_SBL_MS_Level_2
+### REF_ADA_D_CO_Example
+#### Configuration
+|                  setting                   |                      value                       |
+|--------------------------------------------|--------------------------------------------------|
+|Odata type                                  |#microsoft.graph.androidGeneralDeviceConfiguration|
+|Role Scope Tag Ids                          |Default<br/>                                      |
+|Display Name                                |REF_ADA_D_CO_Example                              |
+|Apps Block Clipboard Sharing                |False                                             |
+|Apps Block Copy Paste                       |False                                             |
+|Apps Block You Tube                         |False                                             |
+|Bluetooth Blocked                           |False                                             |
+|Camera Blocked                              |True                                              |
+|Cellular Block Data Roaming                 |False                                             |
+|Cellular Block Messaging                    |False                                             |
+|Cellular Block Voice Roaming                |False                                             |
+|Cellular Block Wi Fi Tethering              |False                                             |
+|Compliant App List Type                     |none                                              |
+|Diagnostic Data Block Submission            |False                                             |
+|Location Services Blocked                   |False                                             |
+|Google Account Block Auto Sync              |False                                             |
+|Google Play Store Blocked                   |False                                             |
+|Kiosk Mode Block Sleep Button               |False                                             |
+|Kiosk Mode Block Volume Buttons             |False                                             |
+|Date And Time Block Changes                 |False                                             |
+|Nfc Blocked                                 |False                                             |
+|Password Block Fingerprint Unlock           |False                                             |
+|Password Block Trust Agents                 |False                                             |
+|Password Required Type                      |numeric                                           |
+|Required Password Complexity                |none                                              |
+|Password Required                           |False                                             |
+|Power Off Blocked                           |False                                             |
+|Factory Reset Blocked                       |False                                             |
+|Screen Capture Blocked                      |False                                             |
+|Device Sharing Allowed                      |False                                             |
+|Storage Block Google Backup                 |False                                             |
+|Storage Block Removable Storage             |False                                             |
+|Storage Require Device Encryption           |False                                             |
+|Storage Require Removable Storage Encryption|False                                             |
+|Voice Assistant Blocked                     |False                                             |
+|Voice Dialing Blocked                       |False                                             |
+|Web Browser Block Popups                    |False                                             |
+|Web Browser Block Autofill                  |False                                             |
+|Web Browser Block Java Script               |False                                             |
+|Web Browser Blocked                         |False                                             |
+|Web Browser Cookie Settings                 |browserDefault                                    |
+|Wi Fi Blocked                               |False                                             |
+|Security Require Verify Apps                |False                                             |
+
+### REF_AND_D_BYOD_SBL_MS_Level_2
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
 #### Configuration
 |                             setting                             |                            value                            |
 |-----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                       |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                               |Default<br/>                                                 |
-|Display Name                                                     |REF_AND_AE_D_BYOD_SBL_MS_Level_2                             |
+|Display Name                                                     |REF_AND_D_BYOD_SBL_MS_Level_2                                |
 |Password Block Face Unlock                                       |False                                                        |
 |Password Block Fingerprint Unlock                                |False                                                        |
 |Password Block Iris Unlock                                       |False                                                        |
@@ -1225,14 +1273,14 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Work Profile Account Use                                         |blockAll                                                     |
 |Block Unified Password For Work Profile                          |False                                                        |
 
-### REF_AND_AE_D_BYOD_SBL_MS_Level_3
+### REF_AND_D_BYOD_SBL_MS_Level_3
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
 #### Configuration
 |                            setting                             |                            value                            |
 |----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                      |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |REF_AND_AE_D_BYOD_SBL_MS_Level_3                             |
+|Display Name                                                    |REF_AND_D_BYOD_SBL_MS_Level_3                                |
 |Password Block Face Unlock                                      |False                                                        |
 |Password Block Fingerprint Unlock                               |False                                                        |
 |Password Block Iris Unlock                                      |False                                                        |
@@ -1270,17 +1318,17 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Work Profile Account Use                                        |allowAllExceptGoogleAccounts                                 |
 |Block Unified Password For Work Profile                         |False                                                        |
 
-### REF_AND_AE_D_CO_CERT_Trusted
+### REF_AND_D_CO_CERT_Trusted
 #### Configuration
 |        setting         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type              |#microsoft.graph.androidWorkProfileTrustedRootCertificate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |Role Scope Tag Ids      |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|Display Name            |REF_AND_AE_D_CO_CERT_Trusted                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|Display Name            |REF_AND_D_CO_CERT_Trusted                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |Trusted Root Certificate|<details><summary>Click to expand...</summary>MIIDaTCCAlGgAwIBAgIQGaNeMMJ7ZIlEAB5Y0DYsfzANBgkqhkiG9w0BAQ0FADBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFjAUBgoJkiaJk/IsZAEZFgZlbm5iZWUxFjAUBgNVBAMTDWVubmJlZS1MQUItQ0EwHhcNMjMxMTA4MTAzMjMwWhcNMjgxMTA4MTA0MjMwWjBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFjAUBgoJkiaJk/IsZAEZFgZlbm5iZWUxFjAUBgNVBAMTDWVubmJlZS1MQUItQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGsRq3OwhvN3vI1LO+/96QvAHJJZ7HBjQ6XlVHvHPwhsGYMfw6J3mLNFeM4GwNyEjCJU7xBP8GM/YWZZUOMaYPgTPIhAXUqvu3ZBfyGjtpiAdpz7D3Ns0jStk8DN7zOmySM/67cCSKHAlrKCEeoH0oTC1o+Etx0zUCnPloIsasX9CHlCM5I2YFfU8mAZ5CflndK2SlEyApRJF56mj54xGLytvxpJh8KzT1qdej0Sbfd480smYOv9C5oiQi3Kvd2J1xD+ZRwMDbXqkyPnta2RBwcQPsiQVgmLPmJRE8WP6q7IfU55b64nj+Pft4erN0fzezBTVjDnnojbkIOoDqbcnpAgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQ0pwEaE/+ri/pmm3FRXY4wz9fAPzAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQ0FAAOCAQEAf7yqpBiCyif8Ut9xUGaeFlO8RgMIFfL2fY2Xhvpzy/MITKbLF84ycUWRcGkiQoUOCj31Lp25uLm6qmEUrBOxGCI87vLc9db8DMuDxfNd3F4JX2cPysFklBrXX5QvbTBDJ+cFV9Bf34x7vKMg65KPFxuHQTqGo3oClpmRgcytdBpXtFM17zrx2QFkpVFLEPIF3Vzo4jUbU5AQbbcu/yINJe4s2ZzgHXghh/gPRrw8XxFWZXDy1JhlBJG8Am99Bl3uhP8Y961e1TRdYnhB6eqNT65Ivm90+PML1gadKodYFXu3PSHsFdGzRdux34qFH3uTyEZpiPOuoeRtNF+ay4DT/A==</details>|
 |Cert File Name          |root.cer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-### REF_AND_AE_D_CO_MicrosoftLauncher_Branding
+### REF_AND_D_CO_MicrosoftLauncher_Branding
 Description: Use these settings to configure a kiosk\-style experience on your dedicated or fully managed devices, or to customize the home screen experiences on your fully managed devices\.
 
 https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-android-for-work?tabs=aecorporate#device-experience
@@ -1289,14 +1337,14 @@ https://techcommunity.microsoft.com/blog/intunecustomersuccess/selecting-a-home-
 #### Assignments
 |intent |  target   |filter type|filter name|
 |-------|-----------|-----------|-----------|
-|Include|All Devices|include    |AND_AE_CO  |
+|Include|All Devices|include    |AND_CO     |
 
 #### Configuration
 |                        setting                         |                            value                            |
 |--------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                              |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                      |Default<br/>                                                 |
-|Display Name                                            |REF_AND_AE_D_CO_MicrosoftLauncher_Branding                   |
+|Display Name                                            |REF_AND_D_CO_MicrosoftLauncher_Branding                      |
 |Cross Profile Policies Allow Data Sharing               |notConfigured                                                |
 |Microsoft Launcher Configuration Enabled                |True                                                         |
 |Microsoft Launcher Custom Wallpaper Enabled             |True                                                         |
@@ -1325,14 +1373,14 @@ https://techcommunity.microsoft.com/blog/intunecustomersuccess/selecting-a-home-
 |Work Profile Password Require Unlock                    |deviceDefault                                                |
 |Device Location Mode                                    |notConfigured                                                |
 
-### REF_AND_AE_D_CO_SBL_MS_Level_1
+### REF_AND_D_CO_SBL_MS_Level_1
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
 #### Configuration
 |                            setting                             |                            value                            |
 |----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                      |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |REF_AND_AE_D_CO_SBL_MS_Level_1                               |
+|Display Name                                                    |REF_AND_D_CO_SBL_MS_Level_1                                  |
 |Apps Auto Update Policy                                         |wiFiOnly                                                     |
 |Certificate Credential Configuration Disabled                   |True                                                         |
 |Cross Profile Policies Allow Data Sharing                       |notConfigured                                                |
@@ -1359,14 +1407,14 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Work Profile Password Require Unlock                            |deviceDefault                                                |
 |Device Location Mode                                            |notConfigured                                                |
 
-### REF_AND_AE_D_CO_SBL_MS_Level_2
+### REF_AND_D_CO_SBL_MS_Level_2
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2
 #### Configuration
 |                       setting                        |                            value                            |
 |------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                            |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                    |Default<br/>                                                 |
-|Display Name                                          |REF_AND_AE_D_CO_SBL_MS_Level_2                               |
+|Display Name                                          |REF_AND_D_CO_SBL_MS_Level_2                                  |
 |Cross Profile Policies Allow Data Sharing             |notConfigured                                                |
 |Enrollment Profile                                    |notConfigured                                                |
 |Google Accounts Blocked                               |True                                                         |
@@ -1390,14 +1438,14 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Work Profile Password Require Unlock                  |deviceDefault                                                |
 |Device Location Mode                                  |notConfigured                                                |
 
-### REF_AND_AE_D_CO_SBL_MS_Level_3
+### REF_AND_D_CO_SBL_MS_Level_3
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3
 #### Configuration
 |                            setting                             |                            value                            |
 |----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                      |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |REF_AND_AE_D_CO_SBL_MS_Level_3                               |
+|Display Name                                                    |REF_AND_D_CO_SBL_MS_Level_3                                  |
 |Apps Auto Update Policy                                         |always                                                       |
 |Cellular Block Wi Fi Tethering                                  |True                                                         |
 |Cross Profile Policies Allow Data Sharing                       |notConfigured                                                |
@@ -1421,7 +1469,7 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Work Profile Password Require Unlock                            |deviceDefault                                                |
 |Device Location Mode                                            |notConfigured                                                |
 
-### REF_AND_AE_D_CO_VPN_MicrosoftDefender
+### REF_AND_D_CO_VPN_MicrosoftDefender
 Description: Used for Defender for Endpoint onboarding only\.
 
 https://learn.microsoft.com/en-us/defender-endpoint/android-intune
@@ -1430,7 +1478,7 @@ https://learn.microsoft.com/en-us/defender-endpoint/android-intune
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |REF_AND_AE_D_CO_VPN_MicrosoftDefender                        |
+|Display Name                             |REF_AND_D_CO_VPN_MicrosoftDefender                           |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
 |Kiosk Customization Status Bar           |notConfigured                                                |
@@ -1446,13 +1494,13 @@ https://learn.microsoft.com/en-us/defender-endpoint/android-intune
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### REF_AND_AE_D_CO_VPN_MicrosoftTunnel
+### REF_AND_D_CO_VPN_MicrosoftTunnel
 #### Configuration
 |        setting         |                                                                                                                                                               value                                                                                                                                                               |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type              |#microsoft.graph.androidDeviceOwnerVpnConfiguration                                                                                                                                                                                                                                                                                |
 |Role Scope Tag Ids      |Default<br/>                                                                                                                                                                                                                                                                                                                       |
-|Display Name            |REF_AND_AE_D_CO_VPN_MicrosoftTunnel                                                                                                                                                                                                                                                                                                |
+|Display Name            |REF_AND_D_CO_VPN_MicrosoftTunnel                                                                                                                                                                                                                                                                                                   |
 |Authentication Method   |azureAD                                                                                                                                                                                                                                                                                                                            |
 |Connection Name         |Customer VPN                                                                                                                                                                                                                                                                                                                       |
 |Connection Type         |microsoftProtect                                                                                                                                                                                                                                                                                                                   |
@@ -1462,13 +1510,13 @@ https://learn.microsoft.com/en-us/defender-endpoint/android-intune
 |Custom Data             |**key:** MicrosoftDefenderAppSettings<br/>**value:** [{"key":"vpn","type":"int","value":"1"},{"key":"defendertoggle","type":"int","value":"0"},{"key":"GlobalSecureAccess","type":"int","value":"0"},{"key":"antiphishing","type":"int","value":"0"},{"key":"DefenderNetworkProtectionEnable","type":"int","value":"0"}]<br/><br/> |
 |Custom Key Value Data   |**name:** MicrosoftDefenderAppSettings<br/>**value:** [{"key":"vpn","type":"int","value":"1"},{"key":"defendertoggle","type":"int","value":"0"},{"key":"GlobalSecureAccess","type":"int","value":"0"},{"key":"antiphishing","type":"int","value":"0"},{"key":"DefenderNetworkProtectionEnable","type":"int","value":"0"}]<br/><br/>|
 
-### REF_AND_AE_D_CO_WiFi_SSIDName
+### REF_AND_D_CO_WiFi_SSIDName
 #### Configuration
 |              setting              |                       value                        |
 |-----------------------------------|----------------------------------------------------|
 |Odata type                         |#microsoft.graph.androidDeviceOwnerWiFiConfiguration|
 |Role Scope Tag Ids                 |Default<br/>                                        |
-|Display Name                       |REF_AND_AE_D_CO_WiFi_SSIDName                       |
+|Display Name                       |REF_AND_D_CO_WiFi_SSIDName                          |
 |Network Name                       |WIFIProfile                                         |
 |Ssid                               |WIFIProfile                                         |
 |Connect Automatically              |False                                               |
@@ -1476,6 +1524,16 @@ https://learn.microsoft.com/en-us/defender-endpoint/android-intune
 |Wi Fi Security Type                |wep                                                 |
 |Pre Shared Key Is Set              |True                                                |
 |Proxy Settings                     |none                                                |
+
+### REF_AOSP_D_CO_Example
+#### Configuration
+|            setting            |                       value                       |
+|-------------------------------|---------------------------------------------------|
+|Odata type                     |#microsoft.graph.aospDeviceOwnerDeviceConfiguration|
+|Role Scope Tag Ids             |Default<br/>                                       |
+|Display Name                   |REF_AOSP_D_CO_Example                              |
+|Password Required Type         |deviceDefault                                      |
+|Storage Block Usb File Transfer|True                                               |
 
 ### REF_IOS_D_CO_MicrosoftDefender_ZeroTouch
 Description: The Microsoft Defender app offers enhanced capabilities on supervised iOS/iPadOS devices, using the advanced management features of the platform\. It also delivers Web Protection without the need for a local VPN setup on the device\. This ensures a seamless user experience while safeguarding against phishing and other web\-based threats\.
@@ -1865,206 +1923,6 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Display Name      |REF_WIN_D_COPE_WindowsHello_DisablePostLogonProvisioning                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |Oma Settings      |**@odata.type:** #microsoft.graph.omaSettingBoolean<br/>**displayName:** DisablePostLogonProvisioning<br/>**description:** https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesdisablepostlogonprovisioning<br/>**omaUri:** ./Device/Vendor/MSFT/PassportForWork/69b2ff03-08b5-4781-b7ea-af7ffbf790c4/Policies/DisablePostLogonProvisioning<br/>**secretReferenceValueId:** None<br/>**isEncrypted:** False<br/>**value:** True<br/><br/>|
 
-### UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DataProtection
-Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
-#### Assignments
-|intent |            target            |filter type|filter name|
-|-------|------------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
-
-#### Configuration
-|                           setting                           |                            value                            |
-|-------------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DataProtection                 |
-|Password Block Face Unlock                                   |False                                                        |
-|Password Block Fingerprint Unlock                            |False                                                        |
-|Password Block Iris Unlock                                   |False                                                        |
-|Password Block Trust Agents                                  |False                                                        |
-|Password Required Type                                       |atLeastNumeric                                               |
-|Required Password Complexity                                 |none                                                         |
-|Work Profile Allow App Installs From Unknown Sources         |False                                                        |
-|Work Profile Data Sharing Type                               |allowPersonalToWork                                          |
-|Work Profile Block Notifications While Device Locked         |True                                                         |
-|Work Profile Block Adding Accounts                           |True                                                         |
-|Work Profile Bluetooth Enable Contact Sharing                |False                                                        |
-|Work Profile Block Screen Capture                            |True                                                         |
-|Work Profile Block Cross Profile Caller Id                   |True                                                         |
-|Work Profile Block Camera                                    |False                                                        |
-|Work Profile Block Cross Profile Contacts Search             |True                                                         |
-|Work Profile Block Cross Profile Copy Paste                  |True                                                         |
-|Work Profile Default App Permission Policy                   |deviceDefault                                                |
-|Work Profile Password Block Face Unlock                      |False                                                        |
-|Work Profile Password Block Fingerprint Unlock               |False                                                        |
-|Work Profile Password Block Iris Unlock                      |False                                                        |
-|Work Profile Password Block Trust Agents                     |False                                                        |
-|Work Profile Password Required Type                          |deviceDefault                                                |
-|Work Profile Required Password Complexity                    |none                                                         |
-|Work Profile Require Password                                |False                                                        |
-|Security Require Verify Apps                                 |False                                                        |
-|Vpn Enable Always On Lockdown Mode                           |False                                                        |
-|Work Profile Allow Widgets                                   |False                                                        |
-|Work Profile Block Personal App Installs From Unknown Sources|False                                                        |
-|Work Profile Account Use                                     |blockAll                                                     |
-|Block Unified Password For Work Profile                      |False                                                        |
-
-### UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DeviceLock
-Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
-#### Assignments
-|intent |            target            |filter type|filter name|
-|-------|------------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
-
-#### Configuration
-|                             setting                             |                            value                            |
-|-----------------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                                       |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                               |Default<br/>                                                 |
-|Display Name                                                     |UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DeviceLock                     |
-|Password Block Face Unlock                                       |False                                                        |
-|Password Block Fingerprint Unlock                                |False                                                        |
-|Password Block Iris Unlock                                       |False                                                        |
-|Password Block Trust Agents                                      |False                                                        |
-|Password Minimum Length                                          |                                                            6|
-|Password Minutes Of Inactivity Before Screen Timeout             |                                                            5|
-|Password Previous Password Block Count                           |                                                           24|
-|Password Sign In Failure Count Before Factory Reset              |                                                           10|
-|Password Required Type                                           |numericComplex                                               |
-|Required Password Complexity                                     |high                                                         |
-|Work Profile Allow App Installs From Unknown Sources             |False                                                        |
-|Work Profile Data Sharing Type                                   |deviceDefault                                                |
-|Work Profile Block Notifications While Device Locked             |False                                                        |
-|Work Profile Block Adding Accounts                               |False                                                        |
-|Work Profile Bluetooth Enable Contact Sharing                    |False                                                        |
-|Work Profile Block Screen Capture                                |False                                                        |
-|Work Profile Block Cross Profile Caller Id                       |False                                                        |
-|Work Profile Block Camera                                        |False                                                        |
-|Work Profile Block Cross Profile Contacts Search                 |False                                                        |
-|Work Profile Block Cross Profile Copy Paste                      |False                                                        |
-|Work Profile Default App Permission Policy                       |deviceDefault                                                |
-|Work Profile Password Block Face Unlock                          |False                                                        |
-|Work Profile Password Block Fingerprint Unlock                   |False                                                        |
-|Work Profile Password Block Iris Unlock                          |False                                                        |
-|Work Profile Password Block Trust Agents                         |True                                                         |
-|Work Profile Password Minimum Length                             |                                                            6|
-|Work Profile Password Minutes Of Inactivity Before Screen Timeout|                                                            5|
-|Work Profile Password Previous Password Block Count              |                                                           24|
-|Work Profile Password Sign In Failure Count Before Factory Reset |                                                           10|
-|Work Profile Password Required Type                              |numericComplex                                               |
-|Work Profile Required Password Complexity                        |high                                                         |
-|Work Profile Require Password                                    |True                                                         |
-|Security Require Verify Apps                                     |False                                                        |
-|Vpn Enable Always On Lockdown Mode                               |False                                                        |
-|Work Profile Allow Widgets                                       |False                                                        |
-|Work Profile Block Personal App Installs From Unknown Sources    |False                                                        |
-|Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
-|Block Unified Password For Work Profile                          |True                                                         |
-
-### UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DeviceManagement
-Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
-#### Assignments
-|intent |            target            |filter type|filter name|
-|-------|------------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
-
-#### Configuration
-|                           setting                           |                            value                            |
-|-------------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                           |Default<br/>                                                 |
-|Display Name                                                 |UAT_AND_AE_D_BYOD_SBL_NCSC_MS_DeviceManagement               |
-|Password Block Face Unlock                                   |False                                                        |
-|Password Block Fingerprint Unlock                            |False                                                        |
-|Password Block Iris Unlock                                   |False                                                        |
-|Password Block Trust Agents                                  |False                                                        |
-|Password Required Type                                       |atLeastNumeric                                               |
-|Required Password Complexity                                 |none                                                         |
-|Work Profile Allow App Installs From Unknown Sources         |False                                                        |
-|Work Profile Data Sharing Type                               |deviceDefault                                                |
-|Work Profile Block Notifications While Device Locked         |False                                                        |
-|Work Profile Block Adding Accounts                           |False                                                        |
-|Work Profile Bluetooth Enable Contact Sharing                |False                                                        |
-|Work Profile Block Screen Capture                            |False                                                        |
-|Work Profile Block Cross Profile Caller Id                   |False                                                        |
-|Work Profile Block Camera                                    |False                                                        |
-|Work Profile Block Cross Profile Contacts Search             |False                                                        |
-|Work Profile Block Cross Profile Copy Paste                  |False                                                        |
-|Work Profile Default App Permission Policy                   |prompt                                                       |
-|Work Profile Password Block Face Unlock                      |False                                                        |
-|Work Profile Password Block Fingerprint Unlock               |False                                                        |
-|Work Profile Password Block Iris Unlock                      |False                                                        |
-|Work Profile Password Block Trust Agents                     |False                                                        |
-|Work Profile Password Required Type                          |deviceDefault                                                |
-|Work Profile Required Password Complexity                    |none                                                         |
-|Work Profile Require Password                                |False                                                        |
-|Security Require Verify Apps                                 |True                                                         |
-|Vpn Enable Always On Lockdown Mode                           |False                                                        |
-|Work Profile Allow Widgets                                   |False                                                        |
-|Work Profile Block Personal App Installs From Unknown Sources|True                                                         |
-|Work Profile Account Use                                     |allowAllExceptGoogleAccounts                                 |
-|Block Unified Password For Work Profile                      |False                                                        |
-
-### UAT_AND_AE_D_CO_SBL_NCSC_MS_DataProtection
-Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3
-#### Assignments
-|intent |            target            |filter type|filter name|
-|-------|------------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_NCSC_MS_COPE|none       |           |
-
-#### Configuration
-|                           setting                           |                                 value                                 |
-|-------------------------------------------------------------|-----------------------------------------------------------------------|
-|Odata type                                                   |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration          |
-|Role Scope Tag Ids                                           |Default<br/>                                                           |
-|Display Name                                                 |UAT_AND_AE_D_CO_SBL_NCSC_MS_DataProtection                             |
-|Accounts Block Modification                                  |True                                                                   |
-|Bluetooth Block Contact Sharing                              |True                                                                   |
-|Cross Profile Policies Allow Copy Paste                      |True                                                                   |
-|Cross Profile Policies Allow Data Sharing                    |dataSharingFromWorkToPersonalBlocked                                   |
-|Cross Profile Policies Show Work Contacts In Personal Profile|False                                                                  |
-|Enrollment Profile                                           |notConfigured                                                          |
-|Google Accounts Blocked                                      |True                                                                   |
-|Kiosk Customization Status Bar                               |notConfigured                                                          |
-|Kiosk Customization System Navigation                        |notConfigured                                                          |
-|Is Kiosk Mode Exit Code Set                                  |False                                                                  |
-|Kiosk Mode Use Managed Home Screen App                       |notConfigured                                                          |
-|Nfc Block Outgoing Beam                                      |True                                                                   |
-|Password Block Keyguard Features                             |camera<br/>remoteInput<br/>trustAgents<br/>unredactedNotifications<br/>|
-|Password Required Type                                       |deviceDefault                                                          |
-|Password Require Unlock                                      |deviceDefault                                                          |
-|Screen Capture Blocked                                       |True                                                                   |
-|Security Require Verify Apps                                 |False                                                                  |
-|Storage Block External Media                                 |True                                                                   |
-|Storage Block Usb File Transfer                              |True                                                                   |
-|Users Block Add                                              |True                                                                   |
-|Users Block Remove                                           |True                                                                   |
-|Vpn Always On Lockdown Mode                                  |False                                                                  |
-|Vpn Always On Package Identifier                             |<details><summary>Click to expand...</summary></details>               |
-|Personal Profile Camera Blocked                              |True                                                                   |
-|Personal Profile Play Store Mode                             |notConfigured                                                          |
-|Work Profile Password Required Type                          |deviceDefault                                                          |
-|Work Profile Password Require Unlock                         |deviceDefault                                                          |
-|Device Location Mode                                         |notConfigured                                                          |
-
 ### UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceLock
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
 
@@ -2111,7 +1969,207 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Password Require Unlock                            |deviceDefault                                                |
 |Device Location Mode                                            |notConfigured                                                |
 
-### UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceManagement
+### UAT_AND_D_BYOD_SBL_NCSC_MS_DataProtection
+Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
+#### Assignments
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
+
+#### Configuration
+|                           setting                           |                            value                            |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+|Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
+|Role Scope Tag Ids                                           |Default<br/>                                                 |
+|Display Name                                                 |UAT_AND_D_BYOD_SBL_NCSC_MS_DataProtection                    |
+|Password Block Face Unlock                                   |False                                                        |
+|Password Block Fingerprint Unlock                            |False                                                        |
+|Password Block Iris Unlock                                   |False                                                        |
+|Password Block Trust Agents                                  |False                                                        |
+|Password Required Type                                       |atLeastNumeric                                               |
+|Required Password Complexity                                 |none                                                         |
+|Work Profile Allow App Installs From Unknown Sources         |False                                                        |
+|Work Profile Data Sharing Type                               |allowPersonalToWork                                          |
+|Work Profile Block Notifications While Device Locked         |True                                                         |
+|Work Profile Block Adding Accounts                           |True                                                         |
+|Work Profile Bluetooth Enable Contact Sharing                |False                                                        |
+|Work Profile Block Screen Capture                            |True                                                         |
+|Work Profile Block Cross Profile Caller Id                   |True                                                         |
+|Work Profile Block Camera                                    |False                                                        |
+|Work Profile Block Cross Profile Contacts Search             |True                                                         |
+|Work Profile Block Cross Profile Copy Paste                  |True                                                         |
+|Work Profile Default App Permission Policy                   |deviceDefault                                                |
+|Work Profile Password Block Face Unlock                      |False                                                        |
+|Work Profile Password Block Fingerprint Unlock               |False                                                        |
+|Work Profile Password Block Iris Unlock                      |False                                                        |
+|Work Profile Password Block Trust Agents                     |False                                                        |
+|Work Profile Password Required Type                          |deviceDefault                                                |
+|Work Profile Required Password Complexity                    |none                                                         |
+|Work Profile Require Password                                |False                                                        |
+|Security Require Verify Apps                                 |False                                                        |
+|Vpn Enable Always On Lockdown Mode                           |False                                                        |
+|Work Profile Allow Widgets                                   |False                                                        |
+|Work Profile Block Personal App Installs From Unknown Sources|False                                                        |
+|Work Profile Account Use                                     |blockAll                                                     |
+|Block Unified Password For Work Profile                      |False                                                        |
+
+### UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceLock
+Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
+#### Assignments
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
+
+#### Configuration
+|                             setting                             |                            value                            |
+|-----------------------------------------------------------------|-------------------------------------------------------------|
+|Odata type                                                       |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
+|Role Scope Tag Ids                                               |Default<br/>                                                 |
+|Display Name                                                     |UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceLock                        |
+|Password Block Face Unlock                                       |False                                                        |
+|Password Block Fingerprint Unlock                                |False                                                        |
+|Password Block Iris Unlock                                       |False                                                        |
+|Password Block Trust Agents                                      |False                                                        |
+|Password Minimum Length                                          |                                                            6|
+|Password Minutes Of Inactivity Before Screen Timeout             |                                                            5|
+|Password Previous Password Block Count                           |                                                           24|
+|Password Sign In Failure Count Before Factory Reset              |                                                           10|
+|Password Required Type                                           |numericComplex                                               |
+|Required Password Complexity                                     |high                                                         |
+|Work Profile Allow App Installs From Unknown Sources             |False                                                        |
+|Work Profile Data Sharing Type                                   |deviceDefault                                                |
+|Work Profile Block Notifications While Device Locked             |False                                                        |
+|Work Profile Block Adding Accounts                               |False                                                        |
+|Work Profile Bluetooth Enable Contact Sharing                    |False                                                        |
+|Work Profile Block Screen Capture                                |False                                                        |
+|Work Profile Block Cross Profile Caller Id                       |False                                                        |
+|Work Profile Block Camera                                        |False                                                        |
+|Work Profile Block Cross Profile Contacts Search                 |False                                                        |
+|Work Profile Block Cross Profile Copy Paste                      |False                                                        |
+|Work Profile Default App Permission Policy                       |deviceDefault                                                |
+|Work Profile Password Block Face Unlock                          |False                                                        |
+|Work Profile Password Block Fingerprint Unlock                   |False                                                        |
+|Work Profile Password Block Iris Unlock                          |False                                                        |
+|Work Profile Password Block Trust Agents                         |True                                                         |
+|Work Profile Password Minimum Length                             |                                                            6|
+|Work Profile Password Minutes Of Inactivity Before Screen Timeout|                                                            5|
+|Work Profile Password Previous Password Block Count              |                                                           24|
+|Work Profile Password Sign In Failure Count Before Factory Reset |                                                           10|
+|Work Profile Password Required Type                              |numericComplex                                               |
+|Work Profile Required Password Complexity                        |high                                                         |
+|Work Profile Require Password                                    |True                                                         |
+|Security Require Verify Apps                                     |False                                                        |
+|Vpn Enable Always On Lockdown Mode                               |False                                                        |
+|Work Profile Allow Widgets                                       |False                                                        |
+|Work Profile Block Personal App Installs From Unknown Sources    |False                                                        |
+|Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
+|Block Unified Password For Work Profile                          |True                                                         |
+
+### UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement
+Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-enhanced-security-level-2
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-personally-owned#personally-owned-work-profile-high-security-level-3
+#### Assignments
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_AND_NCSC_MS_BYOD|none       |           |
+
+#### Configuration
+|                           setting                           |                            value                            |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+|Odata type                                                   |#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration|
+|Role Scope Tag Ids                                           |Default<br/>                                                 |
+|Display Name                                                 |UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement                  |
+|Password Block Face Unlock                                   |False                                                        |
+|Password Block Fingerprint Unlock                            |False                                                        |
+|Password Block Iris Unlock                                   |False                                                        |
+|Password Block Trust Agents                                  |False                                                        |
+|Password Required Type                                       |atLeastNumeric                                               |
+|Required Password Complexity                                 |none                                                         |
+|Work Profile Allow App Installs From Unknown Sources         |False                                                        |
+|Work Profile Data Sharing Type                               |deviceDefault                                                |
+|Work Profile Block Notifications While Device Locked         |False                                                        |
+|Work Profile Block Adding Accounts                           |False                                                        |
+|Work Profile Bluetooth Enable Contact Sharing                |False                                                        |
+|Work Profile Block Screen Capture                            |False                                                        |
+|Work Profile Block Cross Profile Caller Id                   |False                                                        |
+|Work Profile Block Camera                                    |False                                                        |
+|Work Profile Block Cross Profile Contacts Search             |False                                                        |
+|Work Profile Block Cross Profile Copy Paste                  |False                                                        |
+|Work Profile Default App Permission Policy                   |prompt                                                       |
+|Work Profile Password Block Face Unlock                      |False                                                        |
+|Work Profile Password Block Fingerprint Unlock               |False                                                        |
+|Work Profile Password Block Iris Unlock                      |False                                                        |
+|Work Profile Password Block Trust Agents                     |False                                                        |
+|Work Profile Password Required Type                          |deviceDefault                                                |
+|Work Profile Required Password Complexity                    |none                                                         |
+|Work Profile Require Password                                |False                                                        |
+|Security Require Verify Apps                                 |True                                                         |
+|Vpn Enable Always On Lockdown Mode                           |False                                                        |
+|Work Profile Allow Widgets                                   |False                                                        |
+|Work Profile Block Personal App Installs From Unknown Sources|True                                                         |
+|Work Profile Account Use                                     |allowAllExceptGoogleAccounts                                 |
+|Block Unified Password For Work Profile                      |False                                                        |
+
+### UAT_AND_D_CO_SBL_NCSC_MS_DataProtection
+Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3
+#### Assignments
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_AND_NCSC_MS_COPE|none       |           |
+
+#### Configuration
+|                           setting                           |                                 value                                 |
+|-------------------------------------------------------------|-----------------------------------------------------------------------|
+|Odata type                                                   |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration          |
+|Role Scope Tag Ids                                           |Default<br/>                                                           |
+|Display Name                                                 |UAT_AND_D_CO_SBL_NCSC_MS_DataProtection                                |
+|Accounts Block Modification                                  |True                                                                   |
+|Bluetooth Block Contact Sharing                              |True                                                                   |
+|Cross Profile Policies Allow Copy Paste                      |True                                                                   |
+|Cross Profile Policies Allow Data Sharing                    |dataSharingFromWorkToPersonalBlocked                                   |
+|Cross Profile Policies Show Work Contacts In Personal Profile|False                                                                  |
+|Enrollment Profile                                           |notConfigured                                                          |
+|Google Accounts Blocked                                      |True                                                                   |
+|Kiosk Customization Status Bar                               |notConfigured                                                          |
+|Kiosk Customization System Navigation                        |notConfigured                                                          |
+|Is Kiosk Mode Exit Code Set                                  |False                                                                  |
+|Kiosk Mode Use Managed Home Screen App                       |notConfigured                                                          |
+|Nfc Block Outgoing Beam                                      |True                                                                   |
+|Password Block Keyguard Features                             |camera<br/>remoteInput<br/>trustAgents<br/>unredactedNotifications<br/>|
+|Password Required Type                                       |deviceDefault                                                          |
+|Password Require Unlock                                      |deviceDefault                                                          |
+|Screen Capture Blocked                                       |True                                                                   |
+|Security Require Verify Apps                                 |False                                                                  |
+|Storage Block External Media                                 |True                                                                   |
+|Storage Block Usb File Transfer                              |True                                                                   |
+|Users Block Add                                              |True                                                                   |
+|Users Block Remove                                           |True                                                                   |
+|Vpn Always On Lockdown Mode                                  |False                                                                  |
+|Vpn Always On Package Identifier                             |<details><summary>Click to expand...</summary></details>               |
+|Personal Profile Camera Blocked                              |True                                                                   |
+|Personal Profile Play Store Mode                             |notConfigured                                                          |
+|Work Profile Password Required Type                          |deviceDefault                                                          |
+|Work Profile Password Require Unlock                         |deviceDefault                                                          |
+|Device Location Mode                                         |notConfigured                                                          |
+
+### UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
 
 https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
@@ -2129,7 +2187,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |----------------------------------------------------------------|-------------------------------------------------------------|
 |Odata type                                                      |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceManagement                 |
+|Display Name                                                    |UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement                    |
 |Apps Default Permission Policy                                  |prompt                                                       |
 |Apps Recommend Skipping First Use Hints                         |True                                                         |
 |Cellular Block Wi Fi Tethering                                  |True                                                         |
@@ -2160,7 +2218,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Password Require Unlock                            |deviceDefault                                                |
 |Device Location Mode                                            |notConfigured                                                |
 
-### UAT_AND_AE_D_CO_SBL_NCSC_MS_Updates
+### UAT_AND_D_CO_SBL_NCSC_MS_Updates
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
 
 https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
@@ -2178,7 +2236,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |-----------------------------------------|-------------------------------------------------------------|
 |Odata type                               |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
 |Role Scope Tag Ids                       |Default<br/>                                                 |
-|Display Name                             |UAT_AND_AE_D_CO_SBL_NCSC_MS_Updates                          |
+|Display Name                             |UAT_AND_D_CO_SBL_NCSC_MS_Updates                             |
 |Apps Auto Update Policy                  |always                                                       |
 |Cross Profile Policies Allow Data Sharing|notConfigured                                                |
 |Enrollment Profile                       |notConfigured                                                |
@@ -2374,18 +2432,18 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Update Notification Level               |defaultNotifications                                                   |
 |Allow Windows11 Upgrade                 |False                                                                  |
 
-### XXX_AND_AE_D_MicrosoftTunnel_Defender
+### XXX_AND_D_MicrosoftTunnel_Defender
 #### Assignments
 |intent |  target   |filter type|filter name|
 |-------|-----------|-----------|-----------|
-|Include|All Devices|include    |AND_AE_CO  |
+|Include|All Devices|include    |AND_CO     |
 
 #### Configuration
 |        setting         |                                                                                                                                                                                                                                                                                             value                                                                                                                                                                                                                                                                                             |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type              |#microsoft.graph.androidDeviceOwnerVpnConfiguration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |Role Scope Tag Ids      |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|Display Name            |XXX_AND_AE_D_MicrosoftTunnel_Defender                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|Display Name            |XXX_AND_D_MicrosoftTunnel_Defender                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |Authentication Method   |azureAD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |Connection Name         |IntuneBlueprint VPN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |Connection Type         |microsoftProtect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |

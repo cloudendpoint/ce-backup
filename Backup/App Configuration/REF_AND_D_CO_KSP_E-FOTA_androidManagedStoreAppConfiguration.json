@@ -1,0 +1,78 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "You can only have one OEMConfig per Samsung device.",
+     "displayName": "REF_AND_D_CO_KSP_E-FOTA",
+     "packageId": "com.samsung.android.knox.kpu",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.samsung.android.knox.kpu",
+          "managedProperty": [
+               {
+                    "key": "schemaVersion",
+                    "valueString": "45.0.0"
+               },
+               {
+                    "key": "profileId",
+                    "valueString": ""
+               },
+               {
+                    "key": "transactionTs",
+                    "valueString": ""
+               },
+               {
+                    "key": "kpePartnerLicenseKey",
+                    "valueString": ""
+               },
+               {
+                    "key": "profileName",
+                    "valueString": "Knox E-FOTA Enable"
+               },
+               {
+                    "key": "doPolicies",
+                    "valueBundle": {
+                         "managedProperty": [
+                              {
+                                   "key": "doPoliciesIsControlled",
+                                   "valueBool": true
+                              },
+                              {
+                                   "key": "doFotaUpdate",
+                                   "valueBundle": {
+                                        "managedProperty": [
+                                             {
+                                                  "key": "doFotaUpdateIsControlled",
+                                                  "valueBool": true
+                                             },
+                                             {
+                                                  "key": "doFotaUpdateOTA",
+                                                  "valueBool": true
+                                             },
+                                             {
+                                                  "key": "doFotaUpdateRecoveryMode",
+                                                  "valueBool": true
+                                             },
+                                             {
+                                                  "key": "doFotaUpdateInstallLaunchClient",
+                                                  "valueBool": true
+                                             }
+                                        ]
+                                   }
+                              }
+                         ]
+                    }
+               }
+          ]
+     },
+     "appSupportsOemConfig": true,
+     "profileApplicability": "default",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Knox Service Plugin",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     }
+}

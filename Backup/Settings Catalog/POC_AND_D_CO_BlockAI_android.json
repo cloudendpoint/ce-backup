@@ -1,0 +1,48 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "POC_AND_D_CO_BlockAI",
+     "platforms": "androidEnterprise",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "android",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.assistcontentpolicy_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.screencaptureblocked",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.screencaptureblocked_true",
+                         "children": []
+                    }
+               }
+          }
+     ]
+}

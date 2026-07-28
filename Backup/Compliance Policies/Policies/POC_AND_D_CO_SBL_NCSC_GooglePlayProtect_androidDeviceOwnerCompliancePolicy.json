@@ -1,0 +1,58 @@
+{
+     "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "",
+     "displayName": "POC_AND_D_CO_SBL_NCSC_GooglePlayProtect",
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "securityBlockJailbrokenDevices": false,
+     "securityRequireSafetyNetAttestationBasicIntegrity": null,
+     "securityRequireSafetyNetAttestationCertifiedDevice": true,
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "minAndroidSecurityPatchLevel": null,
+     "passwordRequired": null,
+     "passwordMinimumLength": null,
+     "passwordMinimumLetterCharacters": null,
+     "passwordMinimumLowerCaseCharacters": null,
+     "passwordMinimumNonLetterCharacters": null,
+     "passwordMinimumNumericCharacters": null,
+     "passwordMinimumSymbolCharacters": null,
+     "passwordMinimumUpperCaseCharacters": null,
+     "passwordRequiredType": "numeric",
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordExpirationDays": null,
+     "passwordPreviousPasswordCountToBlock": null,
+     "storageRequireEncryption": null,
+     "securityRequireIntuneAppIntegrity": null,
+     "requireNoPendingSystemUpdates": null,
+     "securityRequiredAndroidSafetyNetEvaluationType": null,
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_AND_NCSC_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

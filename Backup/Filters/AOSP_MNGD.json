@@ -1,0 +1,11 @@
+{
+     "displayName": "AOSP_MNGD",
+     "description": "",
+     "platform": "androidMobileApplicationManagement",
+     "rule": "(app.deviceManagementType -eq \"AOSP user-associated devices\") and (app.deviceManagementType -eq \"AOSP userless devices\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "apps",
+     "payloads": []
+}

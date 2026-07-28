@@ -1,0 +1,45 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Restricts use of only work/school account within the app. Configures Outlook settings.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android",
+     "displayName": "POC_AND_D_BYOD_MicrosoftOutlook",
+     "packageId": "app:com.microsoft.office.outlook",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.office.outlook",
+          "managedProperty": [
+               {
+                    "key": "com.microsoft.outlook.EmailProfile.AccountType",
+                    "valueString": "ModernAuth"
+               },
+               {
+                    "key": "com.microsoft.outlook.EmailProfile.EmailUPN",
+                    "valueString": "{{userprincipalname}}"
+               },
+               {
+                    "key": "com.microsoft.outlook.EmailProfile.EmailAddress",
+                    "valueString": "{{mail}}"
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidWorkProfile",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Microsoft Outlook",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

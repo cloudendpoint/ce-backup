@@ -1,0 +1,11 @@
+{
+     "displayName": "AND_COBO_DS",
+     "description": "",
+     "platform": "androidForWork",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -contains \"_DS_\")",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

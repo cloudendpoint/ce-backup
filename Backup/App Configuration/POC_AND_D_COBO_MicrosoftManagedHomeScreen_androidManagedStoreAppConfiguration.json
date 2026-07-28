@@ -1,0 +1,73 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Configures app permissions to prevent user requirement to approve them. Configures additional Managed Home Screen settings for kiosk devices.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android",
+     "displayName": "POC_AND_D_COBO_MicrosoftManagedHomeScreen",
+     "packageId": "app:com.microsoft.launcher.enterprise",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.launcher.enterprise",
+          "managedProperty": [
+               {
+                    "key": "enable_corporate_logo",
+                    "valueBool": true
+               },
+               {
+                    "key": "header_name_style",
+                    "valueString": "Display Name"
+               },
+               {
+                    "key": "header_secondary_element",
+                    "valueString": "Device Name"
+               },
+               {
+                    "key": "header_primary_element",
+                    "valueString": "Tenant Name"
+               },
+               {
+                    "key": "signin_type",
+                    "valueString": "AAD"
+               },
+               {
+                    "key": "enable_mhs_signin",
+                    "valueBool": true
+               },
+               {
+                    "key": "theme_color",
+                    "valueString": "light"
+               },
+               {
+                    "key": "login_hint_text",
+                    "valueString": "Enter in your username"
+               },
+               {
+                    "key": "domain_name",
+                    "valueString": "intuneblueprint.com"
+               },
+               {
+                    "key": "show_device_name",
+                    "valueBool": true
+               },
+               {
+                    "key": "show_virtual_status_bar",
+                    "valueBool": true
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidDeviceOwner",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [
+          {
+               "permission": "android.permission.POST_NOTIFICATIONS",
+               "action": "autoGrant"
+          }
+     ],
+     "targetedMobileApps": {
+          "appName": "Managed Home Screen",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     }
+}

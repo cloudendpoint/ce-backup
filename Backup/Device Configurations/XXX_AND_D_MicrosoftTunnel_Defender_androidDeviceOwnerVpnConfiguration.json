@@ -1,0 +1,54 @@
+{
+     "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "XXX_AND_D_MicrosoftTunnel_Defender",
+     "authenticationMethod": "azureAD",
+     "connectionName": "IntuneBlueprint VPN",
+     "role": null,
+     "realm": null,
+     "connectionType": "microsoftProtect",
+     "proxyServer": null,
+     "targetedPackageIds": [],
+     "alwaysOn": true,
+     "alwaysOnLockdown": null,
+     "lockdownExclusionList": [],
+     "microsoftTunnelSiteId": "77cdf2db-7d2e-4119-b665-a609d471a018",
+     "proxyExclusionList": [],
+     "servers": [
+          {
+               "description": "MST_D_SiteConfig_IntuneBlueprint",
+               "address": "tunnel.intuneblueprint.com:8443",
+               "isDefaultServer": true
+          }
+     ],
+     "targetedMobileApps": [],
+     "customData": [
+          {
+               "key": "MicrosoftDefenderAppSettings",
+               "value": "[{\"key\":\"vpn\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"antiphishing\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"defendertoggle\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DefenderNetworkProtectionEnable\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DisableSignOut\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"EnableLowTouchOnboarding\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"UserUPN\",\"type\":\"string\",\"value\":\"{{UserPrincipalName}}\"},{\"key\":\"DefenderNetworkProtectionAutoRemediation\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"GlobalSecureAccess\",\"type\":\"int\",\"value\":\"0\"}]"
+          }
+     ],
+     "customKeyValueData": [
+          {
+               "name": "MicrosoftDefenderAppSettings",
+               "value": "[{\"key\":\"vpn\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"antiphishing\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"defendertoggle\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DefenderNetworkProtectionEnable\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DisableSignOut\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"EnableLowTouchOnboarding\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"UserUPN\",\"type\":\"string\",\"value\":\"{{UserPrincipalName}}\"},{\"key\":\"DefenderNetworkProtectionAutoRemediation\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"GlobalSecureAccess\",\"type\":\"int\",\"value\":\"0\"}]"
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

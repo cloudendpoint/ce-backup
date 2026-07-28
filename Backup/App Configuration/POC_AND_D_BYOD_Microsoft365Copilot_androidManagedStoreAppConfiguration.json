@@ -1,0 +1,37 @@
+{
+     "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Restricts use of only work/school account within the app.\n\nhttps://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-policies-use-android",
+     "displayName": "POC_AND_D_BYOD_Microsoft365Copilot",
+     "packageId": "app:com.microsoft.office.officehubrow",
+     "payloadJson": {
+          "kind": "androidenterprise#managedConfiguration",
+          "productId": "app:com.microsoft.office.officehubrow",
+          "managedProperty": [
+               {
+                    "key": "com.microsoft.intune.mam.AllowedAccountUPNs",
+                    "valueString": "{{UserPrincipalName}}"
+               }
+          ]
+     },
+     "appSupportsOemConfig": false,
+     "profileApplicability": "androidWorkProfile",
+     "connectedAppsEnabled": false,
+     "credentialProviderRoleState": "notConfigured",
+     "permissionActions": [],
+     "targetedMobileApps": {
+          "appName": "Microsoft 365 Copilot",
+          "type": "#microsoft.graph.androidManagedStoreApp"
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "AND_BYOD",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

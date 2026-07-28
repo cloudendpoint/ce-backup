@@ -48,12 +48,12 @@
           },
           {
                "description": "Windows 11 24H2",
-               "lowestVersion": "10.0.26100.8893",
+               "lowestVersion": "10.0.26100.8894",
                "highestVersion": "10.0.26100.9999"
           },
           {
                "description": "Windows 11 25H2",
-               "lowestVersion": "10.0.26200.8893",
+               "lowestVersion": "10.0.26200.8894",
                "highestVersion": "10.0.26200.9999"
           }
      ],

@@ -1,0 +1,58 @@
+{
+     "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Uses a custom compliance script to detect the health status of Microsoft Defender Antirvirus.\n\nhttps://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings\nhttps://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
+     "displayName": "POC_MAC_D_CO_DefenderAntivirus",
+     "passwordRequired": false,
+     "passwordBlockSimple": false,
+     "passwordExpirationDays": null,
+     "passwordMinimumLength": null,
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordPreviousPasswordBlockCount": null,
+     "passwordMinimumCharacterSetCount": null,
+     "passwordRequiredType": "deviceDefault",
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "osMinimumBuildVersion": null,
+     "osMaximumBuildVersion": null,
+     "systemIntegrityProtectionEnabled": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "storageRequireEncryption": false,
+     "gatekeeperAllowedAppSource": "notConfigured",
+     "firewallEnabled": false,
+     "firewallBlockAllIncoming": false,
+     "firewallEnableStealthMode": false,
+     "deviceCompliancePolicyScript": {
+          "deviceComplianceScriptId": "43ed17ac-d50c-4d9a-bd5e-3c25b73e91b2",
+          "rulesContent": "ewogICAgIlJ1bGVzIjogWwogICAgICAgIHsKICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIkRlZmVuZGVySW5zdGFsbGVkIiwKICAgICAgICAgICAgIk9wZXJhdG9yIjogIklzRXF1YWxzIiwKICAgICAgICAgICAgIkRhdGFUeXBlIjogIkJvb2xlYW4iLAogICAgICAgICAgICAiT3BlcmFuZCI6IHRydWUsCiAgICAgICAgICAgICJNb3JlSW5mb1VybCI6ICJodHRwczovL2xlYXJuLm1pY3Jvc29mdC5jb20vZW4tdXMvbWljcm9zb2Z0LTM2NS9zZWN1cml0eS9kZWZlbmRlci1lbmRwb2ludC9taWNyb3NvZnQtZGVmZW5kZXItZW5kcG9pbnQtbWFjIiwKICAgICAgICAgICAgIlJlbWVkaWF0aW9uU3RyaW5ncyI6IFsKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiTGFuZ3VhZ2UiOiAiZW5fVVMiLAogICAgICAgICAgICAgICAgICAgICJUaXRsZSI6ICJNaWNyb3NvZnQgRGVmZW5kZXIgbm90IGluc3RhbGxlZCIsCiAgICAgICAgICAgICAgICAgICAgIkRlc2NyaXB0aW9uIjogIk1pY3Jvc29mdCBEZWZlbmRlciBmb3IgRW5kcG9pbnQgbXVzdCBiZSBpbnN0YWxsZWQgb24gdGhpcyBkZXZpY2UuIFBsZWFzZSBjb250YWN0IElUIHN1cHBvcnQgZm9yIGFzc2lzdGFuY2UuIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICBdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJTZXR0aW5nTmFtZSI6ICJEZWZlbmRlckhlYWx0aHkiLAogICAgICAgICAgICAiT3BlcmF0b3IiOiAiSXNFcXVhbHMiLAogICAgICAgICAgICAiRGF0YVR5cGUiOiAiQm9vbGVhbiIsCiAgICAgICAgICAgICJPcGVyYW5kIjogdHJ1ZSwKICAgICAgICAgICAgIk1vcmVJbmZvVXJsIjogImh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3NlY3VyaXR5L2RlZmVuZGVyLWVuZHBvaW50L21pY3Jvc29mdC1kZWZlbmRlci1lbmRwb2ludC1tYWMiLAogICAgICAgICAgICAiUmVtZWRpYXRpb25TdHJpbmdzIjogWwogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJMYW5ndWFnZSI6ICJlbl9VUyIsCiAgICAgICAgICAgICAgICAgICAgIlRpdGxlIjogIk1pY3Jvc29mdCBEZWZlbmRlciBub3QgaGVhbHRoeSIsCiAgICAgICAgICAgICAgICAgICAgIkRlc2NyaXB0aW9uIjogIk1pY3Jvc29mdCBEZWZlbmRlciBmb3IgRW5kcG9pbnQgaXMgbm90IGhlYWx0aHkgb24gdGhpcyBkZXZpY2UuIFBsZWFzZSBjb250YWN0IElUIHN1cHBvcnQgZm9yIGFzc2lzdGFuY2UuIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICBdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJTZXR0aW5nTmFtZSI6ICJEZWZlbmRlclJ1bm5pbmciLAogICAgICAgICAgICAiT3BlcmF0b3IiOiAiSXNFcXVhbHMiLAogICAgICAgICAgICAiRGF0YVR5cGUiOiAiQm9vbGVhbiIsCiAgICAgICAgICAgICJPcGVyYW5kIjogdHJ1ZSwKICAgICAgICAgICAgIk1vcmVJbmZvVXJsIjogImh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3NlY3VyaXR5L2RlZmVuZGVyLWVuZHBvaW50L21pY3Jvc29mdC1kZWZlbmRlci1lbmRwb2ludC1tYWMiLAogICAgICAgICAgICAiUmVtZWRpYXRpb25TdHJpbmdzIjogWwogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJMYW5ndWFnZSI6ICJlbl9VUyIsCiAgICAgICAgICAgICAgICAgICAgIlRpdGxlIjogIk1pY3Jvc29mdCBEZWZlbmRlciBub3QgcnVubmluZyIsCiAgICAgICAgICAgICAgICAgICAgIkRlc2NyaXB0aW9uIjogIk1pY3Jvc29mdCBEZWZlbmRlciBmb3IgRW5kcG9pbnQgc2VydmljZSBpcyBub3QgcnVubmluZy4gUGxlYXNlIHJlc3RhcnQgdGhlIGFwcGxpY2F0aW9uIG9yIGNvbnRhY3QgSVQgc3VwcG9ydC4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIlJlYWx0aW1lUHJvdGVjdGlvbkVuYWJsZWQiLAogICAgICAgICAgICAiT3BlcmF0b3IiOiAiSXNFcXVhbHMiLAogICAgICAgICAgICAiRGF0YVR5cGUiOiAiQm9vbGVhbiIsCiAgICAgICAgICAgICJPcGVyYW5kIjogdHJ1ZSwKICAgICAgICAgICAgIk1vcmVJbmZvVXJsIjogImh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3NlY3VyaXR5L2RlZmVuZGVyLWVuZHBvaW50L21hYy1wcmVmZXJlbmNlcyNlbmFibGUtcmVhbC10aW1lLXByb3RlY3Rpb24iLAogICAgICAgICAgICAiUmVtZWRpYXRpb25TdHJpbmdzIjogWwogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJMYW5ndWFnZSI6ICJlbl9VUyIsCiAgICAgICAgICAgICAgICAgICAgIlRpdGxlIjogIk1pY3Jvc29mdCBEZWZlbmRlciByZWFsLXRpbWUgcHJvdGVjdGlvbiBkaXNhYmxlZCIsCiAgICAgICAgICAgICAgICAgICAgIkRlc2NyaXB0aW9uIjogIlJlYWwtdGltZSBwcm90ZWN0aW9uIG11c3QgYmUgZW5hYmxlZCBpbiBNaWNyb3NvZnQgRGVmZW5kZXIuIE9wZW4gTWljcm9zb2Z0IERlZmVuZGVyIGFuZCBlbmFibGUgcmVhbC10aW1lIHByb3RlY3Rpb24sIG9yIGNvbnRhY3QgSVQgc3VwcG9ydC4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIkRlZmluaXRpb25zVXBUb0RhdGUiLAogICAgICAgICAgICAiT3BlcmF0b3IiOiAiSXNFcXVhbHMiLAogICAgICAgICAgICAiRGF0YVR5cGUiOiAiQm9vbGVhbiIsCiAgICAgICAgICAgICJPcGVyYW5kIjogdHJ1ZSwKICAgICAgICAgICAgIk1vcmVJbmZvVXJsIjogImh0dHBzOi8vbGVhcm4ubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3NlY3VyaXR5L2RlZmVuZGVyLWVuZHBvaW50L21hYy11cGRhdGVzIiwKICAgICAgICAgICAgIlJlbWVkaWF0aW9uU3RyaW5ncyI6IFsKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiTGFuZ3VhZ2UiOiAiZW5fVVMiLAogICAgICAgICAgICAgICAgICAgICJUaXRsZSI6ICJNaWNyb3NvZnQgRGVmZW5kZXIgYW50aXZpcnVzIGRlZmluaXRpb25zIG91dCBvZiBkYXRlIiwKICAgICAgICAgICAgICAgICAgICAiRGVzY3JpcHRpb24iOiAiWW91ciBNaWNyb3NvZnQgRGVmZW5kZXIgYW50aXZpcnVzIGRlZmluaXRpb25zIGFyZSBub3QgY3VycmVudC4gUGxlYXNlIHVwZGF0ZSBNaWNyb3NvZnQgRGVmZW5kZXIgb3IgY29udGFjdCBJVCBzdXBwb3J0IGlmIHRoZSBpc3N1ZSBwZXJzaXN0cy4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0KICAgICAgICB9CiAgICBdCn0=",
+          "runIntervalInMinutes": null
+     },
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "deviceComplianceScriptName": "POC_MAC_CO_CS_Antivirus_MicrosoftDefender",
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

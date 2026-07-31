@@ -2257,11 +2257,6 @@
           "assignedTo": {
                "Scripts": [
                     {
-                         "name": "ZZZ_MAC_D_CO_SS_APP_MicrosoftCompanyPortal",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_MAC_D_CO_SS_DesktopWallpaper",
                          "type": "",
                          "intent": "Include"

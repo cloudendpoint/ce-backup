@@ -9,17 +9,5 @@
      "fileName": "installCompanyPortal.zsh",
      "roleScopeTagIds": [
           "Default"
-     ],
-     "assignments": [
-          {
-               "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "SG_MDM_D_MAC_CO",
-                    "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"macmdm\")"
-               }
-          }
      ]
 }

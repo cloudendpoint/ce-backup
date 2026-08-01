@@ -426,6 +426,13 @@
                          "type": "iosMobileAppConfiguration",
                          "intent": "Include"
                     }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_IOS_D_COPE_SSO_AppExtension_Shared",
+                         "type": "",
+                         "intent": "Include"
+                    }
                ]
           }
      },

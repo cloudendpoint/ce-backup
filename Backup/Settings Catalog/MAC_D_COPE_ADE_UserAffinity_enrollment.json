@@ -426,7 +426,7 @@
                          "settingInstanceTemplateId": "7d8e9c44-3b2a-4f13-8a5e-2c9d1b4f5a3e"
                     },
                     "choiceSettingValue": {
-                         "value": "ade_setupassistant_filevault_1",
+                         "value": "ade_setupassistant_filevault_0",
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "2f5c47e9-aa1b-4c35-9e8d-1fa2b8c3d7ea",
                               "useTemplateDefault": false

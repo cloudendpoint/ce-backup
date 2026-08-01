@@ -350,5 +350,17 @@
                     ]
                }
           }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_IOS_CO_ADE_EntraSharedMode",
+                    "groupType": "StaticMembership"
+               }
+          }
      ]
 }

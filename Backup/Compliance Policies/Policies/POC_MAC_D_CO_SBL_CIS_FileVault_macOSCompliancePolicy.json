@@ -3,7 +3,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "description": null,
+     "description": "Shared devices must be excluded from a FileVault policy to allow for login to the device following a restart. This is a known limitation of the Platform SSO configuration and how tokens and permissions are handled for additional users created by the PSSO process.\n\nhttps://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/encrypt-filevault-macos",
      "displayName": "POC_MAC_D_CO_SBL_CIS_FileVault",
      "passwordRequired": false,
      "passwordBlockSimple": false,

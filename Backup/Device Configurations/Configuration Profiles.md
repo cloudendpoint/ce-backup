@@ -1958,52 +1958,6 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Display Name      |REF_WIN_D_COPE_WindowsHello_DisablePostLogonProvisioning                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |Oma Settings      |**@odata.type:** #microsoft.graph.omaSettingBoolean<br/>**displayName:** DisablePostLogonProvisioning<br/>**description:** https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesdisablepostlogonprovisioning<br/>**omaUri:** ./Device/Vendor/MSFT/PassportForWork/69b2ff03-08b5-4781-b7ea-af7ffbf790c4/Policies/DisablePostLogonProvisioning<br/>**secretReferenceValueId:** None<br/>**isEncrypted:** False<br/>**value:** True<br/><br/>|
 
-### UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceLock
-Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2
-
-https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3
-#### Assignments
-|intent |            target            |filter type|filter name|
-|-------|------------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_NCSC_MS_COPE|none       |           |
-
-#### Configuration
-|                            setting                             |                            value                            |
-|----------------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                                      |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceLock                       |
-|Cross Profile Policies Allow Data Sharing                       |notConfigured                                                |
-|Enrollment Profile                                              |notConfigured                                                |
-|Kiosk Customization Status Bar                                  |notConfigured                                                |
-|Kiosk Customization System Navigation                           |notConfigured                                                |
-|Is Kiosk Mode Exit Code Set                                     |False                                                        |
-|Kiosk Mode Use Managed Home Screen App                          |notConfigured                                                |
-|Password Minimum Length                                         |                                                            8|
-|Password Minimum Letter Characters                              |                                                            1|
-|Password Minimum Lower Case Characters                          |                                                            1|
-|Password Minimum Non Letter Characters                          |                                                            1|
-|Password Minimum Numeric Characters                             |                                                            1|
-|Password Minimum Symbol Characters                              |                                                            1|
-|Password Minimum Upper Case Characters                          |                                                            1|
-|Password Minutes Of Inactivity Before Screen Timeout            |                                                            5|
-|Password Previous Password Count To Block                       |                                                           24|
-|Password Required Type                                          |alphanumericWithSymbols                                      |
-|Password Require Unlock                                         |deviceDefault                                                |
-|Password Sign In Failure Count Before Factory Reset             |                                                            5|
-|Security Require Verify Apps                                    |False                                                        |
-|Vpn Always On Lockdown Mode                                     |False                                                        |
-|Vpn Always On Package Identifier                                |<details><summary>Click to expand...</summary></details>     |
-|Personal Profile Play Store Mode                                |notConfigured                                                |
-|Work Profile Password Sign In Failure Count Before Factory Reset|                                                            5|
-|Work Profile Password Required Type                             |deviceDefault                                                |
-|Work Profile Password Require Unlock                            |deviceDefault                                                |
-|Device Location Mode                                            |notConfigured                                                |
-
 ### UAT_AND_D_BYOD_SBL_NCSC_MS_DataProtection
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
 
@@ -2025,7 +1979,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
 |Password Block Trust Agents                                  |False                                                        |
-|Password Required Type                                       |atLeastNumeric                                               |
+|Password Required Type                                       |deviceDefault                                                |
 |Required Password Complexity                                 |none                                                         |
 |Work Profile Allow App Installs From Unknown Sources         |False                                                        |
 |Work Profile Data Sharing Type                               |allowPersonalToWork                                          |
@@ -2078,7 +2032,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Password Previous Password Block Count                           |                                                           24|
 |Password Sign In Failure Count Before Factory Reset              |                                                           10|
 |Password Required Type                                           |numericComplex                                               |
-|Required Password Complexity                                     |high                                                         |
+|Required Password Complexity                                     |medium                                                       |
 |Work Profile Allow App Installs From Unknown Sources             |False                                                        |
 |Work Profile Data Sharing Type                                   |deviceDefault                                                |
 |Work Profile Block Notifications While Device Locked             |False                                                        |
@@ -2099,14 +2053,14 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Password Previous Password Block Count              |                                                           24|
 |Work Profile Password Sign In Failure Count Before Factory Reset |                                                           10|
 |Work Profile Password Required Type                              |numericComplex                                               |
-|Work Profile Required Password Complexity                        |high                                                         |
+|Work Profile Required Password Complexity                        |medium                                                       |
 |Work Profile Require Password                                    |True                                                         |
 |Security Require Verify Apps                                     |False                                                        |
 |Vpn Enable Always On Lockdown Mode                               |False                                                        |
 |Work Profile Allow Widgets                                       |False                                                        |
 |Work Profile Block Personal App Installs From Unknown Sources    |False                                                        |
 |Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
-|Block Unified Password For Work Profile                          |True                                                         |
+|Block Unified Password For Work Profile                          |False                                                        |
 
 ### UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
@@ -2129,7 +2083,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Password Block Fingerprint Unlock                            |False                                                        |
 |Password Block Iris Unlock                                   |False                                                        |
 |Password Block Trust Agents                                  |False                                                        |
-|Password Required Type                                       |atLeastNumeric                                               |
+|Password Required Type                                       |deviceDefault                                                |
 |Required Password Complexity                                 |none                                                         |
 |Work Profile Allow App Installs From Unknown Sources         |False                                                        |
 |Work Profile Data Sharing Type                               |deviceDefault                                                |
@@ -2176,10 +2130,10 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Role Scope Tag Ids                                           |Default<br/>                                                           |
 |Display Name                                                 |UAT_AND_D_CO_SBL_NCSC_MS_DataProtection                                |
 |Accounts Block Modification                                  |True                                                                   |
-|Bluetooth Block Contact Sharing                              |True                                                                   |
-|Cross Profile Policies Allow Copy Paste                      |True                                                                   |
-|Cross Profile Policies Allow Data Sharing                    |dataSharingFromWorkToPersonalBlocked                                   |
-|Cross Profile Policies Show Work Contacts In Personal Profile|False                                                                  |
+|Bluetooth Block Contact Sharing                              |False                                                                  |
+|Cross Profile Policies Allow Copy Paste                      |False                                                                  |
+|Cross Profile Policies Allow Data Sharing                    |notConfigured                                                          |
+|Cross Profile Policies Show Work Contacts In Personal Profile|True                                                                   |
 |Enrollment Profile                                           |notConfigured                                                          |
 |Google Accounts Blocked                                      |True                                                                   |
 |Kiosk Customization Status Bar                               |notConfigured                                                          |
@@ -2204,6 +2158,45 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Password Require Unlock                         |deviceDefault                                                          |
 |Device Location Mode                                         |notConfigured                                                          |
 
+### UAT_AND_D_CO_SBL_NCSC_MS_DeviceLock
+Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2
+
+https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3
+#### Assignments
+|intent |            target            |filter type|filter name|
+|-------|------------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_AND_NCSC_MS_COPE|none       |           |
+
+#### Configuration
+|                      setting                       |                            value                            |
+|----------------------------------------------------|-------------------------------------------------------------|
+|Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
+|Role Scope Tag Ids                                  |Default<br/>                                                 |
+|Display Name                                        |UAT_AND_D_CO_SBL_NCSC_MS_DeviceLock                          |
+|Cross Profile Policies Allow Data Sharing           |notConfigured                                                |
+|Enrollment Profile                                  |notConfigured                                                |
+|Kiosk Customization Status Bar                      |notConfigured                                                |
+|Kiosk Customization System Navigation               |notConfigured                                                |
+|Is Kiosk Mode Exit Code Set                         |False                                                        |
+|Kiosk Mode Use Managed Home Screen App              |notConfigured                                                |
+|Password Minimum Length                             |                                                            6|
+|Password Minutes Of Inactivity Before Screen Timeout|                                                            5|
+|Password Previous Password Count To Block           |                                                           24|
+|Password Required Type                              |numericComplex                                               |
+|Password Require Unlock                             |deviceDefault                                                |
+|Password Sign In Failure Count Before Factory Reset |                                                            5|
+|Security Require Verify Apps                        |False                                                        |
+|Vpn Always On Lockdown Mode                         |False                                                        |
+|Vpn Always On Package Identifier                    |<details><summary>Click to expand...</summary></details>     |
+|Personal Profile Play Store Mode                    |notConfigured                                                |
+|Work Profile Password Required Type                 |deviceDefault                                                |
+|Work Profile Password Require Unlock                |deviceDefault                                                |
+|Device Location Mode                                |notConfigured                                                |
+
 ### UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android
 
@@ -2218,40 +2211,38 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Include|TEST_SG_MDM_D_AND_NCSC_MS_COPE|none       |           |
 
 #### Configuration
-|                            setting                             |                            value                            |
-|----------------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                                      |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                              |Default<br/>                                                 |
-|Display Name                                                    |UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement                    |
-|Apps Default Permission Policy                                  |prompt                                                       |
-|Apps Recommend Skipping First Use Hints                         |True                                                         |
-|Cellular Block Wi Fi Tethering                                  |True                                                         |
-|Certificate Credential Configuration Disabled                   |True                                                         |
-|Cross Profile Policies Allow Data Sharing                       |notConfigured                                                |
-|Enrollment Profile                                              |notConfigured                                                |
-|Data Roaming Blocked                                            |False                                                        |
-|Date Time Configuration Blocked                                 |True                                                         |
-|Factory Reset Device Administrator Emails                       |admin@customerdomain.com<br/>                                |
-|Factory Reset Blocked                                           |True                                                         |
-|Google Accounts Blocked                                         |True                                                         |
-|Kiosk Customization Status Bar                                  |notConfigured                                                |
-|Kiosk Customization System Navigation                           |notConfigured                                                |
-|Is Kiosk Mode Exit Code Set                                     |False                                                        |
-|Kiosk Mode Use Managed Home Screen App                          |notConfigured                                                |
-|Nfc Block Outgoing Beam                                         |False                                                        |
-|Password Required Type                                          |deviceDefault                                                |
-|Password Require Unlock                                         |deviceDefault                                                |
-|Security Require Verify Apps                                    |True                                                         |
-|Users Block Add                                                 |True                                                         |
-|Users Block Remove                                              |True                                                         |
-|Vpn Always On Lockdown Mode                                     |False                                                        |
-|Vpn Always On Package Identifier                                |<details><summary>Click to expand...</summary></details>     |
-|Personal Profile Play Store Mode                                |notConfigured                                                |
-|Work Profile Password Minimum Length                            |                                                            6|
-|Work Profile Password Sign In Failure Count Before Factory Reset|                                                           10|
-|Work Profile Password Required Type                             |numericComplex                                               |
-|Work Profile Password Require Unlock                            |deviceDefault                                                |
-|Device Location Mode                                            |notConfigured                                                |
+|                   setting                   |                            value                            |
+|---------------------------------------------|-------------------------------------------------------------|
+|Odata type                                   |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
+|Role Scope Tag Ids                           |Default<br/>                                                 |
+|Display Name                                 |UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement                    |
+|Apps Default Permission Policy               |prompt                                                       |
+|Apps Recommend Skipping First Use Hints      |True                                                         |
+|Cellular Block Wi Fi Tethering               |True                                                         |
+|Certificate Credential Configuration Disabled|True                                                         |
+|Cross Profile Policies Allow Data Sharing    |notConfigured                                                |
+|Enrollment Profile                           |notConfigured                                                |
+|Data Roaming Blocked                         |False                                                        |
+|Date Time Configuration Blocked              |True                                                         |
+|Factory Reset Device Administrator Emails    |admin@customerdomain.com<br/>                                |
+|Factory Reset Blocked                        |True                                                         |
+|Google Accounts Blocked                      |True                                                         |
+|Kiosk Customization Status Bar               |notConfigured                                                |
+|Kiosk Customization System Navigation        |notConfigured                                                |
+|Is Kiosk Mode Exit Code Set                  |False                                                        |
+|Kiosk Mode Use Managed Home Screen App       |notConfigured                                                |
+|Nfc Block Outgoing Beam                      |False                                                        |
+|Password Required Type                       |deviceDefault                                                |
+|Password Require Unlock                      |deviceDefault                                                |
+|Security Require Verify Apps                 |True                                                         |
+|Users Block Add                              |True                                                         |
+|Users Block Remove                           |True                                                         |
+|Vpn Always On Lockdown Mode                  |False                                                        |
+|Vpn Always On Package Identifier             |<details><summary>Click to expand...</summary></details>     |
+|Personal Profile Play Store Mode             |notConfigured                                                |
+|Work Profile Password Required Type          |deviceDefault                                                |
+|Work Profile Password Require Unlock         |deviceDefault                                                |
+|Device Location Mode                         |notConfigured                                                |
 
 ### UAT_AND_D_CO_SBL_NCSC_MS_Updates
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android

@@ -18,7 +18,7 @@
      "passwordPreviousPasswordBlockCount": 24,
      "passwordSignInFailureCountBeforeFactoryReset": 10,
      "passwordRequiredType": "numericComplex",
-     "requiredPasswordComplexity": "high",
+     "requiredPasswordComplexity": "medium",
      "workProfileAllowAppInstallsFromUnknownSources": false,
      "workProfileDataSharingType": "deviceDefault",
      "workProfileBlockNotificationsWhileDeviceLocked": false,
@@ -46,7 +46,7 @@
      "workProfilePasswordPreviousPasswordBlockCount": 24,
      "workProfilePasswordSignInFailureCountBeforeFactoryReset": 10,
      "workProfilePasswordRequiredType": "numericComplex",
-     "workProfileRequiredPasswordComplexity": "high",
+     "workProfileRequiredPasswordComplexity": "medium",
      "workProfileRequirePassword": true,
      "securityRequireVerifyApps": false,
      "vpnAlwaysOnPackageIdentifier": null,
@@ -55,7 +55,7 @@
      "workProfileBlockPersonalAppInstallsFromUnknownSources": false,
      "workProfileAccountUse": "allowAllExceptGoogleAccounts",
      "allowedGoogleAccountDomains": [],
-     "blockUnifiedPasswordForWorkProfile": true,
+     "blockUnifiedPasswordForWorkProfile": false,
      "assignments": [
           {
                "source": "direct",

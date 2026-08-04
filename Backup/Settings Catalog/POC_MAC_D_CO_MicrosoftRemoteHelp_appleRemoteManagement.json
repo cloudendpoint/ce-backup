@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 1,
+     "settingCount": 2,
      "technologies": "mdm,appleRemoteManagement",
      "templateReference": {
           "templateId": "",
@@ -18,6 +18,160 @@
      "settings": [
           {
                "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "app_app",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                        "settingDefinitionId": "app_privacy",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "groupSettingCollectionValue": [
+                                             {
+                                                  "settingValueTemplateReference": null,
+                                                  "children": [
+                                                       {
+                                                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                            "settingDefinitionId": "app_privacy_permissiondefaults",
+                                                            "settingInstanceTemplateReference": null,
+                                                            "auditRuleInformation": null,
+                                                            "groupSettingCollectionValue": [
+                                                                 {
+                                                                      "settingValueTemplateReference": null,
+                                                                      "children": [
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                                                "settingDefinitionId": "app_privacy_permissiondefaults_generickey",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "groupSettingCollectionValue": [
+                                                                                     {
+                                                                                          "settingValueTemplateReference": null,
+                                                                                          "children": [
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_accessibility",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_accessibility_1",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_bluetooth",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_bluetooth_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_camera",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_camera_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_dictation",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_dictation_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_localnetwork",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_localnetwork_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_location",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_location_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_microphone",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "choiceSettingValue": {
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_microphone_0",
+                                                                                                         "children": []
+                                                                                                    }
+                                                                                               },
+                                                                                               {
+                                                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                    "settingDefinitionId": "app_privacy_permissiondefaults_generickey_organizationjustification",
+                                                                                                    "settingInstanceTemplateReference": null,
+                                                                                                    "auditRuleInformation": null,
+                                                                                                    "simpleSettingValue": {
+                                                                                                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                         "settingValueTemplateReference": null,
+                                                                                                         "value": "Enables screen capture for Microsoft Remote Help"
+                                                                                                    }
+                                                                                               }
+                                                                                          ]
+                                                                                     }
+                                                                                ]
+                                                                           },
+                                                                           {
+                                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                "settingDefinitionId": "app_privacy_permissiondefaults_generickey_keytobereplaced",
+                                                                                "settingInstanceTemplateReference": null,
+                                                                                "auditRuleInformation": null,
+                                                                                "simpleSettingValue": {
+                                                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                     "settingValueTemplateReference": null,
+                                                                                     "value": "com.microsoft.remotehelp"
+                                                                                }
+                                                                           }
+                                                                      ]
+                                                                 }
+                                                            ]
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                     "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",

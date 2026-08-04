@@ -2354,12 +2354,12 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement",
+                         "name": "UAT_AND_D_CO_SBL_NCSC_MS_DeviceLock",
                          "type": "androidDeviceOwnerGeneralDeviceConfiguration",
                          "intent": "Include"
                     },
                     {
-                         "name": "UAT_AND_AE_D_CO_SBL_NCSC_MS_DeviceLock",
+                         "name": "UAT_AND_D_CO_SBL_NCSC_MS_DeviceManagement",
                          "type": "androidDeviceOwnerGeneralDeviceConfiguration",
                          "intent": "Include"
                     },

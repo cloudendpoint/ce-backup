@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 18,
+     "settingCount": 19,
      "technologies": "mdm,appleRemoteManagement",
      "templateReference": {
           "templateId": "",
@@ -643,6 +643,35 @@
                "id": "16",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.fileproviderd_com.apple.fileproviderd",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                        "settingDefinitionId": "com.apple.fileproviderd_managementdomainautoenablementlist",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "simpleSettingCollectionValue": [
+                                             {
+                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                  "settingValueTemplateReference": null,
+                                                  "value": "com.microsoft.OneDrive (UBF8T346G9)"
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                     "settingDefinitionId": "com.apple.system-extension-policy_com.apple.system-extension-policy",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
@@ -693,7 +722,7 @@
                }
           },
           {
-               "id": "17",
+               "id": "18",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                     "settingDefinitionId": "com.apple.notificationsettings_com.apple.notificationsettings",

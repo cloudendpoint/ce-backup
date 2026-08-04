@@ -17,7 +17,7 @@
      "passwordMinutesOfInactivityBeforeScreenTimeout": null,
      "passwordPreviousPasswordBlockCount": null,
      "passwordSignInFailureCountBeforeFactoryReset": null,
-     "passwordRequiredType": "atLeastNumeric",
+     "passwordRequiredType": "deviceDefault",
      "requiredPasswordComplexity": "none",
      "workProfileAllowAppInstallsFromUnknownSources": false,
      "workProfileDataSharingType": "allowPersonalToWork",

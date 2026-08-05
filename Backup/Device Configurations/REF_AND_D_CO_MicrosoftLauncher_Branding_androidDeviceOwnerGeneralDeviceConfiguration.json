@@ -23,7 +23,7 @@
      "crossProfilePoliciesShowWorkContactsInPersonalProfile": null,
      "microsoftLauncherConfigurationEnabled": true,
      "microsoftLauncherCustomWallpaperEnabled": true,
-     "microsoftLauncherCustomWallpaperImageUrl": "https://i.ibb.co/ksxBBfz6/tile-bg-blueprint.png",
+     "microsoftLauncherCustomWallpaperImageUrl": "https://raw.githubusercontent.com/ennnbeee/oddsandendpoints-scripts/refs/heads/main/Intune/PlatformScripts/Shell/TeamsBackgrounds/tile-bg-blueprint.png",
      "microsoftLauncherCustomWallpaperAllowUserModification": null,
      "microsoftLauncherFeedEnabled": true,
      "microsoftLauncherFeedAllowUserModification": true,

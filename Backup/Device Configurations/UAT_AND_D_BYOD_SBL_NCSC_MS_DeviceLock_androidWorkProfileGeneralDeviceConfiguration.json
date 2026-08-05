@@ -55,7 +55,7 @@
      "workProfileBlockPersonalAppInstallsFromUnknownSources": false,
      "workProfileAccountUse": "allowAllExceptGoogleAccounts",
      "allowedGoogleAccountDomains": [],
-     "blockUnifiedPasswordForWorkProfile": false,
+     "blockUnifiedPasswordForWorkProfile": true,
      "assignments": [
           {
                "source": "direct",

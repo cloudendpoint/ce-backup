@@ -1375,38 +1375,38 @@ https://techcommunity.microsoft.com/blog/intunecustomersuccess/selecting-a-home-
 |Include|All Devices|include    |AND_CO     |
 
 #### Configuration
-|                        setting                         |                            value                            |
-|--------------------------------------------------------|-------------------------------------------------------------|
-|Odata type                                              |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
-|Role Scope Tag Ids                                      |Default<br/>                                                 |
-|Display Name                                            |REF_AND_D_CO_MicrosoftLauncher_Branding                      |
-|Cross Profile Policies Allow Data Sharing               |notConfigured                                                |
-|Microsoft Launcher Configuration Enabled                |True                                                         |
-|Microsoft Launcher Custom Wallpaper Enabled             |True                                                         |
-|Microsoft Launcher Custom Wallpaper Image Url           |https://i.ibb.co/ksxBBfz6/tile-bg-blueprint.png              |
-|Microsoft Launcher Feed Enabled                         |True                                                         |
-|Microsoft Launcher Feed Allow User Modification         |True                                                         |
-|Microsoft Launcher Dock Presence Configuration          |show                                                         |
-|Microsoft Launcher Dock Presence Allow User Modification|True                                                         |
-|Microsoft Launcher Search Bar Placement Configuration   |bottom                                                       |
-|Enrollment Profile                                      |fullyManaged                                                 |
-|Kiosk Customization Status Bar                          |notConfigured                                                |
-|Kiosk Customization System Navigation                   |notConfigured                                                |
-|Is Kiosk Mode Exit Code Set                             |False                                                        |
-|Kiosk Mode Virtual Home Button Type                     |notConfigured                                                |
-|Kiosk Mode Screen Orientation                           |notConfigured                                                |
-|Kiosk Mode Icon Size                                    |notConfigured                                                |
-|Kiosk Mode Folder Icon                                  |notConfigured                                                |
-|Kiosk Mode Use Managed Home Screen App                  |notConfigured                                                |
-|Password Required Type                                  |deviceDefault                                                |
-|Password Require Unlock                                 |deviceDefault                                                |
-|Security Require Verify Apps                            |False                                                        |
-|Vpn Always On Lockdown Mode                             |False                                                        |
-|Vpn Always On Package Identifier                        |<details><summary>Click to expand...</summary></details>     |
-|Personal Profile Play Store Mode                        |notConfigured                                                |
-|Work Profile Password Required Type                     |deviceDefault                                                |
-|Work Profile Password Require Unlock                    |deviceDefault                                                |
-|Device Location Mode                                    |notConfigured                                                |
+|                        setting                         |                                                                         value                                                                         |
+|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                          |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                           |
+|Display Name                                            |REF_AND_D_CO_MicrosoftLauncher_Branding                                                                                                                |
+|Cross Profile Policies Allow Data Sharing               |notConfigured                                                                                                                                          |
+|Microsoft Launcher Configuration Enabled                |True                                                                                                                                                   |
+|Microsoft Launcher Custom Wallpaper Enabled             |True                                                                                                                                                   |
+|Microsoft Launcher Custom Wallpaper Image Url           |https://raw.githubusercontent.com/ennnbeee/oddsandendpoints-scripts/refs/heads/main/Intune/PlatformScripts/Shell/TeamsBackgrounds/tile-bg-blueprint.png|
+|Microsoft Launcher Feed Enabled                         |True                                                                                                                                                   |
+|Microsoft Launcher Feed Allow User Modification         |True                                                                                                                                                   |
+|Microsoft Launcher Dock Presence Configuration          |show                                                                                                                                                   |
+|Microsoft Launcher Dock Presence Allow User Modification|True                                                                                                                                                   |
+|Microsoft Launcher Search Bar Placement Configuration   |bottom                                                                                                                                                 |
+|Enrollment Profile                                      |fullyManaged                                                                                                                                           |
+|Kiosk Customization Status Bar                          |notConfigured                                                                                                                                          |
+|Kiosk Customization System Navigation                   |notConfigured                                                                                                                                          |
+|Is Kiosk Mode Exit Code Set                             |False                                                                                                                                                  |
+|Kiosk Mode Virtual Home Button Type                     |notConfigured                                                                                                                                          |
+|Kiosk Mode Screen Orientation                           |notConfigured                                                                                                                                          |
+|Kiosk Mode Icon Size                                    |notConfigured                                                                                                                                          |
+|Kiosk Mode Folder Icon                                  |notConfigured                                                                                                                                          |
+|Kiosk Mode Use Managed Home Screen App                  |notConfigured                                                                                                                                          |
+|Password Required Type                                  |deviceDefault                                                                                                                                          |
+|Password Require Unlock                                 |deviceDefault                                                                                                                                          |
+|Security Require Verify Apps                            |False                                                                                                                                                  |
+|Vpn Always On Lockdown Mode                             |False                                                                                                                                                  |
+|Vpn Always On Package Identifier                        |<details><summary>Click to expand...</summary></details>                                                                                               |
+|Personal Profile Play Store Mode                        |notConfigured                                                                                                                                          |
+|Work Profile Password Required Type                     |deviceDefault                                                                                                                                          |
+|Work Profile Password Require Unlock                    |deviceDefault                                                                                                                                          |
+|Device Location Mode                                    |notConfigured                                                                                                                                          |
 
 ### REF_AND_D_CO_SBL_MS_Level_1
 Description: https://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1
@@ -2060,7 +2060,7 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Allow Widgets                                       |False                                                        |
 |Work Profile Block Personal App Installs From Unknown Sources    |False                                                        |
 |Work Profile Account Use                                         |allowAllExceptGoogleAccounts                                 |
-|Block Unified Password For Work Profile                          |False                                                        |
+|Block Unified Password For Work Profile                          |True                                                         |
 
 ### UAT_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android

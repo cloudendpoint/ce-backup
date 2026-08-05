@@ -54,7 +54,7 @@
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                          "settingValueTemplateReference": null,
-                         "value": "https://i.ibb.co/ksxBBfz6/tile-bg-blueprint.png"
+                         "value": "https://raw.githubusercontent.com/ennnbeee/oddsandendpoints-scripts/refs/heads/main/Intune/PlatformScripts/Shell/TeamsBackgrounds/tile-bg-blueprint.png"
                     }
                }
           },
@@ -68,7 +68,7 @@
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                          "settingValueTemplateReference": null,
-                         "value": "https://i.ibb.co/ksxBBfz6/tile-bg-blueprint.png"
+                         "value": "https://raw.githubusercontent.com/ennnbeee/oddsandendpoints-scripts/refs/heads/main/Intune/PlatformScripts/Shell/TeamsBackgrounds/tile-bg-blueprint.png"
                     }
                }
           }

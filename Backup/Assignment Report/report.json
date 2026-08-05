@@ -38,11 +38,6 @@
                          "name": "WIN_D_COPE_ENT_CIS",
                          "type": "",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_CO_SBL_CIS_DeviceLogon",
-                         "type": "",
-                         "intent": "Include"
                     }
                ]
           }
@@ -1810,6 +1805,11 @@
                "Settings Catalog": [
                     {
                          "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_AppleIntelligence",
                          "type": "",
                          "intent": "Include"
                     },

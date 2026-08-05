@@ -28,8 +28,8 @@
 ## Feedback: neiljohn@microsoft.com
 
 # Define variables
-usebingwallpaper=true # Set to true to have script fetch wallpaper from Bing
-wallpaperurl="https://i.ibb.co/ksxBBfz6/tile-bg-blueprint.png"
+usebingwallpaper=false # Set to true to have script fetch wallpaper from Bing
+wallpaperurl="https://raw.githubusercontent.com/ennnbeee/oddsandendpoints-scripts/refs/heads/main/Intune/PlatformScripts/Shell/TeamsBackgrounds/tile-bg-blueprint.png"
 wallpaperdir="/Users/Shared"
 wallpaperfile="Wallpaper.png"
 log="/var/log/fetchdesktopwallpaper.log"

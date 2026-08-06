@@ -50,17 +50,17 @@ if [[ -x "$MDATP" ]]; then
 	# Check health status
 	healthy=$("$MDATP" health --field healthy 2>/dev/null | tr -d '"')
 	[[ "$healthy" == "true" ]] && defenderHealthy="true" || defenderHealthy="false"
-	logcheck "Defender Healthy (mdatp health healthy)" "$healthy" "$defenderHealthy"
+	logcheck "Defender-Healthy (mdatp health healthy)" "$healthy" "$defenderHealthy"
 
 	# Check real-time protection status
 	realTimeProtection=$("$MDATP" health --field real_time_protection_enabled 2>/dev/null | tr -d '"')
 	[[ "$realTimeProtection" == true* ]] && defenderRealTimeProtection="true" || defenderRealTimeProtection="false"
-	logcheck "Defender Realtime Protection Enabled (mdatp health real_time_protection_enabled)" "$realTimeProtection" "$defenderRealTimeProtection"
+	logcheck "Defender-RealtimeProtectionEnabled (mdatp health real_time_protection_enabled)" "$realTimeProtection" "$defenderRealTimeProtection"
 
 	# Get definitions status - check if they're up to date
 	definitionsCurrent=$("$MDATP" health --field definitions_status 2>/dev/null | tr -d '"')
 	[[ "$definitionsCurrent" == "up_to_date" ]] && defenderDefinitionsCurrent="true" || defenderDefinitionsCurrent="false"
-	logcheck "Defender Definitions Up-to-Date (mdatp health definitions_status)" "$definitionsCurrent" "$defenderDefinitionsCurrent"
+	logcheck "Defender-DefinitionsUpToDate (mdatp health definitions_status)" "$definitionsCurrent" "$defenderDefinitionsCurrent"
 
 else
 	log "Microsoft Defender Antivirus is not installed"
@@ -71,7 +71,7 @@ else
 	defenderDefinitionsCurrent="false"
 fi
 
-json="{\"Defender Installed\": $defenderInstalled, \"Defender Running\": $defenderRunning, \"Defender Healthy\": $defenderHealthy, \"Defender Realtime Protection Enabled\": $defenderRealTimeProtection, \"Defender Definitions Up-to-Date\": $defenderDefinitionsCurrent}"
+json="{\"Defender-Installed\": $defenderInstalled, \"Defender-Running\": $defenderRunning, \"Defender-Healthy\": $defenderHealthy, \"Defender-RealtimeProtectionEnabled\": $defenderRealTimeProtection, \"Defender-DefinitionsUpToDate\": $defenderDefinitionsCurrent}"
 log "SUBMITTED JSON: $json"
 fails=$(echo "$json" | grep -o "false" | wc -l | tr -d ' ')
 log "=============================================================="

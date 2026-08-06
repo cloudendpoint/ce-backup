@@ -1778,6 +1778,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "POC_MAC_D_CO_MicrosoftDefenderAntivirus",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_D_CO_SBL_CIS_Firewall",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"

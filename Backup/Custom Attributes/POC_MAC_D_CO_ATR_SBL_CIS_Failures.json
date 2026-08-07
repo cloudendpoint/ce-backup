@@ -1,0 +1,23 @@
+{
+     "customAttributeName": null,
+     "customAttributeType": "string",
+     "displayName": "POC_MAC_D_CO_ATR_SBL_CIS_Failures",
+     "description": "",
+     "scriptContent": "IyEvYmluL2Jhc2gKCiMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMKIyMjIyMjCiMgSU5TVFJVQ1RJT05TCiMKIyBodHRwczovL2dpdGh1Yi5jb20vdXNuaXN0Z292L21hY29zX3NlY3VyaXR5CiMKIyBVcGxvYWQgdGhlIGZvbGxvd2luZyB0ZXh0IGludG8gRXh0ZW5zaW9uIEF0dHJpYnV0ZSBzZWN0aW9uLgojCiMgVXNlZCB0byBnYXRoZXIgdGhlIGxpc3Qgb2YgZmFpbGVkIGNvbnRyb2xzIGZyb20gdGhlIGNvbXBsaWFuY2UgYXVkaXQuCiMjIyMjIwoKYXVkaXQ9JCgvYmluL2xzIC1sIC9MaWJyYXJ5L1ByZWZlcmVuY2VzIHwgL3Vzci9iaW4vZ3JlcCAnb3JnLiouYXVkaXQucGxpc3QnIHwgL3Vzci9iaW4vYXdrICd7cHJpbnQgJE5GfScpCkZBSUxFRF9SVUxFUz0oKQppZiBbWyAhIC16ICIkYXVkaXQiIF1dOyB0aGVuCgogICAgY291bnQ9JChlY2hvICIkYXVkaXQiIHwgL3Vzci9iaW4vd2MgLWwgfCAvdXNyL2Jpbi94YXJncykKICAgIGlmIFtbICIkY291bnQiID09IDEgXV07IHRoZW4KICAgICAgICBhdWRpdGZpbGU9Ii9MaWJyYXJ5L1ByZWZlcmVuY2VzLyR7YXVkaXR9IgoKICAgICAgICBydWxlcz0oJCgvdXNyL2xpYmV4ZWMvUGxpc3RCdWRkeSAtYyAicHJpbnQgOiIgIiR7YXVkaXRmaWxlfSIgfCAvdXNyL2Jpbi9hd2sgJy9EaWN0LyB7IHByaW50ICQxIH0nKSkKCiAgICAgICAgZm9yIHJ1bGUgaW4gJHtydWxlc1sqXX07IGRvCiAgICAgICAgICAgIGlmIFtbICRydWxlID09ICJEaWN0IiBdXTsgdGhlbgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgZmkKICAgICAgICAgICAgRklORElORz0kKC91c3IvbGliZXhlYy9QbGlzdEJ1ZGR5IC1jICJwcmludCA6JHJ1bGU6ZmluZGluZyIgIiR7YXVkaXRmaWxlfSIpCiAgICAgICAgICAgIGlmIFtbICIkRklORElORyIgPT0gInRydWUiIF1dOyB0aGVuCiAgICAgICAgICAgICAgICBGQUlMRURfUlVMRVMrPSgkcnVsZSkKICAgICAgICAgICAgZmkKICAgICAgICBkb25lCgoKICAgIGVsc2UKICAgICAgICBGQUlMRURfUlVMRVM9Ik11bHRpcGxlIEJhc2VsaW5lcyBGb3VuZCIKICAgIGZpCmVsc2UKICAgIEZBSUxFRF9SVUxFUz0iTm8gQmFzZWxpbmUgU2V0IgpmaQoKIyBzb3J0IHRoZSByZXN1bHRzCklGUz0kJwonIHNvcnRlZD0oJCgvdXNyL2Jpbi9zb3J0IDw8PCIke0ZBSUxFRF9SVUxFU1sqXX0iKSk7IHVuc2V0IElGUwoKcHJpbnRmICI8cmVzdWx0PiIKcHJpbnRmICIlcwoiICIke3NvcnRlZFtAXX0iCnByaW50ZiAiPC9yZXN1bHQ+Ig==",
+     "runAsAccount": "system",
+     "fileName": "attribute_baseline_failures.sh",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_MAC_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

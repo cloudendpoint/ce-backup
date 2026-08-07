@@ -446,21 +446,23 @@
 
 ### POC_WIN_U_UMNGD_MicrosoftEdge_AllUsers
 #### Configuration
-|                  setting                  |                   value                    |
-|-------------------------------------------|--------------------------------------------|
-|Odata type                                 |#microsoft.graph.windowsManagedAppProtection|
-|Display Name                               |POC_WIN_U_UMNGD_MicrosoftEdge_AllUsers      |
-|Role Scope Tag Ids                         |Default<br/>                                |
-|Print Blocked                              |True                                        |
-|Allowed Inbound Data Transfer Sources      |allApps                                     |
-|Allowed Outbound Clipboard Sharing Level   |orgDestinationOrgSource                     |
-|Allowed Outbound Data Transfer Destinations|none                                        |
-|App Action If Unable To Authenticate User  |block                                       |
-|Maximum Allowed Device Threat Level        |notConfigured                               |
-|Mobile Threat Defense Remediation Action   |block                                       |
-|Minimum Required Os Version                |10.0.26100.0                                |
-|Minimum Warning Os Version                 |10.0.26200.0                                |
-|Minimum Wipe Os Version                    |10.0.22631.0                                |
-|Period Offline Before Wipe Is Enforced     |P90D                                        |
-|Period Offline Before Access Check         |P1D                                         |
+|                    setting                    |                   value                    |
+|-----------------------------------------------|--------------------------------------------|
+|Odata type                                     |#microsoft.graph.windowsManagedAppProtection|
+|Display Name                                   |POC_WIN_U_UMNGD_MicrosoftEdge_AllUsers      |
+|Role Scope Tag Ids                             |Default<br/>                                |
+|Print Blocked                                  |True                                        |
+|Allowed Inbound Data Transfer Sources          |allApps                                     |
+|Allowed Outbound Clipboard Sharing Level       |orgDestinationOrgSource                     |
+|Allowed Outbound Data Transfer Destinations    |none                                        |
+|Allowed Inbound Data Transfer Source Apps      |none                                        |
+|Allowed Outbound Data Transfer Destination Apps|none                                        |
+|App Action If Unable To Authenticate User      |block                                       |
+|Maximum Allowed Device Threat Level            |notConfigured                               |
+|Mobile Threat Defense Remediation Action       |block                                       |
+|Minimum Required Os Version                    |10.0.26100.0                                |
+|Minimum Warning Os Version                     |10.0.26200.0                                |
+|Minimum Wipe Os Version                        |10.0.22631.0                                |
+|Period Offline Before Wipe Is Enforced         |P90D                                        |
+|Period Offline Before Access Check             |P1D                                         |
 

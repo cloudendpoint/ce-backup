@@ -9,6 +9,8 @@
      "allowedInboundDataTransferSources": "allApps",
      "allowedOutboundClipboardSharingLevel": "orgDestinationOrgSource",
      "allowedOutboundDataTransferDestinations": "none",
+     "allowedInboundDataTransferSourceApps": "none",
+     "allowedOutboundDataTransferDestinationApps": "none",
      "appActionIfUnableToAuthenticateUser": "block",
      "maximumAllowedDeviceThreatLevel": "notConfigured",
      "mobileThreatDefenseRemediationAction": "block",

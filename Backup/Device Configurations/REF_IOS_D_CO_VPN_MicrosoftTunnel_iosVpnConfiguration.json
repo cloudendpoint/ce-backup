@@ -24,6 +24,8 @@
      "disableOnDemandUserOverride": true,
      "disconnectOnIdle": true,
      "disconnectOnIdleTimerInSeconds": null,
+     "includeAllNetworks": null,
+     "excludeLocalNetworks": null,
      "proxyServer": null,
      "optInToDeviceIdSharing": null,
      "userDomain": null,

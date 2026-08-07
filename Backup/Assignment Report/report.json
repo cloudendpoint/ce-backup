@@ -1773,6 +1773,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "CIS",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_D_CO_SBL_CIS_OperatingSystem",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
@@ -1793,14 +1798,41 @@
                          "intent": "Include"
                     }
                ],
+               "Custom Attributes": [
+                    {
+                         "name": "POC_MAC_D_CO_ATR_SBL_CIS_Exceptions",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_ATR_SBL_CIS_Failures",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_ATR_SBL_CIS_Compliance",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
                "Scripts": [
                     {
                          "name": "POC_MAC_D_CO_SS_SBL_CIS_SystemSecurity",
                          "type": "",
                          "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SS_SBL_CIS_Audit",
+                         "type": "",
+                         "intent": "Include"
                     }
                ],
                "Device Configurations": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_Audit",
+                         "type": "macOSCustomAppConfiguration",
+                         "intent": "Include"
+                    },
                     {
                          "name": "POC_MAC_D_CO_SBL_CIS_SystemSecurity",
                          "type": "macOSCustomConfiguration",

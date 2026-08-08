@@ -3,7 +3,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "description": "You can only have one OEMConfig per Samsung device.",
+     "description": "Configures Samsung E-FOTA settings. You can only have one OEMConfig per Samsung device.\n\nhttps://learn.microsoft.com/en-us/intune/device-updates/android/setup-samsung-knox",
      "displayName": "REF_AND_D_CO_KSP_E-FOTA",
      "packageId": "com.samsung.android.knox.kpu",
      "payloadJson": {
@@ -28,7 +28,7 @@
                },
                {
                     "key": "profileName",
-                    "valueString": "Knox E-FOTA Enable"
+                    "valueString": "Knox E-FOTA(1.0)"
                },
                {
                     "key": "doPolicies",

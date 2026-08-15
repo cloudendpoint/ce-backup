@@ -1,6 +1,6 @@
 {
      "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
-     "displayName": "IOS_D_COPE_ADE_UserAffinity_CIS",
+     "displayName": "ZZZ_IOS_D_COPE_ADE_UserAffinity_CIS",
      "description": "Used for Blueprint testing of Center for Internet Security baselines.\n",
      "requiresUserAuthentication": true,
      "configurationEndpointUrl": "https://appleconfigurator2.manage.microsoft.com/EnrollmentServer/MDMServiceConfig?id=ea525c10-ee31-41c6-8167-10b51bb1f723&AADTenantId=69b2ff03-08b5-4781-b7ea-af7ffbf790c4",

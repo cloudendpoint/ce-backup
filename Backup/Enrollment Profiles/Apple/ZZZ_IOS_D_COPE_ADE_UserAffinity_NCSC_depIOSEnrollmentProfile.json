@@ -1,6 +1,6 @@
 {
      "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
-     "displayName": "IOS_D_COPE_ADE_UserAffinity_NCSC",
+     "displayName": "ZZZ_IOS_D_COPE_ADE_UserAffinity_NCSC",
      "description": "Used for Blueprint testing of National Cyber Security Centre baselines.\n",
      "requiresUserAuthentication": true,
      "configurationEndpointUrl": "https://appleconfigurator2.manage.microsoft.com/EnrollmentServer/MDMServiceConfig?id=ea525c10-ee31-41c6-8167-10b51bb1f723&AADTenantId=69b2ff03-08b5-4781-b7ea-af7ffbf790c4",

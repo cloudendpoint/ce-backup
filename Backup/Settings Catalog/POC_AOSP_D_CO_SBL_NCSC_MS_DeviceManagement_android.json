@@ -1,0 +1,62 @@
+{
+     "creationSource": null,
+     "description": "https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-basic-security-level-1\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-enhanced-security-level-2\n\nhttps://learn.microsoft.com/en-us/intune/device-security/security-configurations/android-fully-managed#fully-managed-high-security-level-3",
+     "name": "POC_AOSP_D_CO_SBL_NCSC_MS_DeviceManagement",
+     "platforms": "aosp",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 3,
+     "technologies": "android",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblockedaosp",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.factoryresetblockedaosp_true",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp_false",
+                         "children": []
+                    }
+               }
+          }
+     ]
+}

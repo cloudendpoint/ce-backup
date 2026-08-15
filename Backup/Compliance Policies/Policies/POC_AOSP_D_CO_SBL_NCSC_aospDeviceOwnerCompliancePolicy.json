@@ -1,0 +1,30 @@
+{
+     "@odata.type": "#microsoft.graph.aospDeviceOwnerCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Reference policy for AOSP, these should be split out as per Android Enterprise.",
+     "displayName": "POC_AOSP_D_CO_SBL_NCSC",
+     "osMinimumVersion": "15.0",
+     "osMaximumVersion": null,
+     "minAndroidSecurityPatchLevel": "2026-07-01",
+     "securityBlockJailbrokenDevices": true,
+     "passwordRequired": true,
+     "passwordRequiredType": "numericComplex",
+     "passwordMinutesOfInactivityBeforeLock": 5,
+     "passwordMinimumLength": 6,
+     "storageRequireEncryption": true,
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ]
+}

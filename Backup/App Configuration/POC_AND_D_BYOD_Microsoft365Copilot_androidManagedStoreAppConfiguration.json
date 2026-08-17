@@ -22,7 +22,7 @@
      "credentialProviderRoleState": "notConfigured",
      "permissionActions": [],
      "targetedMobileApps": {
-          "appName": "Microsoft 365 Copilot",
+          "appName": "Microsoft Copilot",
           "type": "#microsoft.graph.androidManagedStoreApp"
      },
      "assignments": [

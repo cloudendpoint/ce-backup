@@ -20,7 +20,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Profile Applicability         |androidWorkProfile                                                                                                                                                                                                                                   |
 |Connected Apps Enabled        |False                                                                                                                                                                                                                                                |
 |Credential Provider Role State|notConfigured                                                                                                                                                                                                                                        |
-|Targeted Mobile Apps          |**appName:** Microsoft Copilot<br/>**type:** #microsoft.graph.androidManagedStoreApp<br/>                                                                                                                                                            |
+|Targeted Mobile Apps          |**appName:** Microsoft 365 Copilot<br/>**type:** #microsoft.graph.androidManagedStoreApp<br/>                                                                                                                                                        |
 
 ### POC_AND_D_BYOD_MicrosoftCopilot
 Description: Restricts use of only work/school account within the app\.
@@ -267,7 +267,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Connected Apps Enabled        |False                                                                                                                                                                                                                                                |
 |Credential Provider Role State|notConfigured                                                                                                                                                                                                                                        |
 |Permission Actions            |**permission:** android.permission.POST_NOTIFICATIONS<br/>**action:** autoGrant<br/><br/>                                                                                                                                                            |
-|Targeted Mobile Apps          |**appName:** Microsoft Copilot<br/>**type:** #microsoft.graph.androidManagedStoreApp<br/>                                                                                                                                                            |
+|Targeted Mobile Apps          |**appName:** Microsoft 365 Copilot<br/>**type:** #microsoft.graph.androidManagedStoreApp<br/>                                                                                                                                                        |
 
 ### POC_AND_D_CO_MicrosoftCopilot
 Description: Restricts use of only work/school account within the app\. Configures app permissions to prevent user requirement to approve them\.

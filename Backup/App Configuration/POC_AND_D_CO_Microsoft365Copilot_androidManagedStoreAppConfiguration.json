@@ -27,7 +27,7 @@
           }
      ],
      "targetedMobileApps": {
-          "appName": "Microsoft Copilot",
+          "appName": "Microsoft 365 Copilot",
           "type": "#microsoft.graph.androidManagedStoreApp"
      },
      "assignments": [

@@ -67,18 +67,6 @@
                     "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "SG_MDM_D_CPC_CO",
-                    "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")"
-               }
-          },
-          {
-               "source": "direct",
-               "intent": "apply",
-               "target": {
-                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "POC_WIN_D_CO_Updates_Autopatch - Parent Group",
                     "groupType": "StaticMembership"
                }

@@ -64,12 +64,12 @@
                "source": "direct",
                "intent": "apply",
                "target": {
-                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "SG_MDM_D_WIN_CO_Phase_4",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_2",
                     "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))"
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")"
                }
           },
           {
@@ -79,9 +79,20 @@
                     "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "SG_MDM_D_CPC_CO",
+                    "groupName": "SG_MDM_D_WIN_CO_CartUpdatePolicy",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "SG_MDM_D_WIN_CO_Phase_4",
                     "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")"
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))"
                }
           },
           {

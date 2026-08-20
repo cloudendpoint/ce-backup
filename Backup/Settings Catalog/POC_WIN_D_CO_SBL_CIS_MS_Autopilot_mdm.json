@@ -93,7 +93,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators_2",
+                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators_1",
                          "children": []
                     }
                }

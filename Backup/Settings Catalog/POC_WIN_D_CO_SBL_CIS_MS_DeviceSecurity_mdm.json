@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 39,
+     "settingCount": 46,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -18,6 +18,20 @@
      "settings": [
           {
                "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_credentialsui_disablepasswordreveal",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_credentialsui_disablepasswordreveal_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localsecurityauthority_allowcustomsspsaps",
@@ -31,7 +45,7 @@
                }
           },
           {
-               "id": "1",
+               "id": "2",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_power_allowstandbystateswhensleepingonbattery",
@@ -45,7 +59,7 @@
                }
           },
           {
-               "id": "2",
+               "id": "3",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_power_allowstandbywhensleepingpluggedin",
@@ -54,20 +68,6 @@
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
                          "value": "device_vendor_msft_policy_config_power_allowstandbywhensleepingpluggedin_0",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "3",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_credentialsui_disablepasswordreveal",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_credentialsui_disablepasswordreveal_0",
                          "children": []
                     }
                }
@@ -406,7 +406,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowpku2uauthenticationrequests_1",
+                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowpku2uauthenticationrequests_0",
                          "children": []
                     }
                }
@@ -603,6 +603,104 @@
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
                          "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_virtualizefileandregistrywritefailurestoperuserlocations_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "39",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_allowmicrosoftmanageddesktopprocessing",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_allowmicrosoftmanageddesktopprocessing_32",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "40",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_allowtelemetry",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_allowtelemetry_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "41",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "42",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "43",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "44",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdumpcollection",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_limitdumpcollection_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "45",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics_1",
                          "children": []
                     }
                }

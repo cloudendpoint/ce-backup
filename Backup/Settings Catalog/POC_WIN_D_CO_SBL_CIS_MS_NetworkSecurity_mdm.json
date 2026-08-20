@@ -34,12 +34,12 @@
                "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_preventenablinglockscreencamera",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_admx_printing2_registerspoolerremoterpcendpoint",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_devicelock_preventenablinglockscreencamera_1",
+                         "value": "device_vendor_msft_policy_config_admx_printing2_registerspoolerremoterpcendpoint_0",
                          "children": []
                     }
                }
@@ -48,18 +48,254 @@
                "id": "2",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_preventlockscreenslideshow",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_devicelock_preventlockscreenslideshow_1",
-                         "children": []
+                         "value": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_redirectionguardpolicy_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_redirectionguardpolicy_enum_1",
+                                        "children": []
+                                   }
+                              }
+                         ]
                     }
                }
           },
           {
                "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionprotocol_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionprotocol_enum_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionauthentication_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionauthentication_enum_0",
+                                        "children": []
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "4",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpcauthenticationprotocol_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpcauthenticationprotocol_enum_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpclistenerprotocols_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpclistenerprotocols_enum_5",
+                                        "children": []
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "5",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpctcpport",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_configurerpctcpport_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpctcpport_rpctcpport",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 0
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "7",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_copyfilespolicy_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_copyfilespolicy_enum_1",
+                                        "children": []
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "8",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_edit",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": ""
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_0",
+                                        "children": []
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "9",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_admx_dnsclient_turn_off_multicast",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_admx_dnsclient_turn_off_multicast_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "10",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_mssecurityguide_applyuacrestrictionstolocalaccountsonnetworklogon",
@@ -73,7 +309,7 @@
                }
           },
           {
-               "id": "4",
+               "id": "11",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_mssecurityguide_configuresmbv1clientdriver",
@@ -99,7 +335,7 @@
                }
           },
           {
-               "id": "5",
+               "id": "12",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_mssecurityguide_configuresmbv1server",
@@ -113,7 +349,7 @@
                }
           },
           {
-               "id": "6",
+               "id": "13",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_mssecurityguide_enablestructuredexceptionhandlingoverwriteprotection",
@@ -127,7 +363,7 @@
                }
           },
           {
-               "id": "7",
+               "id": "14",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_mssecurityguide_wdigestauthentication",
@@ -141,7 +377,7 @@
                }
           },
           {
-               "id": "8",
+               "id": "15",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_msslegacy_ipv6sourceroutingprotectionlevel",
@@ -167,7 +403,7 @@
                }
           },
           {
-               "id": "9",
+               "id": "16",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_msslegacy_ipsourceroutingprotectionlevel",
@@ -193,7 +429,7 @@
                }
           },
           {
-               "id": "10",
+               "id": "17",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_msslegacy_allowicmpredirectstooverrideospfgeneratedroutes",
@@ -207,7 +443,7 @@
                }
           },
           {
-               "id": "11",
+               "id": "18",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_msslegacy_allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers",
@@ -221,7 +457,7 @@
                }
           },
           {
-               "id": "12",
+               "id": "19",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_mss-legacy_pol_mss_safedllsearchmode",
@@ -235,7 +471,7 @@
                }
           },
           {
-               "id": "13",
+               "id": "20",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_mss-legacy_pol_mss_screensavergraceperiod",
@@ -261,7 +497,7 @@
                }
           },
           {
-               "id": "14",
+               "id": "21",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_mss-legacy_pol_mss_warninglevel",
@@ -287,21 +523,7 @@
                }
           },
           {
-               "id": "15",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_admx_dnsclient_turn_off_multicast",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_admx_dnsclient_turn_off_multicast_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "16",
+               "id": "22",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_connectivity_prohibitinstallationandconfigurationofnetworkbridge",
@@ -315,7 +537,7 @@
                }
           },
           {
-               "id": "17",
+               "id": "23",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_networkconnections_nc_showsharedaccessui",
@@ -329,7 +551,7 @@
                }
           },
           {
-               "id": "18",
+               "id": "24",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_networkconnections_nc_stddomainusersetlocation",
@@ -343,7 +565,7 @@
                }
           },
           {
-               "id": "19",
+               "id": "25",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_connectivity_hardeneduncpaths",
@@ -420,7 +642,49 @@
                }
           },
           {
-               "id": "20",
+               "id": "26",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "27",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_preventenablinglockscreencamera",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_devicelock_preventenablinglockscreencamera_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "28",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_preventlockscreenslideshow",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_devicelock_preventlockscreenslideshow_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "29",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_admx_wcm_wcm_minimizeconnections",
@@ -446,7 +710,7 @@
                }
           },
           {
-               "id": "21",
+               "id": "30",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_windowsconnectionmanager_prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork",
@@ -455,270 +719,6 @@
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
                          "value": "device_vendor_msft_policy_config_windowsconnectionmanager_prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "22",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_admx_printing2_registerspoolerremoterpcendpoint",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_admx_printing2_registerspoolerremoterpcendpoint_0",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "23",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_redirectionguardpolicy_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy_redirectionguardpolicy_enum_1",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "24",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionprotocol_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionprotocol_enum_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionauthentication_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configurerpcconnectionpolicy_rpcconnectionauthentication_enum_0",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "25",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpcauthenticationprotocol_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpcauthenticationprotocol_enum_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpclistenerprotocols_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configurerpclistenerpolicy_rpclistenerprotocols_enum_5",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "26",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpctcpport",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_configurerpctcpport_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurerpctcpport_rpctcpport",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "simpleSettingValue": {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                                        "settingValueTemplateReference": null,
-                                        "value": 0
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "27",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "28",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_copyfilespolicy_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_configurecopyfilespolicy_copyfilespolicy_enum_1",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "29",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_edit",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "simpleSettingValue": {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                        "settingValueTemplateReference": null,
-                                        "value": ""
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_0",
-                                        "children": []
-                                   }
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "30",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "user_vendor_msft_policy_config_admx_wpn_nolockscreentoastnotification_1",
                          "children": []
                     }
                }
@@ -830,7 +830,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_lanmanserver_minsmb2dialect_768",
+                         "value": "device_vendor_msft_policy_config_lanmanserver_minsmb2dialect_785",
                          "children": []
                     }
                }
@@ -914,7 +914,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_lanmanworkstation_minsmb2dialect_768",
+                         "value": "device_vendor_msft_policy_config_lanmanworkstation_minsmb2dialect_785",
                          "children": []
                     }
                }
@@ -928,7 +928,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_lanmanworkstation_requireencryption_0",
+                         "value": "device_vendor_msft_policy_config_lanmanworkstation_requireencryption_1",
                          "children": []
                     }
                }

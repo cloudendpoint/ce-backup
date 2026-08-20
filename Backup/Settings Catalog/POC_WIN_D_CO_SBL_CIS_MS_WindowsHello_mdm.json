@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 6,
+     "settingCount": 7,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -232,6 +232,33 @@
                          "value": "device_vendor_msft_passportforwork_securitykey_usesecuritykeyforsignin_0",
                          "children": []
                     }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}_policies_requiresecuritydevice",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "user_vendor_msft_passportforwork_{tenantid}_policies_requiresecuritydevice_true",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
                }
           }
      ],

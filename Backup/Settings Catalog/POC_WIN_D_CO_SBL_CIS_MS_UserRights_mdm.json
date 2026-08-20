@@ -361,6 +361,11 @@
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
                               "value": "*S-1-5-20"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "*S-1-5-99"
                          }
                     ]
                }
@@ -396,7 +401,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "S-1-5-99-216390572-1995538116-3857911515-2404958512-2623887229"
+                              "value": "*S-1-5-99"
                          }
                     ]
                }

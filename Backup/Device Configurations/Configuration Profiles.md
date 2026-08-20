@@ -1057,7 +1057,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |intent |                   target                    |filter type|filter name|
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_1                      |include    |WIN_CO     |
-|Exclude|SG_MDM_D_CPC_CO                              |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
 
 #### Configuration
@@ -1096,7 +1095,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_2                      |include    |WIN_CO     |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
-|Exclude|SG_MDM_D_CPC_CO                              |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
 
 #### Configuration
@@ -1137,9 +1135,10 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |intent |                   target                    |filter type|filter name|
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_3                      |none       |           |
-|Exclude|SG_MDM_D_CPC_CO                              |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
+|Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
+|Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 
 #### Configuration
 |                setting                 |                                                                          value                                                                           |
@@ -1179,7 +1178,8 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_4                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
-|Exclude|SG_MDM_D_CPC_CO                              |none       |           |
+|Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
+|Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 
 #### Configuration
@@ -1220,9 +1220,10 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |intent |                   target                    |filter type|filter name|
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_5                      |none       |           |
-|Exclude|SG_MDM_D_CPC_CO                              |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
+|Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
+|Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 
 #### Configuration
 |                setting                 |                                                                          value                                                                           |
@@ -1946,29 +1947,6 @@ Description: Uses AppLocker to block third\-party browsers and only allow Edge
 |Connect When Network Name Is Hidden|False                                    |
 |Proxy Setting                      |none                                     |
 |Force F I P S Compliance           |False                                    |
-
-### REF_WIN_D_CO_WindowsUpdateSupportforCarts
-Description: This will conflict with WUCP and Windows Autopatch policies that silent set the SetEDURestart with no GUI option\.
-
-Enabling this policy for EDU devices that remain on Carts overnight will skip power checks to ensure update reboots will happen at the scheduled install time\.
-
-Enabling this policy will restrict updates to download and install outside of Active Hours\. Updates are allowed to start even if there's a signed\-in user or the device is on battery power, providing there's more than 70% battery capacity\. Windows will schedule the device to wake from sleep 1 hour after the ActiveHoursEnd time with a 60\-minute random delay\. Devices will reboot immediately after the updates are installed\. If there are still pending updates, the device continues to retry every hour for 4 hours\.
-
-The following rules are followed regarding battery power:
-
-Above 70% \- allowed to start work;
-Above 40% \- allowed to reboot;
-Above 20% \- allowed to continue work\.
-This setting overrides the install deferral behavior of AllowAutoUpdate\.
-
-These settings are designed for education devices that remain in carts overnight that are left in sleep mode\. It isn't designed for 1:1 devices\.
-#### Configuration
-|     setting      |                                                                                                                                                                                                 value                                                                                                                                                                                                  |
-|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type        |#microsoft.graph.windows10CustomConfiguration                                                                                                                                                                                                                                                                                                                                                           |
-|Role Scope Tag Ids|Default<br/>                                                                                                                                                                                                                                                                                                                                                                                            |
-|Display Name      |REF_WIN_D_CO_WindowsUpdateSupportforCarts                                                                                                                                                                                                                                                                                                                                                               |
-|Oma Settings      |**@odata.type:** #microsoft.graph.omaSettingInteger<br/>**displayName:** SetEDURestart<br/>**description:** https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#setedurestart<br/>**omaUri:** ./Device/Vendor/MSFT/Policy/Config/Update/SetEDURestart<br/>**secretReferenceValueId:** None<br/>**isEncrypted:** False<br/>**value:** 1<br/>**isReadOnly:** False<br/><br/>|
 
 ### REF_WIN_D_COBO_Kiosk_EditionUpgrade
 Description: Used for userless kiosk devices to activate to Enterprise\.

@@ -23,7 +23,9 @@
                     "All"
                ],
                "excludeApplications": [
-                    "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
+                    "45a330b1-b1ec-4cc1-9161-9f03992aa49f",
+                    "5cf0163f-7d07-4243-8f38-a8ad8508aa1c",
+                    "881dee9c-2ebe-4f40-998f-88e99e90beec"
                ],
                "includeUserActions": [],
                "includeAuthenticationContextClassReferences": [],

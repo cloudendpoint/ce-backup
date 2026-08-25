@@ -1,0 +1,52 @@
+{
+     "@odata.type": "#microsoft.graph.iosCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": null,
+     "displayName": "POC_IOS_D_CO_SBL_CIS_MS_DeviceHealth",
+     "passcodeBlockSimple": false,
+     "passcodeExpirationDays": null,
+     "passcodeMinimumLength": null,
+     "passcodeMinutesOfInactivityBeforeLock": null,
+     "passcodeMinutesOfInactivityBeforeScreenTimeout": null,
+     "passcodePreviousPasscodeBlockCount": null,
+     "passcodeMinimumCharacterSetCount": null,
+     "passcodeRequiredType": "deviceDefault",
+     "passcodeRequired": false,
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "osMinimumBuildVersion": null,
+     "osMaximumBuildVersion": null,
+     "securityBlockJailbrokenDevices": true,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "managedEmailProfileRequired": false,
+     "restrictedApps": [],
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

@@ -1,69 +1,4 @@
 ## Configuration Profiles
-### DEV_AND_D_CO_DR_SBL_CIS_DeviceSecurity
-#### Assignments
-|intent |          target          |filter type|filter name|
-|-------|--------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_AND_CIS_COPE|none       |           |
-
-#### Configuration
-|                      setting                       |                                               value                                               |
-|----------------------------------------------------|---------------------------------------------------------------------------------------------------|
-|Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                      |
-|Role Scope Tag Ids                                  |Default<br/>                                                                                       |
-|Display Name                                        |DEV_AND_D_CO_DR_SBL_CIS_DeviceSecurity                                                             |
-|Accounts Block Modification                         |True                                                                                               |
-|Apps Auto Update Policy                             |notConfigured                                                                                      |
-|Apps Default Permission Policy                      |deviceDefault                                                                                      |
-|Apps Recommend Skipping First Use Hints             |False                                                                                              |
-|Bluetooth Block Configuration                       |False                                                                                              |
-|Bluetooth Block Contact Sharing                     |False                                                                                              |
-|Camera Blocked                                      |False                                                                                              |
-|Cellular Block Wi Fi Tethering                      |False                                                                                              |
-|Certificate Credential Configuration Disabled       |False                                                                                              |
-|Cross Profile Policies Allow Data Sharing           |notConfigured                                                                                      |
-|Microsoft Launcher Configuration Enabled            |True                                                                                               |
-|Enrollment Profile                                  |fullyManaged                                                                                       |
-|Data Roaming Blocked                                |False                                                                                              |
-|Date Time Configuration Blocked                     |False                                                                                              |
-|Factory Reset Blocked                               |False                                                                                              |
-|Google Accounts Blocked                             |True                                                                                               |
-|Kiosk Customization Device Settings Blocked         |True                                                                                               |
-|Kiosk Customization Status Bar                      |notConfigured                                                                                      |
-|Kiosk Customization System Navigation               |notConfigured                                                                                      |
-|Is Kiosk Mode Exit Code Set                         |False                                                                                              |
-|Kiosk Mode Virtual Home Button Type                 |notConfigured                                                                                      |
-|Kiosk Mode Screen Orientation                       |notConfigured                                                                                      |
-|Kiosk Mode Icon Size                                |notConfigured                                                                                      |
-|Kiosk Mode Folder Icon                              |notConfigured                                                                                      |
-|Kiosk Mode Use Managed Home Screen App              |notConfigured                                                                                      |
-|Nfc Block Outgoing Beam                             |False                                                                                              |
-|Password Block Keyguard Features                    |camera<br/>remoteInput<br/>unredactedNotifications<br/>                                            |
-|Password Expiration Days                            |                                                                                                365|
-|Password Minimum Length                             |                                                                                                  6|
-|Password Minutes Of Inactivity Before Screen Timeout|                                                                                                  1|
-|Password Previous Password Count To Block           |                                                                                                  5|
-|Password Required Type                              |numericComplex                                                                                     |
-|Password Require Unlock                             |daily                                                                                              |
-|Password Sign In Failure Count Before Factory Reset |                                                                                                 11|
-|Play Store Mode                                     |allowList                                                                                          |
-|Screen Capture Blocked                              |False                                                                                              |
-|Security Require Verify Apps                        |False                                                                                              |
-|Storage Block External Media                        |False                                                                                              |
-|Storage Block Usb File Transfer                     |False                                                                                              |
-|System Update Window End Minutes After Midnight     |                                                                                                360|
-|System Update Install Type                          |windowed                                                                                           |
-|Users Block Add                                     |False                                                                                              |
-|Users Block Remove                                  |True                                                                                               |
-|Vpn Always On Lockdown Mode                         |False                                                                                              |
-|Vpn Always On Package Identifier                    |<details><summary>Click to expand...</summary></details>                                           |
-|Wifi Block Edit Configurations                      |False                                                                                              |
-|Personal Profile Play Store Mode                    |notConfigured                                                                                      |
-|Work Profile Password Required Type                 |deviceDefault                                                                                      |
-|Work Profile Password Require Unlock                |deviceDefault                                                                                      |
-|Locate Device Lost Mode Enabled                     |True                                                                                               |
-|Device Location Mode                                |notConfigured                                                                                      |
-|Device Owner Lock Screen Message                    |**defaultMessage:** This device belongs to {Organization Name}<br/>**localizedMessages:** <ul></ul>|
-
 ### POC_AND_D_BYOD_AndroidManagementAPI
 Description: This policy will migrate existing Personally\-Owned with Work Profile devices to Android Management API\.
 
@@ -490,45 +425,66 @@ https://learn.microsoft.com/en-us/intune/device-security/security-configurations
 |Work Profile Password Require Unlock     |deviceDefault                                                |
 |Device Location Mode                     |notConfigured                                                |
 
-### POC_AND_D_CO_SBL_CIS_DeviceSecurity
+### POC_AND_D_CO_SBL_CIS_MS_DataProtection
 #### Configuration
-|                      setting                       |                                                                          value                                                                           |
-|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration                                                                                             |
-|Role Scope Tag Ids                                  |Default<br/>                                                                                                                                              |
-|Display Name                                        |POC_AND_D_CO_SBL_CIS_DeviceSecurity                                                                                                                       |
-|Accounts Block Modification                         |True                                                                                                                                                      |
-|Apps Auto Update Policy                             |always                                                                                                                                                    |
-|Bluetooth Block Contact Sharing                     |True                                                                                                                                                      |
-|Cross Profile Policies Allow Data Sharing           |notConfigured                                                                                                                                             |
-|Enrollment Profile                                  |notConfigured                                                                                                                                             |
-|Date Time Configuration Blocked                     |True                                                                                                                                                      |
-|Google Accounts Blocked                             |True                                                                                                                                                      |
-|Kiosk Customization Power Button Actions Blocked    |True                                                                                                                                                      |
-|Kiosk Customization Status Bar                      |notConfigured                                                                                                                                             |
-|Kiosk Customization System Navigation               |notConfigured                                                                                                                                             |
-|Is Kiosk Mode Exit Code Set                         |False                                                                                                                                                     |
-|Kiosk Mode Use Managed Home Screen App              |notConfigured                                                                                                                                             |
-|Password Block Keyguard Features                    |allFeatures<br/>biometrics<br/>camera<br/>face<br/>fingerprint<br/>iris<br/>notifications<br/>remoteInput<br/>trustAgents<br/>unredactedNotifications<br/>|
-|Password Expiration Days                            |                                                                                                                                                        90|
-|Password Minimum Length                             |                                                                                                                                                         6|
-|Password Minutes Of Inactivity Before Screen Timeout|                                                                                                                                                         1|
-|Password Previous Password Count To Block           |                                                                                                                                                         5|
-|Password Required Type                              |numericComplex                                                                                                                                            |
-|Password Require Unlock                             |deviceDefault                                                                                                                                             |
-|Password Sign In Failure Count Before Factory Reset |                                                                                                                                                         5|
-|Security Require Verify Apps                        |True                                                                                                                                                      |
-|System Update Install Type                          |automatic                                                                                                                                                 |
-|Users Block Add                                     |True                                                                                                                                                      |
-|Users Block Remove                                  |True                                                                                                                                                      |
-|Vpn Always On Lockdown Mode                         |False                                                                                                                                                     |
-|Vpn Always On Package Identifier                    |<details><summary>Click to expand...</summary></details>                                                                                                  |
-|Personal Profile Play Store Mode                    |notConfigured                                                                                                                                             |
-|Work Profile Password Required Type                 |deviceDefault                                                                                                                                             |
-|Work Profile Password Require Unlock                |deviceDefault                                                                                                                                             |
-|Locate Device Lost Mode Enabled                     |True                                                                                                                                                      |
-|Device Location Mode                                |notConfigured                                                                                                                                             |
-|Device Owner Lock Screen Message                    |**defaultMessage:** If lost please return to Customer Name<br/>**localizedMessages:** <ul></ul>                                                           |
+|                           setting                           |                                   value                                    |
+|-------------------------------------------------------------|----------------------------------------------------------------------------|
+|Odata type                                                   |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration               |
+|Role Scope Tag Ids                                           |Default<br/>                                                                |
+|Display Name                                                 |POC_AND_D_CO_SBL_CIS_MS_DataProtection                                      |
+|Certificate Credential Configuration Disabled                |True                                                                        |
+|Cross Profile Policies Allow Data Sharing                    |notConfigured                                                               |
+|Cross Profile Policies Show Work Contacts In Personal Profile|False                                                                       |
+|Enrollment Profile                                           |notConfigured                                                               |
+|Google Accounts Blocked                                      |True                                                                        |
+|Kiosk Customization Status Bar                               |notConfigured                                                               |
+|Kiosk Customization System Navigation                        |notConfigured                                                               |
+|Is Kiosk Mode Exit Code Set                                  |False                                                                       |
+|Kiosk Mode Use Managed Home Screen App                       |notConfigured                                                               |
+|Nfc Block Outgoing Beam                                      |True                                                                        |
+|Password Block Keyguard Features                             |trustAgents<br/>unredactedNotifications<br/>                                |
+|Password Required Type                                       |deviceDefault                                                               |
+|Password Require Unlock                                      |deviceDefault                                                               |
+|Security Require Verify Apps                                 |False                                                                       |
+|Storage Block External Media                                 |True                                                                        |
+|Storage Block Usb File Transfer                              |True                                                                        |
+|Users Block Add                                              |True                                                                        |
+|Users Block Remove                                           |True                                                                        |
+|Vpn Always On Lockdown Mode                                  |False                                                                       |
+|Vpn Always On Package Identifier                             |<details><summary>Click to expand...</summary></details>                    |
+|Personal Profile Play Store Mode                             |notConfigured                                                               |
+|Work Profile Password Required Type                          |deviceDefault                                                               |
+|Work Profile Password Require Unlock                         |deviceDefault                                                               |
+|Device Location Mode                                         |notConfigured                                                               |
+|Device Owner Lock Screen Message                             |**defaultMessage:** Lock screen message<br/>**localizedMessages:** <ul></ul>|
+
+### POC_AND_D_CO_SBL_CIS_MS_Password
+#### Configuration
+|                      setting                       |                            value                            |
+|----------------------------------------------------|-------------------------------------------------------------|
+|Odata type                                          |#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration|
+|Role Scope Tag Ids                                  |Default<br/>                                                 |
+|Display Name                                        |POC_AND_D_CO_SBL_CIS_MS_Password                             |
+|Cross Profile Policies Allow Data Sharing           |notConfigured                                                |
+|Enrollment Profile                                  |notConfigured                                                |
+|Kiosk Customization Status Bar                      |notConfigured                                                |
+|Kiosk Customization System Navigation               |notConfigured                                                |
+|Is Kiosk Mode Exit Code Set                         |False                                                        |
+|Kiosk Mode Use Managed Home Screen App              |notConfigured                                                |
+|Password Expiration Days                            |                                                          365|
+|Password Minimum Length                             |                                                            6|
+|Password Minutes Of Inactivity Before Screen Timeout|                                                            1|
+|Password Previous Password Count To Block           |                                                            5|
+|Password Required Type                              |numericComplex                                               |
+|Password Require Unlock                             |deviceDefault                                                |
+|Password Sign In Failure Count Before Factory Reset |                                                            5|
+|Security Require Verify Apps                        |False                                                        |
+|Vpn Always On Lockdown Mode                         |False                                                        |
+|Vpn Always On Package Identifier                    |<details><summary>Click to expand...</summary></details>     |
+|Personal Profile Play Store Mode                    |notConfigured                                                |
+|Work Profile Password Required Type                 |deviceDefault                                                |
+|Work Profile Password Require Unlock                |deviceDefault                                                |
+|Device Location Mode                                |notConfigured                                                |
 
 ### POC_AND_D_CO_SBL_NCSC_MS_DataProtection
 Description: https://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/android

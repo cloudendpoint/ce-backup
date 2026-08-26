@@ -1,0 +1,286 @@
+{
+     "displayName": "REF_WIN_D_CO_SBL_CIS_MS_VisualStudioCode",
+     "description": "Support for Windows 11 26200.8875 and above only.\n\nL1 policy that managed the telemetry level, disables chat Tools auto approve, ensures automatic updates are enabled. \n\nL2 policy that manages allowed extensions, disabled feedback and ChatMCP.\n\nIn addtion to CIS controls, this policy also enables ExtensionsAutoUpdate with a 2 day delay.\n\nhttps://code.visualstudio.com/docs/enterprise/extensions#_configure-allowed-extensions",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "policyConfigurationIngestionType": "custom",
+     "definitionValues": [
+          {
+               "createdDateTime": "2026-08-25T14:13:21.0047054Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "4a735967-cfd8-4446-8881-d492971619e3",
+               "lastModifiedDateTime": "2026-08-25T14:13:22.567953Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "ChatMCP",
+                    "explainText": "Controls access to installed Model Context Protocol servers.",
+                    "categoryPath": "\\Visual Studio Code\\Chat",
+                    "supportedOn": "Visual Studio Code >= 1.99",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "1d56d9eb-ecda-4a7f-a188-1f1fd177bf15",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "a08c765b-3d3c-4ccd-abd7-324fef0e6f4e",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-08-25T14:13:22.567953Z",
+                         "createdDateTime": "2026-08-25T14:13:22.5688896Z",
+                         "id": "83567e6b-6348-49ec-9d93-37248df991eb",
+                         "value": "none",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "4ffb97ec-5ef4-47f8-870f-9ba8bbb1287d",
+                              "lastModifiedDateTime": "2026-08-25T14:11:49.6274246Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "No access to MCP servers.",
+                                   "value": "none"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "No access to MCP servers.",
+                                        "value": "none"
+                                   },
+                                   {
+                                        "displayName": "Allows access to MCP servers installed from the registry that VS Code is connected to.",
+                                        "value": "registry"
+                                   },
+                                   {
+                                        "displayName": "Allow access to any installed MCP server.",
+                                        "value": "all"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-08-25T14:13:15.20596Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "fe76b97e-f0f2-4ec0-b543-fbf344fa3a51",
+               "lastModifiedDateTime": "2026-08-25T14:13:16.6192609Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "AllowedExtensions",
+                    "explainText": "Specify a list of extensions that are allowed to use. This helps maintain a secure and consistent development environment by restricting the use of unauthorized extensions. More information: https://aka.ms/vscode/enterprise/extensions/allowed",
+                    "categoryPath": "\\Visual Studio Code\\Extensions",
+                    "supportedOn": "Visual Studio Code >= 1.96",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "63f31ecc-59d5-4833-b8e0-2b27c5b90f55",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "27fad5bd-f3fe-42cb-a462-90164f176dea",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueMultiText",
+                         "lastModifiedDateTime": "2026-08-25T14:13:16.6192609Z",
+                         "createdDateTime": "2026-08-25T14:13:16.6245491Z",
+                         "id": "189bb3fb-3743-4a06-8fd1-a005c602a1a3",
+                         "values": [
+                              "{ \"microsoft\": true, \"github\": true }"
+                         ],
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationMultiTextBox",
+                              "label": "",
+                              "id": "3455fbc4-ce3d-4406-87a0-78b4768c48d8",
+                              "lastModifiedDateTime": "2026-08-25T14:11:49.6076651Z",
+                              "required": false,
+                              "maxLength": 1023,
+                              "maxStrings": 9999
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-08-25T14:13:18.0160353Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "199cdf8e-989e-4f14-86ee-6a35ac6673f9",
+               "lastModifiedDateTime": "2026-08-25T14:13:18.015723Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "EnableFeedback",
+                    "explainText": "Enable feedback mechanisms such as the issue reporter, surveys, and other feedback options.",
+                    "categoryPath": "\\Visual Studio Code\\Telemetry",
+                    "supportedOn": "Visual Studio Code >= 1.99",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6dbb9f6e-7652-4310-a14a-b5fc36166936",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "d738cc5e-4498-4886-8320-b7929c753a70",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-08-25T14:13:26.0549496Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "c76b4831-9558-489c-ab09-f0cc5ff441f5",
+               "lastModifiedDateTime": "2026-08-25T14:13:26.3349586Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "UpdateMode",
+                    "explainText": "Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.",
+                    "categoryPath": "\\Visual Studio Code\\Update",
+                    "supportedOn": "Visual Studio Code >= 1.67",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "9a2ba376-6ed7-49f9-b588-931f642ddc20",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "24a01c94-c7b5-44d8-897e-e2300b06d95e",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-08-25T14:13:26.3349586Z",
+                         "createdDateTime": "2026-08-25T14:13:26.3349586Z",
+                         "id": "2092e32f-d0c4-4055-ae49-89c88fe0e52b",
+                         "value": "default",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "6f3a6a90-414d-42fc-8d77-73d4d73aa529",
+                              "lastModifiedDateTime": "2026-08-25T14:11:49.7665525Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "Disable updates.",
+                                   "value": "none"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "Disable updates.",
+                                        "value": "none"
+                                   },
+                                   {
+                                        "displayName": "Disable automatic background update checks. Updates will be available if you manually check for updates.",
+                                        "value": "manual"
+                                   },
+                                   {
+                                        "displayName": "Check for updates only on startup. Disable automatic background update checks.",
+                                        "value": "start"
+                                   },
+                                   {
+                                        "displayName": "Enable automatic update checks. Code will check for updates automatically and periodically.",
+                                        "value": "default"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-08-25T14:13:18.8818744Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "4f0a87b4-8138-49ef-a8c3-07783cf96259",
+               "lastModifiedDateTime": "2026-08-25T14:13:18.8773448Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "ChatToolsAutoApprove",
+                    "explainText": "Global auto approve also known as \"YOLO mode\" disables manual approval completely for all tools in all workspaces, allowing the agent to act fully autonomously. This is extremely dangerous and is *never* recommended, even containerized environments like Codespaces and Dev Containers have user keys forwarded into the container that could be compromised.\r\n\r\nThis feature disables critical security protections and makes it much easier for an attacker to compromise the machine.",
+                    "categoryPath": "\\Visual Studio Code\\Chat",
+                    "supportedOn": "Visual Studio Code >= 1.99",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "1d56d9eb-ecda-4a7f-a188-1f1fd177bf15",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "78b65ec3-7890-40b2-b077-f5e792b60878",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-08-25T14:13:12.7606333Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "a855c0c6-0f95-4ace-af29-a1c3627a150b",
+               "lastModifiedDateTime": "2026-08-25T14:13:13.1570354Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "TelemetryLevel",
+                    "explainText": "Controls the level of telemetry.",
+                    "categoryPath": "\\Visual Studio Code\\Telemetry",
+                    "supportedOn": "Visual Studio Code >= 1.99",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6dbb9f6e-7652-4310-a14a-b5fc36166936",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "9df14a34-135f-47b6-b6c5-fcd971cb617a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-08-25T14:13:13.1570354Z",
+                         "createdDateTime": "2026-08-25T14:13:13.1599563Z",
+                         "id": "e2d2e918-66f1-492b-9135-63fee92fa973",
+                         "value": "off",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "f1c8d243-2fa2-4351-95c4-f69216d32fb0",
+                              "lastModifiedDateTime": "2026-08-25T14:11:49.7572815Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "Sends usage data, errors, and crash reports.",
+                                   "value": "all"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "Sends usage data, errors, and crash reports.",
+                                        "value": "all"
+                                   },
+                                   {
+                                        "displayName": "Sends general error telemetry and crash reports.",
+                                        "value": "error"
+                                   },
+                                   {
+                                        "displayName": "Sends OS level crash reports.",
+                                        "value": "crash"
+                                   },
+                                   {
+                                        "displayName": "Disables all product telemetry.",
+                                        "value": "off"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "lastModifiedDateTime": "2026-08-25T14:16:00.2915171Z",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_CIS_MS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

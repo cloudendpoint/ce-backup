@@ -1256,6 +1256,13 @@
                          "intent": "Include"
                     }
                ],
+               "Group Policy Configurations": [
+                    {
+                         "name": "REF_WIN_D_CO_SBL_CIS_MS_VisualStudioCode",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
                "Proactive Remediations": [
                     {
                          "name": "POC_WIN_D_CO_RS_SBL_CIS_MS_SystemServices",

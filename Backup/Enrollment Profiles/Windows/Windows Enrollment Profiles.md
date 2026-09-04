@@ -93,12 +93,12 @@ Description: This is the default enrollment status screen configuration applied 
 |Track Install Progress For Autopilot Only    |False                                                          |
 |Disable User Status Tracking After First User|False                                                          |
 
-### POC_WIN_D_COBO_ENT_Kiosk
+### POC_WIN_D_COBO_ENT_Self_Kiosk
 #### Configuration
 |            setting             |                                                                                              value                                                                                               |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                         |
-|Display Name                    |POC_WIN_D_COBO_ENT_Kiosk                                                                                                                                                                          |
+|Display Name                    |POC_WIN_D_COBO_ENT_Self_Kiosk                                                                                                                                                                     |
 |Language                        |os-default                                                                                                                                                                                        |
 |Locale                          |os-default                                                                                                                                                                                        |
 |Extract Hardware Hash           |False                                                                                                                                                                                             |
@@ -111,65 +111,17 @@ Description: This is the default enrollment status screen configuration applied 
 |Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** shared<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
 |Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** shared<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
 
-### POC_WIN_D_COPE_ENT_All
+### POC_WIN_D_COPE_ENT_User_All
 #### Configuration
 |            setting             |                                                                                                value                                                                                                 |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
-|Display Name                    |POC_WIN_D_COPE_ENT_All                                                                                                                                                                                |
+|Display Name                    |POC_WIN_D_COPE_ENT_User_All                                                                                                                                                                           |
 |Language                        |os-default                                                                                                                                                                                            |
 |Locale                          |os-default                                                                                                                                                                                            |
 |Extract Hardware Hash           |False                                                                                                                                                                                                 |
 |Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
 |Device Name Template            |<details><summary>Click to expand...</summary></details>                                                                                                                                              |
-|Device Type                     |windowsPc                                                                                                                                                                                             |
-|Enable White Glove              |False                                                                                                                                                                                                 |
-|Preprovisioning Allowed         |False                                                                                                                                                                                                 |
-|Role Scope Tag Ids              |Default<br/>                                                                                                                                                                                          |
-|Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
-|Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
-
-### WIN_D_COPE_ENT_CE
-Description: Used for Blueprint testing of Cyber Essentials baselines\.
-#### Assignments
-|intent |         target          |filter type|filter name|
-|-------|-------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CE_COPE|none       |           |
-
-#### Configuration
-|            setting             |                                                                                                value                                                                                                 |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
-|Display Name                    |WIN_D_COPE_ENT_CE                                                                                                                                                                                     |
-|Language                        |os-default                                                                                                                                                                                            |
-|Locale                          |os-default                                                                                                                                                                                            |
-|Extract Hardware Hash           |False                                                                                                                                                                                                 |
-|Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
-|Device Name Template            |CE-%SERIAL%                                                                                                                                                                                           |
-|Device Type                     |windowsPc                                                                                                                                                                                             |
-|Enable White Glove              |False                                                                                                                                                                                                 |
-|Preprovisioning Allowed         |False                                                                                                                                                                                                 |
-|Role Scope Tag Ids              |Default<br/>                                                                                                                                                                                          |
-|Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
-|Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
-
-### WIN_D_COPE_ENT_CIS
-Description: Used for Blueprint testing of Center for Internet Security baselines\.
-#### Assignments
-|intent |           target            |filter type|filter name|
-|-------|-----------------------------|-----------|-----------|
-|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
-
-#### Configuration
-|            setting             |                                                                                                value                                                                                                 |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
-|Display Name                    |WIN_D_COPE_ENT_CIS                                                                                                                                                                                    |
-|Language                        |en-GB                                                                                                                                                                                                 |
-|Locale                          |en-GB                                                                                                                                                                                                 |
-|Extract Hardware Hash           |False                                                                                                                                                                                                 |
-|Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
-|Device Name Template            |CIS-%SERIAL%                                                                                                                                                                                          |
 |Device Type                     |windowsPc                                                                                                                                                                                             |
 |Enable White Glove              |False                                                                                                                                                                                                 |
 |Preprovisioning Allowed         |False                                                                                                                                                                                                 |
@@ -201,7 +153,55 @@ Description: Used for Blueprint testing of Microsoft Zero Trust baselines\.
 |Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
 |Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
 
-### WIN_D_COPE_ENT_NCSC
+### WIN_D_COPE_ENT_User_CE
+Description: Used for Blueprint testing of Cyber Essentials baselines\.
+#### Assignments
+|intent |         target          |filter type|filter name|
+|-------|-------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CE_COPE|none       |           |
+
+#### Configuration
+|            setting             |                                                                                                value                                                                                                 |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
+|Display Name                    |WIN_D_COPE_ENT_User_CE                                                                                                                                                                                |
+|Language                        |os-default                                                                                                                                                                                            |
+|Locale                          |os-default                                                                                                                                                                                            |
+|Extract Hardware Hash           |False                                                                                                                                                                                                 |
+|Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
+|Device Name Template            |CE-%SERIAL%                                                                                                                                                                                           |
+|Device Type                     |windowsPc                                                                                                                                                                                             |
+|Enable White Glove              |False                                                                                                                                                                                                 |
+|Preprovisioning Allowed         |False                                                                                                                                                                                                 |
+|Role Scope Tag Ids              |Default<br/>                                                                                                                                                                                          |
+|Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
+|Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
+
+### WIN_D_COPE_ENT_User_CIS
+Description: Used for Blueprint testing of Center for Internet Security baselines\.
+#### Assignments
+|intent |           target            |filter type|filter name|
+|-------|-----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_CIS_MS_COPE|none       |           |
+
+#### Configuration
+|            setting             |                                                                                                value                                                                                                 |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
+|Display Name                    |WIN_D_COPE_ENT_User_CIS                                                                                                                                                                               |
+|Language                        |en-GB                                                                                                                                                                                                 |
+|Locale                          |en-GB                                                                                                                                                                                                 |
+|Extract Hardware Hash           |False                                                                                                                                                                                                 |
+|Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
+|Device Name Template            |CIS-%SERIAL%                                                                                                                                                                                          |
+|Device Type                     |windowsPc                                                                                                                                                                                             |
+|Enable White Glove              |False                                                                                                                                                                                                 |
+|Preprovisioning Allowed         |False                                                                                                                                                                                                 |
+|Role Scope Tag Ids              |Default<br/>                                                                                                                                                                                          |
+|Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
+|Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
+
+### WIN_D_COPE_ENT_User_NCSC
 Description: Used for Blueprint testing of National Cyber Security Centre baselines\.
 #### Assignments
 |intent |            target            |filter type|filter name|
@@ -212,7 +212,7 @@ Description: Used for Blueprint testing of National Cyber Security Centre baseli
 |            setting             |                                                                                                value                                                                                                 |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
-|Display Name                    |WIN_D_COPE_ENT_NCSC                                                                                                                                                                                   |
+|Display Name                    |WIN_D_COPE_ENT_User_NCSC                                                                                                                                                                              |
 |Language                        |en-GB                                                                                                                                                                                                 |
 |Locale                          |en-GB                                                                                                                                                                                                 |
 |Extract Hardware Hash           |False                                                                                                                                                                                                 |

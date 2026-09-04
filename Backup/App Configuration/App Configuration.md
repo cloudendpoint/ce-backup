@@ -677,6 +677,21 @@ https://learn.microsoft.com/en-us/intune/intune-service/apps/app-configuration-p
 |Settings            |**appConfigKey:** sharedDeviceMode<br/>**appConfigKeyType:** booleanType<br/>**appConfigKeyValue:** true<br/><br/>|
 |Targeted Mobile Apps|**appName:** Microsoft Authenticator<br/>**type:** #microsoft.graph.iosVppApp<br/>                                |
 
+### POC_IOS_D_CO_MicrosoftCompanyPortal
+Description: For user affinity Enrollment Time Grouping enrolled devices ONLY\.
+
+https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment
+
+https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531
+#### Configuration
+|      setting       |                                                                                                                                          value                                                                                                                                           |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type          |#microsoft.graph.iosMobileAppConfiguration                                                                                                                                                                                                                                                |
+|Role Scope Tag Ids  |Default<br/>                                                                                                                                                                                                                                                                              |
+|Display Name        |POC_IOS_D_CO_MicrosoftCompanyPortal                                                                                                                                                                                                                                                       |
+|Encoded Setting Xml |<details><summary>Click to expand...</summary><dict><br>  <key>IntuneCompanyPortalEnrollmentAfterUDA</key><br>  <dict><br>    <key>IntuneDeviceId</key><br>    <string>{{deviceid}}</string><br>    <key>UserId</key><br>    <string>{{userid}}</string><br>  </dict><br></dict></details>|
+|Targeted Mobile Apps|**appName:** Intune Company Portal<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                                                                                                                                                                          |
+
 ### POC_IOS_D_CO_MicrosoftCompanyPortal_NUA
 Description: For non\-user affinity Enrollment Time Grouping enrolled devices ONLY\.
 

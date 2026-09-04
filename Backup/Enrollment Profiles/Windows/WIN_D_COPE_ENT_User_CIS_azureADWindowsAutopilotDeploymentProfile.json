@@ -1,0 +1,46 @@
+{
+     "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+     "displayName": "WIN_D_COPE_ENT_User_CIS",
+     "description": "Used for Blueprint testing of Center for Internet Security baselines.",
+     "language": "en-GB",
+     "locale": "en-GB",
+     "enrollmentStatusScreenSettings": null,
+     "extractHardwareHash": false,
+     "hardwareHashExtractionEnabled": false,
+     "deviceNameTemplate": "CIS-%SERIAL%",
+     "deviceType": "windowsPc",
+     "enableWhiteGlove": false,
+     "preprovisioningAllowed": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "managementServiceAppId": null,
+     "outOfBoxExperienceSettings": {
+          "hidePrivacySettings": true,
+          "hideEULA": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "skipKeyboardSelectionPage": true,
+          "hideEscapeLink": true
+     },
+     "outOfBoxExperienceSetting": {
+          "privacySettingsHidden": true,
+          "eulaHidden": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "keyboardSelectionPageSkipped": true,
+          "escapeLinkHidden": true
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_CIS_MS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

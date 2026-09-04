@@ -1,0 +1,14 @@
+{
+     "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "For user affinity Enrollment Time Grouping enrolled devices ONLY.\n\nhttps://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment\n\nhttps://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531",
+     "displayName": "POC_IOS_D_CO_MicrosoftCompanyPortal",
+     "encodedSettingXml": "PGRpY3Q+CiAgPGtleT5JbnR1bmVDb21wYW55UG9ydGFsRW5yb2xsbWVudEFmdGVyVURBPC9rZXk+CiAgPGRpY3Q+CiAgICA8a2V5PkludHVuZURldmljZUlkPC9rZXk+CiAgICA8c3RyaW5nPnt7ZGV2aWNlaWR9fTwvc3RyaW5nPgogICAgPGtleT5Vc2VySWQ8L2tleT4KICAgIDxzdHJpbmc+e3t1c2VyaWR9fTwvc3RyaW5nPgogIDwvZGljdD4KPC9kaWN0Pg==",
+     "settings": [],
+     "targetedMobileApps": {
+          "appName": "Intune Company Portal",
+          "type": "#microsoft.graph.iosVppApp"
+     }
+}

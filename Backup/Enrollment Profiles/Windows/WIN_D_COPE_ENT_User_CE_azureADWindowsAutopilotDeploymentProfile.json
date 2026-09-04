@@ -1,0 +1,46 @@
+{
+     "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+     "displayName": "WIN_D_COPE_ENT_User_CE",
+     "description": "Used for Blueprint testing of Cyber Essentials baselines.",
+     "language": "os-default",
+     "locale": "os-default",
+     "enrollmentStatusScreenSettings": null,
+     "extractHardwareHash": false,
+     "hardwareHashExtractionEnabled": false,
+     "deviceNameTemplate": "CE-%SERIAL%",
+     "deviceType": "windowsPc",
+     "enableWhiteGlove": false,
+     "preprovisioningAllowed": false,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "managementServiceAppId": null,
+     "outOfBoxExperienceSettings": {
+          "hidePrivacySettings": true,
+          "hideEULA": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "skipKeyboardSelectionPage": true,
+          "hideEscapeLink": true
+     },
+     "outOfBoxExperienceSetting": {
+          "privacySettingsHidden": true,
+          "eulaHidden": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "keyboardSelectionPageSkipped": true,
+          "escapeLinkHidden": true
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_CE_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

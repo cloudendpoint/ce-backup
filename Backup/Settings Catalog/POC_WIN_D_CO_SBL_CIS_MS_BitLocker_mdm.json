@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 14,
+     "settingCount": 15,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -18,60 +18,6 @@
      "settings": [
           {
                "id": "0",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_1",
-                         "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_retroactive",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_retroactive_1",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
-                                   "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_list",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "simpleSettingCollectionValue": [
-                                        {
-                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                             "settingValueTemplateReference": null,
-                                             "value": "{d48179be-ec20-11d1-b6b8-00c04fa372a7}"
-                                        },
-                                        {
-                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                             "settingValueTemplateReference": null,
-                                             "value": "{7ebefbc0-3200-11d2-b4c2-00a0C9697d07"
-                                        },
-                                        {
-                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                             "settingValueTemplateReference": null,
-                                             "value": "{c06ff265-ae09-48f0-812c-16753d7cba83}"
-                                        },
-                                        {
-                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                             "settingValueTemplateReference": null,
-                                             "value": "{6bdd1fc1-810f-11d0-bec7-08002be2092f}"
-                                        }
-                                   ]
-                              }
-                         ]
-                    }
-               }
-          },
-          {
-               "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_encryptionmethodbydrivetype",
@@ -119,7 +65,7 @@
                }
           },
           {
-               "id": "2",
+               "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions",
@@ -129,28 +75,6 @@
                          "settingValueTemplateReference": null,
                          "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_1",
                          "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverypasswordusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverypasswordusagedropdown_name_2",
-                                        "children": []
-                                   }
-                              },
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvallowdra_name",
@@ -175,12 +99,34 @@
                               },
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverypasswordusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverypasswordusagedropdown_name_2",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrequireactivedirectorybackup_name",
                                    "settingInstanceTemplateReference": null,
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "settingValueTemplateReference": null,
                                         "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrequireactivedirectorybackup_name_1",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_bitlocker_fixeddrivesrecoveryoptions_fdvrecoverykeyusagedropdown_name_0",
                                         "children": []
                                    }
                               },
@@ -211,7 +157,7 @@
                }
           },
           {
-               "id": "3",
+               "id": "2",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesrequireencryption",
@@ -225,7 +171,7 @@
                }
           },
           {
-               "id": "4",
+               "id": "3",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_fixeddrivesencryptiontype",
@@ -251,7 +197,7 @@
                }
           },
           {
-               "id": "5",
+               "id": "4",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesenhancedpin",
@@ -265,7 +211,7 @@
                }
           },
           {
-               "id": "6",
+               "id": "5",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions",
@@ -275,28 +221,6 @@
                          "settingValueTemplateReference": null,
                          "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_1",
                          "children": [
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name_0",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverypasswordusagedropdown_name",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverypasswordusagedropdown_name_2",
-                                        "children": []
-                                   }
-                              },
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osallowdra_name",
@@ -316,6 +240,17 @@
                                    "choiceSettingValue": {
                                         "settingValueTemplateReference": null,
                                         "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osactivedirectorybackupdropdown_name_1",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverypasswordusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverypasswordusagedropdown_name_2",
                                         "children": []
                                    }
                               },
@@ -343,6 +278,17 @@
                               },
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osrecoverykeyusagedropdown_name_0",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesrecoveryoptions_osactivedirectorybackup_name",
                                    "settingInstanceTemplateReference": null,
                                    "auditRuleInformation": null,
@@ -353,6 +299,20 @@
                                    }
                               }
                          ]
+                    }
+               }
+          },
+          {
+               "id": "6",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_bitlocker_systemdrivesenableprebootinputprotectorsonslates",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_bitlocker_systemdrivesenableprebootinputprotectorsonslates_1",
+                         "children": []
                     }
                }
           },
@@ -543,6 +503,60 @@
                "id": "11",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_retroactive",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "settingValueTemplateReference": null,
+                                        "value": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_retroactive_1",
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_deviceinstallation_preventinstallationofmatchingdevicesetupclasses_deviceinstall_classes_deny_list",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingCollectionValue": [
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "{d48179be-ec20-11d1-b6b8-00c04fa372a7}"
+                                        },
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "{7ebefbc0-3200-11d2-b4c2-00a0C9697d07"
+                                        },
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "{c06ff265-ae09-48f0-812c-16753d7cba83}"
+                                        },
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "{6bdd1fc1-810f-11d0-bec7-08002be2092f}"
+                                        }
+                                   ]
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "12",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_allowwarningforotherdiskencryption",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
@@ -566,7 +580,7 @@
                }
           },
           {
-               "id": "12",
+               "id": "13",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_configurerecoverypasswordrotation",
@@ -580,7 +594,7 @@
                }
           },
           {
-               "id": "13",
+               "id": "14",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_bitlocker_requiredeviceencryption",

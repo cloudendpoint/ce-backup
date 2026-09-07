@@ -2540,30 +2540,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_AND_NCSC_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "ZZZ_AND_D_BYOD_SBL_NCSC_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_AND_D_BYOD_SBL_NCSC_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_AND_D_BYOD_SBL_NCSC_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "SG_MDM_D_WIN_CO_11_23H2",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.22631\")",

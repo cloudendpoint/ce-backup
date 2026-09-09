@@ -7,7 +7,7 @@
      "deviceManagementApplicabilityRuleOsVersion": null,
      "deviceManagementApplicabilityRuleDeviceMode": null,
      "description": "",
-     "displayName": "POC_WIN_D_CO_SBL_CE_Updates_Windows",
+     "displayName": "POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement",
      "deliveryOptimizationMode": "userDefined",
      "prereleaseFeatures": "userDefined",
      "automaticUpdateMode": "autoInstallAtMaintenanceTime",

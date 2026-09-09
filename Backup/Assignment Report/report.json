@@ -83,7 +83,7 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Password",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
@@ -136,47 +136,42 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_OperatingSystem_Consumer",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Gatekeeper",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem_26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewall",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem_26",
                          "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Password",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Antivirus",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Password",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS15",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
@@ -186,18 +181,23 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem_15",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewall",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_OperatingSystem_Business",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
                          "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     }
                ],
@@ -292,32 +292,22 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_OperatingSystem_Consumer",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Gatekeeper",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem_26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewall",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem_26",
                          "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Password",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS15",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
@@ -327,18 +317,13 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_AND_U_BYOD_SBL_CE_Password",
                          "type": "androidWorkProfileCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Antivirus",
-                         "type": "windows10CompliancePolicy",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -347,7 +332,17 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Password",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
@@ -367,18 +362,23 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_OperatingSystem_15",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewall",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_OperatingSystem_Business",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
                          "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     }
                ],
@@ -820,59 +820,39 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_OperatingSystem_Business",
+                         "name": "POC_WIN_D_CO_SBL_CE_Firewalls",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_OperatingSystem_Consumer",
+                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_Antivirus",
+                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_Firewall",
+                         "name": "POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_MicrosoftDefender_SmartScreen",
+                         "name": "DEV_WIN_D_CO_SBL_CE_SecureConfiguration",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_DeviceLock",
+                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CE_MicrosoftDefender_Antivirus",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_MicrosoftDefender_Antivirus_Exclusions",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_MicrosoftEdge",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_DeviceManagement",
+                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1091,67 +1071,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_MAC_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_Gatekeeper",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_OperatingSystem_15",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_OperatingSystem",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_OperatingSystem_26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_Firewall",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_MicrosoftEdge",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_MAC_CIS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -1240,6 +1159,62 @@
                "Scripts": [
                     {
                          "name": "POC_MAC_D_CO_SS_SBL_CIS_SystemSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_MAC_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_MalwareProtection",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS15",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_DeviceManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1805,35 +1780,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_WIN_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_BYOD_SBL_CE_MicrosoftEdge",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_BYOD_SBL_CE_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_BYOD_SBL_CE_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_BYOD_SBL_CE_MicrosoftDefender_SmartScreen",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_BYOD",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2122,35 +2068,6 @@
                "Driver Updates": [
                     {
                          "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_MAC_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_BYOD_SBL_CE_Updates",
                          "type": "",
                          "intent": "Include"
                     }

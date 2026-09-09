@@ -974,13 +974,13 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Allow Device Health Monitoring       |enabled                                              |
 |Config Device Health Monitoring Scope|bootPerformance,windowsUpdates                       |
 
-### POC_WIN_D_CO_SBL_CE_Updates_Windows
+### POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement
 #### Configuration
 |                setting                 |                                                                          value                                                                           |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
 |Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_SBL_CE_Updates_Windows                                                                                                                       |
+|Display Name                            |POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement                                                                                                              |
 |Delivery Optimization Mode              |userDefined                                                                                                                                               |
 |Prerelease Features                     |userDefined                                                                                                                                               |
 |Automatic Update Mode                   |autoInstallAtMaintenanceTime                                                                                                                              |

@@ -9,7 +9,7 @@
      "passwordBlockSimple": true,
      "passwordExpirationDays": null,
      "passwordMinimumLength": 12,
-     "passwordMinutesOfInactivityBeforeLock": 1,
+     "passwordMinutesOfInactivityBeforeLock": 5,
      "passwordPreviousPasswordBlockCount": 24,
      "passwordMinimumCharacterSetCount": 1,
      "passwordRequiredType": "alphanumeric",

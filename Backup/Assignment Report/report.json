@@ -136,13 +136,13 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem_26",
-                         "type": "iosCompliancePolicy",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "macOSCompliancePolicy",
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -161,6 +161,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
@@ -173,11 +178,6 @@
                     {
                          "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
                          "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem",
-                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -292,13 +292,18 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem_26",
-                         "type": "iosCompliancePolicy",
+                         "name": "POC_AND_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "androidWorkProfileCompliancePolicy",
                          "intent": "Include"
                     },
                     {
                          "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -312,22 +317,12 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_U_BYOD_SBL_CE_OperatingSystem",
-                         "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_BYOD_SBL_CE_Password",
-                         "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_Password",
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
                          "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
@@ -347,23 +342,18 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_OperatingSystem",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_BYOD_SBL_CE_DeviceHealth",
+                         "name": "POC_AND_U_BYOD_SBL_CE_SecurityUpdateManagement",
                          "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_DeviceHealth",
-                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
                          "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
                          "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -886,108 +876,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_AND_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_OperatingSystem_17",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_OperatingSystem_16",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_DeviceHealth",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_Password",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_OperatingSystem",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_DeviceLock",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_DeviceManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_Updates",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_DataProtection",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_OperatingSystem_26",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_Password",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_DeviceHealth",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_OperatingSystem",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -1199,22 +1087,17 @@
                ],
                "Settings Catalog": [
                     {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
                          "type": "",
                          "intent": "Include"
                     },
                     {
                          "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1269,6 +1152,95 @@
                     {
                          "name": "ZZZ_AND_D_CO_SBL_NCSC_DeviceManagement",
                          "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android17",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android16",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_MalwareProtection",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_IOS_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS26",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_MalwareProtection",
+                         "type": "",
                          "intent": "Include"
                     }
                ]
@@ -1898,6 +1870,20 @@
           }
      },
      {
+          "groupName": "TEST_SG_MDM_D_IOS_CE_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "POC_IOS_D_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2009,25 +1995,6 @@
                     },
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_CE_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_CE_DataProtection",
                          "type": "",
                          "intent": "Include"
                     }
@@ -2404,30 +2371,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_CE_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_CE_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_CE_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2451,6 +2394,25 @@
                     {
                          "name": "POC_AND_D_CO_SBL_NCSC_MS_Updates",
                          "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
+                    {
+                         "name": "POC_AND_D_BYOD_SBL_CE_MalwareProtection",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
                ]

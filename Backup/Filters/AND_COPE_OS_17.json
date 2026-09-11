@@ -2,7 +2,7 @@
      "displayName": "AND_COPE_OS_17",
      "description": "",
      "platform": "androidForWork",
-     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.osVersion -eq \"17\") and (device.enrollmentProfileName -eq $null)",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 17.0) and (device.operatingSystemVersion -lt 18.0)",
      "roleScopeTags": [
           "Default"
      ],

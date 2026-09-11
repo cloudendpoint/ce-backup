@@ -71,33 +71,33 @@
 
 ### AND_COPE_OS_15
 #### Configuration
-|             setting             |                                                        value                                                        |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_COPE_OS_15                                                                                                       |
-|Platform                         |androidForWork                                                                                                       |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "15")|
-|Role Scope Tags                  |Default<br/>                                                                                                         |
-|Assignment Filter Management Type|devices                                                                                                              |
+|             setting             |                                                                                     value                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_COPE_OS_15                                                                                                                                                                 |
+|Platform                         |androidForWork                                                                                                                                                                 |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 15.0) and (device.operatingSystemVersion -lt 16.0)|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
+|Assignment Filter Management Type|devices                                                                                                                                                                        |
 
 ### AND_COPE_OS_16
 #### Configuration
-|             setting             |                                                        value                                                        |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_COPE_OS_16                                                                                                       |
-|Platform                         |androidForWork                                                                                                       |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq "16")|
-|Role Scope Tags                  |Default<br/>                                                                                                         |
-|Assignment Filter Management Type|devices                                                                                                              |
+|             setting             |                                                                                     value                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_COPE_OS_16                                                                                                                                                                 |
+|Platform                         |androidForWork                                                                                                                                                                 |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 16.0) and (device.operatingSystemVersion -lt 17.0)|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
+|Assignment Filter Management Type|devices                                                                                                                                                                        |
 
 ### AND_COPE_OS_17
 #### Configuration
-|             setting             |                                                        value                                                        |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------|
-|Display Name                     |AND_COPE_OS_17                                                                                                       |
-|Platform                         |androidForWork                                                                                                       |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -eq "17") and (device.enrollmentProfileName -eq $null)|
-|Role Scope Tags                  |Default<br/>                                                                                                         |
-|Assignment Filter Management Type|devices                                                                                                              |
+|             setting             |                                                                                     value                                                                                     |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |AND_COPE_OS_17                                                                                                                                                                 |
+|Platform                         |androidForWork                                                                                                                                                                 |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 17.0) and (device.operatingSystemVersion -lt 18.0)|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
+|Assignment Filter Management Type|devices                                                                                                                                                                        |
 
 ### AND_DA_BYOD
 #### Configuration
@@ -239,6 +239,16 @@
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
 
+### IOS_BYOD_OS_27
+#### Configuration
+|             setting             |                                     value                                     |
+|---------------------------------|-------------------------------------------------------------------------------|
+|Display Name                     |IOS_BYOD_OS_27                                                                 |
+|Platform                         |iOS                                                                            |
+|Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "27")|
+|Role Scope Tags                  |Default<br/>                                                                   |
+|Assignment Filter Management Type|devices                                                                        |
+
 ### IOS_CO
 #### Configuration
 |             setting             |                 value                  |
@@ -276,6 +286,16 @@
 |Display Name                     |IOS_CO_OS_26                                                                    |
 |Platform                         |iOS                                                                             |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "26")|
+|Role Scope Tags                  |Default<br/>                                                                    |
+|Assignment Filter Management Type|devices                                                                         |
+
+### IOS_CO_OS_27
+#### Configuration
+|             setting             |                                     value                                      |
+|---------------------------------|--------------------------------------------------------------------------------|
+|Display Name                     |IOS_CO_OS_27                                                                    |
+|Platform                         |iOS                                                                             |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
 
@@ -369,6 +389,16 @@
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
 
+### MAC_BYOD_OS_27
+#### Configuration
+|             setting             |                                     value                                     |
+|---------------------------------|-------------------------------------------------------------------------------|
+|Display Name                     |MAC_BYOD_OS_27                                                                 |
+|Platform                         |macOS                                                                          |
+|Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "27")|
+|Role Scope Tags                  |Default<br/>                                                                   |
+|Assignment Filter Management Type|devices                                                                        |
+
 ### MAC_CO
 #### Configuration
 |             setting             |                 value                  |
@@ -406,6 +436,16 @@
 |Display Name                     |MAC_CO_OS_26                                                                    |
 |Platform                         |macOS                                                                           |
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "26")|
+|Role Scope Tags                  |Default<br/>                                                                    |
+|Assignment Filter Management Type|devices                                                                         |
+
+### MAC_CO_OS_27
+#### Configuration
+|             setting             |                                     value                                      |
+|---------------------------------|--------------------------------------------------------------------------------|
+|Display Name                     |MAC_CO_OS_27                                                                    |
+|Platform                         |macOS                                                                           |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
 

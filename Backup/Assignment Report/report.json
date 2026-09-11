@@ -136,6 +136,16 @@
                ],
                "Compliance Policies": [
                     {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
@@ -292,8 +302,18 @@
                ],
                "Compliance Policies": [
                     {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_AND_U_BYOD_SBL_CE_SecureConfiguration",
                          "type": "androidWorkProfileCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
@@ -1080,6 +1100,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS27",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
@@ -1218,6 +1243,11 @@
                     },
                     {
                          "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS27",
                          "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },

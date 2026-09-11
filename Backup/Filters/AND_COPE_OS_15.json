@@ -2,7 +2,7 @@
      "displayName": "AND_COPE_OS_15",
      "description": "",
      "platform": "androidForWork",
-     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -eq $null) and (device.osVersion -eq \"15\")",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 15.0) and (device.operatingSystemVersion -lt 16.0)",
      "roleScopeTags": [
           "Default"
      ],

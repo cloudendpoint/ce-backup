@@ -33,7 +33,7 @@
      "engagedRestartSnoozeScheduleInDays": null,
      "engagedRestartTransitionScheduleInDays": null,
      "deadlineForFeatureUpdatesInDays": 0,
-     "deadlineForQualityUpdatesInDays": 1,
+     "deadlineForQualityUpdatesInDays": 2,
      "deadlineGracePeriodInDays": 1,
      "postponeRebootUntilAfterDeadline": false,
      "autoRestartNotificationDismissal": "notConfigured",

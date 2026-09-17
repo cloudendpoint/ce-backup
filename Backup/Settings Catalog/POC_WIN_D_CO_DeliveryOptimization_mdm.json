@@ -103,7 +103,7 @@
                     },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 45,
+                         "value": 50,
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "3b7be39d-0c88-41da-bd4c-1d392f6ff128",
                               "useTemplateDefault": false
@@ -179,7 +179,7 @@
                     },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 300,
+                         "value": 14400,
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "08205e2e-308f-4f90-8dc1-6a18eebdf5dd",
                               "useTemplateDefault": false
@@ -255,7 +255,7 @@
                     },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 0,
+                         "value": 28,
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "995ec1b5-c1c5-4fa0-878d-6c5164fbf9b2",
                               "useTemplateDefault": false

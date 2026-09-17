@@ -974,7 +974,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         1|
+|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
 |Deadline Grace Period In Days           |                                                                                                                                                         1|
 |Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
 |Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
@@ -1005,7 +1005,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
 |Microsoft Update Service Allowed        |True                                                                                                                                                      |
 |Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         6|
+|Quality Updates Deferral Period In Days |                                                                                                                                                         5|
 |Quality Updates Paused                  |False                                                                                                                                                     |
 |Feature Updates Paused                  |False                                                                                                                                                     |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
@@ -1017,6 +1017,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
 |Deadline Grace Period In Days           |                                                                                                                                                         1|
 |Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
 |Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
@@ -1047,7 +1048,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
 |Microsoft Update Service Allowed        |True                                                                                                                                                      |
 |Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         8|
+|Quality Updates Deferral Period In Days |                                                                                                                                                         7|
 |Quality Updates Paused                  |False                                                                                                                                                     |
 |Feature Updates Paused                  |False                                                                                                                                                     |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
@@ -1059,7 +1060,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         1|
+|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
 |Deadline Grace Period In Days           |                                                                                                                                                         1|
 |Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
 |Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
@@ -1102,7 +1103,8 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline Grace Period In Days           |                                                                                                                                                         2|
+|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
+|Deadline Grace Period In Days           |                                                                                                                                                         1|
 |Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
 |Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
 |User Pause Access                       |disabled                                                                                                                                                  |

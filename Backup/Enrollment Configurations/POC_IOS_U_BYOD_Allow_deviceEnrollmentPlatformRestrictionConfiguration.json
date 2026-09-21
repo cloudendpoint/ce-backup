@@ -12,7 +12,7 @@
           "platformBlocked": false,
           "personalDeviceEnrollmentBlocked": false,
           "osMinimumVersion": "18.0.0",
-          "osMaximumVersion": "26.99.99",
+          "osMaximumVersion": "27.99.99",
           "blockedManufacturers": [],
           "blockedSkus": []
      },

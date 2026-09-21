@@ -359,16 +359,6 @@
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
 
-### MAC_BYOD_OS_14
-#### Configuration
-|             setting             |                                     value                                     |
-|---------------------------------|-------------------------------------------------------------------------------|
-|Display Name                     |MAC_BYOD_OS_14                                                                 |
-|Platform                         |macOS                                                                          |
-|Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "14")|
-|Role Scope Tags                  |Default<br/>                                                                   |
-|Assignment Filter Management Type|devices                                                                        |
-
 ### MAC_BYOD_OS_15
 #### Configuration
 |             setting             |                                     value                                     |
@@ -409,16 +399,6 @@
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
 
-### MAC_CO_OS_14
-#### Configuration
-|             setting             |                                     value                                      |
-|---------------------------------|--------------------------------------------------------------------------------|
-|Display Name                     |MAC_CO_OS_14                                                                    |
-|Platform                         |macOS                                                                           |
-|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "14")|
-|Role Scope Tags                  |Default<br/>                                                                    |
-|Assignment Filter Management Type|devices                                                                         |
-
 ### MAC_CO_OS_15
 #### Configuration
 |             setting             |                                     value                                      |
@@ -448,6 +428,16 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+
+### MAC_OS_15_Above
+#### Configuration
+|             setting             |                                          value                                          |
+|---------------------------------|-----------------------------------------------------------------------------------------|
+|Display Name                     |MAC_OS_15_Above                                                                          |
+|Platform                         |macOS                                                                                    |
+|Rule                             |(device.operatingSystemVersion -gt 15.0.0) and (device.operatingSystemVersion -lt 28.0.0)|
+|Role Scope Tags                  |Default<br/>                                                                             |
+|Assignment Filter Management Type|devices                                                                                  |
 
 ### WIN_BYOD
 #### Configuration

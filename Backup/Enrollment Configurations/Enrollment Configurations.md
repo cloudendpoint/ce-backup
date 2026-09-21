@@ -110,6 +110,18 @@ Description: Users for Teams Room Systems and Phones
 |Platform Type                       |android                                                                                                                                                                                                                    |
 |Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** None<br/>**osMaximumVersion:** None<br/>**blockedManufacturers:** <ul><li> Yealink </li></ul>**blockedSkus:** <ul></ul>|
 
+### POC_AND_U_SBL_CE_SecurityUpdateManagement_BYOD
+#### Configuration
+|              setting               |                                                                                                 value                                                                                                  |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                          |#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration                                                                                                                                       |
+|Display Name                        |POC_AND_U_SBL_CE_SecurityUpdateManagement_BYOD                                                                                                                                                          |
+|Priority                            |                                                                                                                                                                                                       3|
+|Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                            |
+|Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                               |
+|Platform Type                       |android                                                                                                                                                                                                 |
+|Platform Restriction                |**platformBlocked:** True<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** None<br/>**osMaximumVersion:** None<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+
 ### POC_IOS_U_BYOD_Allow
 #### Assignments
 |intent |      target      |filter type|            filter name             |
@@ -127,7 +139,19 @@ Description: Users for Teams Room Systems and Phones
 |Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                                   |
 |Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                      |
 |Platform Type                       |ios                                                                                                                                                                                                            |
-|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 18.0.0<br/>**osMaximumVersion:** 26.99.99<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 18.0.0<br/>**osMaximumVersion:** 27.99.99<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+
+### POC_IOS_U_SBL_CE_SecurityUpdateManagement_BYOD
+#### Configuration
+|              setting               |                                                                                                     value                                                                                                     |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                          |#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration                                                                                                                                              |
+|Display Name                        |POC_IOS_U_SBL_CE_SecurityUpdateManagement_BYOD                                                                                                                                                                 |
+|Priority                            |                                                                                                                                                                                                              2|
+|Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                                   |
+|Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                      |
+|Platform Type                       |ios                                                                                                                                                                                                            |
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 18.0.0<br/>**osMaximumVersion:** 27.99.99<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
 
 ### POC_MAC_U_BYOD_Allow_AllUsers
 #### Assignments
@@ -141,6 +165,23 @@ Description: Users for Teams Room Systems and Phones
 |Odata type                          |#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration                                                                                                                                        |
 |Display Name                        |POC_MAC_U_BYOD_Allow_AllUsers                                                                                                                                                                            |
 |Priority                            |                                                                                                                                                                                                        1|
+|Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                             |
+|Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                |
+|Platform Type                       |mac                                                                                                                                                                                                      |
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** None<br/>**osMaximumVersion:** None<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+
+### POC_MAC_U_SBL_CE_SecurityUpdateManagement_BYOD
+#### Assignments
+|intent | target  |filter type|  filter name  |
+|-------|---------|-----------|---------------|
+|Include|All Users|include    |MAC_OS_15_Above|
+
+#### Configuration
+|              setting               |                                                                                                  value                                                                                                  |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                          |#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration                                                                                                                                        |
+|Display Name                        |POC_MAC_U_SBL_CE_SecurityUpdateManagement_BYOD                                                                                                                                                           |
+|Priority                            |                                                                                                                                                                                                        2|
 |Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                             |
 |Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                |
 |Platform Type                       |mac                                                                                                                                                                                                      |
@@ -192,4 +233,16 @@ Description: Users for Teams Room Systems and Phones
 |Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                |
 |Platform Type                       |windows                                                                                                                                                                                                  |
 |Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** None<br/>**osMaximumVersion:** None<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+
+### POC_WIN_U_SBL_CE_SecurityUpdateManagement_BYOD
+#### Configuration
+|              setting               |                                                                                                             value                                                                                                             |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                          |#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration                                                                                                                                                              |
+|Display Name                        |POC_WIN_U_SBL_CE_SecurityUpdateManagement_BYOD                                                                                                                                                                                 |
+|Priority                            |                                                                                                                                                                                                                              3|
+|Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                                                   |
+|Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                                      |
+|Platform Type                       |windows                                                                                                                                                                                                                        |
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 10.0.26200.0000<br/>**osMaximumVersion:** 10.0.28000.9999<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
 

@@ -926,7 +926,7 @@ Should not be used with Platform SSO pasword sync\.
 |Scheduled Actions For Rule                        |**ruleName:** None<br/>**scheduledActionConfigurations:** <ul>**gracePeriodHours:** 0<br/>**actionType:** block<br/>**notificationTemplateId:** 00000000-0000-0000-0000-000000000000<br/>**notificationMessageCCList:** <ul></ul><br/></ul><br/>|
 
 ### POC_MAC_D_CO_SBL_CIS_FileVault
-Description: Shared devices must be excluded from a FileVault policy to allow for login to the device following a restart\. This is a known limitation of the Platform SSO configuration and how tokens and permissions are handled for additional users created by the PSSO process\.
+Description: Shared devices not running macOS27 must be excluded from a FileVault policy to allow for login to the device following a restart\. This is a known limitation of the Platform SSO configuration on earlier versions and how tokens and permissions are handled for additional users created by the PSSO process\.
 
 https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/encrypt-filevault-macos
 #### Assignments
@@ -1089,7 +1089,7 @@ Should not be used with Platform SSO pasword sync\.
 |Scheduled Actions For Rule                        |**ruleName:** None<br/>**scheduledActionConfigurations:** <ul>**gracePeriodHours:** 0<br/>**actionType:** block<br/>**notificationTemplateId:** 00000000-0000-0000-0000-000000000000<br/>**notificationMessageCCList:** <ul></ul><br/></ul><br/>|
 
 ### POC_MAC_D_CO_SBL_NCSC_FileVault
-Description: Shared devices must be excluded from a FileVault policy to allow for login to the device following a restart\. This is a known limitation of the Platform SSO configuration and how tokens and permissions are handled for additional users created by the PSSO process\.
+Description: Shared devices not running macOS27 must be excluded from a FileVault policy to allow for login to the device following a restart\. This is a known limitation of the Platform SSO configuration on earlier versions and how tokens and permissions are handled for additional users created by the PSSO process\.
 
 https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/encrypt-filevault-macos
 #### Assignments

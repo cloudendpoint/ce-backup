@@ -1,0 +1,19 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_AND_U_SBL_CE_SecurityUpdateManagement_BYOD",
+     "description": "",
+     "priority": 3,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "androidForWork",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "14.0.0",
+          "osMaximumVersion": "17.99.99",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     }
+}

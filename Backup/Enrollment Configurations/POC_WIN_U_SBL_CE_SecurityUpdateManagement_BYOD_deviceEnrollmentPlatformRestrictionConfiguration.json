@@ -1,0 +1,19 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_WIN_U_SBL_CE_SecurityUpdateManagement_BYOD",
+     "description": "",
+     "priority": 3,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "windows",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "10.0.26200.0000",
+          "osMaximumVersion": "10.0.28000.9999",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     }
+}

@@ -1,0 +1,11 @@
+{
+     "displayName": "MAC_OS_15_Above",
+     "description": "",
+     "platform": "macOS",
+     "rule": "(device.operatingSystemVersion -gt 15.0.0) and (device.operatingSystemVersion -lt 28.0.0)",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "payloads": []
+}

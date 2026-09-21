@@ -1,0 +1,29 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+     "displayName": "POC_MAC_U_SBL_CE_SecurityUpdateManagement_BYOD",
+     "description": "",
+     "priority": 2,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+     "platformType": "mac",
+     "platformRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "MAC_OS_15_Above",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

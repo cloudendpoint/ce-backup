@@ -129,52 +129,52 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\*.sdf"
+                              "value": "%windir%\\CCM\\*.sdf"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\ServiceData"
+                              "value": "%windir%\\CCM\\ServiceData"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\ScriptStore"
+                              "value": "%windir%\\CCM\\ScriptStore"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\Logs"
+                              "value": "%windir%\\CCM\\Logs"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\temp"
+                              "value": "%windir%\\CCM\\temp"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCMSetup"
+                              "value": "%windir%\\CCMSetup"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCMCache"
+                              "value": "%windir%\\CCMCache"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "C:\\Program Files\\Microsoft Policy Platform\\authorityDb\\*.sdf"
+                              "value": "%ProgramFiles%\\Microsoft Policy Platform\\authorityDb\\*.sdf"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\Setup\\Scripts"
+                              "value": "%windir%\\Setup\\Scripts"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\SMSTSPostUpgrade"
+                              "value": "%windir%\\SMSTSPostUpgrade"
                          }
                     ]
                }
@@ -242,7 +242,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\RemCtrl\\CmRcService.exe"
+                              "value": "%windir%\\CCM\\RemCtrl\\CmRcService.exe"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
@@ -252,7 +252,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%Windir%\\CCM\\Ccmrepair.exe"
+                              "value": "%windir%\\CCM\\Ccmrepair.exe"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",

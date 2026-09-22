@@ -47,12 +47,12 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\*.chk\""
+                              "value": "%windir%\\Security\\Database\\*.chk"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\\\.edb"
+                              "value": "%windir%\\Security\\Database\\*.edb"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
@@ -62,22 +62,22 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\*.log\""
+                              "value": "%windir%\\Security\\Database\\*.log"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\*.sdb\""
+                              "value": "%windir%\\Security\\Database\\*.sdb"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\*.xml\""
+                              "value": "%windir%\\Security\\Database\\*.xml"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\Security\\Database\\*.csv\""
+                              "value": "%windir%\\Security\\Database\\*.csv"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
@@ -97,7 +97,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%windir%\\SoftwareDistribution\\Datastore\\\\\\\\Logs\\edb.chk"
+                              "value": "%windir%\\SoftwareDistribution\\Datastore\\Logs\\edb.chk"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
@@ -168,7 +168,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "%ProgramFiles%\\Windows Defender\\NisSrv.exe\""
+                              "value": "%ProgramFiles%\\Windows Defender\\NisSrv.exe"
                          },
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",

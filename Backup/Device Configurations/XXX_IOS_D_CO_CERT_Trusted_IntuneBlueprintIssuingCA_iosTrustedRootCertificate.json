@@ -1,0 +1,24 @@
+{
+     "@odata.type": "#microsoft.graph.iosTrustedRootCertificate",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "XXX_IOS_D_CO_CERT_Trusted_IntuneBlueprintIssuingCA",
+     "trustedRootCertificate": "MIIGpzCCBY+gAwIBAgIQRcsqKObJrQC7rWNvKxxWXjANBgkqhkiG9w0BAQsFADCBkTELMAkGA1UEBhMCR0IxGDAWBgNVBAgMD05vcnRoIFlvcmtzaGlyZTENMAsGA1UEBwwEWW9yazEXMBUGA1UECwwOQ2xvdWQgRW5kcG9pbnQxHTAbBgNVBAoMFFBob2VuaXggU29mdHdhcmUgTHRkMSEwHwYDVQQDDBhJbnR1bmUgQmx1ZXByaW50IFJvb3QgQ0EwHhcNMjYwOTIzMDg0NDIzWhcNMzYwOTIyMDg0NDIzWjCBlDELMAkGA1UEBhMCR0IxGDAWBgNVBAgMD05vcnRoIFlvcmtzaGlyZTENMAsGA1UEBwwEWW9yazEXMBUGA1UECwwOQ2xvdWQgRW5kcG9pbnQxHTAbBgNVBAoMFFBob2VuaXggU29mdHdhcmUgTHRkMSQwIgYDVQQDDBtJbnR1bmUgQmx1ZXByaW50IElzc3VpbmcgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuULc4mV9k27i3vH++iJOnzXUk2RwEb2ldkUXanDu/a2x8FuALghXNmN68fblciXzfE5a9WhkepGDXZuzsxfu1ZazfNePfBiezKGfkXyIr7FKOHdEcqQS8q+/u5xbG5TzGQMBfgvcwh6eeJeON4+bW+5gGzWUfDspWzm5Y0s2fBRbP44WmBknAm69wKzwuGQwLVhNYC08O7XcNfiqJ1VDRcRmkTObI5qKJYSG+tW3KHsPW+kSq1D5WLNgVHMMGz8/tzCmmAMqCxu1XE8RbP9GbBtGRqOA2Ki9JP6HQH7Q2tqi8J88gCeoF9m0/LwR48M2YmD+keIbpMl2MMugz3M7ZAgMBAAGjggL0MIIC8DAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADATBgNVHSUEDDAKBggrBgEFBQcDAjAdBgNVHQ4EFgQURAkvrp/QKO5lYN/yyT2pfUzVifEwHwYDVR0jBBgwFoAUn3NWh1hWdhfuV+YQ9ah53ngdtFcwggE3BgNVHR8EggEuMIIBKjCBj6CBjKCBiYaBhmh0dHA6Ly9wcmltYXJ5LWNkbi5wa2kuYXp1cmUubmV0L25vcnRoZXVyb3BlL2NybHMvZTY1MTVhYjRmZTFiNGYxMGI2YWUzMjY5NTQyMzdmZmEvYzRmMWIxYmItYzczNC00MzM4LWE0OWEtY2FmNWQ2YzdmY2I2X3YxL2N1cnJlbnQuY3JsMIGVoIGSoIGPhoGMaHR0cDovL2U2NTE1YWI0ZmUxYjRmMTBiNmFlMzI2OTU0MjM3ZmZhLm5vcnRoZXVyb3BlLnBraS5henVyZS5uZXQvY2VydGlmaWNhdGVBdXRob3JpdGllcy9jNGYxYjFiYi1jNzM0LTQzMzgtYTQ5YS1jYWY1ZDZjN2ZjYjZfdjEvY3VycmVudC5jcmwwggE4BggrBgEFBQcBAQSCASowggEmMIGTBggrBgEFBQcwAoaBhmh0dHA6Ly9wcmltYXJ5LWNkbi5wa2kuYXp1cmUubmV0L25vcnRoZXVyb3BlL2NhY2VydHMvZTY1MTVhYjRmZTFiNGYxMGI2YWUzMjY5NTQyMzdmZmEvYzRmMWIxYmItYzczNC00MzM4LWE0OWEtY2FmNWQ2YzdmY2I2X3YxL2NlcnQuY2VyMIGNBggrBgEFBQcwAoaBgGh0dHA6Ly9lNjUxNWFiNGZlMWI0ZjEwYjZhZTMyNjk1NDIzN2ZmYS5ub3J0aGV1cm9wZS5wa2kuYXp1cmUubmV0L2NlcnRpZmljYXRlQXV0aG9yaXRpZXMvYzRmMWIxYmItYzczNC00MzM4LWE0OWEtY2FmNWQ2YzdmY2I2X3YxMA0GCSqGSIb3DQEBCwUAA4IBAQBp18zUV+EFIwl6einkdu/yH147fKoq3eeVni0NjBeTJmTbluTpu/1BP3b/LvWca2Xd5j4gluDjqVTWWrvoaK4HtzhzQbxxmMte9/LZbD2SKXsim3itVoy67LhwIrVmPbUQEupt37S4DSZZ4omZ0BsceffPWLFY3fyy9RWJYpt1ii6jVTw/y7cIyj992QJS7yZMpZP21Bi0qVp/cyFP5SHBCVDx9Epx66s8T8Cdk+/R6d8Je7LAXTcntdhCn5Rr8pUo/ESXV4zTKxstN1wDJMdrZAmV9lOhOi3zzhGC9C2wNIvJk7hlMhZdlPYYo3CTnlv+2TGe5Lde/aKPtyxbHXIa",
+     "certFileName": "Intune Blueprint Issuing CA.cer",
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

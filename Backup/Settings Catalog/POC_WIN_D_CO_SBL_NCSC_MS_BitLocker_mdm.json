@@ -165,7 +165,7 @@
                     "auditRuleInformation": null,
                     "choiceSettingValue": {
                          "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_bitlocker_fixeddrivesrequireencryption_1",
+                         "value": "device_vendor_msft_bitlocker_fixeddrivesrequireencryption_0",
                          "children": []
                     }
                }

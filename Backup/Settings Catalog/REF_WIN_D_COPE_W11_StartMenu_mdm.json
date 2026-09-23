@@ -44,15 +44,5 @@
                     }
                }
           }
-     ],
-     "assignments": [
-          {
-               "source": "direct",
-               "target": {
-                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "WIN_CO",
-                    "deviceAndAppManagementAssignmentFilterType": "include"
-               }
-          }
      ]
 }

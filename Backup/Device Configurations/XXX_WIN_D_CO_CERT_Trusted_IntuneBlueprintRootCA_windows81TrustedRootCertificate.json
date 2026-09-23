@@ -1,0 +1,25 @@
+{
+     "@odata.type": "#microsoft.graph.windows81TrustedRootCertificate",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "XXX_WIN_D_CO_CERT_Trusted_IntuneBlueprintRootCA",
+     "trustedRootCertificate": "MIIEKzCCAxOgAwIBAgIQQ3DhnCyqz/nENdsjdvh5zjANBgkqhkiG9w0BAQsFADCBkTELMAkGA1UEBhMCR0IxGDAWBgNVBAgMD05vcnRoIFlvcmtzaGlyZTENMAsGA1UEBwwEWW9yazEXMBUGA1UECwwOQ2xvdWQgRW5kcG9pbnQxHTAbBgNVBAoMFFBob2VuaXggU29mdHdhcmUgTHRkMSEwHwYDVQQDDBhJbnR1bmUgQmx1ZXByaW50IFJvb3QgQ0EwIBcNMjYwOTIzMDgyNTAzWhgPMjA1MTA5MjMwODI1MDNaMIGRMQswCQYDVQQGEwJHQjEYMBYGA1UECAwPTm9ydGggWW9ya3NoaXJlMQ0wCwYDVQQHDARZb3JrMRcwFQYDVQQLDA5DbG91ZCBFbmRwb2ludDEdMBsGA1UECgwUUGhvZW5peCBTb2Z0d2FyZSBMdGQxITAfBgNVBAMMGEludHVuZSBCbHVlcHJpbnQgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAInHiT0tTMnQ8vaxQj2xUl1DUzCD13LSOqA3UCAdGfxtyETtYWM6+iadoO69hvbRINSNjg7n1dkGApQsJk3cCxjyznJHYUz/OEpiQWHddTnqTEUeT547hLMnCPwRyjhGNk+vuR5wBA++hxEzsYLHiSeeu+ffbz6Q5PN2dBJaavUkX3ytGbCn7LBit+B2tQ1KcqBtgFQ+t+/IQQOgqP6VX5wnbSjlU9Kh/nnYZ0B1Ar7NA2O9SMKyerWDI0pL5NGgiUpbwmhaU8HOXLFWUVfRqAYDTaouQkysCwsdTFwnfjABtMSIAhKztlxOmpmEbzDjEKrdn+OEZJVWr7t2NG96+wUCAwEAAaN7MHkwEgYDVR0TAQH/BAgwBgEB/wIBATAOBgNVHQ8BAf8EBAMCAYYwEwYDVR0lBAwwCgYIKwYBBQUHAwIwHQYDVR0OBBYEFJ9zVodYVnYX7lfmEPWoed54HbRXMB8GA1UdIwQYMBaAFJ9zVodYVnYX7lfmEPWoed54HbRXMA0GCSqGSIb3DQEBCwUAA4IBAQBaEcMqWmyJoKROaQ1oXUk7c0KfWAcHWUqyh6noxKSfROztSdBFwydyYmCyOItfS/JzrXa1JSCS2IhjEBe368ugX7QEpqmjAynzoCLDBVhUw+2yROVbn6I0YbbWCIaI+RSUGG4kmkpUZjpkQ1R3t82q9ftLKK/acIbBCmQGa4oEqyL3dIFdFVrRd9NJJE+gUhxXJy2kwSWuY8fSApw713ClmdlxwvqKA16NipyttrcoyWZEK/FmIOwvI9xTsLpUvCFEyRCmf9lJ/bJ9mRu3tWlChTcVC/D7u1kOZGslsdBhei8aXYk0uCaY8jB9TKepHPQY7nYNKxUsDXgwNm85XyfH",
+     "certFileName": "Intune Blueprint Root CA.cer",
+     "destinationStore": "computerCertStoreRoot",
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

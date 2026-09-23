@@ -597,53 +597,6 @@
                          "type": "",
                          "intent": "Include"
                     }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_MicrosoftDriverBlock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_MicrosoftWindowsUserMode",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_Scripts",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_MicrosoftAllow",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_Downloads",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_MicrosoftWindowsDefault",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_RemoteManagementTools",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_StrictKernelMode",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_ACFB_Audit_BasePolicy_SignedandReputable",
-                         "type": "",
-                         "intent": "Include"
-                    }
                ]
           }
      },
@@ -1157,28 +1110,6 @@
                          "type": "",
                          "intent": "Include"
                     }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "ZZZ_AND_D_CO_SBL_NCSC_DeviceLock",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_AND_D_CO_SBL_NCSC_Updates",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_AND_D_CO_SBL_NCSC_DataProtection",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_AND_D_CO_SBL_NCSC_DeviceManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
                ]
           }
      },
@@ -1295,33 +1226,6 @@
                     {
                          "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceHealth",
                          "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "ZZZ_IOS_D_CO_SBL_NCSC_Safari",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_CO_SBL_NCSC_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_CO_SBL_NCSC_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_CO_SBL_NCSC_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_CO_SBL_NCSC_DeviceLock",
-                         "type": "",
                          "intent": "Include"
                     }
                ]
@@ -1617,40 +1521,6 @@
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
                          "type": "",
                          "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_NCSC_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "ZZZ_IOS_D_BYOD_SBL_NCSC_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_BYOD_SBL_NCSC_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_BYOD_SBL_NCSC_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_BYOD_SBL_NCSC_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_IOS_D_BYOD_SBL_NCSC_Safari",
-                         "type": "",
-                         "intent": "Include"
                     }
                ]
           }

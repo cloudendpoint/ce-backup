@@ -178,7 +178,7 @@
                          "settingInstanceTemplateId": "7a47b4f2-0d06-46ea-a88a-9809830be5c8"
                     },
                     "choiceSettingValue": {
-                         "value": "device_vendor_msft_bitlocker_fixeddrivesrequireencryption_1",
+                         "value": "device_vendor_msft_bitlocker_fixeddrivesrequireencryption_0",
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "ddfd6c77-f32f-480c-a43d-4970185ccf15",
                               "useTemplateDefault": false

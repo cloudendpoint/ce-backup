@@ -23,6 +23,7 @@
                "includeUserActions": [
                     "urn:user:registerdevice"
                ],
+               "includeAgentActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },

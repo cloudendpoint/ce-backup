@@ -25,6 +25,7 @@
                ],
                "excludeApplications": [],
                "includeUserActions": [],
+               "includeAgentActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },
@@ -58,6 +59,7 @@
           "continuousAccessEvaluation": null,
           "secureSignInSession": null,
           "blockSensitiveActions": null,
+          "humanApproval": null,
           "signInFrequency": {
                "value": null,
                "type": null,

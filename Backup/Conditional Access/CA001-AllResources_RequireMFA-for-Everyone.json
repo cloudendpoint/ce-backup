@@ -28,6 +28,7 @@
                     "881dee9c-2ebe-4f40-998f-88e99e90beec"
                ],
                "includeUserActions": [],
+               "includeAgentActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },

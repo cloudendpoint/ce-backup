@@ -22,6 +22,7 @@
                ],
                "excludeApplications": [],
                "includeUserActions": [],
+               "includeAgentActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },

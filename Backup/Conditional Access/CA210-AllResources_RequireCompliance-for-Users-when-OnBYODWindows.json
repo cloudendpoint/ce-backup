@@ -24,6 +24,7 @@
                     "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
                ],
                "includeUserActions": [],
+               "includeAgentActions": [],
                "includeAuthenticationContextClassReferences": [],
                "applicationFilter": null
           },

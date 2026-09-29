@@ -191,11 +191,6 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS15",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_AND_U_BYOD_SBL_CE_SecureConfiguration",
                          "type": "androidWorkProfileCompliancePolicy",
                          "intent": "Include"
@@ -1886,11 +1881,6 @@
                          "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS15",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
                     }
                ],
                "Settings Catalog": [
@@ -1981,11 +1971,6 @@
                     {
                          "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
                          "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS15",
-                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {

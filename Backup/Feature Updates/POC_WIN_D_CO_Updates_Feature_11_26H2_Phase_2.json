@@ -1,0 +1,17 @@
+{
+     "displayName": "POC_WIN_D_CO_Updates_Feature_11_26H2_Phase_2",
+     "description": "",
+     "featureUpdateVersion": "Windows 11, version 26H2",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deployableContentDisplayName": null,
+     "endOfSupportDate": "2029-10-09T00:00:00Z",
+     "installLatestWindows10OnWindows11IneligibleDevice": false,
+     "installFeatureUpdatesOptional": false,
+     "rolloutSettings": {
+          "offerStartDateTimeInUTC": "2027-03-01T00:00:00Z",
+          "offerEndDateTimeInUTC": "2027-05-01T00:00:00Z",
+          "offerIntervalInDays": 7
+     }
+}

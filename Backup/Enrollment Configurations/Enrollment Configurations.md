@@ -244,5 +244,5 @@ Description: Users for Teams Room Systems and Phones
 |Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                                                   |
 |Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                                      |
 |Platform Type                       |windows                                                                                                                                                                                                                        |
-|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 10.0.26200.0000<br/>**osMaximumVersion:** 10.0.28000.9999<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 10.0.26200.0000<br/>**osMaximumVersion:** 10.0.26300.9999<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
 

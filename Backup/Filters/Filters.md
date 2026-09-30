@@ -8,6 +8,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### AND_BYOD
 #### Configuration
@@ -18,6 +19,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
+|Evaluation Mode                  |checkinTimeEvaluation                  |
 
 ### AND_CO
 #### Configuration
@@ -28,6 +30,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### AND_CO_Samsung
 #### Configuration
@@ -38,6 +41,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.manufacturer -eq "samsung")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### AND_COBO_DD
 #### Configuration
@@ -48,6 +52,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -contains "_DD")|
 |Role Scope Tags                  |Default<br/>                                                                               |
 |Assignment Filter Management Type|devices                                                                                    |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                      |
 
 ### AND_COBO_DS
 #### Configuration
@@ -58,6 +63,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -contains "_DS_")|
 |Role Scope Tags                  |Default<br/>                                                                                |
 |Assignment Filter Management Type|devices                                                                                     |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                       |
 
 ### AND_COPE
 #### Configuration
@@ -68,6 +74,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null)|
 |Role Scope Tags                  |Default<br/>                                                                         |
 |Assignment Filter Management Type|devices                                                                              |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                |
 
 ### AND_COPE_OS_15
 #### Configuration
@@ -78,6 +85,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 15.0) and (device.operatingSystemVersion -lt 16.0)|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
 |Assignment Filter Management Type|devices                                                                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                          |
 
 ### AND_COPE_OS_16
 #### Configuration
@@ -88,6 +96,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 16.0) and (device.operatingSystemVersion -lt 17.0)|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
 |Assignment Filter Management Type|devices                                                                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                          |
 
 ### AND_COPE_OS_17
 #### Configuration
@@ -98,6 +107,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -eq $null) and (device.operatingSystemVersion -ge 17.0) and (device.operatingSystemVersion -lt 18.0)|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                   |
 |Assignment Filter Management Type|devices                                                                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                          |
 
 ### AND_DA_BYOD
 #### Configuration
@@ -108,6 +118,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
+|Evaluation Mode                  |checkinTimeEvaluation                  |
 
 ### AND_DA_CO
 #### Configuration
@@ -118,6 +129,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### AND_MNGD
 #### Configuration
@@ -128,6 +140,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile") or (app.deviceManagementType -eq "Personally-owned work profile")</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                                                     |
 |Assignment Filter Management Type|apps                                                                                                                                                                                                                                                                                                                                                             |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                                                            |
 
 ### AND_MNGD_BYOD
 #### Configuration
@@ -138,6 +151,7 @@
 |Rule                             |(app.deviceManagementType -eq "Personally-owned work profile")|
 |Role Scope Tags                  |Default<br/>                                                  |
 |Assignment Filter Management Type|apps                                                          |
+|Evaluation Mode                  |checkinTimeEvaluation                                         |
 
 ### AND_MNGD_COBO
 #### Configuration
@@ -148,6 +162,7 @@
 |Rule                             |(app.deviceManagementType -eq "Corporate-owned dedicated devices with Entra ID Shared mode") or (app.deviceManagementType -eq "Corporate-owned dedicated devices without Entra ID Shared mode")|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                   |
 |Assignment Filter Management Type|apps                                                                                                                                                                                           |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                          |
 
 ### AND_MNGD_COPE
 #### Configuration
@@ -158,6 +173,7 @@
 |Rule                             |(app.deviceManagementType -eq "Corporate-owned fully managed") or (app.deviceManagementType -eq "Corporate-owned with work profile")|
 |Role Scope Tags                  |Default<br/>                                                                                                                        |
 |Assignment Filter Management Type|apps                                                                                                                                |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                               |
 
 ### AND_UMNGD
 #### Configuration
@@ -168,6 +184,7 @@
 |Rule                             |(app.deviceManagementType -eq "Unmanaged")|
 |Role Scope Tags                  |Default<br/>                              |
 |Assignment Filter Management Type|apps                                      |
+|Evaluation Mode                  |checkinTimeEvaluation                     |
 
 ### AOSP_CO
 #### Configuration
@@ -178,6 +195,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### AOSP_MNGD
 #### Configuration
@@ -188,6 +206,7 @@
 |Rule                             |(app.deviceManagementType -eq "AOSP user-associated devices") and (app.deviceManagementType -eq "AOSP userless devices")|
 |Role Scope Tags                  |Default<br/>                                                                                                            |
 |Assignment Filter Management Type|apps                                                                                                                    |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                   |
 
 ### CPC_CO
 #### Configuration
@@ -198,6 +217,7 @@
 |Rule                             |(device.model -contains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                       |
 |Assignment Filter Management Type|devices                            |
+|Evaluation Mode                  |checkinTimeEvaluation              |
 
 ### CPC_CO_Link
 #### Configuration
@@ -208,6 +228,7 @@
 |Rule                             |(device.operatingSystemSKU -eq "WCPC")|
 |Role Scope Tags                  |Default<br/>                          |
 |Assignment Filter Management Type|devices                               |
+|Evaluation Mode                  |checkinTimeEvaluation                 |
 
 ### IOS_BYOD
 #### Configuration
@@ -218,6 +239,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
+|Evaluation Mode                  |checkinTimeEvaluation                  |
 
 ### IOS_BYOD_OS_18
 #### Configuration
@@ -228,6 +250,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "18")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### IOS_BYOD_OS_26
 #### Configuration
@@ -238,6 +261,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "26")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### IOS_BYOD_OS_27
 #### Configuration
@@ -248,6 +272,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### IOS_CO
 #### Configuration
@@ -258,6 +283,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### IOS_CO_ADE
 #### Configuration
@@ -268,6 +294,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.enrollmentProfileName -ne null)|
 |Role Scope Tags                  |Default<br/>                                                                        |
 |Assignment Filter Management Type|devices                                                                             |
+|Evaluation Mode                  |checkinTimeEvaluation                                                               |
 
 ### IOS_CO_OS_18
 #### Configuration
@@ -278,6 +305,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "18")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### IOS_CO_OS_26
 #### Configuration
@@ -288,6 +316,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "26")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### IOS_CO_OS_27
 #### Configuration
@@ -298,6 +327,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### IOS_MNGD
 #### Configuration
@@ -308,6 +338,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(app.deviceManagementType -eq "Managed") or (app.deviceManagementType -eq "Automated Device Enrollment userless devices") or (app.deviceManagementType -eq "Automated Device Enrollment user-associated devices") or (app.deviceManagementType -eq "Account Driven User Enrollment") or (app.deviceManagementType -eq "Device Enrollment with Company Portal and Web Enrollment")</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |Assignment Filter Management Type|apps                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### IOS_MNGD_BYOD
 #### Configuration
@@ -318,6 +349,7 @@
 |Rule                             |(app.deviceManagementType -eq "Account Driven User Enrollment") or (app.deviceManagementType -eq "Device Enrollment with Company Portal and Web Enrollment")|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                |
 |Assignment Filter Management Type|apps                                                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                       |
 
 ### IOS_MNGD_COBO
 #### Configuration
@@ -328,6 +360,7 @@
 |Rule                             |(app.deviceManagementType -eq "Automated Device Enrollment userless devices")|
 |Role Scope Tags                  |Default<br/>                                                                 |
 |Assignment Filter Management Type|apps                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                        |
 
 ### IOS_MNGD_COPE
 #### Configuration
@@ -338,6 +371,7 @@
 |Rule                             |(app.deviceManagementType -eq "Automated Device Enrollment user-associated devices")|
 |Role Scope Tags                  |Default<br/>                                                                        |
 |Assignment Filter Management Type|apps                                                                                |
+|Evaluation Mode                  |checkinTimeEvaluation                                                               |
 
 ### IOS_UMNGD
 #### Configuration
@@ -348,6 +382,7 @@
 |Rule                             |(app.deviceManagementType -eq "Unmanaged")|
 |Role Scope Tags                  |Default<br/>                              |
 |Assignment Filter Management Type|apps                                      |
+|Evaluation Mode                  |checkinTimeEvaluation                     |
 
 ### MAC_BYOD
 #### Configuration
@@ -358,6 +393,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
+|Evaluation Mode                  |checkinTimeEvaluation                  |
 
 ### MAC_BYOD_OS_15
 #### Configuration
@@ -368,6 +404,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "15")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### MAC_BYOD_OS_26
 #### Configuration
@@ -378,6 +415,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "26")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### MAC_BYOD_OS_27
 #### Configuration
@@ -388,6 +426,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                   |
 |Assignment Filter Management Type|devices                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                          |
 
 ### MAC_CO
 #### Configuration
@@ -398,6 +437,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate")|
 |Role Scope Tags                  |Default<br/>                            |
 |Assignment Filter Management Type|devices                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                   |
 
 ### MAC_CO_OS_15
 #### Configuration
@@ -408,6 +448,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "15")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### MAC_CO_OS_26
 #### Configuration
@@ -418,6 +459,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "26")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### MAC_CO_OS_27
 #### Configuration
@@ -428,6 +470,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "27")|
 |Role Scope Tags                  |Default<br/>                                                                    |
 |Assignment Filter Management Type|devices                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                           |
 
 ### MAC_OS_15_Above
 #### Configuration
@@ -438,6 +481,7 @@
 |Rule                             |(device.operatingSystemVersion -gt 15.0.0) and (device.operatingSystemVersion -lt 28.0.0)|
 |Role Scope Tags                  |Default<br/>                                                                             |
 |Assignment Filter Management Type|devices                                                                                  |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                    |
 
 ### WIN_BYOD
 #### Configuration
@@ -448,6 +492,7 @@
 |Rule                             |(device.deviceOwnership -eq "Personal")|
 |Role Scope Tags                  |Default<br/>                           |
 |Assignment Filter Management Type|devices                                |
+|Evaluation Mode                  |checkinTimeEvaluation                  |
 
 ### WIN_BYOD_OS_Business
 #### Configuration
@@ -458,6 +503,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(device.deviceOwnership -eq "Personal") and (device.operatingSystemSKU -in ["Enterprise","EnterpriseEval","EnterpriseG","EnterpriseGN","EnterpriseS","EnterpriseSEval","EnterpriseSN","EnterpriseN","EnterpriseNEval","IoTEnterprise","Education","EducationN"])</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                            |
 |Assignment Filter Management Type|devices                                                                                                                                                                                                                                                                                                                 |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                   |
 
 ### WIN_BYOD_OS_Consumer
 #### Configuration
@@ -468,6 +514,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(device.deviceOwnership -eq "Personal") and (device.operatingSystemSKU -in ["Core","CoreN","CoreSingleLanguage","Professional","ProfessionalEducation","ProfessionalWorkstation","ProfessionalN","ProfessionalEducationN","BusinessN","ProfessionalSingleLanguage"])</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                |
 |Assignment Filter Management Type|devices                                                                                                                                                                                                                                                                                                                     |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                       |
 
 ### WIN_CO
 #### Configuration
@@ -478,6 +525,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.model -notContains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                                                                       |
 |Assignment Filter Management Type|devices                                                                            |
+|Evaluation Mode                  |checkinTimeEvaluation                                                              |
 
 ### WIN_CO_AP
 #### Configuration
@@ -488,6 +536,7 @@
 |Rule                             |(device.enrollmentProfileName -ne $null) and (device.deviceOwnership -eq "Corporate") and (device.model -notContains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                                                                                                                    |
 |Assignment Filter Management Type|devices                                                                                                                         |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                           |
 
 ### WIN_CO_ARM
 #### Configuration
@@ -498,6 +547,7 @@
 |Rule                             |(device.cpuArchitecture -eq "arm64")|
 |Role Scope Tags                  |Default<br/>                        |
 |Assignment Filter Management Type|devices                             |
+|Evaluation Mode                  |checkinTimeEvaluation               |
 
 ### WIN_CO_OS_10
 #### Configuration
@@ -508,6 +558,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "10.0.1") and (device.model -notContains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                                                                                                                   |
 |Assignment Filter Management Type|devices                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                          |
 
 ### WIN_CO_OS_11
 #### Configuration
@@ -518,6 +569,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "10.0.2") and (device.model -notContains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                                                                                                                   |
 |Assignment Filter Management Type|devices                                                                                                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                          |
 
 ### WIN_CO_OS_11_24H2
 #### Configuration
@@ -528,6 +580,7 @@
 |Rule                             |(device.deviceOwnership -eq "Corporate") and (device.osVersion -startsWith "10.0.26100") and (device.model -notContains "Cloud PC")|
 |Role Scope Tags                  |Default<br/>                                                                                                                       |
 |Assignment Filter Management Type|devices                                                                                                                            |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                              |
 
 ### WIN_CO_OS_Business
 #### Configuration
@@ -538,6 +591,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(device.deviceOwnership -eq "Corporate") and (device.operatingSystemSKU -in ["Enterprise","EnterpriseEval","EnterpriseG","EnterpriseGN","EnterpriseS","EnterpriseSEval","EnterpriseSN","EnterpriseN","EnterpriseNEval","IoTEnterprise","Education","EducationN"])</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                             |
 |Assignment Filter Management Type|devices                                                                                                                                                                                                                                                                                                                  |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                    |
 
 ### WIN_CO_OS_Consumer
 #### Configuration
@@ -548,6 +602,7 @@
 |Rule                             |<details><summary>Click to expand...</summary>(device.deviceOwnership -eq "Corporate") and (device.operatingSystemSKU -in ["Core","CoreN","CoreSingleLanguage","Professional","ProfessionalEducation","ProfessionalWorkstation","ProfessionalN","ProfessionalEducationN","BusinessN","ProfessionalSingleLanguage"])</details>|
 |Role Scope Tags                  |Default<br/>                                                                                                                                                                                                                                                                                                                 |
 |Assignment Filter Management Type|devices                                                                                                                                                                                                                                                                                                                      |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                                                                                                                                                                        |
 
 ### WIN_OS_NotHome
 #### Configuration
@@ -558,4 +613,5 @@
 |Rule                             |(device.operatingSystemSKU -notContains "Core")|
 |Role Scope Tags                  |Default<br/>                                   |
 |Assignment Filter Management Type|devices                                        |
+|Evaluation Mode                  |checkinTimeEvaluation                          |
 

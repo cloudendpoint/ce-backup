@@ -462,7 +462,6 @@
 |Mobile Threat Defense Remediation Action       |block                                       |
 |Minimum Required Os Version                    |10.0.26100.0                                |
 |Minimum Warning Os Version                     |10.0.26200.0                                |
-|Minimum Wipe Os Version                        |10.0.22631.0                                |
 |Period Offline Before Wipe Is Enforced         |P90D                                        |
 |Period Offline Before Access Check             |P1D                                         |
 

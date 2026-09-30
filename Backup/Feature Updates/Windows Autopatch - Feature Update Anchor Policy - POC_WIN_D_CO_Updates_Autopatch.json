@@ -1,12 +1,12 @@
 {
      "displayName": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
      "description": null,
-     "featureUpdateVersion": "Windows 11, version 25H2",
+     "featureUpdateVersion": "Windows 11, version 26H2",
      "roleScopeTagIds": [
           "Default"
      ],
      "deployableContentDisplayName": null,
-     "endOfSupportDate": "2028-10-10T00:00:00Z",
+     "endOfSupportDate": "2029-10-09T00:00:00Z",
      "installLatestWindows10OnWindows11IneligibleDevice": false,
      "installFeatureUpdatesOptional": false,
      "rolloutSettings": {

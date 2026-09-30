@@ -7,5 +7,6 @@
           "Default"
      ],
      "assignmentFilterManagementType": "devices",
+     "evaluationMode": "checkinTimeEvaluation",
      "payloads": []
 }

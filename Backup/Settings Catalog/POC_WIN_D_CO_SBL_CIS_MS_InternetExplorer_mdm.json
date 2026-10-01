@@ -116,7 +116,7 @@
                                    "auditRuleInformation": null,
                                    "choiceSettingValue": {
                                         "settingValueTemplateReference": null,
-                                        "value": "device_vendor_msft_policy_config_internetexplorer_disableencryptionsupport_advanced_wininetprotocoloptions_2560",
+                                        "value": "device_vendor_msft_policy_config_internetexplorer_disableencryptionsupport_advanced_wininetprotocoloptions_10240",
                                         "children": []
                                    }
                               }

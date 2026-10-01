@@ -72,7 +72,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_bluetooth_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_bluetooth_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -94,7 +94,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_dictation_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_dictation_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -105,7 +105,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_localnetwork_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_localnetwork_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -116,7 +116,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_location_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_location_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -154,7 +154,7 @@
                                                                                 "simpleSettingValue": {
                                                                                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                      "settingValueTemplateReference": null,
-                                                                                     "value": "com.microsoft.teams2"
+                                                                                     "value": "com.microsoft.teams2 {anchor apple generic}"
                                                                                 }
                                                                            }
                                                                       ]

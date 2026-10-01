@@ -165,17 +165,6 @@
                               },
                               {
                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                   "settingDefinitionId": "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications",
-                                   "settingInstanceTemplateReference": null,
-                                   "auditRuleInformation": null,
-                                   "choiceSettingValue": {
-                                        "settingValueTemplateReference": null,
-                                        "value": "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications_false",
-                                        "children": []
-                                   }
-                              },
-                              {
-                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                    "settingDefinitionId": "vendor_msft_firewall_mdmstore_domainprofile_disablestealthmode",
                                    "settingInstanceTemplateReference": null,
                                    "auditRuleInformation": null,
@@ -294,6 +283,20 @@
                                              "settingValueTemplateId": "120c5dbe-0c88-46f0-b897-2c996d3e5277",
                                              "useTemplateDefault": false
                                         }
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "value": "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications_true",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "120c5dbe-0c88-46f0-b897-2c996d3e5277",
+                                             "useTemplateDefault": false
+                                        },
+                                        "children": []
                                    }
                               }
                          ]

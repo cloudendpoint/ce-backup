@@ -83,7 +83,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_camera_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_camera_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -127,7 +127,7 @@
                                                                                                     "auditRuleInformation": null,
                                                                                                     "choiceSettingValue": {
                                                                                                          "settingValueTemplateReference": null,
-                                                                                                         "value": "app_privacy_permissiondefaults_generickey_microphone_0",
+                                                                                                         "value": "app_privacy_permissiondefaults_generickey_microphone_1",
                                                                                                          "children": []
                                                                                                     }
                                                                                                },
@@ -154,7 +154,7 @@
                                                                                 "simpleSettingValue": {
                                                                                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                      "settingValueTemplateReference": null,
-                                                                                     "value": "com.microsoft.remotehelp"
+                                                                                     "value": "com.microsoft.remotehelp {anchor apple generic}"
                                                                                 }
                                                                            }
                                                                       ]

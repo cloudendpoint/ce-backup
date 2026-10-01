@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 123,
+     "settingCount": 119,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -420,6 +420,44 @@
                "id": "26",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_urlblocklist",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_urlblocklist_1",
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                   "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_urlblocklist_urlblocklistdesc",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingCollectionValue": [
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "apps.microsoft.com"
+                                        },
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "ms-windows-store://*"
+                                        },
+                                        {
+                                             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                             "settingValueTemplateReference": null,
+                                             "value": "javascript://*"
+                                        }
+                                   ]
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "27",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
@@ -443,7 +481,7 @@
                }
           },
           {
-               "id": "27",
+               "id": "28",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~googlecast_enablemediarouter",
@@ -457,7 +495,7 @@
                }
           },
           {
-               "id": "28",
+               "id": "29",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge~certificatemanagement_cacertificatemanagementallowed",
@@ -483,7 +521,7 @@
                }
           },
           {
-               "id": "29",
+               "id": "30",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_clearbrowsingdataonexit",
@@ -497,7 +535,7 @@
                }
           },
           {
-               "id": "30",
+               "id": "31",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_clearcachedimagesandfilesonexit",
@@ -511,7 +549,7 @@
                }
           },
           {
-               "id": "31",
+               "id": "32",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_internetexplorermodecleardataonexitenabled",
@@ -525,7 +563,7 @@
                }
           },
           {
-               "id": "32",
+               "id": "33",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_composeinlineenabled",
@@ -539,7 +577,7 @@
                }
           },
           {
-               "id": "33",
+               "id": "34",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_browsercodeintegritysetting",
@@ -565,7 +603,7 @@
                }
           },
           {
-               "id": "34",
+               "id": "35",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_inprivatemodeavailability",
@@ -591,7 +629,7 @@
                }
           },
           {
-               "id": "35",
+               "id": "36",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev99~policy~microsoft_edge_relatedmatchescloudserviceenabled",
@@ -605,7 +643,7 @@
                }
           },
           {
-               "id": "36",
+               "id": "37",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_hstspolicybypasslist",
@@ -619,7 +657,7 @@
                }
           },
           {
-               "id": "37",
+               "id": "38",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled",
@@ -647,7 +685,7 @@
                }
           },
           {
-               "id": "38",
+               "id": "39",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_configureshare",
@@ -673,7 +711,7 @@
                }
           },
           {
-               "id": "39",
+               "id": "40",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes",
@@ -699,7 +737,7 @@
                }
           },
           {
-               "id": "40",
+               "id": "41",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~contentsettings_defaultinsecurecontentsetting",
@@ -725,7 +763,7 @@
                }
           },
           {
-               "id": "41",
+               "id": "42",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~contentsettings_defaultfilesystemwriteguardsetting",
@@ -751,7 +789,7 @@
                }
           },
           {
-               "id": "42",
+               "id": "43",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultpluginssetting",
@@ -765,7 +803,7 @@
                }
           },
           {
-               "id": "43",
+               "id": "44",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultpluginssetting",
@@ -779,7 +817,7 @@
                }
           },
           {
-               "id": "44",
+               "id": "45",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge~contentsettings_defaultautomaticdownloadssetting",
@@ -805,7 +843,7 @@
                }
           },
           {
-               "id": "45",
+               "id": "46",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultgeolocationsetting",
@@ -831,7 +869,7 @@
                }
           },
           {
-               "id": "46",
+               "id": "47",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backgroundmodeenabled",
@@ -845,7 +883,7 @@
                }
           },
           {
-               "id": "47",
+               "id": "48",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_experimentationandconfigurationservicecontrol",
@@ -871,7 +909,7 @@
                }
           },
           {
-               "id": "48",
+               "id": "49",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_overridesecurityrestrictionsoninsecureorigin",
@@ -885,7 +923,7 @@
                }
           },
           {
-               "id": "49",
+               "id": "50",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_deletedataonmigration",
@@ -899,7 +937,7 @@
                }
           },
           {
-               "id": "50",
+               "id": "51",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_savingbrowserhistorydisabled",
@@ -913,7 +951,7 @@
                }
           },
           {
-               "id": "51",
+               "id": "52",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_syncdisabled",
@@ -927,7 +965,7 @@
                }
           },
           {
-               "id": "52",
+               "id": "53",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_dnsinterceptionchecksenabled",
@@ -941,7 +979,7 @@
                }
           },
           {
-               "id": "53",
+               "id": "54",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev128~policy~microsoft_edge~downloads_showdownloadsinsecurewarningsenabled",
@@ -955,7 +993,7 @@
                }
           },
           {
-               "id": "54",
+               "id": "55",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev128~policy~microsoft_edge_dynamiccodesettings",
@@ -981,7 +1019,7 @@
                }
           },
           {
-               "id": "55",
+               "id": "56",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev120~policy~microsoft_edge_edge3pserptelemetryenabled",
@@ -995,7 +1033,7 @@
                }
           },
           {
-               "id": "56",
+               "id": "57",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_edgewalletetreeenabled",
@@ -1009,7 +1047,7 @@
                }
           },
           {
-               "id": "57",
+               "id": "58",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~typosquattingchecker_typosquattingcheckerenabled",
@@ -1023,7 +1061,7 @@
                }
           },
           {
-               "id": "58",
+               "id": "59",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev128.1~policy~microsoft_edge_applicationboundencryptionenabled",
@@ -1037,7 +1075,7 @@
                }
           },
           {
-               "id": "59",
+               "id": "60",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofilladdressenabled",
@@ -1051,7 +1089,7 @@
                }
           },
           {
-               "id": "60",
+               "id": "61",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillcreditcardenabled",
@@ -1065,7 +1103,7 @@
                }
           },
           {
-               "id": "61",
+               "id": "62",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_browserlegacyextensionpointsblockingenabled",
@@ -1079,7 +1117,7 @@
                }
           },
           {
-               "id": "62",
+               "id": "63",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_componentupdatesenabled",
@@ -1093,7 +1131,7 @@
                }
           },
           {
-               "id": "63",
+               "id": "64",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev112~policy~microsoft_edge_cryptowalletenabled",
@@ -1107,7 +1145,7 @@
                }
           },
           {
-               "id": "64",
+               "id": "65",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowdeletingbrowserhistory",
@@ -1121,7 +1159,7 @@
                }
           },
           {
-               "id": "65",
+               "id": "66",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_discoverpagecontextenabled",
@@ -1135,7 +1173,7 @@
                }
           },
           {
-               "id": "66",
+               "id": "67",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_edgefollowenabled",
@@ -1149,7 +1187,7 @@
                }
           },
           {
-               "id": "67",
+               "id": "68",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_globallyscopehttpauthcacheenabled",
@@ -1163,7 +1201,7 @@
                }
           },
           {
-               "id": "68",
+               "id": "69",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_networkpredictionoptions",
@@ -1189,7 +1227,7 @@
                }
           },
           {
-               "id": "69",
+               "id": "70",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browseraddprofileenabled",
@@ -1203,7 +1241,7 @@
                }
           },
           {
-               "id": "70",
+               "id": "71",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_resolvenavigationerrorsusewebservice",
@@ -1217,7 +1255,7 @@
                }
           },
           {
-               "id": "71",
+               "id": "72",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_searchsuggestenabled",
@@ -1231,7 +1269,7 @@
                }
           },
           {
-               "id": "72",
+               "id": "73",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled",
@@ -1245,7 +1283,7 @@
                }
           },
           {
-               "id": "73",
+               "id": "74",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_siteperprocess",
@@ -1259,7 +1297,7 @@
                }
           },
           {
-               "id": "74",
+               "id": "75",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev113~policy~microsoft_edge_tabservicesenabled",
@@ -1273,7 +1311,7 @@
                }
           },
           {
-               "id": "75",
+               "id": "76",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_searchbarallowed",
@@ -1287,7 +1325,7 @@
                }
           },
           {
-               "id": "76",
+               "id": "77",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_uploadfromphoneenabled",
@@ -1301,7 +1339,7 @@
                }
           },
           {
-               "id": "77",
+               "id": "78",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_forceephemeralprofiles",
@@ -1315,7 +1353,7 @@
                }
           },
           {
-               "id": "78",
+               "id": "79",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_insecureformswarningsenabled",
@@ -1329,7 +1367,7 @@
                }
           },
           {
-               "id": "79",
+               "id": "80",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev122~policy~microsoft_edge_aigenthemesenabled",
@@ -1343,7 +1381,7 @@
                }
           },
           {
-               "id": "80",
+               "id": "81",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98.1~policy~microsoft_edge_enhancesecuritymode",
@@ -1369,7 +1407,7 @@
                }
           },
           {
-               "id": "81",
+               "id": "82",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge~experimentation_featureflagoverridescontrol",
@@ -1395,7 +1433,7 @@
                }
           },
           {
-               "id": "82",
+               "id": "83",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensioninstallallowlist",
@@ -1423,7 +1461,7 @@
                }
           },
           {
-               "id": "83",
+               "id": "84",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~extensions_blockexternalextensions",
@@ -1437,7 +1475,7 @@
                }
           },
           {
-               "id": "84",
+               "id": "85",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensioninstallforcelist",
@@ -1465,7 +1503,7 @@
                }
           },
           {
-               "id": "85",
+               "id": "86",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensioninstallblocklist",
@@ -1493,7 +1531,7 @@
                }
           },
           {
-               "id": "86",
+               "id": "87",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge~edgegames_gamermodeenabled",
@@ -1507,7 +1545,7 @@
                }
           },
           {
-               "id": "87",
+               "id": "88",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_hidefirstrunexperience",
@@ -1521,7 +1559,7 @@
                }
           },
           {
-               "id": "88",
+               "id": "89",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88.0.705.23~policy~microsoft_edge~httpauthentication_basicauthoverhttpenabled",
@@ -1535,7 +1573,7 @@
                }
           },
           {
-               "id": "89",
+               "id": "90",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allowcrossoriginauthprompt",
@@ -1549,7 +1587,7 @@
                }
           },
           {
-               "id": "90",
+               "id": "91",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_authschemes",
@@ -1575,7 +1613,7 @@
                }
           },
           {
-               "id": "91",
+               "id": "92",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~identity_nonmicrosoftaccountsigninenabled",
@@ -1589,7 +1627,7 @@
                }
           },
           {
-               "id": "92",
+               "id": "93",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev107~policy~microsoft_edge~identity_linkedaccountenabled",
@@ -1603,7 +1641,7 @@
                }
           },
           {
-               "id": "93",
+               "id": "94",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge~identity_guidedswitchenabled",
@@ -1617,7 +1655,7 @@
                }
           },
           {
-               "id": "94",
+               "id": "95",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_inappsupportenabled",
@@ -1631,7 +1669,7 @@
                }
           },
           {
-               "id": "95",
+               "id": "96",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_webrtclocalipsallowedurls",
@@ -1645,7 +1683,7 @@
                }
           },
           {
-               "id": "96",
+               "id": "97",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_sslversionmin",
@@ -1671,7 +1709,7 @@
                }
           },
           {
-               "id": "97",
+               "id": "98",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_sslversionmin",
@@ -1697,7 +1735,7 @@
                }
           },
           {
-               "id": "98",
+               "id": "99",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~nativemessaging_nativemessaginguserlevelhosts",
@@ -1711,7 +1749,7 @@
                }
           },
           {
-               "id": "99",
+               "id": "100",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification",
@@ -1737,7 +1775,7 @@
                }
           },
           {
-               "id": "100",
+               "id": "101",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~passwordmanager_passwordmanagerenabled",
@@ -1751,7 +1789,7 @@
                }
           },
           {
-               "id": "101",
+               "id": "102",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge~performance_startupboostenabled",
@@ -1765,7 +1803,7 @@
                }
           },
           {
-               "id": "102",
+               "id": "103",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev92~policy~microsoft_edge~privatenetworkrequestsettings_insecureprivatenetworkrequestsallowed",
@@ -1779,7 +1817,7 @@
                }
           },
           {
-               "id": "103",
+               "id": "104",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling",
@@ -1805,7 +1843,7 @@
                }
           },
           {
-               "id": "104",
+               "id": "105",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachesize",
@@ -1831,7 +1869,7 @@
                }
           },
           {
-               "id": "105",
+               "id": "106",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotificationperiod",
@@ -1857,7 +1895,7 @@
                }
           },
           {
-               "id": "106",
+               "id": "107",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev87~policy~microsoft_edge_edgeshoppingassistantenabled",
@@ -1871,7 +1909,7 @@
                }
           },
           {
-               "id": "107",
+               "id": "108",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_showmicrosoftrewards",
@@ -1885,7 +1923,7 @@
                }
           },
           {
-               "id": "108",
+               "id": "109",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorermodetoolbarbuttonenabled",
@@ -1899,77 +1937,7 @@
                }
           },
           {
-               "id": "109",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_smartscreenenabled",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_smartscreenenabled_1",
-                         "children": []
-                    }
-               }
-          },
-          {
                "id": "110",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~smartscreen_smartscreenpuaenabled",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge~smartscreen_smartscreenpuaenabled_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "111",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge~smartscreen_smartscreenfortrusteddownloadsenabled",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge~smartscreen_smartscreenfortrusteddownloadsenabled_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "112",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverride",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverride_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "113",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverrideforfiles",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_preventsmartscreenpromptoverrideforfiles_1",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "114",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_sharedarraybufferunrestrictedaccessallowed",
@@ -1983,7 +1951,7 @@
                }
           },
           {
-               "id": "115",
+               "id": "111",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_standalonehubssidebarenabled",
@@ -1997,7 +1965,7 @@
                }
           },
           {
-               "id": "116",
+               "id": "112",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev118~policy~microsoft_edge~startup_newtabpagebingchatenabled",
@@ -2011,7 +1979,7 @@
                }
           },
           {
-               "id": "117",
+               "id": "113",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_alternateerrorpagesenabled",
@@ -2025,7 +1993,7 @@
                }
           },
           {
-               "id": "118",
+               "id": "114",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_suppressunsupportedoswarning",
@@ -2039,7 +2007,7 @@
                }
           },
           {
-               "id": "119",
+               "id": "115",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_internetexplorerintegrationalwayswaitforunload",
@@ -2053,7 +2021,7 @@
                }
           },
           {
-               "id": "120",
+               "id": "116",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_walletdonationenabled",
@@ -2067,7 +2035,7 @@
                }
           },
           {
-               "id": "121",
+               "id": "117",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_applications_pol_defaultupdatepolicy",
@@ -2093,7 +2061,7 @@
                }
           },
           {
-               "id": "122",
+               "id": "118",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_update~policy~cat_google~cat_googleupdate~cat_preferences_pol_autoupdatecheckperiod",

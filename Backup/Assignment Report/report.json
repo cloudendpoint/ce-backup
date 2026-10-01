@@ -1278,11 +1278,6 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_DeliveryOptimization",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_SBL_CIS_MS_SystemSecurity",
                          "type": "",
                          "intent": "Include"

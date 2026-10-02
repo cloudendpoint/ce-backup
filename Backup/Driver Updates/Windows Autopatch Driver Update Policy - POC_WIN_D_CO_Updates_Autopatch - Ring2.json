@@ -4,7 +4,7 @@
      "approvalType": "automatic",
      "deviceReporting": 0,
      "newUpdates": 0,
-     "deploymentDeferralInDays": 6,
+     "deploymentDeferralInDays": 5,
      "roleScopeTagIds": [
           "Default"
      ],

@@ -90,18 +90,6 @@
                     "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
                     "deviceAndAppManagementAssignmentFilterId": null,
                     "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "SG_MDM_D_WIN_CO_Phase_2",
-                    "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")"
-               }
-          },
-          {
-               "source": "direct",
-               "intent": "apply",
-               "target": {
-                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "SG_MDM_D_WIN_CO_CartUpdatePolicy",
                     "groupType": "StaticMembership"
                }

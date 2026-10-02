@@ -283,11 +283,6 @@
                          "intent": "Exclude"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
                          "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Exclude"
@@ -322,22 +317,12 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
                          "type": "",
                          "intent": "Exclude"
                     },
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
                          "type": "",
                          "intent": "Exclude"
                     },
@@ -352,17 +337,7 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
                          "type": "",
                          "intent": "Exclude"
                     }
@@ -381,17 +356,7 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
                          "type": "windowsUpdateForBusinessConfiguration",
                          "intent": "Exclude"
                     }
@@ -405,24 +370,9 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
                          "type": "",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
                     }
                ]
           }
@@ -493,22 +443,12 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
                          "type": "",
                          "intent": "Exclude"
                     },
                     {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
                          "type": "",
                          "intent": "Exclude"
                     },
@@ -523,17 +463,7 @@
                          "intent": "Exclude"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
                          "type": "",
                          "intent": "Exclude"
                     }
@@ -601,24 +531,9 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
                          "type": "",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
                     }
                ]
           }
@@ -675,24 +590,9 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
                          "type": "",
                          "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
                     }
                ]
           }
@@ -763,11 +663,6 @@
                "Settings Catalog": [
                     {
                          "name": "POC_MAC_D_CO_SBL_NCSC_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_Screensaver",
                          "type": "",
                          "intent": "Include"
                     },
@@ -1147,21 +1042,6 @@
                ],
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
                          "type": "",
                          "intent": "Include"
@@ -1490,6 +1370,13 @@
                "Scripts": [
                     {
                          "name": "Modern Workplace - Autopatch Client Setup v2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_WindowsAutopatchSupport",
                          "type": "",
                          "intent": "Include"
                     }
@@ -2227,37 +2114,37 @@
           "assignedTo": {
                "Settings Catalog": [
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_FileVault",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Password",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_Password",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_Updates",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_FileVault",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_Firewall",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DataProtection",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_DataProtection",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Firewall",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_DeviceManagement",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DeviceManagement",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_BYOD_SBL_NCSC_DeviceLock",
+                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Updates",
                          "type": "",
                          "intent": "Include"
                     }
@@ -2460,35 +2347,6 @@
                     {
                          "name": "POC_IOS_D_CO_MicrosoftCompanyPortal_NUA",
                          "type": "iosMobileAppConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_Dell",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceManufacturer -eq \"Dell Inc.\")",
-          "assignedTo": {
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_5",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_2",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_3",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Dell_Phase_4",
-                         "type": "",
                          "intent": "Include"
                     }
                ]

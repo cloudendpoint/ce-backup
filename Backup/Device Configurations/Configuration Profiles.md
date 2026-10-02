@@ -991,7 +991,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Include|SG_MDM_D_WIN_CO_Phase_3                      |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
-|Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 
 #### Configuration
@@ -1033,7 +1032,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_4                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
-|Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 
@@ -1048,7 +1046,7 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
 |Microsoft Update Service Allowed        |True                                                                                                                                                      |
 |Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         7|
+|Quality Updates Deferral Period In Days |                                                                                                                                                         8|
 |Quality Updates Paused                  |False                                                                                                                                                     |
 |Feature Updates Paused                  |False                                                                                                                                                     |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
@@ -1075,7 +1073,6 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |intent |                   target                    |filter type|filter name|
 |-------|---------------------------------------------|-----------|-----------|
 |Include|SG_MDM_D_WIN_CO_Phase_5                      |none       |           |
-|Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
 |Exclude|SG_MDM_D_WIN_CO_Phase_2                      |none       |           |
 |Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
@@ -1886,7 +1883,7 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Microsoft Update Service Allowed        |False                                                                  |
 |Drivers Excluded                        |False                                                                  |
 |Quality Updates Deferral Period In Days |                                                                     11|
-|Feature Updates Deferral Period In Days |                                                                     28|
+|Feature Updates Deferral Period In Days |                                                                     84|
 |Quality Updates Paused                  |False                                                                  |
 |Feature Updates Paused                  |False                                                                  |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                   |
@@ -1895,9 +1892,9 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Skip Checks Before Restart              |False                                                                  |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
-|Deadline For Feature Updates In Days    |                                                                      7|
-|Deadline For Quality Updates In Days    |                                                                      3|
-|Deadline Grace Period In Days           |                                                                      2|
+|Deadline For Feature Updates In Days    |                                                                     28|
+|Deadline For Quality Updates In Days    |                                                                      2|
+|Deadline Grace Period In Days           |                                                                      1|
 |Auto Restart Notification Dismissal     |notConfigured                                                          |
 |User Pause Access                       |notConfigured                                                          |
 |User Windows Update Scan Access         |notConfigured                                                          |
@@ -1922,7 +1919,7 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Microsoft Update Service Allowed        |False                                                                   |
 |Drivers Excluded                        |False                                                                   |
 |Quality Updates Deferral Period In Days |                                                                       1|
-|Feature Updates Deferral Period In Days |                                                                       7|
+|Feature Updates Deferral Period In Days |                                                                      14|
 |Quality Updates Paused                  |False                                                                   |
 |Feature Updates Paused                  |False                                                                   |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
@@ -1933,7 +1930,7 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
 |Deadline For Feature Updates In Days    |                                                                       7|
 |Deadline For Quality Updates In Days    |                                                                       2|
-|Deadline Grace Period In Days           |                                                                       2|
+|Deadline Grace Period In Days           |                                                                       1|
 |Auto Restart Notification Dismissal     |notConfigured                                                           |
 |User Pause Access                       |notConfigured                                                           |
 |User Windows Update Scan Access         |notConfigured                                                           |
@@ -1957,8 +1954,8 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Automatic Update Mode                   |windowsDefault                                                          |
 |Microsoft Update Service Allowed        |False                                                                   |
 |Drivers Excluded                        |False                                                                   |
-|Quality Updates Deferral Period In Days |                                                                       6|
-|Feature Updates Deferral Period In Days |                                                                      14|
+|Quality Updates Deferral Period In Days |                                                                       5|
+|Feature Updates Deferral Period In Days |                                                                      28|
 |Quality Updates Paused                  |False                                                                   |
 |Feature Updates Paused                  |False                                                                   |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
@@ -1967,9 +1964,9 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Skip Checks Before Restart              |False                                                                   |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Deadline For Feature Updates In Days    |                                                                       7|
+|Deadline For Feature Updates In Days    |                                                                      14|
 |Deadline For Quality Updates In Days    |                                                                       2|
-|Deadline Grace Period In Days           |                                                                       2|
+|Deadline Grace Period In Days           |                                                                       1|
 |Auto Restart Notification Dismissal     |notConfigured                                                           |
 |User Pause Access                       |notConfigured                                                           |
 |User Windows Update Scan Access         |notConfigured                                                           |
@@ -1993,8 +1990,8 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Automatic Update Mode                   |windowsDefault                                                          |
 |Microsoft Update Service Allowed        |False                                                                   |
 |Drivers Excluded                        |False                                                                   |
-|Quality Updates Deferral Period In Days |                                                                       9|
-|Feature Updates Deferral Period In Days |                                                                      21|
+|Quality Updates Deferral Period In Days |                                                                       8|
+|Feature Updates Deferral Period In Days |                                                                      56|
 |Quality Updates Paused                  |False                                                                   |
 |Feature Updates Paused                  |False                                                                   |
 |Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
@@ -2003,9 +2000,9 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Skip Checks Before Restart              |False                                                                   |
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Deadline For Feature Updates In Days    |                                                                       7|
-|Deadline For Quality Updates In Days    |                                                                       5|
-|Deadline Grace Period In Days           |                                                                       2|
+|Deadline For Feature Updates In Days    |                                                                      14|
+|Deadline For Quality Updates In Days    |                                                                       2|
+|Deadline Grace Period In Days           |                                                                       1|
 |Auto Restart Notification Dismissal     |notConfigured                                                           |
 |User Pause Access                       |notConfigured                                                           |
 |User Windows Update Scan Access         |notConfigured                                                           |
@@ -2038,7 +2035,6 @@ https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-
 |Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
 |Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
 |Deadline For Feature Updates In Days    |                                                                      7|
-|Deadline Grace Period In Days           |                                                                      2|
 |Auto Restart Notification Dismissal     |notConfigured                                                          |
 |User Pause Access                       |notConfigured                                                          |
 |User Windows Update Scan Access         |notConfigured                                                          |

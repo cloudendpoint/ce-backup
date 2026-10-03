@@ -598,30 +598,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_NCSC_MS_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_BYOD_SBL_NCSC_MS_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -694,6 +670,30 @@
                     {
                          "name": "POC_MAC_D_CO_SBL_NCSC_DataProtection",
                          "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
+                    {
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceLock",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DataProtection",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
                ]
@@ -2222,6 +2222,40 @@
           }
      },
      {
+          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DataProtection",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Safari",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceManagement",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "TEST_SG_MDM_U_MSZT",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2257,40 +2291,6 @@
                     {
                          "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
                          "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_NCSC_MS_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_NCSC_MS_Safari",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_NCSC_MS_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_NCSC_MS_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_BYOD_SBL_NCSC_MS_Updates",
-                         "type": "",
                          "intent": "Include"
                     }
                ]

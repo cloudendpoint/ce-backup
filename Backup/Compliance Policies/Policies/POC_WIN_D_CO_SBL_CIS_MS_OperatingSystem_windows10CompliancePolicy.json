@@ -53,7 +53,7 @@
           },
           {
                "description": "Windows 11 26H2",
-               "lowestVersion": "10.0.26300.9550",
+               "lowestVersion": "10.0.26300.9457",
                "highestVersion": "10.0.26300.9999"
           }
      ],

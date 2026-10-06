@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 38,
+     "settingCount": 40,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -370,6 +370,20 @@
                "id": "20",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_printers_configurewindowsreadyprintdriverranking",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_printers_configurewindowsreadyprintdriverranking_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "21",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_privacy_allowinputpersonalization",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
@@ -381,7 +395,7 @@
                }
           },
           {
-               "id": "21",
+               "id": "22",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_privacy_letappsactivatewithvoiceabovelock",
@@ -395,7 +409,7 @@
                }
           },
           {
-               "id": "22",
+               "id": "23",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_search_allowindexingencryptedstoresoritems",
@@ -409,7 +423,7 @@
                }
           },
           {
-               "id": "23",
+               "id": "24",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_search_allowsearchtouselocation",
@@ -423,7 +437,7 @@
                }
           },
           {
-               "id": "24",
+               "id": "25",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_sudo_enablesudo",
@@ -437,7 +451,7 @@
                }
           },
           {
-               "id": "25",
+               "id": "26",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_enableonesettingsauditing",
@@ -451,7 +465,7 @@
                }
           },
           {
-               "id": "26",
+               "id": "27",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_systemservices_configurexboxaccessorymanagementservicestartupmode",
@@ -465,7 +479,7 @@
                }
           },
           {
-               "id": "27",
+               "id": "28",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_systemservices_configurexboxliveauthmanagerservicestartupmode",
@@ -479,7 +493,7 @@
                }
           },
           {
-               "id": "28",
+               "id": "29",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_systemservices_configurexboxlivegamesaveservicestartupmode",
@@ -493,7 +507,7 @@
                }
           },
           {
-               "id": "29",
+               "id": "30",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_systemservices_configurexboxlivenetworkingservicestartupmode",
@@ -507,7 +521,7 @@
                }
           },
           {
-               "id": "30",
+               "id": "31",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_taskscheduler_enablexboxgamesavetask",
@@ -521,7 +535,21 @@
                }
           },
           {
-               "id": "31",
+               "id": "32",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_virtualizationbasedtechnology_hypervisorenforcedcodeintegrity",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_virtualizationbasedtechnology_hypervisorenforcedcodeintegrity_2",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "33",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_virtualizationbasedtechnology_requireuefimemoryattributestable",
@@ -535,7 +563,7 @@
                }
           },
           {
-               "id": "32",
+               "id": "34",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_newsandinterests_allownewsandinterests",
@@ -549,7 +577,7 @@
                }
           },
           {
-               "id": "33",
+               "id": "35",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_windowsai_removemicrosoftcopilotapp",
@@ -563,7 +591,7 @@
                }
           },
           {
-               "id": "34",
+               "id": "36",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_windowsinkworkspace_allowwindowsinkworkspace",
@@ -577,7 +605,7 @@
                }
           },
           {
-               "id": "35",
+               "id": "37",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_windowssandbox_allowclipboardredirection",
@@ -591,7 +619,7 @@
                }
           },
           {
-               "id": "36",
+               "id": "38",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_windowssandbox_allownetworking",
@@ -605,7 +633,7 @@
                }
           },
           {
-               "id": "37",
+               "id": "39",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_wirelessdisplay_requirepinforpairing",

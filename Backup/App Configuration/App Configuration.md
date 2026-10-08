@@ -728,7 +728,7 @@ https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-vis
 |Role Scope Tag Ids  |Default<br/>                                                                                                                   |
 |Display Name        |POC_IOS_D_CO_MicrosoftCopilotAIAssistant                                                                                       |
 |Settings            |**appConfigKey:** IntuneMAMUPN <br/>**appConfigKeyType:** stringType<br/>**appConfigKeyValue:** {{UserPrincipalName}}<br/><br/>|
-|Targeted Mobile Apps|**appName:** Microsoft Copilot<br/>**type:** #microsoft.graph.iosVppApp<br/>                                                   |
+|Targeted Mobile Apps|**appName:** Copilot: Your AI Assistant<br/>**type:** #microsoft.graph.iosVppApp<br/>                                          |
 
 ### POC_IOS_D_CO_MicrosoftDefender
 #### Configuration

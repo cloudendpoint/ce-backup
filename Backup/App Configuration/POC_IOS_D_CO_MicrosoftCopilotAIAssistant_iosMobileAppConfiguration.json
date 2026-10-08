@@ -14,7 +14,7 @@
           }
      ],
      "targetedMobileApps": {
-          "appName": "Microsoft Copilot",
+          "appName": "Copilot: Your AI Assistant",
           "type": "#microsoft.graph.iosVppApp"
      },
      "assignments": [

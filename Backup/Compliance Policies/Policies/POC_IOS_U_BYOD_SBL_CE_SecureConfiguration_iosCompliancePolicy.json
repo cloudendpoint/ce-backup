@@ -3,17 +3,17 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "description": "",
+     "description": null,
      "displayName": "POC_IOS_U_BYOD_SBL_CE_SecureConfiguration",
-     "passcodeBlockSimple": true,
+     "passcodeBlockSimple": false,
      "passcodeExpirationDays": null,
-     "passcodeMinimumLength": 6,
-     "passcodeMinutesOfInactivityBeforeLock": 5,
-     "passcodeMinutesOfInactivityBeforeScreenTimeout": 0,
-     "passcodePreviousPasscodeBlockCount": 24,
+     "passcodeMinimumLength": null,
+     "passcodeMinutesOfInactivityBeforeLock": null,
+     "passcodeMinutesOfInactivityBeforeScreenTimeout": null,
+     "passcodePreviousPasscodeBlockCount": null,
      "passcodeMinimumCharacterSetCount": null,
-     "passcodeRequiredType": "numeric",
-     "passcodeRequired": true,
+     "passcodeRequiredType": "deviceDefault",
+     "passcodeRequired": false,
      "osMinimumVersion": null,
      "osMaximumVersion": null,
      "osMinimumBuildVersion": null,
@@ -37,19 +37,6 @@
                     {
                          "gracePeriodHours": 0,
                          "actionType": "pushNotification",
-                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
-                         "notificationMessageCCList": []
-                    },
-                    {
-                         "gracePeriodHours": 0,
-                         "actionType": "notification",
-                         "notificationTemplateId": "4a897ea9-678f-46fc-a239-c57e027aa3c3",
-                         "notificationMessageCCList": [],
-                         "notificationTemplateName": "POC_IOS_U_BYOD_Alert"
-                    },
-                    {
-                         "gracePeriodHours": 168,
-                         "actionType": "retire",
                          "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
                          "notificationMessageCCList": []
                     }

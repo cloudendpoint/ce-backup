@@ -215,7 +215,7 @@ Description: Users for Teams Room Systems and Phones
 |Role Scope Tag Ids                  |Default<br/>                                                                                                                                                                                                                   |
 |Device Enrollment Configuration Type|singlePlatformRestriction                                                                                                                                                                                                      |
 |Platform Type                       |windows                                                                                                                                                                                                                        |
-|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 10.0.26100.0000<br/>**osMaximumVersion:** 10.0.26200.9999<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
+|Platform Restriction                |**platformBlocked:** False<br/>**personalDeviceEnrollmentBlocked:** False<br/>**osMinimumVersion:** 10.0.26100.0000<br/>**osMaximumVersion:** 10.0.26300.9999<br/>**blockedManufacturers:** <ul></ul>**blockedSkus:** <ul></ul>|
 
 ### POC_WIN_U_BYOD_Allow_AllUsers_NotHome
 #### Assignments

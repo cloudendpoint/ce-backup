@@ -2123,50 +2123,6 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_MAC_NCSC_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Password",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_FileVault",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "ZZZ_MAC_D_BYOD_SBL_NCSC_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "SG_MDM_D_IOS_CO_ADE_EntraSharedMode",
           "groupType": "StaticMembership",
           "membershipRule": null,

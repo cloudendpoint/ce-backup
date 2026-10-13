@@ -7,7 +7,7 @@
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 50,
+     "settingCount": 49,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -260,20 +260,6 @@
           {
                "id": "14",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_donotrequirectrlaltdel",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "choiceSettingValue": {
-                         "settingValueTemplateReference": null,
-                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_donotrequirectrlaltdel_0",
-                         "children": []
-                    }
-               }
-          },
-          {
-               "id": "15",
-               "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_machineinactivitylimit_v2",
                     "settingInstanceTemplateReference": null,
@@ -286,7 +272,7 @@
                }
           },
           {
-               "id": "16",
+               "id": "15",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_smartcardremovalbehavior",
@@ -300,7 +286,7 @@
                }
           },
           {
-               "id": "17",
+               "id": "16",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkclient_digitallysigncommunicationsalways",
@@ -314,7 +300,7 @@
                }
           },
           {
-               "id": "18",
+               "id": "17",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkclient_digitallysigncommunicationsifserveragrees",
@@ -328,7 +314,7 @@
                }
           },
           {
-               "id": "19",
+               "id": "18",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkclient_sendunencryptedpasswordtothirdpartysmbservers",
@@ -342,7 +328,7 @@
                }
           },
           {
-               "id": "20",
+               "id": "19",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_digitallysigncommunicationsalways",
@@ -356,7 +342,7 @@
                }
           },
           {
-               "id": "21",
+               "id": "20",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_digitallysigncommunicationsifclientagrees",
@@ -370,7 +356,7 @@
                }
           },
           {
-               "id": "22",
+               "id": "21",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowanonymousenumerationofsamaccounts",
@@ -384,7 +370,7 @@
                }
           },
           {
-               "id": "23",
+               "id": "22",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowanonymousenumerationofsamaccountsandshares",
@@ -398,7 +384,7 @@
                }
           },
           {
-               "id": "24",
+               "id": "23",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_restrictanonymousaccesstonamedpipesandshares",
@@ -412,7 +398,7 @@
                }
           },
           {
-               "id": "25",
+               "id": "24",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_restrictclientsallowedtomakeremotecallstosam",
@@ -426,7 +412,7 @@
                }
           },
           {
-               "id": "26",
+               "id": "25",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowlocalsystemtousecomputeridentityforntlm",
@@ -440,7 +426,7 @@
                }
           },
           {
-               "id": "27",
+               "id": "26",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowpku2uauthenticationrequests",
@@ -454,7 +440,7 @@
                }
           },
           {
-               "id": "28",
+               "id": "27",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_donotstorelanmanagerhashvalueonnextpasswordchange",
@@ -468,7 +454,7 @@
                }
           },
           {
-               "id": "29",
+               "id": "28",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_lanmanagerauthenticationlevel",
@@ -482,7 +468,7 @@
                }
           },
           {
-               "id": "30",
+               "id": "29",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_minimumsessionsecurityforntlmsspbasedclients",
@@ -496,7 +482,7 @@
                }
           },
           {
-               "id": "31",
+               "id": "30",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_minimumsessionsecurityforntlmsspbasedservers",
@@ -510,7 +496,7 @@
                }
           },
           {
-               "id": "32",
+               "id": "31",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_restrictntlm_auditincomingntlmtraffic",
@@ -524,7 +510,7 @@
                }
           },
           {
-               "id": "33",
+               "id": "32",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_restrictntlm_incomingntlmtraffic",
@@ -538,7 +524,7 @@
                }
           },
           {
-               "id": "34",
+               "id": "33",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_restrictntlm_outgoingntlmtraffictoremoteservers",
@@ -552,7 +538,7 @@
                }
           },
           {
-               "id": "35",
+               "id": "34",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators",
@@ -566,7 +552,7 @@
                }
           },
           {
-               "id": "36",
+               "id": "35",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforstandardusers",
@@ -580,7 +566,7 @@
                }
           },
           {
-               "id": "37",
+               "id": "36",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_detectapplicationinstallationsandpromptforelevation",
@@ -594,7 +580,7 @@
                }
           },
           {
-               "id": "38",
+               "id": "37",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations",
@@ -608,7 +594,7 @@
                }
           },
           {
-               "id": "39",
+               "id": "38",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_runalladministratorsinadminapprovalmode",
@@ -622,7 +608,7 @@
                }
           },
           {
-               "id": "40",
+               "id": "39",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_switchtothesecuredesktopwhenpromptingforelevation",
@@ -636,7 +622,7 @@
                }
           },
           {
-               "id": "41",
+               "id": "40",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_useadminapprovalmode",
@@ -650,7 +636,7 @@
                }
           },
           {
-               "id": "42",
+               "id": "41",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_virtualizefileandregistrywritefailurestoperuserlocations",
@@ -664,7 +650,7 @@
                }
           },
           {
-               "id": "43",
+               "id": "42",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_allowmicrosoftmanageddesktopprocessing",
@@ -678,7 +664,7 @@
                }
           },
           {
-               "id": "44",
+               "id": "43",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_allowtelemetry",
@@ -692,7 +678,7 @@
                }
           },
           {
-               "id": "45",
+               "id": "44",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification",
@@ -706,7 +692,7 @@
                }
           },
           {
-               "id": "46",
+               "id": "45",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux",
@@ -720,7 +706,7 @@
                }
           },
           {
-               "id": "47",
+               "id": "46",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection",
@@ -734,7 +720,7 @@
                }
           },
           {
-               "id": "48",
+               "id": "47",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdumpcollection",
@@ -748,7 +734,7 @@
                }
           },
           {
-               "id": "49",
+               "id": "48",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics",

@@ -1,37 +1,32 @@
 {
      "creationSource": null,
-     "description": "Delivery Optimization policy based on 2Pint recommendations.\n\nhttps://2pintsoftware.com/news/details/delivery-optimization-recommendations-for-microsoft-intune",
+     "description": "Delivery Optimization to support devices downloading content from peers as a priority, adjustment may be required for foreground and background delays based on requirements.",
      "name": "POC_WIN_D_CO_DeliveryOptimization",
      "platforms": "windows10",
      "priorityMetaData": null,
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 17,
+     "settingCount": 19,
      "technologies": "mdm",
      "templateReference": {
-          "templateId": "132f1027-0325-45e0-854a-6955cd3c68c0_1",
-          "templateFamily": "deviceConfigurationPolicies",
-          "templateDisplayName": "Delivery Optimization",
-          "templateDisplayVersion": "Version 1"
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
      },
      "settings": [
           {
                "id": "0",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodownloadmode",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_doabsolutemaxcachesize",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "8e5ed494-b8fa-49cc-8b80-94e4149296fa"
-                    },
-                    "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dodownloadmode_1",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "65d2fa9e-34cb-4e96-b8f2-07b1395988e5",
-                              "useTemplateDefault": false
-                         },
-                         "children": []
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 30
                     }
                }
           },
@@ -39,17 +34,12 @@
                "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dorestrictpeerselectionby",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_doallowvpnpeercaching",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "30574884-0f28-4b51-8412-864a2eaae3d7"
-                    },
                     "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dorestrictpeerselectionby_2",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "637cd3a2-f54c-4ed6-95e7-087059169e72",
-                              "useTemplateDefault": false
-                         },
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_doallowvpnpeercaching_0",
                          "children": []
                     }
                }
@@ -57,19 +47,14 @@
           {
                "id": "2",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dogroupidsource",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodelaybackgrounddownloadfromhttp",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "1893051f-ef5d-42c9-a3ab-db8adeebb5e0"
-                    },
-                    "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dogroupidsource_0",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "67e903dc-33bd-468d-8a16-86a22b939b1f",
-                              "useTemplateDefault": false
-                         },
-                         "children": []
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 14400
                     }
                }
           },
@@ -77,37 +62,27 @@
                "id": "3",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dopercentagemaxforegroundbandwidth",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodelayforegrounddownloadfromhttp",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "adfc249d-dc28-4675-8403-b38233c5ec9b"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 90,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "06ca33b0-9020-473a-972b-836a72103e61",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 60
                     }
                }
           },
           {
                "id": "4",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dopercentagemaxbackgroundbandwidth",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodisallowcacheserverdownloadsonvpn",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "d55899a8-7407-4e4c-baf7-b2adcce7b8a2"
-                    },
-                    "simpleSettingValue": {
-                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 50,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "3b7be39d-0c88-41da-bd4c-1d392f6ff128",
-                              "useTemplateDefault": false
-                         }
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dodisallowcacheserverdownloadsonvpn_1",
+                         "children": []
                     }
                }
           },
@@ -115,17 +90,12 @@
                "id": "5",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitforegrounddownloadbandwidth",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodownloadmode",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "5f56eb60-3fe3-4ce2-9c38-26fd4ebbb7bd"
-                    },
                     "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitforegrounddownloadbandwidth_0",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "f9b8499d-b01a-4880-842b-683689b1996a",
-                              "useTemplateDefault": false
-                         },
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dodownloadmode_1",
                          "children": []
                     }
                }
@@ -134,17 +104,12 @@
                "id": "6",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitbackgrounddownloadbandwidth",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dogroupidsource",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "e4086147-de67-45f9-855c-4526d21643d6"
-                    },
                     "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitbackgrounddownloadbandwidth_0",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "94dfd4c2-c118-465d-954a-7ee0607ba4a1",
-                              "useTemplateDefault": false
-                         },
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dogroupidsource_0",
                          "children": []
                     }
                }
@@ -153,18 +118,13 @@
                "id": "7",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodelayforegrounddownloadfromhttp",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_domaxcacheage",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "cfaf7afb-397f-4d61-b4de-d2602b324bb5"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 60,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "b493b1c5-1808-44cc-93c0-e61742482f9a",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 28
                     }
                }
           },
@@ -172,18 +132,13 @@
                "id": "8",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dodelaybackgrounddownloadfromhttp",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominbackgroundqos",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "7827f3a6-8677-4034-ab18-1425fdd71e9b"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 14400,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "08205e2e-308f-4f90-8dc1-6a18eebdf5dd",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 64
                     }
                }
           },
@@ -191,18 +146,13 @@
                "id": "9",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominramallowedtopeer",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominfilesizetocache",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "c2a32641-d787-47f9-8e4a-5a85db1d1979"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 4,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "33322f13-ce45-4034-b6cd-d832cc256f29",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 1
                     }
                }
           },
@@ -210,18 +160,13 @@
                "id": "10",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominfilesizetocache",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominramallowedtopeer",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "093d4d9e-9559-4420-958b-90372f22a415"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 1,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "1d991539-28d7-442f-afe8-cdb67184a8c2",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 4
                     }
                }
           },
@@ -229,18 +174,13 @@
                "id": "11",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominbatterypercentageallowedtoupload",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_domodifycachedrive",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "f711c329-ae89-4832-ac20-f935f0473d62"
-                    },
                     "simpleSettingValue": {
-                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 40,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "dd54dd07-e387-4b6f-9796-60e79acfb48b",
-                              "useTemplateDefault": false
-                         }
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": "%SYSTEMDRIVE%"
                     }
                }
           },
@@ -248,18 +188,13 @@
                "id": "12",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_domaxcacheage",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_domonthlyuploaddatacap",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "01dbb227-ca30-4ea1-a544-ec1b03470460"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 28,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "995ec1b5-c1c5-4fa0-878d-6c5164fbf9b2",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 50
                     }
                }
           },
@@ -267,75 +202,85 @@
                "id": "13",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_doabsolutemaxcachesize",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dopercentagemaxbackgroundbandwidth",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "ba4e84ec-0d58-405f-a472-89ebe3ee727c"
-                    },
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 30,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "7ffa2150-9aef-41f9-adb6-a34f6fd66963",
-                              "useTemplateDefault": false
-                         }
+                         "settingValueTemplateReference": null,
+                         "value": 50
                     }
                }
           },
           {
                "id": "14",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_doallowvpnpeercaching",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dopercentagemaxforegroundbandwidth",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "95ee6079-1a5f-4af3-af60-35f539c0734e"
-                    },
-                    "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_deliveryoptimization_doallowvpnpeercaching_0",
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "2b2fa30a-0849-4409-84f8-cc60ec9c0485",
-                              "useTemplateDefault": false
-                         },
-                         "children": []
+                    "simpleSettingValue": {
+                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                         "settingValueTemplateReference": null,
+                         "value": 90
                     }
                }
           },
           {
                "id": "15",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dominbackgroundqos",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dorestrictpeerselectionby",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "2ed7b583-ad74-4f4f-a9fd-4153ed9df1d9"
-                    },
-                    "simpleSettingValue": {
-                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 64,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "c3d66342-4837-4335-81e6-ab2bc2fd8b62",
-                              "useTemplateDefault": false
-                         }
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dorestrictpeerselectionby_1",
+                         "children": []
                     }
                }
           },
           {
                "id": "16",
                "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_domonthlyuploaddatacap",
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dovpnkeywords",
+                    "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
-                    "settingInstanceTemplateReference": {
-                         "settingInstanceTemplateId": "6a41f406-6794-4f84-8a16-412bd0797d03"
-                    },
-                    "simpleSettingValue": {
-                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                         "value": 100,
-                         "settingValueTemplateReference": {
-                              "settingValueTemplateId": "1085a675-d4ed-4691-abe6-d89d7b86e744",
-                              "useTemplateDefault": false
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "VPN"
                          }
+                    ]
+               }
+          },
+          {
+               "id": "17",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitbackgrounddownloadbandwidth",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitbackgrounddownloadbandwidth_0",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "18",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitforegrounddownloadbandwidth",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_deliveryoptimization_dosethourstolimitforegrounddownloadbandwidth_0",
+                         "children": []
                     }
                }
           }

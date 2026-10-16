@@ -1,0 +1,23 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": null,
+     "displayName": "REF_WIN_D_CO_Windows11Accelerator_Updates",
+     "omaSettings": [
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "IgnoreWindowsUpdateGroupPolicies",
+               "description": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#ignorewindowsupdategrouppolicies",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/IgnoreWindowsUpdateGroupPolicies",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 1,
+               "isReadOnly": false
+          }
+     ]
+}

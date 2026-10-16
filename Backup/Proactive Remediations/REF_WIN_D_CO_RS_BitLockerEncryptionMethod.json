@@ -1,5 +1,5 @@
 {
-     "publisher": "Phoenix Software",
+     "publisher": "Phoenix Software Ltd",
      "displayName": "REF_WIN_D_CO_RS_BitLockerEncryptionMethod",
      "description": "Used only if existing devices need to be re-encrypted with a different encryption method e.g. AES 256.\n\nNot to be used on devices with pre-boot authentication methods other than TPM only.",
      "detectionScriptContent": "JEVycm9yQWN0aW9uUHJlZmVyZW5jZSA9ICdTaWxlbnRseUNvbnRpbnVlJw0KdHJ5IHsNCiAgICAkZGVzaXJlZEVuY3J5cHRpb25NZXRob2QgPSAnWHRzQWVzMjU2Jw0KICAgICRtb3VudFBvaW50cyA9IEdldC1CaXRMb2NrZXJWb2x1bWUgfCBXaGVyZS1PYmplY3QgeyAkXy5FbmNyeXB0aW9uTWV0aG9kIC1uZSAkZGVzaXJlZEVuY3J5cHRpb25NZXRob2QgfQ0KICAgIGlmICgkbW91bnRQb2ludHMuQ291bnQgLWVxIDApIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJBbGwgZHJpdmVzIGFyZSBhbHJlYWR5IGVuY3J5cHRlZCB3aXRoICRkZXNpcmVkRW5jcnlwdGlvbk1ldGhvZC4iDQogICAgICAgIEV4aXQgMA0KICAgIH0NCiAgICBlbHNlIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJGb3VuZCBkcml2ZXMgdGhhdCBhcmUgbm90IGVuY3J5cHRlZCB3aXRoICRkZXNpcmVkRW5jcnlwdGlvbk1ldGhvZC4iDQogICAgICAgIEV4aXQgMQ0KICAgIH0NCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1FcnJvciAiRmFpbGVkIHRvIGRlY3J5cHQgZHJpdmVzICRfIg0KICAgIEV4aXQgMjAwMA0KfQ==",

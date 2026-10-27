@@ -1084,16 +1084,146 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_WIN_CIS_MS_COPE",
+          "groupName": "SG_MDM_D_WIN_CO_AP",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.devicePhysicalIDs -any (_ -contains \"[ZTDID]\"))",
+          "assignedTo": {
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_APDP_MSZT_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
                "Scripts": [
                     {
-                         "name": "POC_WIN_D_CO_PS_SBL_CIS_MS_BitLockerTPMandPIN",
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
                          "type": "",
                          "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_APDP_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_APDP_CIS_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_APDP_NCSC_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_CPC_CO",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")",
+          "assignedTo": {
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_23H2_Anchor",
+                         "type": "",
+                         "intent": "Exclude"
                     },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_24H2_Anchor",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "XXX_WIN_D_CO_Blueprint_Settings",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_CIS_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Scripts": [
                     {
                          "name": "POC_WIN_D_CO_PS_SBL_CIS_MS_SystemServices",
                          "type": "",
@@ -1238,141 +1368,6 @@
                          "name": "POC_WIN_D_CO_RS_SBL_CIS_MS_SystemServices",
                          "type": "",
                          "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_AP",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.devicePhysicalIDs -any (_ -contains \"[ZTDID]\"))",
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_APDP_MSZT_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_APDP_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_APDP_CIS_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_APDP_NCSC_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_CPC_CO",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")",
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_23H2_Anchor",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_24H2_Anchor",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "XXX_WIN_D_CO_Blueprint_Settings",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
                     }
                ]
           }

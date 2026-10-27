@@ -555,7 +555,7 @@
                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                               "settingValueTemplateReference": null,
-                              "value": "*S-1-5-80"
+                              "value": " *S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420"
                          }
                     ]
                }

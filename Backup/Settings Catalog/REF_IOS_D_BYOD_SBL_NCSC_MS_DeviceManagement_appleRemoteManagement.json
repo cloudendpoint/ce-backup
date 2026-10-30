@@ -15,57 +15,6 @@
           "templateDisplayName": null,
           "templateDisplayVersion": null
      },
-     "settings": [
-          {
-               "id": "0",
-               "settingInstance": {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                    "settingDefinitionId": "com.apple.applicationaccess_com.apple.applicationaccess",
-                    "settingInstanceTemplateReference": null,
-                    "auditRuleInformation": null,
-                    "groupSettingCollectionValue": [
-                         {
-                              "settingValueTemplateReference": null,
-                              "children": [
-                                   {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                        "settingDefinitionId": "com.apple.applicationaccess_allowdiagnosticsubmission",
-                                        "settingInstanceTemplateReference": null,
-                                        "auditRuleInformation": null,
-                                        "choiceSettingValue": {
-                                             "settingValueTemplateReference": null,
-                                             "value": "com.apple.applicationaccess_allowdiagnosticsubmission_false",
-                                             "children": []
-                                        }
-                                   },
-                                   {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                        "settingDefinitionId": "com.apple.applicationaccess_allowuntrustedtlsprompt",
-                                        "settingInstanceTemplateReference": null,
-                                        "auditRuleInformation": null,
-                                        "choiceSettingValue": {
-                                             "settingValueTemplateReference": null,
-                                             "value": "com.apple.applicationaccess_allowuntrustedtlsprompt_false",
-                                             "children": []
-                                        }
-                                   },
-                                   {
-                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                        "settingDefinitionId": "com.apple.applicationaccess_forceencryptedbackup",
-                                        "settingInstanceTemplateReference": null,
-                                        "auditRuleInformation": null,
-                                        "choiceSettingValue": {
-                                             "settingValueTemplateReference": null,
-                                             "value": "com.apple.applicationaccess_forceencryptedbackup_true",
-                                             "children": []
-                                        }
-                                   }
-                              ]
-                         }
-                    ]
-               }
-          }
-     ],
      "assignments": [
           {
                "source": "direct",

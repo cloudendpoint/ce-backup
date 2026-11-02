@@ -17,6 +17,7 @@
           "deviceStates": null,
           "clientApplications": null,
           "agents": null,
+          "actionsAndDestinations": null,
           "applications": {
                "includeApplications": [
                     "00000003-0000-0ff1-ce00-000000000000",

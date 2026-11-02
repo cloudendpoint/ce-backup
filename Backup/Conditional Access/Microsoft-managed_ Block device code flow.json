@@ -18,6 +18,7 @@
           "devices": null,
           "clientApplications": null,
           "agents": null,
+          "actionsAndDestinations": null,
           "applications": {
                "includeApplications": [
                     "All"

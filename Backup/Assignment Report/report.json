@@ -2284,6 +2284,50 @@
           }
      },
      {
+          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_CBL_MS_Windows_11_26H2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus_Exclusions",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "TEST_SG_MDM_D_WIN_MSZT_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2327,6 +2371,20 @@
                     {
                          "name": "REF_IOS_D_BYOD_SBL_CE_SecureConfiguration",
                          "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_AP_MS_COPE",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.devicePhysicalIds -any _ -startswith \"[OrderID]:ENT_USER_MS\")",
+          "assignedTo": {
+               "Enrollment Profiles": [
+                    {
+                         "name": "WIN_D_COPE_ENT_User_MS",
+                         "type": "azureADWindowsAutopilotDeploymentProfile",
                          "intent": "Include"
                     }
                ]

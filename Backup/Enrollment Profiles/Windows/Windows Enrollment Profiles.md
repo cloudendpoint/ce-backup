@@ -201,6 +201,30 @@ Description: Used for Blueprint testing of Center for Internet Security baseline
 |Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
 |Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
 
+### WIN_D_COPE_ENT_User_MS
+Description: Used for Blueprint testing of Microsoft Security baselines\.
+#### Assignments
+|intent |           target           |filter type|filter name|
+|-------|----------------------------|-----------|-----------|
+|Include|TEST_SG_MDM_D_WIN_AP_MS_COPE|none       |           |
+
+#### Configuration
+|            setting             |                                                                                                value                                                                                                 |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                      |#microsoft.graph.azureADWindowsAutopilotDeploymentProfile                                                                                                                                             |
+|Display Name                    |WIN_D_COPE_ENT_User_MS                                                                                                                                                                                |
+|Language                        |en-GB                                                                                                                                                                                                 |
+|Locale                          |en-GB                                                                                                                                                                                                 |
+|Extract Hardware Hash           |False                                                                                                                                                                                                 |
+|Hardware Hash Extraction Enabled|False                                                                                                                                                                                                 |
+|Device Name Template            |MS-%SERIAL%                                                                                                                                                                                           |
+|Device Type                     |windowsPc                                                                                                                                                                                             |
+|Enable White Glove              |False                                                                                                                                                                                                 |
+|Preprovisioning Allowed         |False                                                                                                                                                                                                 |
+|Role Scope Tag Ids              |Default<br/>                                                                                                                                                                                          |
+|Out Of Box Experience Settings  |**hidePrivacySettings:** True<br/>**hideEULA:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**skipKeyboardSelectionPage:** True<br/>**hideEscapeLink:** True<br/>         |
+|Out Of Box Experience Setting   |**privacySettingsHidden:** True<br/>**eulaHidden:** True<br/>**userType:** standard<br/>**deviceUsageType:** singleUser<br/>**keyboardSelectionPageSkipped:** True<br/>**escapeLinkHidden:** True<br/>|
+
 ### WIN_D_COPE_ENT_User_NCSC
 Description: Used for Blueprint testing of National Cyber Security Centre baselines\.
 #### Assignments

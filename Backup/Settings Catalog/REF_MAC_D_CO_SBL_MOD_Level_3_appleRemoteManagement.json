@@ -1,0 +1,124 @@
+{
+     "creationSource": null,
+     "description": "Ministory of Defence Defence Standard 05-138, Issue 4",
+     "name": "REF_MAC_D_CO_SBL_MOD_Level_3",
+     "platforms": "macOS",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 4,
+     "technologies": "mdm,appleRemoteManagement",
+     "templateReference": {
+          "templateId": "",
+          "templateFamily": "none",
+          "templateDisplayName": null,
+          "templateDisplayVersion": null
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.mcx.filevault2_com.apple.mcx.filevault2",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx.filevault2_enable",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx.filevault2_enable_0",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx.filevault2_forceenableinsetupassistant",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx.filevault2_forceenableinsetupassistant_true",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                    "settingDefinitionId": "com.apple.mcx_com.apple.mcx-fdefilevaultoptions",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "groupSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "children": [
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx_dontallowfdedisable",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx_dontallowfdedisable_true",
+                                             "children": []
+                                        }
+                                   },
+                                   {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                        "settingDefinitionId": "com.apple.mcx_dontallowfdeenable",
+                                        "settingInstanceTemplateReference": null,
+                                        "auditRuleInformation": null,
+                                        "choiceSettingValue": {
+                                             "settingValueTemplateReference": null,
+                                             "value": "com.apple.mcx_dontallowfdeenable_false",
+                                             "children": []
+                                        }
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_adssettingforintrusiveadssites",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_adssettingforintrusiveadssites_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "com.apple.managedclient.preferences_visualbasicmacroexecutionstate",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "com.apple.managedclient.preferences_visualbasicmacroexecutionstate_1",
+                         "children": []
+                    }
+               }
+          }
+     ]
+}

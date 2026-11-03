@@ -1,0 +1,46 @@
+{
+     "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "description": "Ministory of Defence Defence Standard 05-138, Issue 4",
+     "displayName": "REF_AND_D_CO_SBL_MOD_Level_3",
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+     "securityBlockJailbrokenDevices": true,
+     "securityRequireSafetyNetAttestationBasicIntegrity": null,
+     "securityRequireSafetyNetAttestationCertifiedDevice": true,
+     "osMinimumVersion": "17.0",
+     "osMaximumVersion": null,
+     "minAndroidSecurityPatchLevel": null,
+     "passwordRequired": true,
+     "passwordMinimumLength": null,
+     "passwordMinimumLetterCharacters": null,
+     "passwordMinimumLowerCaseCharacters": null,
+     "passwordMinimumNonLetterCharacters": null,
+     "passwordMinimumNumericCharacters": null,
+     "passwordMinimumSymbolCharacters": null,
+     "passwordMinimumUpperCaseCharacters": null,
+     "passwordRequiredType": "numeric",
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordExpirationDays": null,
+     "passwordPreviousPasswordCountToBlock": null,
+     "storageRequireEncryption": true,
+     "securityRequireIntuneAppIntegrity": null,
+     "requireNoPendingSystemUpdates": null,
+     "securityRequiredAndroidSafetyNetEvaluationType": "basic",
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ]
+}

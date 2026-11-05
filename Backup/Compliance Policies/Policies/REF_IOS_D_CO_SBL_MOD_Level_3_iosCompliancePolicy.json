@@ -14,7 +14,7 @@
      "passcodeMinimumCharacterSetCount": null,
      "passcodeRequiredType": "deviceDefault",
      "passcodeRequired": true,
-     "osMinimumVersion": "26.0.0",
+     "osMinimumVersion": "26.7.2",
      "osMaximumVersion": null,
      "osMinimumBuildVersion": null,
      "osMaximumBuildVersion": null,

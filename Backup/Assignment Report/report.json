@@ -742,6 +742,57 @@
           }
      },
      {
+          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
+                    {
+                         "name": "REF_WIN_D_CO_MicrosoftEdgeBrowsingOnly",
+                         "type": "windows10CustomConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus_Exclusions",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "POC_WIN_D_CO_Updates_Autopatch - Last",
           "groupType": "StaticMembership",
           "membershipRule": null,
@@ -2299,50 +2350,6 @@
                     {
                          "name": "WIN_D_COPE_ENT_MSZT",
                          "type": "azureADWindowsAutopilotDeploymentProfile",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus_Exclusions",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
-                         "type": "",
                          "intent": "Include"
                     }
                ]

@@ -26,7 +26,7 @@
                     "simpleSettingValue": {
                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                          "settingValueTemplateReference": null,
-                         "value": "{\r\n    \"applyOnce\": false,\r\n    \"pinnedList\": [\r\n        {\r\n            \"desktopAppLink\": \"%ALLUSERSPROFILE%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Microsoft Edge.lnk\"\r\n        },\r\n        {\r\n            \"packagedAppId\": \"windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel\"\r\n        },\r\n        {\r\n            \"desktopAppLink\": \"%APPDATA%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\File Explorer.lnk\"\r\n        },\r\n        {\r\n            \"packagedAppId\": \"Microsoft.CompanyPortal_8wekyb3d8bbwe!App\"\r\n        },\r\n        {\r\n            \"packagedAppId\": \"Microsoft.WindowsTerminal_8wekyb3d8bbwe!App\"\r\n        }\r\n    ]\r\n}"
+                         "value": "{\r\n  \"applyOnce\": false,\r\n  \"pinnedList\": [\r\n    {\r\n      \"desktopAppLink\": \"%ALLUSERSPROFILE%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Microsoft Edge.lnk\"\r\n    },\r\n    {\r\n      \"packagedAppId\": \"windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel\"\r\n    },\r\n    {\r\n      \"desktopAppLink\": \"%APPDATA%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\File Explorer.lnk\"\r\n    },\r\n    {\r\n      \"packagedAppId\": \"Microsoft.CompanyPortal_8wekyb3d8bbwe!App\"\r\n    },\r\n    {\r\n      \"packagedAppId\": \"Microsoft.WindowsTerminal_8wekyb3d8bbwe!App\"\r\n    }\r\n  ]\r\n}"
                     }
                }
           }

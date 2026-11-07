@@ -83,16 +83,5 @@
           }
      ],
      "onDemandRules": [],
-     "targetedMobileApps": [],
-     "assignments": [
-          {
-               "source": "direct",
-               "intent": "apply",
-               "target": {
-                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "IOS_CO",
-                    "deviceAndAppManagementAssignmentFilterType": "include"
-               }
-          }
-     ]
+     "targetedMobileApps": []
 }

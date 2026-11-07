@@ -497,46 +497,6 @@
           }
      },
      {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "SG_MDM_D_WIN_CO_Phase_4",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))",
@@ -655,46 +615,6 @@
                     },
                     {
                          "name": "POC_MAC_D_CO_SBL_NCSC_DeviceSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring2",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
                          "type": "",
                          "intent": "Include"
                     }
@@ -826,46 +746,6 @@
                     },
                     {
                          "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1069,6 +949,39 @@
           }
      },
      {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring2",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "SG_MDM_D_CPC_CO",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")",
@@ -1124,6 +1037,72 @@
                          "name": "XXX_WIN_D_CO_Blueprint_Settings",
                          "type": "",
                          "intent": "Exclude"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
                     }
                ]
           }

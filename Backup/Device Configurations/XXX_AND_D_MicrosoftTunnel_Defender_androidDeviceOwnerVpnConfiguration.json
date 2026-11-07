@@ -39,16 +39,5 @@
                "name": "MicrosoftDefenderAppSettings",
                "value": "[{\"key\":\"vpn\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"antiphishing\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"defendertoggle\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DefenderNetworkProtectionEnable\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"DisableSignOut\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"EnableLowTouchOnboarding\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"UserUPN\",\"type\":\"string\",\"value\":\"{{UserPrincipalName}}\"},{\"key\":\"DefenderNetworkProtectionAutoRemediation\",\"type\":\"int\",\"value\":\"1\"},{\"key\":\"GlobalSecureAccess\",\"type\":\"int\",\"value\":\"0\"}]"
           }
-     ],
-     "assignments": [
-          {
-               "source": "direct",
-               "intent": "apply",
-               "target": {
-                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": "AND_CO",
-                    "deviceAndAppManagementAssignmentFilterType": "include"
-               }
-          }
      ]
 }

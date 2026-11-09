@@ -1,0 +1,85 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Deadline and active hour settings must not be configured.\nNotifications should be configured using a settings catalog policy.\n\nhttps://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update",
+     "displayName": "REF_WIN_D_CO_Updates_Windows_MaintenanceWindows",
+     "omaSettings": [
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowEnabled",
+               "description": "Enable window - ./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowEnabled",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowEnabled",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 1,
+               "isReadOnly": false
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowDurationHours",
+               "description": "Length of window - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowdurationhours",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowDurationHours",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 4,
+               "isReadOnly": false
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingString",
+               "displayName": "MaintenanceWindowStartTime",
+               "description": "Start time - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowstarttime",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowStartTime",
+               "isEncrypted": false,
+               "secretReferenceValueId": null,
+               "value": {
+                    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
+                    "value": "12:00"
+               }
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowUpdateActions",
+               "description": "1 = Download, install and restart, 2 = Install and restart, 3 = Restart only - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowupdateactions",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowUpdateActions",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 1,
+               "isReadOnly": false
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowMonthlyWeekBasedDayOfTheWeek",
+               "description": "1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday. - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowmonthlyweekbaseddayoftheweek",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowMonthlyWeekBasedDayOfTheWeek",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 4,
+               "isReadOnly": false
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowMonthlyWeekBasedOccurrenceInMonth",
+               "description": "1=first week, 2=second week, 3=third week, 4=fourth week, 5=last week - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowmonthlyweekbasedoccurrenceinmonth",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowMonthlyWeekBasedOccurrenceInMonth",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 3,
+               "isReadOnly": false
+          },
+          {
+               "@odata.type": "#microsoft.graph.omaSettingInteger",
+               "displayName": "MaintenanceWindowRepeatScheduleOption",
+               "description": "1=no repeat, 2=daily, 3=weekly, 4=monthly - https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#maintenancewindowrepeatscheduleoption",
+               "omaUri": "./Device/Vendor/MSFT/Policy/Config/Update/MaintenanceWindowRepeatScheduleOption",
+               "secretReferenceValueId": null,
+               "isEncrypted": false,
+               "value": 4,
+               "isReadOnly": false
+          }
+     ]
+}

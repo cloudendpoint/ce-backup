@@ -15,7 +15,7 @@
      "passwordRequiredType": "deviceDefault",
      "passwordPreviousPasswordBlockCount": null,
      "requireHealthyDeviceReport": false,
-     "osMinimumVersion": "10.0.26300.9711",
+     "osMinimumVersion": "10.0.26300.9974",
      "osMaximumVersion": null,
      "mobileOsMinimumVersion": null,
      "mobileOsMaximumVersion": null,

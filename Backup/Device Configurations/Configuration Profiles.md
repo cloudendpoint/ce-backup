@@ -630,37 +630,39 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 
 ### POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement                                                                                                              |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAtMaintenanceTime                                                                                                                              |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        30|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Feature Updates In Days    |                                                                                                                                                        10|
-|Deadline For Quality Updates In Days    |                                                                                                                                                        10|
-|Deadline Grace Period In Days           |                                                                                                                                                         4|
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |disabled                                                                                                                                                  |
-|User Windows Update Scan Access         |enabled                                                                                                                                                   |
-|Update Notification Level               |defaultNotifications                                                                                                                                      |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement                                                                                                              |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAtMaintenanceTime                                                                                                                              |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        30|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Feature Updates In Days                    |                                                                                                                                                        10|
+|Deadline For Quality Updates In Days                    |                                                                                                                                                        10|
+|Deadline Grace Period In Days                           |                                                                                                                                                         4|
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |disabled                                                                                                                                                  |
+|User Windows Update Scan Access                         |enabled                                                                                                                                                   |
+|Update Notification Level                               |defaultNotifications                                                                                                                                      |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_CO_Updates_Windows_Phase_1
 #### Assignments
@@ -670,34 +672,36 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
 
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_Updates_Windows_Phase_1                                                                                                                      |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        10|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |enabled                                                                                                                                                   |
-|User Windows Update Scan Access         |enabled                                                                                                                                                   |
-|Update Notification Level               |restartWarningsOnly                                                                                                                                       |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_Updates_Windows_Phase_1                                                                                                                      |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        10|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |enabled                                                                                                                                                   |
+|User Windows Update Scan Access                         |enabled                                                                                                                                                   |
+|Update Notification Level                               |restartWarningsOnly                                                                                                                                       |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_CO_Updates_Windows_Phase_2
 #### Assignments
@@ -708,37 +712,39 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Exclude|POC_WIN_D_CO_Updates_Autopatch - Parent Group|none       |           |
 
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_Updates_Windows_Phase_2                                                                                                                      |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         1|
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        10|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
-|Deadline Grace Period In Days           |                                                                                                                                                         1|
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |enabled                                                                                                                                                   |
-|User Windows Update Scan Access         |enabled                                                                                                                                                   |
-|Update Notification Level               |restartWarningsOnly                                                                                                                                       |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_Updates_Windows_Phase_2                                                                                                                      |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Deferral Period In Days                 |                                                                                                                                                         1|
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        10|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Quality Updates In Days                    |                                                                                                                                                         2|
+|Deadline Grace Period In Days                           |                                                                                                                                                         1|
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |enabled                                                                                                                                                   |
+|User Windows Update Scan Access                         |enabled                                                                                                                                                   |
+|Update Notification Level                               |restartWarningsOnly                                                                                                                                       |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_CO_Updates_Windows_Phase_3
 #### Assignments
@@ -750,37 +756,39 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_Updates_Windows_Phase_3                                                                                                                      |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         5|
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        30|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
-|Deadline Grace Period In Days           |                                                                                                                                                         1|
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |disabled                                                                                                                                                  |
-|User Windows Update Scan Access         |enabled                                                                                                                                                   |
-|Update Notification Level               |restartWarningsOnly                                                                                                                                       |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_Updates_Windows_Phase_3                                                                                                                      |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Deferral Period In Days                 |                                                                                                                                                         5|
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        30|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Quality Updates In Days                    |                                                                                                                                                         2|
+|Deadline Grace Period In Days                           |                                                                                                                                                         1|
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |disabled                                                                                                                                                  |
+|User Windows Update Scan Access                         |enabled                                                                                                                                                   |
+|Update Notification Level                               |restartWarningsOnly                                                                                                                                       |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_CO_Updates_Windows_Phase_4
 #### Assignments
@@ -792,37 +800,39 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Exclude|SG_MDM_D_WIN_CO_Phase_1                      |none       |           |
 
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_Updates_Windows_Phase_4                                                                                                                      |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                         8|
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        30|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
-|Deadline Grace Period In Days           |                                                                                                                                                         1|
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |disabled                                                                                                                                                  |
-|User Windows Update Scan Access         |disabled                                                                                                                                                  |
-|Update Notification Level               |restartWarningsOnly                                                                                                                                       |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_Updates_Windows_Phase_4                                                                                                                      |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Deferral Period In Days                 |                                                                                                                                                         8|
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        30|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Quality Updates In Days                    |                                                                                                                                                         2|
+|Deadline Grace Period In Days                           |                                                                                                                                                         1|
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |disabled                                                                                                                                                  |
+|User Windows Update Scan Access                         |disabled                                                                                                                                                  |
+|Update Notification Level                               |restartWarningsOnly                                                                                                                                       |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_CO_Updates_Windows_Phase_5
 #### Assignments
@@ -834,66 +844,70 @@ https://learn.microsoft.com/en-us/intune/intune-service/configuration/windows-he
 |Exclude|SG_MDM_D_WIN_CO_CartUpdatePolicy             |none       |           |
 
 #### Configuration
-|                setting                 |                                                                          value                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                              |
-|Display Name                            |POC_WIN_D_CO_Updates_Windows_Phase_5                                                                                                                      |
-|Delivery Optimization Mode              |userDefined                                                                                                                                               |
-|Prerelease Features                     |userDefined                                                                                                                                               |
-|Automatic Update Mode                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
-|Microsoft Update Service Allowed        |True                                                                                                                                                      |
-|Drivers Excluded                        |False                                                                                                                                                     |
-|Quality Updates Deferral Period In Days |                                                                                                                                                        11|
-|Quality Updates Paused                  |False                                                                                                                                                     |
-|Feature Updates Paused                  |False                                                                                                                                                     |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                      |
-|Business Ready Updates Only             |userDefined                                                                                                                                               |
-|Skip Checks Before Restart              |False                                                                                                                                                     |
-|Feature Updates Rollback Window In Days |                                                                                                                                                        30|
-|Quality Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Feature Updates Will Be Rolled Back     |False                                                                                                                                                     |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                      |
-|Deadline For Quality Updates In Days    |                                                                                                                                                         2|
-|Deadline Grace Period In Days           |                                                                                                                                                         1|
-|Postpone Reboot Until After Deadline    |False                                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                             |
-|User Pause Access                       |disabled                                                                                                                                                  |
-|User Windows Update Scan Access         |disabled                                                                                                                                                  |
-|Update Notification Level               |restartWarningsOnly                                                                                                                                       |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                     |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                           |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                    |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                              |
+|Display Name                                            |POC_WIN_D_CO_Updates_Windows_Phase_5                                                                                                                      |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                               |
+|Prerelease Features                                     |userDefined                                                                                                                                               |
+|Automatic Update Mode                                   |autoInstallAndRebootAtMaintenanceTime                                                                                                                     |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                      |
+|Drivers Excluded                                        |False                                                                                                                                                     |
+|Quality Updates Deferral Period In Days                 |                                                                                                                                                        11|
+|Quality Updates Paused                                  |False                                                                                                                                                     |
+|Feature Updates Paused                                  |False                                                                                                                                                     |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                      |
+|Business Ready Updates Only                             |userDefined                                                                                                                                               |
+|Skip Checks Before Restart                              |False                                                                                                                                                     |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                        30|
+|Quality Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Feature Updates Will Be Rolled Back                     |False                                                                                                                                                     |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                      |
+|Deadline For Quality Updates In Days                    |                                                                                                                                                         2|
+|Deadline Grace Period In Days                           |                                                                                                                                                         1|
+|Postpone Reboot Until After Deadline                    |False                                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                             |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                             |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                             |
+|User Pause Access                                       |disabled                                                                                                                                                  |
+|User Windows Update Scan Access                         |disabled                                                                                                                                                  |
+|Update Notification Level                               |restartWarningsOnly                                                                                                                                       |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                     |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateActiveHoursInstall<br/>**activeHoursStart:** 08:00:00.0000000<br/>**activeHoursEnd:** 17:00:00.0000000<br/>|
 
 ### POC_WIN_D_COBO_Updates_Windows_Kiosk
 #### Configuration
-|                setting                 |                                                                          value                                                                          |
-|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                   |
-|Role Scope Tag Ids                      |Default<br/>                                                                                                                                             |
-|Display Name                            |POC_WIN_D_COBO_Updates_Windows_Kiosk                                                                                                                     |
-|Delivery Optimization Mode              |userDefined                                                                                                                                              |
-|Prerelease Features                     |userDefined                                                                                                                                              |
-|Automatic Update Mode                   |autoInstallAndRebootAtScheduledTime                                                                                                                      |
-|Microsoft Update Service Allowed        |True                                                                                                                                                     |
-|Drivers Excluded                        |False                                                                                                                                                    |
-|Quality Updates Paused                  |False                                                                                                                                                    |
-|Feature Updates Paused                  |False                                                                                                                                                    |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                     |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                                                                                                     |
-|Business Ready Updates Only             |userDefined                                                                                                                                              |
-|Skip Checks Before Restart              |False                                                                                                                                                    |
-|Update Weeks                            |everyWeek                                                                                                                                                |
-|Feature Updates Rollback Window In Days |                                                                                                                                                       30|
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                     |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                                                                                                     |
-|Auto Restart Notification Dismissal     |notConfigured                                                                                                                                            |
-|User Pause Access                       |disabled                                                                                                                                                 |
-|User Windows Update Scan Access         |disabled                                                                                                                                                 |
-|Update Notification Level               |disableAllNotifications                                                                                                                                  |
-|Allow Windows11 Upgrade                 |False                                                                                                                                                    |
-|Installation Schedule                   |**@odata.type:** #microsoft.graph.windowsUpdateScheduledInstall<br/>**scheduledInstallDay:** everyday<br/>**scheduledInstallTime:** 03:00:00.0000000<br/>|
+|                        setting                         |                                                                          value                                                                          |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                                                                                                   |
+|Role Scope Tag Ids                                      |Default<br/>                                                                                                                                             |
+|Display Name                                            |POC_WIN_D_COBO_Updates_Windows_Kiosk                                                                                                                     |
+|Delivery Optimization Mode                              |userDefined                                                                                                                                              |
+|Prerelease Features                                     |userDefined                                                                                                                                              |
+|Automatic Update Mode                                   |autoInstallAndRebootAtScheduledTime                                                                                                                      |
+|Microsoft Update Service Allowed                        |True                                                                                                                                                     |
+|Drivers Excluded                                        |False                                                                                                                                                    |
+|Quality Updates Paused                                  |False                                                                                                                                                    |
+|Feature Updates Paused                                  |False                                                                                                                                                    |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                     |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                                                                                                     |
+|Business Ready Updates Only                             |userDefined                                                                                                                                              |
+|Skip Checks Before Restart                              |False                                                                                                                                                    |
+|Update Weeks                                            |everyWeek                                                                                                                                                |
+|Feature Updates Rollback Window In Days                 |                                                                                                                                                       30|
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                     |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                                                                                                     |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                                                                                                            |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                                                                                                            |
+|Auto Restart Notification Dismissal                     |notConfigured                                                                                                                                            |
+|User Pause Access                                       |disabled                                                                                                                                                 |
+|User Windows Update Scan Access                         |disabled                                                                                                                                                 |
+|Update Notification Level                               |disableAllNotifications                                                                                                                                  |
+|Allow Windows11 Upgrade                                 |False                                                                                                                                                    |
+|Installation Schedule                                   |**@odata.type:** #microsoft.graph.windowsUpdateScheduledInstall<br/>**scheduledInstallDay:** everyday<br/>**scheduledInstallTime:** 03:00:00.0000000<br/>|
 
 ### REF_ADA_D_CO_Example
 #### Configuration
@@ -1890,34 +1904,36 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Include|POC_WIN_D_CO_Updates_Autopatch - Last|none       |           |
 
 #### Configuration
-|                setting                 |                                 value                                 |
-|----------------------------------------|-----------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                 |
-|Role Scope Tag Ids                      |Default<br/>                                                           |
-|Display Name                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last|
-|Delivery Optimization Mode              |userDefined                                                            |
-|Prerelease Features                     |userDefined                                                            |
-|Automatic Update Mode                   |windowsDefault                                                         |
-|Microsoft Update Service Allowed        |False                                                                  |
-|Drivers Excluded                        |False                                                                  |
-|Quality Updates Deferral Period In Days |                                                                     11|
-|Feature Updates Deferral Period In Days |                                                                     84|
-|Quality Updates Paused                  |False                                                                  |
-|Feature Updates Paused                  |False                                                                  |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                   |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                   |
-|Business Ready Updates Only             |userDefined                                                            |
-|Skip Checks Before Restart              |False                                                                  |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
-|Deadline For Feature Updates In Days    |                                                                     28|
-|Deadline For Quality Updates In Days    |                                                                      2|
-|Deadline Grace Period In Days           |                                                                      1|
-|Auto Restart Notification Dismissal     |notConfigured                                                          |
-|User Pause Access                       |notConfigured                                                          |
-|User Windows Update Scan Access         |notConfigured                                                          |
-|Update Notification Level               |defaultNotifications                                                   |
-|Allow Windows11 Upgrade                 |False                                                                  |
+|                        setting                         |                                 value                                 |
+|--------------------------------------------------------|-----------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                 |
+|Role Scope Tag Ids                                      |Default<br/>                                                           |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last|
+|Delivery Optimization Mode                              |userDefined                                                            |
+|Prerelease Features                                     |userDefined                                                            |
+|Automatic Update Mode                                   |windowsDefault                                                         |
+|Microsoft Update Service Allowed                        |False                                                                  |
+|Drivers Excluded                                        |False                                                                  |
+|Quality Updates Deferral Period In Days                 |                                                                     11|
+|Feature Updates Deferral Period In Days                 |                                                                     84|
+|Quality Updates Paused                                  |False                                                                  |
+|Feature Updates Paused                                  |False                                                                  |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                   |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                   |
+|Business Ready Updates Only                             |userDefined                                                            |
+|Skip Checks Before Restart                              |False                                                                  |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                   |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                   |
+|Deadline For Feature Updates In Days                    |                                                                     28|
+|Deadline For Quality Updates In Days                    |                                                                      2|
+|Deadline Grace Period In Days                           |                                                                      1|
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                          |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                          |
+|Auto Restart Notification Dismissal                     |notConfigured                                                          |
+|User Pause Access                                       |notConfigured                                                          |
+|User Windows Update Scan Access                         |notConfigured                                                          |
+|Update Notification Level                               |defaultNotifications                                                   |
+|Allow Windows11 Upgrade                                 |False                                                                  |
 
 ### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1
 #### Assignments
@@ -1926,34 +1942,36 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Include|POC_WIN_D_CO_Updates_Autopatch - Ring1|none       |           |
 
 #### Configuration
-|                setting                 |                                 value                                  |
-|----------------------------------------|------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
-|Role Scope Tag Ids                      |Default<br/>                                                            |
-|Display Name                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1|
-|Delivery Optimization Mode              |userDefined                                                             |
-|Prerelease Features                     |userDefined                                                             |
-|Automatic Update Mode                   |windowsDefault                                                          |
-|Microsoft Update Service Allowed        |False                                                                   |
-|Drivers Excluded                        |False                                                                   |
-|Quality Updates Deferral Period In Days |                                                                       1|
-|Feature Updates Deferral Period In Days |                                                                      14|
-|Quality Updates Paused                  |False                                                                   |
-|Feature Updates Paused                  |False                                                                   |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Business Ready Updates Only             |userDefined                                                             |
-|Skip Checks Before Restart              |False                                                                   |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Deadline For Feature Updates In Days    |                                                                       7|
-|Deadline For Quality Updates In Days    |                                                                       2|
-|Deadline Grace Period In Days           |                                                                       1|
-|Auto Restart Notification Dismissal     |notConfigured                                                           |
-|User Pause Access                       |notConfigured                                                           |
-|User Windows Update Scan Access         |notConfigured                                                           |
-|Update Notification Level               |defaultNotifications                                                    |
-|Allow Windows11 Upgrade                 |False                                                                   |
+|                        setting                         |                                 value                                  |
+|--------------------------------------------------------|------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
+|Role Scope Tag Ids                                      |Default<br/>                                                            |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1|
+|Delivery Optimization Mode                              |userDefined                                                             |
+|Prerelease Features                                     |userDefined                                                             |
+|Automatic Update Mode                                   |windowsDefault                                                          |
+|Microsoft Update Service Allowed                        |False                                                                   |
+|Drivers Excluded                                        |False                                                                   |
+|Quality Updates Deferral Period In Days                 |                                                                       1|
+|Feature Updates Deferral Period In Days                 |                                                                      14|
+|Quality Updates Paused                                  |False                                                                   |
+|Feature Updates Paused                                  |False                                                                   |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Business Ready Updates Only                             |userDefined                                                             |
+|Skip Checks Before Restart                              |False                                                                   |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Deadline For Feature Updates In Days                    |                                                                       7|
+|Deadline For Quality Updates In Days                    |                                                                       2|
+|Deadline Grace Period In Days                           |                                                                       1|
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                           |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                           |
+|Auto Restart Notification Dismissal                     |notConfigured                                                           |
+|User Pause Access                                       |notConfigured                                                           |
+|User Windows Update Scan Access                         |notConfigured                                                           |
+|Update Notification Level                               |defaultNotifications                                                    |
+|Allow Windows11 Upgrade                                 |False                                                                   |
 
 ### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2
 #### Assignments
@@ -1962,34 +1980,36 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Include|POC_WIN_D_CO_Updates_Autopatch - Ring2|none       |           |
 
 #### Configuration
-|                setting                 |                                 value                                  |
-|----------------------------------------|------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
-|Role Scope Tag Ids                      |Default<br/>                                                            |
-|Display Name                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2|
-|Delivery Optimization Mode              |userDefined                                                             |
-|Prerelease Features                     |userDefined                                                             |
-|Automatic Update Mode                   |windowsDefault                                                          |
-|Microsoft Update Service Allowed        |False                                                                   |
-|Drivers Excluded                        |False                                                                   |
-|Quality Updates Deferral Period In Days |                                                                       5|
-|Feature Updates Deferral Period In Days |                                                                      28|
-|Quality Updates Paused                  |False                                                                   |
-|Feature Updates Paused                  |False                                                                   |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Business Ready Updates Only             |userDefined                                                             |
-|Skip Checks Before Restart              |False                                                                   |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Deadline For Feature Updates In Days    |                                                                      14|
-|Deadline For Quality Updates In Days    |                                                                       2|
-|Deadline Grace Period In Days           |                                                                       1|
-|Auto Restart Notification Dismissal     |notConfigured                                                           |
-|User Pause Access                       |notConfigured                                                           |
-|User Windows Update Scan Access         |notConfigured                                                           |
-|Update Notification Level               |defaultNotifications                                                    |
-|Allow Windows11 Upgrade                 |False                                                                   |
+|                        setting                         |                                 value                                  |
+|--------------------------------------------------------|------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
+|Role Scope Tag Ids                                      |Default<br/>                                                            |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2|
+|Delivery Optimization Mode                              |userDefined                                                             |
+|Prerelease Features                                     |userDefined                                                             |
+|Automatic Update Mode                                   |windowsDefault                                                          |
+|Microsoft Update Service Allowed                        |False                                                                   |
+|Drivers Excluded                                        |False                                                                   |
+|Quality Updates Deferral Period In Days                 |                                                                       5|
+|Feature Updates Deferral Period In Days                 |                                                                      28|
+|Quality Updates Paused                                  |False                                                                   |
+|Feature Updates Paused                                  |False                                                                   |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Business Ready Updates Only                             |userDefined                                                             |
+|Skip Checks Before Restart                              |False                                                                   |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Deadline For Feature Updates In Days                    |                                                                      14|
+|Deadline For Quality Updates In Days                    |                                                                       2|
+|Deadline Grace Period In Days                           |                                                                       1|
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                           |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                           |
+|Auto Restart Notification Dismissal                     |notConfigured                                                           |
+|User Pause Access                                       |notConfigured                                                           |
+|User Windows Update Scan Access                         |notConfigured                                                           |
+|Update Notification Level                               |defaultNotifications                                                    |
+|Allow Windows11 Upgrade                                 |False                                                                   |
 
 ### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3
 #### Assignments
@@ -1998,34 +2018,36 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Include|POC_WIN_D_CO_Updates_Autopatch - Ring3|none       |           |
 
 #### Configuration
-|                setting                 |                                 value                                  |
-|----------------------------------------|------------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
-|Role Scope Tag Ids                      |Default<br/>                                                            |
-|Display Name                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3|
-|Delivery Optimization Mode              |userDefined                                                             |
-|Prerelease Features                     |userDefined                                                             |
-|Automatic Update Mode                   |windowsDefault                                                          |
-|Microsoft Update Service Allowed        |False                                                                   |
-|Drivers Excluded                        |False                                                                   |
-|Quality Updates Deferral Period In Days |                                                                       8|
-|Feature Updates Deferral Period In Days |                                                                      56|
-|Quality Updates Paused                  |False                                                                   |
-|Feature Updates Paused                  |False                                                                   |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                    |
-|Business Ready Updates Only             |userDefined                                                             |
-|Skip Checks Before Restart              |False                                                                   |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                    |
-|Deadline For Feature Updates In Days    |                                                                      14|
-|Deadline For Quality Updates In Days    |                                                                       2|
-|Deadline Grace Period In Days           |                                                                       1|
-|Auto Restart Notification Dismissal     |notConfigured                                                           |
-|User Pause Access                       |notConfigured                                                           |
-|User Windows Update Scan Access         |notConfigured                                                           |
-|Update Notification Level               |defaultNotifications                                                    |
-|Allow Windows11 Upgrade                 |False                                                                   |
+|                        setting                         |                                 value                                  |
+|--------------------------------------------------------|------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
+|Role Scope Tag Ids                                      |Default<br/>                                                            |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3|
+|Delivery Optimization Mode                              |userDefined                                                             |
+|Prerelease Features                                     |userDefined                                                             |
+|Automatic Update Mode                                   |windowsDefault                                                          |
+|Microsoft Update Service Allowed                        |False                                                                   |
+|Drivers Excluded                                        |False                                                                   |
+|Quality Updates Deferral Period In Days                 |                                                                       8|
+|Feature Updates Deferral Period In Days                 |                                                                      56|
+|Quality Updates Paused                                  |False                                                                   |
+|Feature Updates Paused                                  |False                                                                   |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Business Ready Updates Only                             |userDefined                                                             |
+|Skip Checks Before Restart                              |False                                                                   |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Deadline For Feature Updates In Days                    |                                                                      14|
+|Deadline For Quality Updates In Days                    |                                                                       2|
+|Deadline Grace Period In Days                           |                                                                       1|
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                           |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                           |
+|Auto Restart Notification Dismissal                     |notConfigured                                                           |
+|User Pause Access                                       |notConfigured                                                           |
+|User Windows Update Scan Access                         |notConfigured                                                           |
+|Update Notification Level                               |defaultNotifications                                                    |
+|Allow Windows11 Upgrade                                 |False                                                                   |
 
 ### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test
 #### Assignments
@@ -2034,30 +2056,32 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Include|POC_WIN_D_CO_Updates_Autopatch - Test|none       |           |
 
 #### Configuration
-|                setting                 |                                 value                                 |
-|----------------------------------------|-----------------------------------------------------------------------|
-|Odata type                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                 |
-|Role Scope Tag Ids                      |Default<br/>                                                           |
-|Display Name                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test|
-|Delivery Optimization Mode              |userDefined                                                            |
-|Prerelease Features                     |userDefined                                                            |
-|Automatic Update Mode                   |windowsDefault                                                         |
-|Microsoft Update Service Allowed        |False                                                                  |
-|Drivers Excluded                        |False                                                                  |
-|Quality Updates Paused                  |False                                                                  |
-|Feature Updates Paused                  |False                                                                  |
-|Quality Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                   |
-|Feature Updates Pause Expiry Date Time  |0001-01-01T00:00:00Z                                                   |
-|Business Ready Updates Only             |userDefined                                                            |
-|Skip Checks Before Restart              |False                                                                  |
-|Quality Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
-|Feature Updates Rollback Start Date Time|0001-01-01T00:00:00Z                                                   |
-|Deadline For Feature Updates In Days    |                                                                      7|
-|Auto Restart Notification Dismissal     |notConfigured                                                          |
-|User Pause Access                       |notConfigured                                                          |
-|User Windows Update Scan Access         |notConfigured                                                          |
-|Update Notification Level               |defaultNotifications                                                   |
-|Allow Windows11 Upgrade                 |False                                                                  |
+|                        setting                         |                                 value                                 |
+|--------------------------------------------------------|-----------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                 |
+|Role Scope Tag Ids                                      |Default<br/>                                                           |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test|
+|Delivery Optimization Mode                              |userDefined                                                            |
+|Prerelease Features                                     |userDefined                                                            |
+|Automatic Update Mode                                   |windowsDefault                                                         |
+|Microsoft Update Service Allowed                        |False                                                                  |
+|Drivers Excluded                                        |False                                                                  |
+|Quality Updates Paused                                  |False                                                                  |
+|Feature Updates Paused                                  |False                                                                  |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                   |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                   |
+|Business Ready Updates Only                             |userDefined                                                            |
+|Skip Checks Before Restart                              |False                                                                  |
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                   |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                   |
+|Deadline For Feature Updates In Days                    |                                                                      7|
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                          |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                          |
+|Auto Restart Notification Dismissal                     |notConfigured                                                          |
+|User Pause Access                                       |notConfigured                                                          |
+|User Windows Update Scan Access                         |notConfigured                                                          |
+|Update Notification Level                               |defaultNotifications                                                   |
+|Allow Windows11 Upgrade                                 |False                                                                  |
 
 ### XXX_AND_D_CO_CERT_Trusted_IntuneBlueprintIssuingCA
 #### Assignments

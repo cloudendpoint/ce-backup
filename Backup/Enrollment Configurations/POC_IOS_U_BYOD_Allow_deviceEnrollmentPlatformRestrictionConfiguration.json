@@ -11,6 +11,7 @@
      "platformRestriction": {
           "platformBlocked": false,
           "personalDeviceEnrollmentBlocked": false,
+          "isServerEnrollmentBlocked": true,
           "osMinimumVersion": "18.0.0",
           "osMaximumVersion": "27.99.99",
           "blockedManufacturers": [],

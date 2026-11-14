@@ -1,289 +1,116 @@
 [
      {
-          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_COPE",
+          "groupName": "TEST_SG_MDM_U_CE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "App Protection": [
                     {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_Updates",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "name": "POC_AND_U_UMNGD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DataProtection",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "name": "POC_IOS_U_UMNGD_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceLock",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_Phase_5",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"9\") or (device.deviceId -startsWith \"a\") or (device.deviceId -startsWith \"b\") or (device.deviceId -startsWith \"c\") or (device.deviceId -startsWith \"d\") or (device.deviceId -startsWith \"e\") or (device.deviceId -startsWith \"f\"))",
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Parent Group",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_1",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_Phase_2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")",
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_CartUpdatePolicy",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "REF_WIN_D_CO_WindowsUpdate_SupportforCarts",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DataProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceLock",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_AND_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     }
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_DeviceUnlocking",
-                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android17",
-                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android16",
-                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "POC_AND_D_CO_SBL_CE_MalwareProtection",
+                         "name": "WIN_D_COPE_ENT_CE",
                          "type": "",
                          "intent": "Include"
                     }
@@ -291,94 +118,97 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_MAC_CIS_COPE",
+          "groupName": "TEST_SG_MDM_U_CIS",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "App Protection": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_CIS_SystemSecurity",
-                         "type": "macOSCustomConfiguration",
+                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
+                    }
+               ],
+               "Enrollment Configurations": [
+                    {
+                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_Allow",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "WIN_D_COPE_ENT_CIS",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_U_NCSC",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "App Protection": [
+                    {
+                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
+                    }
+               ],
+               "Enrollment Configurations": [
+                    {
+                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_Allow",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
                          "intent": "Include"
                     }
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_CIS_Firewall",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_Gatekeeper",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_SystemIntegrity",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_OperatingSystem",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_MicrosoftDefenderAntivirus",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Scripts": [
-                    {
-                         "name": "POC_MAC_D_CO_SS_SBL_CIS_SystemSecurity",
-                         "type": "",
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_CIS_EndpointSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_DeviceLogon",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_Password",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_AppleIntelligence",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_SoftwareUpdate",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_DeviceSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CIS_MicrosoftEdge",
+                         "name": "WIN_D_COPE_ENT_NCSC",
                          "type": "",
                          "intent": "Include"
                     }
@@ -386,150 +216,40 @@
           }
      },
      {
-          "groupName": "SG_MDM_D_WIN_CO_Phase_3",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"1\") or (device.deviceId -startsWith \"2\") or (device.deviceId -startsWith \"3\"))",
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_Phase_1",
+          "groupName": "TEST_SG_MDM_U_MSZT",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "App Protection": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
-                         "type": "windowsUpdateForBusinessConfiguration",
+                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
-                         "type": "",
+                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_1",
-                         "type": "",
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
-                         "type": "",
-                         "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
+                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "name": "POC_MOB_U_BOTH_MSZT_QuietTime",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "name": "WIN_D_COPE_ENT_MSZT",
                          "type": "",
                          "intent": "Include"
                     }
@@ -537,124 +257,144 @@
           }
      },
      {
-          "groupName": "SG_MDM_D_WIN_CO_Phase_4",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))",
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
+          "groupName": "TEST_SG_MDM_U_CE+",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "App Protection": [
                     {
-                         "name": "REF_AND_D_BYOD_SBL_CE_MalwareProtection",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
                          "intent": "Include"
                     },
                     {
-                         "name": "REF_AND_D_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "androidManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
+                         "type": "iosManagedAppProtection",
                          "intent": "Include"
                     }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
+               ],
+               "Enrollment Configurations": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_GoogleChrome",
-                         "type": "macOSCustomConfiguration",
+                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_Allow",
+                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
                          "intent": "Include"
                     }
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_FileVault",
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_OperatingSystem",
+                         "name": "POC_AND_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "androidWorkProfileCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_Gatekeeper",
+                         "name": "POC_IOS_U_BYOD_SBL_CE_DeviceUnlocking",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_SystemIntegrity",
+                         "name": "POC_AND_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "androidWorkProfileCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_Firewall",
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_U_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_U_BYOD_SBL_CE_DeviceUnlocking",
+                         "type": "androidWorkProfileCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
                          "type": "macOSCompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_FileVault",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_Password",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceSecurity",
+                         "name": "WIN_D_COPE_ENT_CE",
                          "type": "",
                          "intent": "Include"
                     }
@@ -662,39 +402,52 @@
           }
      },
      {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring2",
+          "groupName": "TEST_SG_MDM_D_WIN_CE_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "Enrollment Profiles": [
                     {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "windowsUpdateForBusinessConfiguration",
+                         "name": "WIN_D_COPE_ENT_User_CE",
+                         "type": "azureADWindowsAutopilotDeploymentProfile",
                          "intent": "Include"
                     }
                ],
-               "Driver Updates": [
+               "Compliance Policies": [
                     {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
-                         "type": "",
+                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
+                    },
                     {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
+                         "name": "POC_WIN_D_CO_SBL_CE_Firewalls",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "name": "DEV_WIN_D_CO_SBL_CE_SecureConfiguration",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
                          "type": "",
                          "intent": "Include"
                     }
@@ -702,212 +455,147 @@
           }
      },
      {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring1",
+          "groupName": "TEST_SG_MDM_D_WIN_NCSC_MS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Device Configurations": [
+               "Enrollment Profiles": [
                     {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
-                         "type": "windowsUpdateForBusinessConfiguration",
+                         "name": "WIN_D_COPE_ENT_User_NCSC",
+                         "type": "azureADWindowsAutopilotDeploymentProfile",
                          "intent": "Include"
                     }
                ],
-               "Driver Updates": [
+               "Compliance Policies": [
                     {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
-                         "type": "",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_OperatingSystem",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
+                    },
                     {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Firewall",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Encryption",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceHealth",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Antivirus",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsHello",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "REF_WIN_D_CO_MicrosoftEdgeBrowsingOnly",
-                         "type": "windows10CustomConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceGuard",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus_Exclusions",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus_Exclusions",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
+                         "name": "POC_WIN_D_COPE_GoogleChrome_SSO",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftEdge",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_GoogleChrome",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_SmartScreen",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Auditing",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Last",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Firewall",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_UserRights",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_BitLocker",
                          "type": "",
                          "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Devices All",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Proactive Remediations": [
+                    },
                     {
-                         "name": "POC_WIN_D_CO_RS_WindowsAutopatchConflicts",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsLAPS",
                          "type": "",
                          "intent": "Include"
-                    }
-               ],
-               "Scripts": [
+                    },
                     {
-                         "name": "Modern Workplace - Autopatch Client Setup v2",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceControl",
                          "type": "",
                          "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
+                    },
                     {
-                         "name": "POC_WIN_D_CO_WindowsAutopatchSupport",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_NetworkSecurity",
                          "type": "",
                          "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_ACFB_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Proactive Remediations": [
+                    },
                     {
-                         "name": "REF_WIN_D_CO_RS_AppControlEventLogSize",
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsSecurityExperience",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceGuard_Autopilot",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Printing",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_InternetExplorer",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_AttackSurfaceReduction",
                          "type": "",
                          "intent": "Include"
                     }
@@ -919,6 +607,13 @@
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
+               "Enrollment Profiles": [
+                    {
+                         "name": "WIN_D_COPE_ENT_User_CIS",
+                         "type": "azureADWindowsAutopilotDeploymentProfile",
+                         "intent": "Include"
+                    }
+               ],
                "Proactive Remediations": [
                     {
                          "name": "POC_WIN_D_CO_RS_SBL_CIS_MS_SystemServices",
@@ -928,17 +623,12 @@
                ],
                "Compliance Policies": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_Encryption",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_Firewall",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_SBL_CIS_MS_Antivirus",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_Encryption",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     },
@@ -946,18 +636,48 @@
                          "name": "POC_WIN_D_CO_SBL_CIS_MS_OperatingSystem",
                          "type": "windows10CompliancePolicy",
                          "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_Firewall",
+                         "type": "windows10CompliancePolicy",
+                         "intent": "Include"
                     }
                ],
-               "Scripts": [
+               "Group Policy Configurations": [
                     {
-                         "name": "POC_WIN_D_CO_PS_SBL_CIS_MS_SystemServices",
+                         "name": "REF_WIN_D_CO_SBL_CIS_MS_VisualStudioCode",
                          "type": "",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_SmartScreen",
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_WindowsLAPS",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_NetworkSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_SystemSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_BitLocker",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_DeviceSecurity",
                          "type": "",
                          "intent": "Include"
                     },
@@ -972,12 +692,7 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_UserRights",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_Antivirus",
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_AttackSurfaceReduction",
                          "type": "",
                          "intent": "Include"
                     },
@@ -987,7 +702,32 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_UserRights",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_WIN_D_CO_SBL_CIS_MS_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_WindowsConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_InternetExplorer",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_SmartScreen",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_CIS_MS_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     },
@@ -1002,66 +742,49 @@
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_SBL_CIS_MS_Auditing",
                          "type": "",
                          "intent": "Include"
-                    },
+                    }
+               ],
+               "Scripts": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_InternetExplorer",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_MicrosoftDefender_AttackSurfaceReduction",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_WindowsConfiguration",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_NetworkSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_DeviceSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_WindowsLAPS",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_SystemSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CIS_MS_BitLocker",
+                         "name": "POC_WIN_D_CO_PS_SBL_CIS_MS_SystemServices",
                          "type": "",
                          "intent": "Include"
                     }
-               ],
-               "Group Policy Configurations": [
-                    {
-                         "name": "REF_WIN_D_CO_SBL_CIS_MS_VisualStudioCode",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_MSZT_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
                "Enrollment Profiles": [
                     {
-                         "name": "WIN_D_COPE_ENT_User_CIS",
+                         "name": "WIN_D_COPE_ENT_MSZT",
+                         "type": "azureADWindowsAutopilotDeploymentProfile",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MSZT_OrganizationalMessages",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_AP_MS_COPE",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.devicePhysicalIds -any _ -startswith \"[OrderID]:ENT_USER_MS\")",
+          "assignedTo": {
+               "Enrollment Profiles": [
+                    {
+                         "name": "WIN_D_COPE_ENT_User_MS",
                          "type": "azureADWindowsAutopilotDeploymentProfile",
                          "intent": "Include"
                     }
@@ -1075,7 +798,7 @@
           "assignedTo": {
                "Driver Updates": [
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
                          "type": "",
                          "intent": "Exclude"
                     },
@@ -1085,12 +808,7 @@
                          "intent": "Exclude"
                     },
                     {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
                          "type": "",
                          "intent": "Exclude"
                     },
@@ -1098,11 +816,9 @@
                          "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
                          "type": "",
                          "intent": "Exclude"
-                    }
-               ],
-               "Scripts": [
+                    },
                     {
-                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
                          "type": "",
                          "intent": "Exclude"
                     }
@@ -1124,6 +840,1074 @@
                          "name": "XXX_WIN_D_CO_Blueprint_Settings",
                          "type": "",
                          "intent": "Exclude"
+                    }
+               ],
+               "Scripts": [
+                    {
+                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_Phase_2",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceId -startsWith \"0\")",
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_Phase_1",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_1",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Parent Group",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_2",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_1",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_1",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_2",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_2",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_1",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice",
+                         "type": "",
+                         "intent": "Exclude"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring2",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Last",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Last",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_Phase_3",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"1\") or (device.deviceId -startsWith \"2\") or (device.deviceId -startsWith \"3\"))",
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring3",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring1",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring1",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Test",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_Phase_5",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"9\") or (device.deviceId -startsWith \"a\") or (device.deviceId -startsWith \"b\") or (device.deviceId -startsWith \"c\") or (device.deviceId -startsWith \"d\") or (device.deviceId -startsWith \"e\") or (device.deviceId -startsWith \"f\"))",
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_5",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_5",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_Phase_4",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and ((device.deviceId -startsWith \"4\") or (device.deviceId -startsWith \"5\") or (device.deviceId -startsWith \"6\") or (device.deviceId -startsWith \"7\") or (device.deviceId -startsWith \"8\"))",
+          "assignedTo": {
+               "Driver Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Drivers_Phase_4",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_MicrosoftOffice_Phase_4",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Windows Autopatch - Devices All",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Proactive Remediations": [
+                    {
+                         "name": "POC_WIN_D_CO_RS_WindowsAutopatchConflicts",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_WindowsAutopatchSupport",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Scripts": [
+                    {
+                         "name": "Modern Workplace - Autopatch Client Setup v2",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_ACFB_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Proactive Remediations": [
+                    {
+                         "name": "REF_WIN_D_CO_RS_AppControlEventLogSize",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_11_25H2",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26200\")",
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_25H2_Anchor",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_11_23H2",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.22631\")",
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_23H2_Anchor",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_11_26H2",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26300\")",
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_26H2_Anchor",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_11_24H2",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26100\")",
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "POC_WIN_D_CO_Updates_Feature_11_24H2_Anchor",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_MAC_CIS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_OperatingSystem",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_Firewall",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_MicrosoftDefenderAntivirus",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_SystemIntegrity",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_Gatekeeper",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_SystemSecurity",
+                         "type": "macOSCustomConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_FileVault",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_SoftwareUpdate",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_MicrosoftEdge",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_DeviceSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_Password",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_EndpointSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_DeviceLogon",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CIS_AppleIntelligence",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Scripts": [
+                    {
+                         "name": "POC_MAC_D_CO_SS_SBL_CIS_SystemSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_IOS_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS26",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_DeviceUnlocking",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS27",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_DeviceUnlocking",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CE_MalwareProtection",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_NCSC_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_OperatingSystem",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceHealth",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_Password",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android17",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_DeviceUnlocking",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement_Android16",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CE_MalwareProtection",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_OperatingSystem",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceHealth",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_Password",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_NetworkSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_AppleAccount",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_LockScreenMessage",
+                         "type": "",
+                         "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_CIS_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_MAC_CE_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS27",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_MalwareProtection",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS26",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_CE_SecureConfiguration",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_MAC_NCSC_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_Firewall",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_Gatekeeper",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_SystemIntegrity",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_FileVault",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_OperatingSystem",
+                         "type": "macOSCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_GoogleChrome",
+                         "type": "macOSCustomConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_FileVault",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_DataProtection",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_Password",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_MAC_D_CO_SBL_NCSC_DeviceLock",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_CIS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CIS_MS_OperatingSystem",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_CIS_MS_Password",
+                         "type": "androidDeviceOwnerCompliancePolicy",
+                         "intent": "Include"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "POC_AND_D_CO_SBL_CIS_MS_DeviceSecurity",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_IOS_NCSC_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Password",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_OperatingSystem",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceHealth",
+                         "type": "iosCompliancePolicy",
+                         "intent": "Include"
                     }
                ]
           }
@@ -1178,54 +1962,73 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_U_NCSC",
+          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_BYOD",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Enrollment Configurations": [
+               "Device Configurations": [
                     {
-                         "name": "POC_IOS_U_BYOD_Allow",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceLock",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DeviceManagement",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_AND_D_BYOD_SBL_NCSC_MS_DataProtection",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
-               ],
-               "Compliance Policies": [
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_AND_CE_BYOD",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
                     {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "windows10CompliancePolicy",
+                         "name": "REF_AND_D_BYOD_SBL_CE_MalwareProtection",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_AND_D_BYOD_SBL_CE_SecureConfiguration",
+                         "type": "androidWorkProfileGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
-               ],
-               "App Protection": [
+               ]
+          }
+     },
+     {
+          "groupName": "SG_MDM_D_WIN_CO_CartUpdatePolicy",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
                     {
-                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
                     },
                     {
-                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_4",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
                     },
                     {
-                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
+                         "name": "POC_WIN_D_CO_Updates_Windows_Phase_5",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Exclude"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "WIN_D_COPE_ENT_NCSC",
+                         "name": "REF_WIN_D_CO_WindowsUpdate_SupportforCarts",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1233,42 +2036,79 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_U_CIS",
+          "groupName": "TEST_SG_MDM_D_AND_NCSC_MS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Enrollment Configurations": [
+               "Device Configurations": [
                     {
-                         "name": "POC_IOS_U_BYOD_Allow",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_Updates",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DataProtection",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceLock",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceManagement",
+                         "type": "androidDeviceOwnerGeneralDeviceConfiguration",
                          "intent": "Include"
                     }
-               ],
-               "App Protection": [
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
                     {
-                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
+                         "name": "REF_WIN_D_CO_MicrosoftEdgeBrowsingOnly",
+                         "type": "windows10CustomConfiguration",
                          "intent": "Include"
                     }
                ],
                "Settings Catalog": [
                     {
-                         "name": "WIN_D_COPE_ENT_CIS",
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus_Exclusions",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1276,206 +2116,18 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_U_CE+",
+          "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Enrollment Configurations": [
-                    {
-                         "name": "POC_IOS_U_BYOD_Allow",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_AE_U_BYOD_Allow_AllUsers",
-                         "type": "deviceEnrollmentPlatformRestrictionConfiguration",
-                         "intent": "Include"
-                    }
-               ],
-               "Compliance Policies": [
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_BYOD_SBL_CE_DeviceUnlocking",
-                         "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "androidWorkProfileCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_DeviceUnlocking",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "App Protection": [
-                    {
-                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    }
-               ],
                "Settings Catalog": [
                     {
-                         "name": "WIN_D_COPE_ENT_CE",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_AppleAccount",
                          "type": "",
                          "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_AND_NCSC_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_DeviceHealth",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
                     },
                     {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_Password",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_NCSC_MS_OperatingSystem",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_CIS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_OperatingSystem",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceHealth",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_Password",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_AppleAccount",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceConfiguration",
                          "type": "",
                          "intent": "Include"
                     },
@@ -1485,27 +2137,27 @@
                          "intent": "Exclude"
                     },
                     {
-                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceConfiguration",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_NetworkSecurity",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_D_CO_SBL_CIS_NetworkSecurity",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_Updates",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceLock",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_D_CO_SBL_CIS_DeviceSecurity",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DataProtection",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_IOS_D_CO_SBL_CIS_Updates",
+                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceSecurity",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1513,50 +2165,33 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_MAC_CE_COPE",
+          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_BYOD",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_MalwareProtection",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement_macOS27",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
                "Settings Catalog": [
                     {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecurityUpdateManagement",
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Safari",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_CE_Firewalls",
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SBL_CE_SecureConfiguration",
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceManagement",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Updates",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DataProtection",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1564,265 +2199,47 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_WIN_NCSC_MS_COPE",
+          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_COPE",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Encryption",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Firewall",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceHealth",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_OperatingSystem",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Antivirus",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
                "Settings Catalog": [
                     {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftEdge",
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Safari",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus_Exclusions",
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceLock",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceLock",
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Updates",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceGuard",
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceManagement",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceControl",
+                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DataProtection",
                          "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_GoogleChrome",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_InternetExplorer",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsLAPS",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsHello",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_DeviceGuard_Autopilot",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_UserRights",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_BitLocker",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_COPE_GoogleChrome_SSO",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_NetworkSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_AttackSurfaceReduction",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_WindowsSecurityExperience",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_SmartScreen",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Printing",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_Auditing",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Enrollment Profiles": [
-                    {
-                         "name": "WIN_D_COPE_ENT_User_NCSC",
-                         "type": "azureADWindowsAutopilotDeploymentProfile",
                          "intent": "Include"
                     }
                ]
           }
      },
      {
-          "groupName": "TEST_SG_MDM_U_CE",
+          "groupName": "TEST_SG_MDM_D_IOS_CE_BYOD",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS27",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_Firewalls",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS27",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement_iOS26",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_MalwareProtection",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_UserAccessControl",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_Firewalls",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_U_BYOD_SBL_CE_MalwareProtection",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_MAC_U_BYOD_SBL_CE_SecurityUpdateManagement_macOS26",
-                         "type": "macOSCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_BYOD_SBL_CE_SecurityUpdateManagement",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "App Protection": [
-                    {
-                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_UMNGD_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_UMNGD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    }
-               ],
                "Settings Catalog": [
                     {
-                         "name": "WIN_D_COPE_ENT_CE",
+                         "name": "REF_IOS_D_BYOD_SBL_CE_SecureConfiguration",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1830,50 +2247,13 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_IOS_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
+          "groupName": "SG_MDM_U",
+          "groupType": "DynamicMembership",
+          "membershipRule": "user.assignedPlans -any (assignedPlan.servicePlanId -eq \"c1ec4a95-1f05-45b3-a911-aa3fa01094f5\" -and assignedPlan.capabilityStatus -eq \"Enabled\")",
           "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS27",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement_iOS26",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_DeviceUnlocking",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
                "Settings Catalog": [
                     {
-                         "name": "POC_IOS_D_CO_SBL_CE_DeviceUnlocking",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CE_MalwareProtection",
+                         "name": "POC_WIN_D_COPE_ENT_User_SUA",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1881,102 +2261,18 @@
           }
      },
      {
-          "groupName": "TEST_SG_MDM_D_IOS_NCSC_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
+          "groupName": "SG_MDM_D_WIN_CO",
+          "groupType": "DynamicMembership",
+          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\")",
           "assignedTo": {
-               "Compliance Policies": [
+               "Scripts": [
                     {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_OperatingSystem",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceHealth",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Password",
-                         "type": "iosCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_CE_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_SecurityUpdateManagement",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_Firewalls",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "windows10CompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_MalwareProtection",
+                         "name": "REF_WIN_D_CO_PS_WindowsAutopatchClientBroker",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "DEV_WIN_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_CE_SecureConfiguration",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Enrollment Profiles": [
-                    {
-                         "name": "WIN_D_COPE_ENT_User_CE",
-                         "type": "azureADWindowsAutopilotDeploymentProfile",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_AND_CIS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_CIS_MS_OperatingSystem",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_D_CO_SBL_CIS_MS_Password",
-                         "type": "androidDeviceOwnerCompliancePolicy",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_AND_D_CO_SBL_CIS_MS_DeviceSecurity",
+                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
                          "type": "",
                          "intent": "Include"
                     }
@@ -1990,14 +2286,14 @@
           "assignedTo": {
                "Scripts": [
                     {
-                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
                          "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
                          "type": "",
                          "intent": "Exclude"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_PS_RemoveBuiltInApps",
+                         "type": "",
+                         "intent": "Include"
                     }
                ]
           }
@@ -2059,37 +2355,18 @@
           }
      },
      {
-          "groupName": "SG_MDM_D_WIN_CO",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\")",
-          "assignedTo": {
-               "Scripts": [
-                    {
-                         "name": "REF_WIN_D_CO_PS_WindowsAutopatchClientBroker",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_PS_BitLockerKeyEscrow",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
           "groupName": "SG_MDM_D_MAC_CO",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"macmdm\")",
           "assignedTo": {
                "Scripts": [
                     {
-                         "name": "POC_MAC_D_CO_SS_DesktopWallpaper",
+                         "name": "POC_MAC_D_CO_SS_MicrosoftOneDrive_FinderSync",
                          "type": "",
                          "intent": "Include"
                     },
                     {
-                         "name": "POC_MAC_D_CO_SS_MicrosoftOneDrive_FinderSync",
+                         "name": "POC_MAC_D_CO_SS_DesktopWallpaper",
                          "type": "",
                          "intent": "Include"
                     },
@@ -2116,283 +2393,6 @@
                          "name": "POC_MAC_D_CO_SS_APP_FileVaultEscrowBuddy",
                          "type": "",
                          "intent": "Exclude"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_11_23H2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.22631\")",
-          "assignedTo": {
-               "Feature Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_23H2_Anchor",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_11_26H2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26300\")",
-          "assignedTo": {
-               "Feature Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_26H2_Anchor",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_11_25H2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26200\")",
-          "assignedTo": {
-               "Feature Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_25H2_Anchor",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_D_WIN_CO_11_24H2",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26100\")",
-          "assignedTo": {
-               "Feature Updates": [
-                    {
-                         "name": "POC_WIN_D_CO_Updates_Feature_11_24H2_Anchor",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_U_MSZT",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "App Protection": [
-                    {
-                         "name": "POC_IOS_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_U_MNGD_COPE_AllApps_AllUsers",
-                         "type": "iosManagedAppProtection",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_AND_U_MNGD_BYOD_AllApps_AllUsers",
-                         "type": "androidManagedAppProtection",
-                         "intent": "Include"
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "POC_MOB_U_BOTH_MSZT_QuietTime",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "WIN_D_COPE_ENT_MSZT",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_CIS_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_LockScreenMessage",
-                         "type": "",
-                         "intent": "Exclude"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_NetworkSecurity",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceConfiguration",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_AppleAccount",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_CIS_MS_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_Safari",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_NCSC_MS_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_NCSC_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Safari",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DataProtection",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceLock",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_Updates",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_IOS_D_CO_SBL_NCSC_MS_DeviceManagement",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_MSZT_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MSZT_OrganizationalMessages",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Enrollment Profiles": [
-                    {
-                         "name": "WIN_D_COPE_ENT_MSZT",
-                         "type": "azureADWindowsAutopilotDeploymentProfile",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "SG_MDM_U",
-          "groupType": "DynamicMembership",
-          "membershipRule": "user.assignedPlans -any (assignedPlan.servicePlanId -eq \"c1ec4a95-1f05-45b3-a911-aa3fa01094f5\" -and assignedPlan.capabilityStatus -eq \"Enabled\")",
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_COPE_ENT_User_SUA",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_IOS_CE_BYOD",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "REF_IOS_D_BYOD_SBL_CE_SecureConfiguration",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_AP_MS_COPE",
-          "groupType": "DynamicMembership",
-          "membershipRule": "(device.devicePhysicalIds -any _ -startswith \"[OrderID]:ENT_USER_MS\")",
-          "assignedTo": {
-               "Enrollment Profiles": [
-                    {
-                         "name": "WIN_D_COPE_ENT_User_MS",
-                         "type": "azureADWindowsAutopilotDeploymentProfile",
-                         "intent": "Include"
                     }
                ]
           }

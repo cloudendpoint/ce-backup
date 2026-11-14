@@ -14,7 +14,7 @@
      "passcodeMinimumCharacterSetCount": null,
      "passcodeRequiredType": "deviceDefault",
      "passcodeRequired": false,
-     "osMinimumVersion": "18.7.11",
+     "osMinimumVersion": "18.7.12",
      "osMaximumVersion": null,
      "osMinimumBuildVersion": null,
      "osMaximumBuildVersion": null,
@@ -33,6 +33,37 @@
                          "actionType": "block",
                          "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
                          "notificationMessageCCList": []
+                    },
+                    {
+                         "gracePeriodHours": 168,
+                         "actionType": "pushNotification",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    },
+                    {
+                         "gracePeriodHours": 336,
+                         "actionType": "pushNotification",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    },
+                    {
+                         "gracePeriodHours": 504,
+                         "actionType": "remoteLock",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    },
+                    {
+                         "gracePeriodHours": 672,
+                         "actionType": "retire",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    },
+                    {
+                         "gracePeriodHours": 336,
+                         "actionType": "notification",
+                         "notificationTemplateId": "4a897ea9-678f-46fc-a239-c57e027aa3c3",
+                         "notificationMessageCCList": [],
+                         "notificationTemplateName": "POC_IOS_U_BYOD_Alert"
                     }
                ]
           }

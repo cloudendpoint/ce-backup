@@ -1,0 +1,131 @@
+{
+     "creationSource": null,
+     "description": "Now covered by built-in exclusions - https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-exclusions-overview#built-in-exclusions\n\nUsed when only moving Endpoint Protection workload to Microsoft Intune, or require separate testing of Endpoint Protection workload.\n\nhttps://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/endpoint-protection/recommended-antivirus-exclusions",
+     "name": "REF_WIN_D_CO_SBL_NCSC_MS_MicrosoftDefender_Antivirus_Exclusions_Co-Management",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "mdm,microsoftSense",
+     "templateReference": {
+          "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+          "templateFamily": "endpointSecurityAntivirus",
+          "templateDisplayName": "Microsoft Defender Antivirus exclusions",
+          "templateDisplayVersion": "Version 1"
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedpaths",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "aaf04adc-c639-464f-b4a7-152e784092e8"
+                    },
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\*.sdf"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\ServiceData"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\ScriptStore"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\Logs"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\temp"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCMSetup"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCMCache"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%ProgramFiles%\\Microsoft Policy Platform\\authorityDb\\*.sdf"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\Setup\\Scripts"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\SMSTSPostUpgrade"
+                         }
+                    ]
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedprocesses",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "96b046ed-f138-4250-9ae0-b0772a93d16f"
+                    },
+                    "simpleSettingCollectionValue": [
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\RemCtrl\\CmRcService.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCMSetup\\Ccmsetup.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\Ccmrepair.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCMSetup\\autoupgrade\\Ccmsetup*.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\Ccmexec.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\ScClient.exe"
+                         },
+                         {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                              "settingValueTemplateReference": null,
+                              "value": "%windir%\\CCM\\CcmAADBroker.exe"
+                         }
+                    ]
+               }
+          }
+     ]
+}

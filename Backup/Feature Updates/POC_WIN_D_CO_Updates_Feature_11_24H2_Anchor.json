@@ -22,7 +22,7 @@
                     "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "SG_MDM_D_WIN_CO_11_24H2",
                     "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startswith \"10.0.26100\")"
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSVersion -startsWith \"10.0.26100\") and (device.deviceOSType -ne \"Windows Server\")"
                }
           },
           {

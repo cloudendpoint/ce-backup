@@ -17,7 +17,7 @@
                     "deviceAndAppManagementAssignmentFilterType": "none",
                     "groupName": "SG_MDM_D_WIN_CO",
                     "groupType": "DynamicMembership",
-                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\")"
+                    "membershipRule": "(device.deviceManagementAppId -ne null) and (device.deviceOwnership -eq \"Company\") and (device.deviceOSType -eq \"Windows\") and (device.deviceOSType -ne \"Windows Server\")"
                }
           },
           {

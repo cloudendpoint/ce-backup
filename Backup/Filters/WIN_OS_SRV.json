@@ -1,0 +1,12 @@
+{
+     "displayName": "WIN_OS_SRV",
+     "description": "",
+     "platform": "windows10AndLater",
+     "rule": "(device.deviceOwnership -eq \"Corporate\") and (device.operatingSystemSKU -in [\"ServerStandard\",\"ServerDatacenter\",\"ServerTurbine\",\"ServerStandardEval\",\"ServerDatacenterEval\"])",
+     "roleScopeTags": [
+          "Default"
+     ],
+     "assignmentFilterManagementType": "devices",
+     "evaluationMode": "checkinTimeEvaluation",
+     "payloads": []
+}

@@ -615,3 +615,14 @@
 |Assignment Filter Management Type|devices                                        |
 |Evaluation Mode                  |checkinTimeEvaluation                          |
 
+### WIN_OS_SRV
+#### Configuration
+|             setting             |                                                                                    value                                                                                     |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Display Name                     |WIN_OS_SRV                                                                                                                                                                    |
+|Platform                         |windows10AndLater                                                                                                                                                             |
+|Rule                             |(device.deviceOwnership -eq "Corporate") and (device.operatingSystemSKU -in ["ServerStandard","ServerDatacenter","ServerTurbine","ServerStandardEval","ServerDatacenterEval"])|
+|Role Scope Tags                  |Default<br/>                                                                                                                                                                  |
+|Assignment Filter Management Type|devices                                                                                                                                                                       |
+|Evaluation Mode                  |checkinTimeEvaluation                                                                                                                                                         |
+

@@ -142,6 +142,20 @@ Description: Driver update policy, created by Windows Autopatch
 |Deployment Deferral In Days|                                                                              8|
 |Role Scope Tag Ids         |Default<br/>                                                                   |
 
+### Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4
+Description: Driver update policy, created by Windows Autopatch
+#### Assignments
+|intent |                target                |filter type|filter name|
+|-------|--------------------------------------|-----------|-----------|
+|Include|POC_WIN_D_CO_Updates_Autopatch - Ring4|none       |           |
+
+#### Configuration
+|     setting      |                                     value                                     |
+|------------------|-------------------------------------------------------------------------------|
+|Display Name      |Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4|
+|Approval Type     |automatic                                                                      |
+|Role Scope Tag Ids|Default<br/>                                                                   |
+
 ### Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test
 Description: Driver update policy, created by Windows Autopatch
 #### Assignments

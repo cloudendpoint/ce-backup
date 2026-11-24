@@ -2049,6 +2049,41 @@ Description: https://learn.microsoft.com/en-us/intune/device-security/security-c
 |Update Notification Level                               |defaultNotifications                                                    |
 |Allow Windows11 Upgrade                                 |False                                                                   |
 
+### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4
+#### Assignments
+|intent |                target                |filter type|filter name|
+|-------|--------------------------------------|-----------|-----------|
+|Include|POC_WIN_D_CO_Updates_Autopatch - Ring4|none       |           |
+
+#### Configuration
+|                        setting                         |                                 value                                  |
+|--------------------------------------------------------|------------------------------------------------------------------------|
+|Odata type                                              |#microsoft.graph.windowsUpdateForBusinessConfiguration                  |
+|Role Scope Tag Ids                                      |Default<br/>                                                            |
+|Display Name                                            |Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4|
+|Delivery Optimization Mode                              |userDefined                                                             |
+|Prerelease Features                                     |userDefined                                                             |
+|Automatic Update Mode                                   |windowsDefault                                                          |
+|Microsoft Update Service Allowed                        |True                                                                    |
+|Drivers Excluded                                        |False                                                                   |
+|Quality Updates Paused                                  |False                                                                   |
+|Feature Updates Paused                                  |False                                                                   |
+|Quality Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Pause Expiry Date Time                  |0001-01-01T00:00:00Z                                                    |
+|Business Ready Updates Only                             |userDefined                                                             |
+|Skip Checks Before Restart                              |False                                                                   |
+|Feature Updates Rollback Window In Days                 |                                                                      30|
+|Quality Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Feature Updates Rollback Start Date Time                |0001-01-01T00:00:00Z                                                    |
+|Postpone Reboot Until After Deadline                    |False                                                                   |
+|Postpone Reboot Until After Deadline For Quality Updates|notConfigured                                                           |
+|Postpone Reboot Until After Deadline For Feature Updates|notConfigured                                                           |
+|Auto Restart Notification Dismissal                     |notConfigured                                                           |
+|User Pause Access                                       |disabled                                                                |
+|User Windows Update Scan Access                         |notConfigured                                                           |
+|Update Notification Level                               |defaultNotifications                                                    |
+|Allow Windows11 Upgrade                                 |False                                                                   |
+
 ### Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Test
 #### Assignments
 |intent |               target                |filter type|filter name|

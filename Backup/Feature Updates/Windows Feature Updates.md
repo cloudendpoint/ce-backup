@@ -102,6 +102,7 @@
 |Include|POC_WIN_D_CO_Updates_Autopatch - Last |none       |           |
 |Include|POC_WIN_D_CO_Updates_Autopatch - Ring1|none       |           |
 |Include|POC_WIN_D_CO_Updates_Autopatch - Test |none       |           |
+|Include|POC_WIN_D_CO_Updates_Autopatch - Ring4|none       |           |
 
 #### Configuration
 |                        setting                        |                                                   value                                                    |

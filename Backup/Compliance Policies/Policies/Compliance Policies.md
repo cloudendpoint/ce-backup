@@ -1955,6 +1955,7 @@ Description: Will force the change to the local user accounts on macOS devices\.
 |intent |            target            |filter type|filter name|
 |-------|------------------------------|-----------|-----------|
 |Include|TEST_SG_MDM_D_WIN_NCSC_MS_COPE|none       |           |
+|Include|TEST_SG_MDM_D_WIN_MS_COPE     |none       |           |
 
 #### Configuration
 |                    setting                     |                                                                                                                                                                                    value                                                                                                                                                                                     |

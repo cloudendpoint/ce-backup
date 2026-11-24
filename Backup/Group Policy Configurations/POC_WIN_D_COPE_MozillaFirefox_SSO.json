@@ -1,0 +1,43 @@
+{
+     "displayName": "POC_WIN_D_COPE_MozillaFirefox_SSO",
+     "description": "Configures SSO for Mozilla Firefox.\n\nhttps://support.mozilla.org/en-US/kb/windows-sso",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "policyConfigurationIngestionType": "custom",
+     "definitionValues": [
+          {
+               "createdDateTime": "2024-09-23T09:56:23.8609496Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "7684220f-7830-4d12-9919-cb86e57e1244",
+               "lastModifiedDateTime": "2024-09-23T09:56:23.8453248Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Windows SSO",
+                    "explainText": "If this policy is enabled, Firefox will use credentials stored in Windows to sign in to Microsoft, work, and school accounts.\r\n\r\nIf this policy is disabled or not configured, credentials must be entered manually.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 91 or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "c3235846-170f-4e42-bba2-10e208c74ae5",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          }
+     ],
+     "assignments": [
+          {
+               "lastModifiedDateTime": "2026-03-27T11:52:53.4625664Z",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": "WIN_CO",
+                    "deviceAndAppManagementAssignmentFilterType": "include"
+               }
+          }
+     ]
+}

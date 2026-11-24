@@ -110,6 +110,13 @@
                          "intent": "Include"
                     }
                ],
+               "Group Policy Configurations": [
+                    {
+                         "name": "REF_WIN_D_CO_SBL_CIS_MS_VisualStudioCode",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
                "Scripts": [
                     {
                          "name": "POC_WIN_D_CO_PS_SBL_CIS_MS_SystemServices",
@@ -830,6 +837,64 @@
                     {
                          "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring3",
                          "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "TEST",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "REF_WIN_D_CO_MicrosoftEdgeBrowsingOnly",
+                         "type": "windows10CustomConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Compliance Policies": [
+                    {
+                         "name": "POC_WIN_D_CO_SBL_NCSC_MS_OperatingSystem",
+                         "type": "windows10CompliancePolicy",
                          "intent": "Include"
                     }
                ]
@@ -1582,6 +1647,46 @@
           }
      },
      {
+          "groupName": "POC_WIN_D_CO_Updates_Autopatch - Ring4",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch Microsoft 365 Apps Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
+                         "name": "Windows Autopatch Edge Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "Include"
+                    }
+               ],
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Feature Update Anchor Policy - POC_WIN_D_CO_Updates_Autopatch",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ],
+               "Driver Updates": [
+                    {
+                         "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring4",
+                         "type": "",
+                         "intent": "Include"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "SG_MDM_D_CPC_CO",
           "groupType": "DynamicMembership",
           "membershipRule": "(device.deviceOwnership -eq \"Company\") and (device.deviceModel -startsWith \"Cloud PC\")",
@@ -1725,52 +1830,6 @@
                     {
                          "name": "Windows Autopatch Driver Update Policy - POC_WIN_D_CO_Updates_Autopatch - Ring2",
                          "type": "",
-                         "intent": "Include"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Settings Catalog": [
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_BitLocker",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_Windows_11_26H2",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_MicrosoftDefender_Antivirus",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_Firewall",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsHello",
-                         "type": "",
-                         "intent": "Include"
-                    },
-                    {
-                         "name": "POC_WIN_D_CO_SBL_MS_WindowsLAPS",
-                         "type": "",
-                         "intent": "Include"
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "REF_WIN_D_CO_MicrosoftEdgeBrowsingOnly",
-                         "type": "windows10CustomConfiguration",
                          "intent": "Include"
                     }
                ]

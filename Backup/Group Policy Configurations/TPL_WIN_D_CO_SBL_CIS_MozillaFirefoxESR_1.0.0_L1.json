@@ -1,0 +1,1117 @@
+{
+     "displayName": "TPL_WIN_D_CO_SBL_CIS_MozillaFirefoxESR_1.0.0_L1",
+     "description": "",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "policyConfigurationIngestionType": "mixed",
+     "definitionValues": [
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4445577Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "831f9443-39a1-4796-8400-6a5b3720e1cf",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.444191Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Allow deleting browsing history on exit",
+                    "explainText": null,
+                    "categoryPath": null,
+                    "supportedOn": null,
+                    "policyType": "admxBacked",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "17b125be-fe9b-41a7-b5ac-82194e4c906a",
+                    "minDeviceCspVersion": "6.0",
+                    "minUserCspVersion": null,
+                    "version": "1.0",
+                    "id": "542d2c8f-a721-46f1-9cf3-2961e0a6d6d6",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4472005Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "0ecb8402-17ff-41f5-9275-c3f47f8fb01f",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4468825Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Forget Button",
+                    "explainText": "If this policy is enabled, the \"Forget\" button is not available.\r\n\r\nIf this policy is disabled or not configured, the \"Forget\" button is available.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "7bc518aa-bc37-43dc-bf79-010d31f4929d",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4240968Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "69870d7c-286a-4903-95f6-c7fe2f0177e2",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.4240968Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Active Logins",
+                    "explainText": "If the policy is enabled, sessions cleared when the browser is closed.\r\n\r\nIf this policy is disabled or not configured, sessions not cleared when the browser is closed.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Clear data when browser is closed",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "e8e7cbbb-f599-4a0c-b808-24b58e544156",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "5f0966ca-c0bd-49ea-af1d-014b8552ebb0",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5515341Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "9deaeff6-3020-4b78-93ed-28d812efdb52",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5515341Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Locked",
+                    "explainText": "If this policy is disabled, all shutdown preferences can be changed by the user.\r\n\r\nIf this policy is enabled, any shutdown preferences explicitly set via policy cannot be changed by the user.\r\n\r\nIf this policy is not configured, no shutdown preferences can be changed by the user (previous behavior).",
+                    "categoryPath": "\\Mozilla\\Firefox\\Clear data when browser is closed",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "e8e7cbbb-f599-4a0c-b808-24b58e544156",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "b5109770-ab26-441e-a5d8-057720e119b9",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5569775Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "ed4e90ba-9136-4ca8-85ee-d3f7f2172e7b",
+               "lastModifiedDateTime": "2026-11-18T08:53:40.0408477Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Maximum SSL version enabled",
+                    "explainText": "If this policy is enabled, Firefox will not use SSL/TLS versions greater than the value specified.\r\n\r\nIf this policy is disabled or not configured, Firefox defaults to a maximum of TLS 1.3.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 66 or later, Firefox 60.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "1e50b7b8-dbdf-4ca3-a55b-189b9f08f142",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-11-18T08:53:40.0408477Z",
+                         "createdDateTime": "2026-11-18T08:53:40.0411845Z",
+                         "id": "7daae108-865c-4e1e-917c-f52807bc1d87",
+                         "value": "tls1.3",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "e17af495-d8aa-4e8b-ae79-a103caf50ede",
+                              "lastModifiedDateTime": "2024-09-23T09:51:58.7351415Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "TLS 1.3",
+                                   "value": "tls1.3"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "TLS 1.0",
+                                        "value": "tls1"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.1",
+                                        "value": "tls1.1"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.2",
+                                        "value": "tls1.2"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.3",
+                                        "value": "tls1.3"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5794494Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "9bfa0ec0-295c-4e35-a01f-245f6508da4e",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5790655Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Network Prediction",
+                    "explainText": "If this policy is disabled, network prediction (DNS prefetching) will be disabled.\r\n\r\nIf this policy is enabled or not configured, network prediction (DNS prefetching) will be enabled.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 67 or later, Firefox 60.7 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "83aa7fd6-4f53-4361-a075-1dc3ac547c2a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.444191Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "b6e2f88b-9a9e-44ac-ad80-69940ae2a850",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.444191Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Developer Tools",
+                    "explainText": "If this policy is enabled, web developer tools are not available within Firefox.\r\n\r\nIf this policy is disabled or not configured, web developer tools are available within Firefox.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "e91e8a62-a0db-41be-bc2e-35a44c66b9f6",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4614135Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "cfaf5371-1de7-4cd3-8a0e-55e10a0c4638",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.460947Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Firefox Accounts",
+                    "explainText": "If this policy is enabled, Firefox Accounts is disabled which includes disabling Sync.\r\n\r\nIf this policy is disabled or not configured, Firefox Accounts and Sync are available.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "772fe8f6-a7f0-4ca0-9c17-45e174c0494a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4445577Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "baa2ab4c-d345-4749-875c-2641f419d427",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4445577Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Do not allow preferences to be changed",
+                    "explainText": "If this policy is enabled, location preferences cannot be changed by the user.\r\n\r\nIf this policy is disabled or not configured, the user can change location preferences.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Permissions\\Location",
+                    "supportedOn": "Firefox 62 or later, Firefox 60.2 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "0aeacf36-2f6a-4b71-9ceb-27c09c711937",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "a6305196-faa8-46ba-97aa-4a64b5e4a550",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4424159Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "c727a1db-78f3-47f8-864b-8d0f142575b2",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4409367Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Cryptomining",
+                    "explainText": "If this policy is enabled, scripts that use cryptomining are blocked.\r\n\r\nIf this policy is disabled or not configured, scripts that use cryptomining are not blocked.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Tracking Protection",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6459af8c-9c2e-4372-b3d2-fa9967a6dd84",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "5a47298e-14ee-4ae0-a92c-59c463316a78",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5077485Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "8728e814-23a2-422b-b619-a5d69cc148ae",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5077485Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Fingerprinting",
+                    "explainText": "If this policy is enabled, scripts that use fingerprinting are blocked.\r\n\r\nIf this policy is disabled or not configured, scripts that use fingerprinting are not blocked.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Tracking Protection",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6459af8c-9c2e-4372-b3d2-fa9967a6dd84",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "282bffc9-2d36-4621-95c4-5eac51b48766",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4964329Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "a79a239f-16ee-4650-8c0d-63b1a29229b0",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4964329Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Do not allow tracking protection preferences to be changed",
+                    "explainText": "If this policy is enabled, tracking protection preferences cannot be changed by the user.\r\n\r\nIf this policy is disabled or not configured, the user can change tracking protection preferences.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Tracking Protection",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6459af8c-9c2e-4372-b3d2-fa9967a6dd84",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "281c839d-9f71-411a-aa74-65294683c717",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4786104Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "086cbf37-8412-46db-81f3-be034afe3595",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4485921Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Private Browsing",
+                    "explainText": "If this policy is enabled, private browsing is not allowed.\r\n\r\nIf this policy is disabled or not configured, private browsing is allowed.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "676a2dd8-8561-4bcf-b467-6ca64945f556",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4151206Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "3d5abebf-dfb3-4606-8698-98f698c3ac20",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.4147881Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Block new requests asking to access location",
+                    "explainText": "If this policy is enabled, sites that are not in the Allow policy will not be allowed to ask permission to access location.\r\n\r\nIf this policy is disabled or not configured, any site that is not in the Block policy can ask permission to access location.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Permissions\\Location",
+                    "supportedOn": "Firefox 62 or later, Firefox 60.2 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "0aeacf36-2f6a-4b71-9ceb-27c09c711937",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "205dc020-1c13-475c-8dd8-78a0f2ebbc1e",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.468712Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "782c8ecf-ed76-4b77-9e38-93e05eb9614f",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.468712Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Do not allow proxy settings to be changed",
+                    "explainText": "If this policy is enabled, proxy settings cannot be changed by the user.\r\n\r\nIf this policy is disabled or not configured, the user can change their proxy settings.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Proxy Settings",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "b5ec5e44-5c86-4798-a3f3-86a38a93e3a1",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "0f191618-250d-4f33-8f35-7a07cef075a1",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4465726Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "14d1cc60-7bb6-45d8-92bf-bb6e2eca3934",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4465726Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Pocket",
+                    "explainText": "If this policy is enabled, Pocket is not available.\r\n\r\nIf this policy is disabled or not configured, Pocket is available.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "e13cde71-d431-4590-8e95-7b21333d0307",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4013929Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "2a28ae0f-c176-472f-b3e2-9a3d4dac4db3",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.4013929Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Block pop-ups from websites",
+                    "explainText": "If this policy is disabled, pop-up windows are allowed from websites by default.\r\n\r\nIf this policy is not configured or enabled, popups are not allowed from websites.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Popups",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "90dc0791-2296-41b4-9acb-e10dd4456ee8",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "252f898b-1afa-4af9-8301-85cffc666844",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4002613Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "6bc178c4-1267-4848-9546-e265a44beee6",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.3993725Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Activate Flash on websites",
+                    "explainText": "If this policy is enabled, Flash is always activated on websites.\r\n\r\nIf this policy is disabled, Flash is never activated on websites, even if they are in the specified in the Allow list.\r\n\r\nIf this policy is not configured, Flash is click to play.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Flash",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "7d04ec43-238c-4a47-a45d-41374d291e33",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "892ec8c1-b782-4a3a-bf22-8d69481a5f5b",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.6303408Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "af651a00-d90b-4b23-ad47-954e635dff63",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.6303408Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "NTLM",
+                    "explainText": "If this policy is enabled, the specified websites are trusted to use NTLM authentification. Entries in the list are formatted as mydomain.com or https://myotherdomain.com.\r\n\r\nIf this policy is disabled or not configured, no websites are trusted to use NTLM authentification.\r\n\r\nFor more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Authentication",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "55df64dc-a36c-401b-9594-79ac4246cc2b",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "1c51410d-903e-474d-a956-8d84f987f4eb",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.47073Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "76ed0e88-0235-410c-8b74-d23777a972ab",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.47073Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Update",
+                    "explainText": "If this policy is enabled, the browser does not receive updates.\r\n\r\nIf this policy is disabled or not configured, the browser receives updates.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "406f1363-5fa0-4c55-905a-8e860d57c753",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5495712Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "3f296be1-b7ce-4703-8e7b-c55e5d5c06ae",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4922339Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Extension Recommendations",
+                    "explainText": "If this policy is disabled, extensions will not be recommended as the user visits websites.\r\n\r\nIf this policy is enabled or not configured, extensions will be recommended as the user visits websites.",
+                    "categoryPath": "\\Mozilla\\Firefox\\User Messaging",
+                    "supportedOn": "Firefox 75 or later, Firefox 68.7 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "c86a5ffb-df7a-4d52-8a1e-b5e333a4a87a",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "e20794b5-adc9-4dcf-80e5-90774556d4d8",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4427218Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "e63463e7-a30b-4bf1-9e8e-1abec2b54566",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4427218Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Firefox Studies",
+                    "explainText": "If this policy is enabled, Firefox will never run SHIELD studies or do Heartbeat surveys.\r\n\r\nIf this policy is disabled or not configured, the user can choose to enable SHIELD studies or Heartbeat surveys.\r\n\r\nFor more information, see https://support.mozilla.org/en-US/kb/shield and https://wiki.mozilla.org/Firefox/Shield/Heartbeat",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "b28954b6-3b1f-49c1-987d-966709b0bf80",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.6565792Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "9c3759f3-863f-4dff-aa2d-a423bdbdbbae",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.6562707Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+                    "explainText": "If this policy is enabled, the corresponding cipher is disabled.\r\n\r\nIf this policy is disabled, the corresponding cipher is enabled.\r\n\r\nIf this policy is not configured, the corresponding cipher is enabled or disabled based on the default in Firefox.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Disabled Ciphers",
+                    "supportedOn": "Firefox 76 or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "1ec5d087-a9d2-449d-9875-889e27b26cdf",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "2785c827-a658-430e-a38c-9700e003ff4c",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4438754Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "94a3f188-90d0-44ac-8864-439e774cd6c8",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.8695558Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Cookie Behavior in private browsing",
+                    "explainText": "If this policy is enabled, you can configure cookie behavior in private browsing.\r\n\r\nIf this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Cookies",
+                    "supportedOn": "Firefox 95 or later, Firefox 91.4 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "eb16834e-cd71-47da-8a7b-66c56901ebd1",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "b3f2d8ef-6994-4017-9779-974864ffc653",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-11-18T08:53:39.8695558Z",
+                         "createdDateTime": "2026-11-18T08:53:39.8715654Z",
+                         "id": "9d9fc48e-5276-4d78-82b1-7f1e6606fcb9",
+                         "value": "reject-tracker-and-partition-foreign",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "9f415548-f016-4438-a5d4-3421b2b4505d",
+                              "lastModifiedDateTime": "2024-09-23T09:51:58.1882631Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "Accept all cookies",
+                                   "value": "accept"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "Accept all cookies",
+                                        "value": "accept"
+                                   },
+                                   {
+                                        "displayName": "Reject third party cookies",
+                                        "value": "reject-foreign"
+                                   },
+                                   {
+                                        "displayName": "Reject all cookies",
+                                        "value": "reject"
+                                   },
+                                   {
+                                        "displayName": "Reject third party cookies for sites you haven't visited",
+                                        "value": "limit-foreign"
+                                   },
+                                   {
+                                        "displayName": "Reject cookies for known trackers",
+                                        "value": "reject-tracker"
+                                   },
+                                   {
+                                        "displayName": "Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)",
+                                        "value": "reject-tracker-and-partition-foreign"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4459066Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "1a97e184-670b-43a2-95ac-b3d54c3ca097",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4459066Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Feedback Commands",
+                    "explainText": "If this policy is enabled, the \"Submit Feedback\" and \"Report Deceptive Site\" menuitems are not available from the help menu.\r\n\r\nIf this policy is disabled or not configured, the \"Submit Feedback\" and \"Report Deceptive Site\" menuitems are available from the help menu.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "84c955a2-6ec6-4f56-acc9-9b77ef4ebf81",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4093789Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "81ec7d3f-49df-496b-a163-f73bf8ce4172",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.4048464Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Allow add-on installs from websites",
+                    "explainText": "If this policy is disabled, add-ons cannot be installed.\r\n\r\nIf this policy is not configured or enabled, add-ons can be installed.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Addons",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "dbad5e99-bed7-4198-815a-5a9caec6657a",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "eb3c560a-0edd-49ff-be00-9d85f69c2311",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.6283893Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "06fef0f3-e818-40b1-996a-6d5cf04f81b5",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.6283893Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Offer to save logins",
+                    "explainText": "If this policy is enabled or not configured, Firefox will offer to save website logins and passwords.\r\n\r\nIf this policy is disabled, Firefox will not offer to save website logins and passwords.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "fed3a17a-2f8e-442e-ab53-9f6408ea1178",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4573354Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "8c1b3b9a-6b95-4bfb-a525-bf4e5756df8e",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4573354Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable System Addon Updates",
+                    "explainText": "If this policy is enabled, new system add-ons will not be installed and existing system add-ons will not be updated.\r\n\r\nIf this policy is disabled or not configured, system add-ons are installed and updated.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "375382fc-f827-4b9b-a636-a5e3603efd09",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5428446Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "05ca56e5-e178-4e42-b7b1-92b6da884c59",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5428446Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Lock Encrypted Media Extensions",
+                    "explainText": "If this policy is enabled and EncryptedMediaExtensions are disabled, Firefox will not download encrypted media extensions (like Widevine) or ask the user to install them.\r\n\r\nIf this policy is not disabled or not configured, it has no effect.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Encrypted Media Extensions",
+                    "supportedOn": "Firefox 77 or later, Firefox 68.9 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "48d1d186-670b-4209-b60c-52390eeb2313",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "b9bc9086-5cbc-4bdb-a1f4-a91d0a6c7055",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4058058Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "4f4b9c56-fb2e-4b18-ab43-1fd877bb614c",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.4002613Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Background updater",
+                    "explainText": "If this policy disabled, the application will not try to install updates when the application is not running.\r\n\r\nIf this policy is enabled or not configured, application updates may be installed (without user approval) in the background, even when the application is not running. The operating system might still require approval.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 90 or later, Firefox 78.12 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "a90b90f3-0d4a-4bd9-901d-b5531fc6671c",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5192452Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "3de728f9-8fe0-47e2-9ff6-8fd00a476f6c",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5189414Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Extension Update",
+                    "explainText": "If this policy is disabled, extensions will not be updated automatically.\r\n\r\nIf this policy is enabled or not configured, extensions will be updated automatically.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Extensions",
+                    "supportedOn": "Firefox 67 or later, Firefox 60.7 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "8f0595f6-31f4-4aea-8b59-76e12cf5a6f6",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "2382be96-d774-44c9-9a42-b779251ddaab",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4434109Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "1d90b1cc-f812-4f2f-b3c6-07fd430d4332",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4430532Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Do not allow preferences to be changed",
+                    "explainText": "If this policy is enabled, pop-up preferences cannot be changed by the user.\r\n\r\nIf this policy is disabled or not configured, the user can change their pop-up preferences.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Popups",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "90dc0791-2296-41b4-9acb-e10dd4456ee8",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "73437285-3fa8-4d51-8b23-c03019ec643a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.6346189Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "e15e2f71-cdeb-4699-b706-c40f82f9feb6",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5414359Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Form & Search History (Deprecated)",
+                    "explainText": "If the policy is enabled, form data is cleared when the browser is closed.\r\n\r\nIf this policy is disabled or not configured, form data is not cleared when the browser is closed.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Clear data when browser is closed",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "e8e7cbbb-f599-4a0c-b808-24b58e544156",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "cb171807-6145-4046-88b7-c03d518aff0a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4797768Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "2da40c94-8a22-4092-bde2-3ec09465ae7e",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.4793881Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Email Tracking",
+                    "explainText": "If this policy is enabled, hidden email tracking pixels and scripts on websites are blocked.\r\n\r\nIf this policy is disabled or not configured, hidden email tracking pixels and scripts on websites are not blocked.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Tracking Protection",
+                    "supportedOn": "",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "6459af8c-9c2e-4372-b3d2-fa9967a6dd84",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "0d94fa77-ee95-49a7-9e96-c4cca6208f1c",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.53549Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "51f78775-9262-4832-99ff-eff86fc05616",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.5351853Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Download History (Deprecated)",
+                    "explainText": "If the policy is enabled, download history is cleared when the browser is closed.\r\n\r\nIf this policy is disabled or not configured, download history is not cleared when the browser is closed.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Clear data when browser is closed",
+                    "supportedOn": "Firefox 74 or later, Firefox 68.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "e8e7cbbb-f599-4a0c-b808-24b58e544156",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "b9c43691-ea0f-433d-9eb5-c57287b99a21",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.6378622Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "ddce47c2-441c-4ca2-8da5-7b7abf8142c6",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.6378622Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Password Manager",
+                    "explainText": "If this policy is disabled, the password manager is not available via preferences.\r\n\r\nIf this policy is enabled or not configured, the password manager is available via preferences.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 70 or later, Firefox 68.2 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "27172762-d634-47bb-90b6-c63cc6795959",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4403128Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "1c0e4085-ea5a-4e80-8f6d-62268611be98",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.9041296Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Cookie Behavior",
+                    "explainText": "If this policy is enabled, you can configure cookie behavior.\r\n\r\nIf this policy is not configured or disabled, cookies are rejected for known trackers.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Cookies",
+                    "supportedOn": "Firefox 95 or later, Firefox 91.4 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "eb16834e-cd71-47da-8a7b-66c56901ebd1",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "c561d85d-1c38-43de-a9b5-c87f2ee8f7f2",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-11-18T08:53:39.9041296Z",
+                         "createdDateTime": "2026-11-18T08:53:39.9041296Z",
+                         "id": "fc81f4a0-cbf0-4529-9a9b-bfc5cc586cd7",
+                         "value": "reject-tracker-and-partition-foreign",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "556e6124-ae10-497d-89a0-02fd20580ea5",
+                              "lastModifiedDateTime": "2024-09-23T09:51:58.2038883Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "Accept all cookies",
+                                   "value": "accept"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "Accept all cookies",
+                                        "value": "accept"
+                                   },
+                                   {
+                                        "displayName": "Reject third party cookies",
+                                        "value": "reject-foreign"
+                                   },
+                                   {
+                                        "displayName": "Reject all cookies",
+                                        "value": "reject"
+                                   },
+                                   {
+                                        "displayName": "Reject third party cookies for sites you haven't visited",
+                                        "value": "limit-foreign"
+                                   },
+                                   {
+                                        "displayName": "Reject cookies for known trackers",
+                                        "value": "reject-tracker"
+                                   },
+                                   {
+                                        "displayName": "Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)",
+                                        "value": "reject-tracker-and-partition-foreign"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.4445577Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "1d41e004-f34f-4948-a97f-12ba53e150d5",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.444191Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Disable Telemetry",
+                    "explainText": "If this policy is enabled, telemetry is not uploaded.\r\n\r\nIf this policy is disabled or not configured, telemetry is collected and uploaded.\r\n\r\nMozilla recommends that you do not disable telemetry. Information collected through telemetry helps us build a better product for businesses like yours.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 60 or later, Firefox 60 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "8d1d149c-d0bf-40d5-9ec9-c9b5036ef926",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.5713979Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "b9d7dc93-3af4-448f-90a8-eefc9b5ab7f2",
+               "lastModifiedDateTime": "2026-11-18T08:53:40.1018678Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Minimum SSL version enabled",
+                    "explainText": "If this policy is enabled, Firefox will not use SSL/TLS versions less than the value specified.\r\n\r\nIf this policy is disabled or not configured, Firefox defaults to a minimum of TLS 1.2.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 66 or later, Firefox 60.6 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "55d6a9fe-abc4-4672-9575-e4a14799e80a",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": [
+                    {
+                         "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+                         "lastModifiedDateTime": "2026-11-18T08:53:40.1018678Z",
+                         "createdDateTime": "2026-11-18T08:53:40.1062434Z",
+                         "id": "1c5ec847-63e3-4833-9283-3906b5407618",
+                         "value": "tls1.2",
+                         "presentation": {
+                              "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+                              "label": "",
+                              "id": "3e3e3bc3-961b-4b05-8084-df5ec5746f75",
+                              "lastModifiedDateTime": "2024-09-23T09:51:58.7351415Z",
+                              "required": false,
+                              "defaultItem": {
+                                   "displayName": "TLS 1.2",
+                                   "value": "tls1.2"
+                              },
+                              "items": [
+                                   {
+                                        "displayName": "TLS 1.0",
+                                        "value": "tls1"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.1",
+                                        "value": "tls1.1"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.2",
+                                        "value": "tls1.2"
+                                   },
+                                   {
+                                        "displayName": "TLS 1.3",
+                                        "value": "tls1.3"
+                                   }
+                              ]
+                         }
+                    }
+               ]
+          },
+          {
+               "createdDateTime": "2026-11-18T08:53:39.7577691Z",
+               "enabled": false,
+               "configurationType": "policy",
+               "id": "4f9a3427-3754-4abb-9a26-d3a51da8547b",
+               "lastModifiedDateTime": "2026-11-18T08:53:39.6605995Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Search Suggestions",
+                    "explainText": "If this policy is disabled, search suggestions will be disabled.\r\n\r\nIf this policy is enabled, search suggestions will be enabled.\r\n\r\nIf this policy is not configured, search suggestions will be enabled, but the user can turn them off.",
+                    "categoryPath": "\\Mozilla\\Firefox\\Search",
+                    "supportedOn": "Firefox 68 or later, Firefox 68 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "f9aad987-ccee-4541-9e84-22022fc8c284",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "6f794523-1711-4e2a-8216-f87cedadd1bf",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          },
+          {
+               "createdDateTime": "2026-11-18T08:47:26.4002613Z",
+               "enabled": true,
+               "configurationType": "policy",
+               "id": "b8c03b09-7419-4973-b92e-9f4278ffa7cc",
+               "lastModifiedDateTime": "2026-11-18T08:47:26.3997021Z",
+               "definition": {
+                    "classType": "machine",
+                    "displayName": "Application Autoupdate",
+                    "explainText": "If this policy is enabled, Firefox is automatically updated without user approval.\r\n\r\nIf this policy is disabled, Firefox updates are downloaded but the user can choose when to install the update.\r\n\r\nIf this policy is not configured, the user can choose whether not Firefox is automatically updated.",
+                    "categoryPath": "\\Mozilla\\Firefox",
+                    "supportedOn": "Firefox 75 or later, Firefox 68.7 ESR or later",
+                    "policyType": "admxIngested",
+                    "hasRelatedDefinitions": false,
+                    "groupPolicyCategoryId": "245c7e50-4a3f-4605-9632-be59fe77f3c3",
+                    "minDeviceCspVersion": "5.0",
+                    "minUserCspVersion": null,
+                    "version": null,
+                    "id": "4b942208-b82b-49b7-ba26-fd17b039ad5f",
+                    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+               },
+               "presentationValues": []
+          }
+     ]
+}

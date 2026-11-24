@@ -1,0 +1,131 @@
+{
+     "creationSource": null,
+     "description": "",
+     "name": "TEST",
+     "platforms": "windows10",
+     "priorityMetaData": null,
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "settingCount": 2,
+     "technologies": "mdm",
+     "templateReference": {
+          "templateId": "376dba80-ed56-46a7-9975-a655e95ff24c_1",
+          "templateFamily": "maintenanceWindows",
+          "templateDisplayName": "Maintenance windows",
+          "templateDisplayVersion": "Version 1"
+     },
+     "settings": [
+          {
+               "id": "0",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_maintenancewindows_enablemaintenancewindows",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "1604f223-5f9b-47f0-9906-4c624c2f3d06"
+                    },
+                    "choiceSettingValue": {
+                         "value": "device_vendor_msft_maintenancewindows_enablemaintenancewindows_1",
+                         "settingValueTemplateReference": {
+                              "settingValueTemplateId": "32a09fc8-4de9-481b-b2f6-8ea8f8a1462f",
+                              "useTemplateDefault": false
+                         },
+                         "children": [
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_maintenancewindows_startdate",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": "2026-11-01"
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_maintenancewindows_duration",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": 5
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_maintenancewindows_starttime",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "simpleSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": "16:00"
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_maintenancewindows_repeatschedule",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "value": "device_vendor_msft_maintenancewindows_repeatschedule_2",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "32a09fc8-4de9-481b-b2f6-8ea8f8a1462f",
+                                             "useTemplateDefault": false
+                                        },
+                                        "children": []
+                                   }
+                              },
+                              {
+                                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                   "settingDefinitionId": "device_vendor_msft_maintenancewindows_updateaction",
+                                   "settingInstanceTemplateReference": null,
+                                   "auditRuleInformation": null,
+                                   "choiceSettingValue": {
+                                        "value": "device_vendor_msft_maintenancewindows_updateaction_2",
+                                        "settingValueTemplateReference": {
+                                             "settingValueTemplateId": "32a09fc8-4de9-481b-b2f6-8ea8f8a1462f",
+                                             "useTemplateDefault": false
+                                        },
+                                        "children": []
+                                   }
+                              }
+                         ]
+                    }
+               }
+          },
+          {
+               "id": "1",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                    "settingDefinitionId": "device_vendor_msft_maintenancewindows_workloadtype",
+                    "auditRuleInformation": null,
+                    "settingInstanceTemplateReference": {
+                         "settingInstanceTemplateId": "a582b4f4-3a25-474b-8425-4de7a0b4363d"
+                    },
+                    "choiceSettingCollectionValue": [
+                         {
+                              "settingValueTemplateReference": null,
+                              "value": "device_vendor_msft_maintenancewindows_workloadtype_1",
+                              "children": []
+                         }
+                    ]
+               }
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "TEST_SG_MDM_D_WIN_MS_COPE",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

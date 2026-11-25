@@ -869,6 +869,11 @@
                          "intent": "Include"
                     },
                     {
+                         "name": "DEV_WIN_D_CO_WindowsAdminProtection",
+                         "type": "",
+                         "intent": "Include"
+                    },
+                    {
                          "name": "POC_WIN_D_CO_SBL_MS_Firewall",
                          "type": "",
                          "intent": "Include"

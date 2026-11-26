@@ -7929,7 +7929,7 @@
                          "settingInstanceTemplateId": "e2042c90-7211-4988-b811-a78f77178229"
                     },
                     "choiceSettingValue": {
-                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators_2",
+                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators_1",
                          "settingValueTemplateReference": {
                               "settingValueTemplateId": "66ae39cb-096c-4f60-ad22-8e0d61d81f93",
                               "useTemplateDefault": false

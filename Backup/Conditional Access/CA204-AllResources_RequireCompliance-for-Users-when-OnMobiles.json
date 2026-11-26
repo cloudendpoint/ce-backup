@@ -38,7 +38,8 @@
                "includeRoles": [],
                "excludeRoles": [],
                "includeGuestsOrExternalUsers": null,
-               "excludeGuestsOrExternalUsers": null
+               "excludeGuestsOrExternalUsers": null,
+               "userFilter": null
           },
           "platforms": {
                "includePlatforms": [

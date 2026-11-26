@@ -40,6 +40,7 @@
                "includeRoles": [],
                "excludeRoles": [],
                "includeGuestsOrExternalUsers": null,
+               "userFilter": null,
                "excludeGuestsOrExternalUsers": {
                     "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
                     "externalTenants": {

@@ -1,13 +1,13 @@
 {
      "creationSource": null,
-     "description": "",
+     "description": "Security Baselines will conflicy with User Account Control Behavior Of The Elevation Prompt For Administrators, needs to be set as prompt for creds not prompt for elevation.",
      "name": "DEV_WIN_D_CO_WindowsAdminProtection",
      "platforms": "windows10",
      "priorityMetaData": null,
      "roleScopeTagIds": [
           "Default"
      ],
-     "settingCount": 3,
+     "settingCount": 5,
      "technologies": "mdm",
      "templateReference": {
           "templateId": "",
@@ -34,6 +34,34 @@
                "id": "1",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_behavioroftheelevationpromptforadministrators_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "2",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_runalladministratorsinadminapprovalmode",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                         "settingValueTemplateReference": null,
+                         "value": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_runalladministratorsinadminapprovalmode_1",
+                         "children": []
+                    }
+               }
+          },
+          {
+               "id": "3",
+               "settingInstance": {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_typeofadminapprovalmode",
                     "settingInstanceTemplateReference": null,
                     "auditRuleInformation": null,
@@ -45,7 +73,7 @@
                }
           },
           {
-               "id": "2",
+               "id": "4",
                "settingInstance": {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                     "settingDefinitionId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_useadminapprovalmode",
